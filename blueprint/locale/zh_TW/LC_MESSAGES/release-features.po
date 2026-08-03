@@ -83,6 +83,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common6/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/gz-common6/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid "gz-fuel-tools"
@@ -97,6 +99,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools10/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools10/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-gui"
@@ -110,6 +114,7 @@ msgstr ""
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/gz-gui9/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/gz-gui9/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-launch"
@@ -124,6 +129,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch8/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/gz-launch8/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid "gz-math"
@@ -133,6 +140,7 @@ msgstr ""
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-math/blob/gz-math8/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-math/blob/gz-math8/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-msgs"
@@ -279,17 +287,22 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common5/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/gz-common5/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools9/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools9/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/gz-gui8/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/gz-gui8/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "7.x"
@@ -300,28 +313,36 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch7/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/gz-launch7/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-math/blob/gz-math7/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-math/blob/gz-math7/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/gz-msgs10/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/gz-msgs10/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/gz-physics7/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/gz-physics7/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin2/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-plugin/blob/gz-plugin2/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
@@ -690,7 +711,7 @@ msgstr ""
 
 #: ../../../release-features.md:130
 msgid "Sensors"
-msgstr ""
+msgstr "感測器"
 
 #: ../../../release-features.md:131
 msgid ""

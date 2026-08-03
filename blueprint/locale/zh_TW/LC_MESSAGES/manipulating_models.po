@@ -150,7 +150,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:55
 msgid "Translate mode"
-msgstr ""
+msgstr "平移模式"
 
 #: ../../../manipulating_models.md:57
 msgid ""
@@ -162,7 +162,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:59
 msgid "Rotate Mode"
-msgstr ""
+msgstr "旋轉模式"
 
 #: ../../../manipulating_models.md:61
 msgid ""
@@ -198,7 +198,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:71
 msgid "Rotate mode"
-msgstr ""
+msgstr "旋轉模式"
 
 #: ../../../manipulating_models.md:73
 msgid "Align to World frame"
