@@ -791,7 +791,7 @@ msgstr ""
 
 #: ../../../ci.md:318
 msgid "Development"
-msgstr ""
+msgstr "開發"
 
 #: ../../../ci.md:320
 msgid ""
