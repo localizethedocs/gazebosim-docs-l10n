@@ -35,4 +35,4 @@ msgstr ""
 
 #: ../../../how_to_guides.md:5
 msgid "How-to Guides"
-msgstr ""
+msgstr "操作指南"
