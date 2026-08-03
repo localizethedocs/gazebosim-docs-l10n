@@ -1,0 +1,537 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo ionic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ros2_integration.md:1
+msgid "Use ROS 2 to interact with Gazebo"
+msgstr ""
+
+#: ../../../ros2_integration.md:3
+msgid ""
+"In this tutorial we will learn how to use ROS 2 to communicate with Gazebo.  "
+"This can help in many aspects; we can receive data (like joint states, TFs) "
+"or commands from ROS and apply it to Gazebo and vice versa. This can also "
+"help to enable RViz to visualize a robot model simultaneously simulated by a "
+"Gazebo world."
+msgstr ""
+
+#: ../../../ros2_integration.md:8
+msgid "ros_gz_bridge"
+msgstr ""
+
+#: ../../../ros2_integration.md:10
+msgid ""
+"[`ros_gz_bridge`](https://github.com/gazebosim/ros_gz) provides a network "
+"bridge which enables the exchange of messages between ROS 2 and [Gazebo "
+"Transport](https://github.com/gazebosim/gz-transport). Its support is "
+"limited to only certain message types. Please, check this [README](https://"
+"github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/README.md) to verify if "
+"your message type is supported by the bridge."
+msgstr ""
+
+#: ../../../ros2_integration.md:12
+msgid ""
+"Example uses of the bridge can be found in [`ros_gz_sim_demos`](https://"
+"github.com/gazebosim/ros_gz/tree/ros2/ros_gz_sim_demos), including demo "
+"launch files with bridging of all major actuation and sensor types."
+msgstr ""
+
+#: ../../../ros2_integration.md:14
+msgid "Launching the bridge manually"
+msgstr ""
+
+#: ../../../ros2_integration.md:16
+msgid ""
+"We can initialize a bidirectional bridge so we can have ROS as the publisher "
+"and Gazebo as the subscriber or vice versa. The syntax is `/"
+"TOPIC@ROS_MSG@GZ_MSG`, such that `TOPIC` is the Gazebo internal topic, "
+"`ROS_MSG` is the ROS message type for this topic, and `GZ_MSG` is the Gazebo "
+"message type."
+msgstr ""
+
+#: ../../../ros2_integration.md:18
+msgid "For example:"
+msgstr ""
+
+#: ../../../ros2_integration.md:20
+msgid ""
+"ros2 run ros_gz_bridge parameter_bridge /scan@sensor_msgs/msg/LaserScan@gz."
+"msgs.LaserScan\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:24
+msgid ""
+"The `ros2 run ros_gz_bridge parameter_bridge` command simply runs the "
+"`parameter_bridge` code from the `ros_gz_bridge` package. Then, we specify "
+"our topic `/TOPIC` over which the messages will be sent. The first `@` "
+"symbol delimits the topic name from the message types. Following the first "
+"`@` symbol is the ROS message type."
+msgstr ""
+
+#: ../../../ros2_integration.md:26
+msgid "The ROS message type is followed by an `@`, `[`, or `]` symbol where:"
+msgstr ""
+
+#: ../../../ros2_integration.md:28
+msgid "`@`  is a bidirectional bridge."
+msgstr ""
+
+#: ../../../ros2_integration.md:29
+msgid "`[`  is a bridge from Gazebo to ROS."
+msgstr ""
+
+#: ../../../ros2_integration.md:30
+msgid "`]`  is a bridge from ROS to Gazebo."
+msgstr ""
+
+#: ../../../ros2_integration.md:32
+msgid ""
+"Have a look at these [examples]( https://github.com/gazebosim/ros_gz/blob/"
+"ros2/ros_gz_bridge/README.md#example-1a-gazebo-transport-talker-and-ros-2-"
+"listener) explaining how to make communication connections from ROS to "
+"Gazebo and vice versa."
+msgstr ""
+
+#: ../../../ros2_integration.md:35
+msgid ""
+"It is also possible to use ROS Launch with the `ros_gz_bridge` and represent "
+"the topics in yaml format to be given to the bridge at launch time."
+msgstr ""
+
+#: ../../../ros2_integration.md:37
+msgid ""
+"- ros_topic_name: \"scan\"\n"
+"  gz_topic_name: \"/scan\"\n"
+"  ros_type_name: \"sensor_msgs/msg/LaserScan\"\n"
+"  gz_type_name: \"gz.msgs.LaserScan\"\n"
+"  direction: GZ_TO_ROS  # BIDIRECTIONAL or ROS_TO_GZ\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:45
+msgid ""
+"The configuration file is a YAML file that contains the mapping between the "
+"ROS and Gazebo topics to be bridged. For each pair of topics to be bridged, "
+"the following parameters are accepted:"
+msgstr ""
+
+#: ../../../ros2_integration.md:49
+msgid "`ros_topic_name`: The topic name on the ROS side."
+msgstr ""
+
+#: ../../../ros2_integration.md:50
+msgid "`gz_topic_name`: The corresponding topic name on the Gazebo side."
+msgstr ""
+
+#: ../../../ros2_integration.md:51
+msgid "`ros_type_name`: The type of this ROS topic."
+msgstr ""
+
+#: ../../../ros2_integration.md:52
+msgid "`gz_type_name`: The type of this Gazebo topic."
+msgstr ""
+
+#: ../../../ros2_integration.md:53
+msgid "`subscriber_queue`: The size of the ROS subscriber queue."
+msgstr ""
+
+#: ../../../ros2_integration.md:54
+msgid "`publisher_queue`: The size of the ROS publisher queue."
+msgstr ""
+
+#: ../../../ros2_integration.md:55
+msgid ""
+"`lazy`: Whether there's a lazy subscriber or not. If there's no real "
+"subscribers the bridge won't create the internal subscribers either. This "
+"should speedup performance."
+msgstr ""
+
+#: ../../../ros2_integration.md:58
+msgid ""
+"`direction`: It's possible to specify `GZ_TO_ROS`, `ROS_TO_GZ` and "
+"`BIDIRECTIONAL`."
+msgstr ""
+
+#: ../../../ros2_integration.md:61
+msgid ""
+"See [this example](https://github.com/gazebosim/ros_gz/blob/ros2/"
+"ros_gz_bridge/test/config/full.yaml) for a valid configuration file."
+msgstr ""
+
+#: ../../../ros2_integration.md:64
+msgid ""
+"Launching the bridge using the launch files included in `ros_gz_bridge` "
+"package."
+msgstr ""
+
+#: ../../../ros2_integration.md:66
+msgid ""
+"The package `ros_gz_bridge` contains a launch file named `ros_gz_bridge."
+"launch.py`. You can use it to start a ROS 2 and Gazebo bridge."
+msgstr ""
+
+#: ../../../ros2_integration.md:69
+msgid "Here's an example:"
+msgstr ""
+
+#: ../../../ros2_integration.md:70
+msgid ""
+"ros2 launch ros_gz_bridge ros_gz_bridge.launch.py bridge_name:=ros_gz_bridge "
+"config_file:=<path_to_your_YAML_file>\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:74
+msgid "Launching with composition:"
+msgstr ""
+
+#: ../../../ros2_integration.md:75
+msgid ""
+"ros2 launch ros_gz_bridge ros_gz_bridge.launch.py bridge_name:=ros_gz_bridge "
+"config_file:=<path_to_your_YAML_file> use_composition:=True "
+"create_own_container:=True\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:78
+msgid ""
+"Alternatively, if an existing container is already running, you can pass its "
+"name when launching the bridge using the `container_name` parameter. More "
+"info about composition can be viewed [here](ros2_overview.md#composition)"
+msgstr ""
+
+#: ../../../ros2_integration.md:81
+msgid ""
+"Check [this block](https://github.com/gazebosim/ros_gz/blob/jazzy/"
+"ros_gz_bridge/launch/ros_gz_bridge.launch.py#L25-L68) from the source code "
+"to know all the different parameters accepted by this launch file."
+msgstr ""
+
+#: ../../../ros2_integration.md:85
+msgid "QOS Overrides:"
+msgstr ""
+
+#: ../../../ros2_integration.md:87
+msgid ""
+"QOS overrides can be passed as extra parameters to the bridge using the "
+"`bridge_params` argument of the launch file. An example of this:"
+msgstr ""
+
+#: ../../../ros2_integration.md:88
+msgid ""
+"ros2 launch ros_gz_bridge ros_gz_bridge.launch.py bridge_name:=ros_gz_bridge "
+"config_file:=<path_to_your_YAML_file> bridge_params:={'qos_overrides./"
+"topic_name.publisher.durability': 'transient_local', 'qos_overrides./"
+"another_topic_name.publisher.durability': 'transient_local'}\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:91
+msgid ""
+"You can omit the following from what you pass to `bridge_params`: `{}`, ` `, "
+"`\"`, `'`."
+msgstr ""
+
+#: ../../../ros2_integration.md:93
+msgid ""
+"More info about using QOS overrides can be found [here](https://docs.ros.org/"
+"en/jazzy/How-To-Guides/Overriding-QoS-Policies-For-Recording-And-Playback."
+"html#using-qos-overrides)"
+msgstr ""
+
+#: ../../../ros2_integration.md:95
+msgid "Launching the bridge from a custom launch file in XML."
+msgstr ""
+
+#: ../../../ros2_integration.md:97
+msgid ""
+"It's also possible to trigger the bridge from your custom launch file. For "
+"that purpose we have created the `<ros_gz_bridge/>` tag that can be used "
+"from you XML or YAML launch file. In this case, the arguments are passed as "
+"attributes within this tag. Here's a simplified example, a more "
+"comprehensive example can be viewed [here](https://github.com/gazebosim/"
+"ros_gz/blob/ros2/ros_gz_bridge/launch/ros_gz_bridge.launch):"
+msgstr ""
+
+#: ../../../ros2_integration.md:102
+msgid ""
+"<launch>\n"
+"  <arg name=\"bridge_name\" />\n"
+"  <arg name=\"config_file\" />\n"
+"  <ros_gz_bridge\n"
+"    bridge_name=\"$(var bridge_name)\"\n"
+"    config_file=\"$(var config_file)\">\n"
+"  </ros_gz_bridge>\n"
+"</launch>\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:113
+msgid ""
+"In this case the `<ros_gz_bridge>` parameters are read from the command "
+"line. That's an option but not strictly necessary as you could decide to "
+"hardcode some of the values or not even use all the parameters."
+msgstr ""
+
+#: ../../../ros2_integration.md:117
+msgid "Launching the bridge from a custom launch file in Python."
+msgstr ""
+
+#: ../../../ros2_integration.md:119
+msgid ""
+"Here's a simplified example of a Python launch file used to load a bridge "
+"from Python, a more comprehensive example can be viewed [here](https://"
+"github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/launch/ros_gz_bridge."
+"launch.py):"
+msgstr ""
+
+#: ../../../ros2_integration.md:121
+msgid ""
+"from launch import LaunchDescription\n"
+"from launch.actions import DeclareLaunchArgument\n"
+"from launch.substitutions import LaunchConfiguration, TextSubstitution\n"
+"from ros_gz_bridge.actions import RosGzBridge\n"
+"\n"
+"\n"
+"def generate_launch_description():\n"
+"\n"
+"    bridge_name = LaunchConfiguration('bridge_name')\n"
+"    config_file = LaunchConfiguration('config_file')\n"
+"\n"
+"    declare_bridge_name_cmd = DeclareLaunchArgument(\n"
+"        'bridge_name', description='Name of ros_gz_bridge node'\n"
+"    )\n"
+"\n"
+"    declare_config_file_cmd = DeclareLaunchArgument(\n"
+"        'config_file', description='YAML config file'\n"
+"    )\n"
+"\n"
+"    # Create the launch description and populate\n"
+"    ld = LaunchDescription([\n"
+"        RosGzBridge(\n"
+"            bridge_name=LaunchConfiguration('bridge_name'),\n"
+"            config_file=LaunchConfiguration('config_file'),\n"
+"        ),\n"
+"    ])\n"
+"\n"
+"    # Declare the launch options\n"
+"    ld.add_action(declare_bridge_name_cmd)\n"
+"    ld.add_action(declare_config_file_cmd)\n"
+"\n"
+"    return ld\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:156
+msgid "Publish key strokes to ROS"
+msgstr ""
+
+#: ../../../ros2_integration.md:158
+msgid "Let's send messages to ROS using the `Key Publisher` an Gazebo plugin."
+msgstr ""
+
+#: ../../../ros2_integration.md:160
+msgid ""
+"**Note:** Make sure to have all workspaces you need (ROS, Gazebo and, "
+"`ros_gz`...) sourced."
+msgstr ""
+
+#: ../../../ros2_integration.md:163
+msgid ""
+"First we will start a bridge between ROS and Gazebo specifying the topic at "
+"which the `Key Publisher` plugin sends messages and also the type of the "
+"messages as follows:"
+msgstr ""
+
+#: ../../../ros2_integration.md:167
+msgid ""
+"ros2 run ros_gz_bridge parameter_bridge /keyboard/keypress@std_msgs/msg/"
+"Int32@gz.msgs.Int32\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:171
+msgid ""
+"We started a bridge on `/keyboard/keypress` topic with message of type "
+"`Int32`. For ROS it is `std_msgs/msg/Int32` and for Gazebo it is `gz.msgs."
+"Int32`"
+msgstr ""
+
+#: ../../../ros2_integration.md:174
+msgid ""
+"In another terminal launch an Gazebo Sim world, for example the `empty.sdf` "
+"world:"
+msgstr ""
+
+#: ../../../ros2_integration.md:176
+msgid "gz sim empty.sdf\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:180
+msgid ""
+"Then add the `Key Publisher` plugin from the dropdown menu on the top right "
+"corner."
+msgstr ""
+
+#: ../../../ros2_integration.md:182
+msgid ""
+"![empty_world_with_KeyPublisher](tutorials/ros2_integration/empty_world.png)"
+msgstr ""
+
+#: ../../../ros2_integration.md:182
+msgid "empty_world_with_KeyPublisher"
+msgstr ""
+
+#: ../../../ros2_integration.md:184
+msgid "In another terminal start the ROS listener:"
+msgstr ""
+
+#: ../../../ros2_integration.md:186
+msgid "ros2 topic echo /keyboard/keypress\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:190
+msgid ""
+"This command listens to the messages sent over the `/keyboard/keypress` "
+"topic."
+msgstr ""
+
+#: ../../../ros2_integration.md:192
+msgid ""
+"On the Gazebo window, press on the keyboard keys and you should find data on "
+"the listener terminal."
+msgstr ""
+
+#: ../../../ros2_integration.md:195
+msgid ""
+"Now it's your turn! Try to send data from ROS to Gazebo. You can also try "
+"different data types and different directions of communication."
+msgstr ""
+
+#: ../../../ros2_integration.md:197
+msgid "Video walk-through"
+msgstr ""
+
+#: ../../../ros2_integration.md:199
+msgid ""
+"A video walk-through of this tutorial is available from our YouTube channel: "
+"[Gazebo tutorials: ROS 2 Foxy integration](https://youtu.be/IpZTNyTp9t8)."
+msgstr ""
+
+#: ../../../ros2_integration.md:201
+msgid ""
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"IpZTNyTp9t8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-"
+"media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:203
+msgid "Visualize in RViz"
+msgstr ""
+
+#: ../../../ros2_integration.md:205
+msgid ""
+"Take a step further and try out demos from [`ros_gz_sim_demos`](https://"
+"github.com/gazebosim/ros_gz/tree/ros2/ros_gz_sim_demos)."
+msgstr ""
+
+#: ../../../ros2_integration.md:207
+msgid ""
+"For the `sdf_parser` demo, install [`ros_gz`](https://github.com/gazebosim/"
+"ros_gz/tree/ros2) and the parser plugin `sdformat_urdf` from source in a "
+"colcon workspace. Read more about `sdformat_urdf` [here](https://github.com/"
+"ros/sdformat_urdf/blob/rolling/sdformat_urdf/README.md)."
+msgstr ""
+
+#: ../../../ros2_integration.md:210
+msgid "Run the demo launch file with the rviz launch argument set:"
+msgstr ""
+
+#: ../../../ros2_integration.md:212
+msgid "ros2 launch ros_gz_sim_demos sdf_parser.launch.py rviz:=True\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:216
+msgid ""
+"Start the simulation in Gazebo and wait a few seconds for TFs to be "
+"published."
+msgstr ""
+
+#: ../../../ros2_integration.md:218
+msgid ""
+"In another terminal, send either ROS or Gazebo commands for the vehicle to "
+"move in circles:"
+msgstr ""
+
+#: ../../../ros2_integration.md:220
+msgid ""
+"gz topic -t \"/model/vehicle/cmd_vel\" -m gz.msgs.Twist -p \"linear: {x: "
+"1.0}, angular: {z: -0.1}\"\n"
+"ros2 topic pub /model/vehicle/cmd_vel geometry_msgs/msg/Twist \"{linear: {x: "
+"5.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.1}}\n"
+msgstr ""
+
+#: ../../../ros2_integration.md:225
+msgid "And verify the vehicle matching its trajectory in Gazebo and RViz."
+msgstr ""
+
+#: ../../../ros2_integration.md:227
+msgid "![gz_rviz](tutorials/ros2_integration/gz_rviz.gif)"
+msgstr ""
+
+#: ../../../ros2_integration.md:227
+msgid "gz_rviz"
+msgstr ""
+
+#: ../../../ros2_integration.md:229
+msgid ""
+"For more details on implementation of this demo see [ROS 2 Interoperability]"
+"(ros2_interop)."
+msgstr ""
+
+#: ../../../ros2_integration.md:231
+msgid "Using ROS 2 Simulation Interfaces"
+msgstr ""
+
+#: ../../../ros2_integration.md:233
+msgid ""
+"The [ROS 2 Simulation Interfaces](https://github.com/ros-simulation/"
+"simulation_interfaces) are a set of standard ROS 2 service, message and "
+"action definitions for controlling and interacting with simulation "
+"environments. They are simulator agnostic, which means the same interfaces "
+"can be implemented in different simulators while keeping the API consistent."
+msgstr ""
+
+#: ../../../ros2_integration.md:239
+msgid "Gazebo implements these interfaces, enabling you to,"
+msgstr ""
+
+#: ../../../ros2_integration.md:240
+msgid "Spawn and delete entities"
+msgstr ""
+
+#: ../../../ros2_integration.md:241
+msgid "Control simulation state and time stepping"
+msgstr ""
+
+#: ../../../ros2_integration.md:242
+msgid "Query entity and world state"
+msgstr ""
+
+#: ../../../ros2_integration.md:243
+msgid "Retrieve simulator information"
+msgstr ""
+
+#: ../../../ros2_integration.md:245
+msgid ""
+"For a full tutorial, including usage examples for each interface see [Use "
+"ROS 2 Simulation Interfaces with Gazebo](ros2_sim_interfaces)."
+msgstr ""
