@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../ros2_interop.md:5
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../ros2_interop.md:6
 msgid ""
