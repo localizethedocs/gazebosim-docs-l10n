@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../sensors.md:1
 msgid "Sensors"
-msgstr ""
+msgstr "感測器"
 
 #: ../../../sensors.md:3
 msgid ""

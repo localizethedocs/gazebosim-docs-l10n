@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../development.md:11
 msgid "Continuous Integration"
-msgstr ""
+msgstr "持續整合"
 
 #: ../../../development.md:11
 msgid "Release process"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../development.md:1
 msgid "Gazebo Development"
-msgstr ""
+msgstr "Gazebo 開發"
 
 #: ../../../development.md:3
 msgid ""

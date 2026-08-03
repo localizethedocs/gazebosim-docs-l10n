@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../../building_robot.md:162
 msgid "Defining the model"
-msgstr ""
+msgstr "定義模型"
 
 #: ../../../building_robot.md:164
 msgid ""
