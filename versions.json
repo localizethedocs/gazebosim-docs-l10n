@@ -1,0 +1,50 @@
+{
+  "dev" : [
+    {
+      "VERSION" : "rotary",
+      "VERSION_COMPENDIUM" : ""
+    }
+  ],
+  "rel" : [
+    {
+      "VERSION" : "jetty",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "ionic",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "harmonic",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "garden",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "fortress",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "edifice",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "dome",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "citadel",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "blueprint",
+      "VERSION_COMPENDIUM" : "rotary"
+    },
+    {
+      "VERSION" : "acropolis",
+      "VERSION_COMPENDIUM" : "rotary"
+    }
+  ]
+}
