@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo acropolis\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../releasing/bump_major.md:4
+msgid "Bump major versions"
+msgstr ""
+
+#: ../../../releasing/bump_major.md:6
+msgid ""
+"WARNING: this document is no more than a list of steps. Check with the infra-"
+"team the steps to be done if you are unsure."
+msgstr ""
+
+#: ../../../releasing/bump_major.md:9
+msgid "Create -release repository"
+msgstr ""
+
+#: ../../../releasing/bump_major.md:10
+msgid ""
+"[Helper script available](https://github.com/gazebo-tooling/release-tools/"
+"blob/master/release-repo-scripts/README.md#bump_major_versionbash)"
+msgstr ""
+
+#: ../../../releasing/bump_major.md:11
+msgid "Create the Brew formula"
+msgstr ""
+
+#: ../../../releasing/bump_major.md:12
+msgid "Create repo branch"
+msgstr ""
+
+#: ../../../releasing/bump_major.md:13
+msgid "New entries in gazebodistro"
+msgstr ""
+
+#: ../../../releasing/bump_major.md:14
+msgid "Update gzdev"
+msgstr ""
