@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../setup_gazebo_in_ci.md:1
+msgid "Setting up Gazebo in a Continuous Integration (CI) Pipeline"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:3
+msgid ""
+"Setting up a Gazebo environment in a Continuous Integration (CI) pipeline "
+"can often be a complex and time-consuming task. It typically involves "
+"installing various dependencies, managing repository keys, and ensuring "
+"platform compatibility with the Gazebo distribution. If done incorrectly, "
+"this can lead to unpredictable behaviors in CI due inconsistencies across "
+"environments. This section provides information on setting up a Gazebo in a "
+"continuous integration pipeline using the `setup-gazebo` GitHub Action to "
+"automate the entire process of configuring a Gazebo environment in a CI by "
+"taking care of everything, from handling dependencies to installing the "
+"desired Gazebo distribution."
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:8
+msgid ""
+"This action can also be used to install Gazebo alongside ROS 2 along with "
+"ROS-Gazebo bridge (`ros_gz`). It handles the installation of the correct "
+"version of Gazebo and `ros_gz` from all of all the recommended and supported "
+"combinations, along with possible combinations through ROS official binaries "
+"as ROS Gazebo vendor packages."
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:10
+msgid ""
+"The `setup-gazebo` GitHub Action can be found on the [Marketplace](https://"
+"github.com/marketplace/actions/setup-gazebo-environment) with its source "
+"code hosted at [github.com/gazebo-tooling/setup-gazebo](https://github.com/"
+"gazebo-tooling/setup-gazebo). Also check this [community post](https://"
+"community.gazebosim.org/t/introducing-the-setup-gazebo-github-action/3132) "
+"for more details."
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:12
+msgid "Supported Gazebo Releases"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:14
+msgid ""
+"The action currently supports all the non-EOL Gazebo releases. See [releases]"
+"(https://gazebosim.org/docs/all/releases/) for more information."
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:16
+msgid "Citadel"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:17
+msgid "Fortress"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:18
+msgid "Harmonic"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:19
+msgid "Ionic"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:21
+msgid "Supported Platforms"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:23
+msgid ""
+"The `setup-gazebo` GitHub Action works on three platforms (Ubuntu, macOS and "
+"Windows) with the usage instructions for each described below,"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:25
+msgid ""
+"[Ubuntu](https://github.com/marketplace/actions/setup-gazebo-"
+"environment#ubuntu)"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:26
+msgid ""
+"[macOS](https://github.com/marketplace/actions/setup-gazebo-"
+"environment#macos)"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:27
+msgid ""
+"[Windows](https://github.com/marketplace/actions/setup-gazebo-"
+"environment#windows)"
+msgstr ""

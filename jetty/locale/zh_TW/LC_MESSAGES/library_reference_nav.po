@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../library_reference_nav.md:7
+msgid "cmake"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "common"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "fuel_tools"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "gui"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "launch"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "math"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "msgs"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "physics"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "plugin"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "rendering"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "sensors"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "sim"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "tools"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "transport"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "utils"
+msgstr ""
+
+#: ../../../library_reference_nav.md:7
+msgid "sdformat"
+msgstr ""
+
+#: ../../../library_reference_nav.md:5
+msgid "Library Reference"
+msgstr ""
