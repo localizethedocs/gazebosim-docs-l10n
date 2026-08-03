@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo ionic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../support.md:1
+msgid "Support"
+msgstr ""
+
+#: ../../../support.md:3
+msgid ""
+"Different types of questions or discussions correspond to different avenues "
+"of communication. Please check the descriptions below to ensure you choose "
+"the right method."
+msgstr ""
+
+#: ../../../support.md:7
+msgid ""
+"If you need help troubleshooting your system, first search existing "
+"discussions to see if others have encountered a similar issue and whether a "
+"solution already exists."
+msgstr ""
+
+#: ../../../support.md:11
+msgid ""
+"If not, feel free to ask a new question using one of the support options "
+"below. Please avoid contacting developers or maintainers directly, as public "
+"support channels allow the whole community to participate and benefit from "
+"shared solutions."
+msgstr ""
+
+#: ../../../support.md:16
+msgid "Getting help"
+msgstr ""
+
+#: ../../../support.md:18
+msgid "Robotics Stack Exchange"
+msgstr ""
+
+#: ../../../support.md:20
+msgid ""
+"For general usage questions and troubleshooting help, please ask on "
+"[Robotics Stack Exchange](https://robotics.stackexchange.com/)."
+msgstr ""
+
+#: ../../../support.md:23
+msgid ""
+"Make sure to tag your question with **gazebo** (and any other relevant tags) "
+"so it can be easily found by the community."
+msgstr ""
+
+#: ../../../support.md:26
+msgid ""
+"When asking a question, please include enough information for others to "
+"understand the problem, such as:"
+msgstr ""
+
+#: ../../../support.md:28
+msgid "Your operating system"
+msgstr ""
+
+#: ../../../support.md:29
+msgid "Gazebo version"
+msgstr ""
+
+#: ../../../support.md:30
+msgid "What you were trying to do"
+msgstr ""
+
+#: ../../../support.md:31
+msgid "What happened instead, including any warnings or error messages"
+msgstr ""
+
+#: ../../../support.md:33
+msgid ""
+"Providing clear and complete details makes it much easier for others to help "
+"you find a solution."
+msgstr ""
+
+#: ../../../support.md:36
+msgid "Gazebo Discourse"
+msgstr ""
+
+#: ../../../support.md:38
+msgid ""
+"To start a discussion with other Gazebo community members, visit the Gazebo "
+"category on Open Robotics Discourse: [Gazebo Discourse](https://discourse."
+"openrobotics.org/c/gazebo/95)"
+msgstr ""
+
+#: ../../../support.md:42
+msgid ""
+"Discourse is intended for higher-level discussions, such as best practices, "
+"design considerations, or general questions about using Gazebo, rather than "
+"debugging specific errors."
+msgstr ""
+
+#: ../../../support.md:46
+msgid "Zulip chat"
+msgstr ""
+
+#: ../../../support.md:48
+msgid ""
+"For real-time communication with Gazebo developers and users, you can join "
+"the Open Robotics Zulip workspace: [Open Robotics Zulip server](https://"
+"openrobotics.zulipchat.com/)"
+msgstr ""
+
+#: ../../../support.md:52
+msgid ""
+"Zulip is well suited for quick questions, development discussion, and "
+"collaboration. Please note that responses may vary depending on time zones "
+"and availability."
+msgstr ""
+
+#: ../../../support.md:56
+msgid "Pull requests"
+msgstr ""
+
+#: ../../../support.md:58
+msgid ""
+"If you would like to contribute a fix or improvement directly, you are "
+"welcome to open a pull request against the appropriate Gazebo repository."
+msgstr ""
+
+#: ../../../support.md:61
+msgid "Please make sure to:"
+msgstr ""
+
+#: ../../../support.md:62
+msgid "Follow the pull request template"
+msgstr ""
+
+#: ../../../support.md:63
+msgid "Target the correct branch for your change"
+msgstr ""
+
+#: ../../../support.md:65
+msgid ""
+"Guidance on branch selection, contribution workflow, and general "
+"contribution etiquette is described in the contributing guide: [Contributing "
+"to Gazebo](https://gazebosim.org/docs/all/contributing)"
+msgstr ""
+
+#: ../../../support.md:69
+msgid "Reporting bugs and requesting features"
+msgstr ""
+
+#: ../../../support.md:71
+msgid ""
+"If you identify a bug, have a suggestion for improvement, or would like to "
+"request a new feature, please open an issue in the appropriate repository on "
+"GitHub: [Gazebo Sim](https://github.com/gazebosim)"
+msgstr ""
+
+#: ../../../support.md:76
+msgid "Before opening a new issue, please:"
+msgstr ""
+
+#: ../../../support.md:77
+msgid "Search existing issues to see if the problem has already been reported"
+msgstr ""
+
+#: ../../../support.md:78
+msgid "Use the provided issue template and fill out all relevant sections"
+msgstr ""
+
+#: ../../../support.md:80
+msgid ""
+"Using the issue templates and providing complete information helps "
+"maintainers and contributors understand and address issues more efficiently."
+msgstr ""

@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo ionic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../releasing/release_repositories.md:4
+msgid "Release repositories"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:6
+msgid ""
+"TODO: the document needs to be completed with real information. The points "
+"below are only for reference. Check with the infra-team if you need any "
+"information related to -release repositories."
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:10
+msgid "Design"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:12
+msgid "TODO"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:14
+msgid "Ignore architectures using '.releasepy_NO_ARCH_'"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:15
+msgid ""
+"To disable builds for a specific architecture, add a file to the `-release` "
+"repository that starts with `.releasepy_NO_ARCH_` and append the name of the "
+"architecture to be excluded. The file can be added to the root of the `-"
+"release` repository (like [.releasepy_NO_ARCH_ARM64 in ign-gazebo2-release]"
+"(https://github.com/gazebo-release/ign-gazebo2-release/blob/master/."
+"releasepy_NO_ARCH_ARM64)) or in a distro-specific sub-folder (like [bionic/."
+"releasepy_NO_ARCH_armhf in ign-launch2-release](https://github.com/gazebo-"
+"release/ign-launch2-release/blob/master/bionic/.releasepy_NO_ARCH_armhf)). "
+"The architecture suffix is not case-sensitive."
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:22
+msgid "New distributions in Debian/Ubuntu"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:24
+msgid "TODO: script"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:26
+msgid "New repository"
+msgstr ""
+
+#: ../../../releasing/release_repositories.md:28
+msgid "TODO: point to major version bump doc)"
+msgstr ""
