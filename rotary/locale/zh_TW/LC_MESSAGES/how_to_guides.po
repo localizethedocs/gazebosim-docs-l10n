@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../how_to_guides.md:7
 msgid "ROS 2 integration overview"
-msgstr ""
+msgstr "ROS 2 整合概覽"
 
 #: ../../../how_to_guides.md:7
 msgid "Launch Gazebo from ROS 2"
@@ -51,4 +51,4 @@ msgstr ""
 
 #: ../../../how_to_guides.md:5
 msgid "How-to Guides"
-msgstr ""
+msgstr "操作指南"

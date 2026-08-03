@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../ros2_overview.md:1
 msgid "ROS 2 integration overview"
-msgstr ""
+msgstr "ROS 2 整合概覽"
 
 #: ../../../ros2_overview.md:4
 msgid ""

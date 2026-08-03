@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../moving_robot.md:1
 msgid "Moving the robot"
-msgstr ""
+msgstr "移動機器人"
 
 #: ../../../moving_robot.md:3
 msgid ""

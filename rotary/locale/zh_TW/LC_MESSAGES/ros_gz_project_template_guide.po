@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../../ros_gz_project_template_guide.md:5
 msgid "Installation Steps"
-msgstr ""
+msgstr "安裝步驟"
 
 #: ../../../ros_gz_project_template_guide.md:7
 msgid ""
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../../../ros_gz_project_template_guide.md:82
 msgid "Development"
-msgstr ""
+msgstr "開發"
 
 #: ../../../ros_gz_project_template_guide.md:84
 msgid "Choose a ROS and Gazebo [combination](ros_installation)"

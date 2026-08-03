@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../web_visualization.md:1
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../web_visualization.md:3
 msgid ""
