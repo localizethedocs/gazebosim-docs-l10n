@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../../fuel_insert.md:15
 msgid "Choose a Model"
-msgstr ""
+msgstr "選擇模型"
 
 #: ../../../fuel_insert.md:17
 msgid ""
