@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.md:8
 msgid "Get Started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../index.md:8
 msgid "Release Notes"
@@ -27,23 +27,23 @@ msgstr ""
 
 #: ../../../index.md:8
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: ../../../index.md:8
 msgid "ROS/Gazebo Installation"
-msgstr ""
+msgstr "ROS/Gazebo 安裝"
 
 #: ../../../index.md:19
 msgid "Simulation Tutorials"
-msgstr ""
+msgstr "模擬教學"
 
 #: ../../../index.md:19 ../../../index.md:28
 msgid "How-to Guides"
-msgstr ""
+msgstr "操作指南"
 
 #: ../../../index.md:19
 msgid "For Users"
-msgstr ""
+msgstr "使用者專區"
 
 #: ../../../index.md:28
 msgid "Sim Architecture"
@@ -51,19 +51,19 @@ msgstr ""
 
 #: ../../../index.md:28
 msgid "Library How-to Guides"
-msgstr ""
+msgstr "程式庫操作指南"
 
 #: ../../../index.md:28
 msgid "Roadmap"
-msgstr ""
+msgstr "路線圖"
 
 #: ../../../index.md:28
 msgid "Development"
-msgstr ""
+msgstr "開發"
 
 #: ../../../index.md:28
 msgid "For Developers"
-msgstr ""
+msgstr "開發者專案"
 
 #: ../../../index.md:40
 msgid "Release Features"
@@ -71,11 +71,11 @@ msgstr ""
 
 #: ../../../index.md:40
 msgid "Releases"
-msgstr ""
+msgstr "發行版"
 
 #: ../../../index.md:40
 msgid "Governance"
-msgstr ""
+msgstr "治理"
 
 #: ../../../index.md:40
 msgid "Fuel"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../index.md:40
 msgid "Projects using Gazebo"
-msgstr ""
+msgstr "使用 Gazebo 的專案"
 
 #: ../../../index.md:40
 msgid "Support"
@@ -107,11 +107,11 @@ msgstr ""
 
 #: ../../../index.md:53
 msgid "Migration Guides"
-msgstr ""
+msgstr "遷移指南"
 
 #: ../../../index.md:63
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../index.md:0
 msgid "0; url=getstarted"

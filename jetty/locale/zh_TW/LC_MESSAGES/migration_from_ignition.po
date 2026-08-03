@@ -37,7 +37,7 @@ msgstr ""
 #: ../../../migration_from_ignition.md:8
 #: ../../../migration_from_ignition.md:176
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../migration_from_ignition.md:10
 msgid "Changes"
