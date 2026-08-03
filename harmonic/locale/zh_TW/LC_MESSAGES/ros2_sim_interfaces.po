@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:15
 msgid "[State Update](#state-update)"
-msgstr ""
+msgstr "[狀態更新](#state-update)"
 
 #: ../../../ros2_sim_interfaces.md:16
 msgid "[Simulator Information](#simulator-information)"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:18
 msgid "Simulation Control"
-msgstr ""
+msgstr "模擬控制"
 
 #: ../../../ros2_sim_interfaces.md:20
 msgid ""
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:182
 msgid "Topic Name"
-msgstr ""
+msgstr "話題名稱"
 
 #: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:182
 msgid "Type"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:182
 msgid "Service"
-msgstr ""
+msgstr "服務"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Reset the simulation to its initial state"
@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:30
 msgid "ResetSimulation Service"
-msgstr ""
+msgstr "ResetSimulation 服務"
 
 #: ../../../ros2_sim_interfaces.md:32
 msgid "Reset the simulation to its initial state."
@@ -170,7 +170,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:38
 msgid "StepSimulation Service"
-msgstr ""
+msgstr "StepSimulation 服務"
 
 #: ../../../ros2_sim_interfaces.md:40
 msgid "Step the simulation forward by a specified number of steps."
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:46
 msgid "GetSimulationState Service"
-msgstr ""
+msgstr "GetSimulationState 服務"
 
 #: ../../../ros2_sim_interfaces.md:48
 msgid "Get the current simulation state (playing/paused/stopped)."
@@ -243,6 +243,8 @@ msgid ""
 "ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
 "SetSimulationState \"{state: {state: 3}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
+"SetSimulationState \"{state: {state: 3}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:82
 msgid "SimulateSteps Action"
@@ -320,7 +322,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:117
 msgid "DeleteEntity Service"
-msgstr ""
+msgstr "DeleteEntity 服務"
 
 #: ../../../ros2_sim_interfaces.md:119
 msgid "Delete an existing entity by name."
@@ -334,7 +336,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:125
 msgid "State Query"
-msgstr ""
+msgstr "狀態查詢"
 
 #: ../../../ros2_sim_interfaces.md:127
 msgid ""

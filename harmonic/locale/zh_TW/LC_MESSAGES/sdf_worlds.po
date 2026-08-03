@@ -346,7 +346,7 @@ msgstr ""
 
 #: ../../../sdf_worlds.md:198
 msgid "Entity tree"
-msgstr ""
+msgstr "實體樹"
 
 #: ../../../sdf_worlds.md:200
 msgid ""

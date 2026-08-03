@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:57
 msgid "Translate mode"
-msgstr ""
+msgstr "平移模式"
 
 #: ../../../manipulating_models.md:59
 msgid ""
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:61
 msgid "Rotate Mode"
-msgstr ""
+msgstr "旋轉模式"
 
 #: ../../../manipulating_models.md:63
 msgid ""
@@ -204,7 +204,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:73
 msgid "Rotate mode"
-msgstr ""
+msgstr "旋轉模式"
 
 #: ../../../manipulating_models.md:75
 msgid "Align to World frame"
@@ -371,7 +371,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:130
 msgid "Align Tool"
-msgstr ""
+msgstr "對齊工具"
 
 #: ../../../manipulating_models.md:132
 msgid "Select the Align Tool from the plugins drop-down menu."
