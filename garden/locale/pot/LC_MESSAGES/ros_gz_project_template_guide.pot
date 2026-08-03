@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo garden\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ros_gz_project_template_guide.md:1
+msgid "Guide to `ros_gz_project_template` for ROS 2 and Gazebo Development"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:3
+msgid ""
+"In this guide, you will learn how to use the `ros_gz_project_template` to "
+"create a (recommended) structured workspace or improve your existing "
+"workspace for your ROS 2 and Gazebo projects. This template offers a "
+"consistent layout, automated build process, and integration with both ROS 2 "
+"and Gazebo, enabling you to focus on developing your robotics applications."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:5
+msgid "Installation Steps"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:7
+msgid ""
+"If you are starting a project, create a new workspace or go to your existing "
+"project's source directory:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:9
+msgid ""
+"mkdir -p ~/project_ws/src\n"
+"cd ~/project_ws/src\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:14
+msgid ""
+"Directly use the [`ros_gz_project_template` template](https://github.com/"
+"gazebosim/ros_gz_project_template) and create your project repository on "
+"GitHub."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:16
+msgid "![use_template](tutorials/ros2_integration/use_template.png)"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:16
+msgid "use_template"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:18
+msgid "Or start by cloning the template repository:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:20
+msgid ""
+"wget https://raw.githubusercontent.com/gazebosim/ros_gz_project_template/"
+"main/template_workspace.yaml\n"
+"vcs import < template_workspace.yaml\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:25
+msgid "Rename the cloned repository folder to your desired project name:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:27
+msgid "mv ros_gz_project_template your_project_name\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:31
+msgid "Package structure"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:33
+msgid "At this point you'll have the following packages in your project:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:35
+msgid ""
+"`ros_gz_example_application` - holds ROS 2 specific code and configurations. "
+"Namely where control, planning or any high level algorithms reside."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:37
+msgid ""
+" <pre> ├── CMakeLists.txt\n"
+" ├── package.xml\n"
+" ├── <span style=\"color:#12488B\"><b>src</b></span>\n"
+"     └── ...\n"
+" </pre>\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:43
+msgid ""
+"`ros_gz_example_bringup` - holds launch files and high level utilities, "
+"communication bridge between ROS and Gazebo. Any robot or hardware specific "
+"configurations go here."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:45
+msgid ""
+" <pre> ├── <span style=\"color:#12488B\"><b>config</b></span>\n"
+" │   ├── ros_gz_example_bridge.yaml\n"
+" │   └── diff_drive.rviz\n"
+" ├── <span style=\"color:#12488B\"><b>launch</b></span>\n"
+"     └── diff_drive.launch.py\n"
+" </pre>\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:52
+msgid ""
+"`ros_gz_example_description` - holds the SDF description of the simulated "
+"system and any other [simulation assets](#accessing-simulation-assets)."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:54
+msgid ""
+" <pre> ├── <span style=\"color:#12488B\"><b>hooks</b></span>\n"
+" │   └── ros_gz_example_description.dsv.in\n"
+" ├── <span style=\"color:#12488B\"><b>models</b></span>\n"
+"     ├── <span style=\"color:#12488B\"><b>diff_drive</b></span>\n"
+"         ├── model.config\n"
+"         └── model.sdf\n"
+" </pre>\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:62
+msgid ""
+"`ros_gz_example_gazebo` - holds Gazebo specific code and configurations. "
+"Namely this is where user-defined worlds and custom system plugins end up."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:64
+msgid ""
+" <pre> ├── <span style=\"color:#12488B\"><b>include</b></span>\n"
+" │   └── <span style=\"color:#12488B\"><b>ros_gz_example_gazebo</b></span>\n"
+" │       ├── BasicSystem.hh\n"
+" │       └── FullSystem.hh\n"
+" ├── <span style=\"color:#12488B\"><b>src</b></span>\n"
+" │   ├── BasicSystem.cc\n"
+" │   └── FullSystem.cc\n"
+" ├── <span style=\"color:#12488B\"><b>worlds</b></span>\n"
+"         └── diff_drive.sdf\n"
+" </pre>\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:75
+msgid "Accessing Simulation Assets"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:77
+msgid ""
+"Simulation assets include your models or robot descriptions in URDF or SDF, "
+"meshes and materials files to help visualize different parts of the robot "
+"and finally compiling all these elements in a simulated world SDF. Gazebo "
+"offers a few different mechanisms for locating those, initializing it's "
+"search on `GZ_SIM_RESOURCE_PATH` environment variable, see gz-sim API on "
+"[finding resources](https://gazebosim.org/api/sim/8/resources.html) for more "
+"details."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:79
+msgid ""
+"There is a difference in how ROS and Gazebo resolves URIs, that the ROS side "
+"can handle `package://` URIs, but by default SDFormat only supports `model://"
+"`. Now `libsdformat` can convert `package://` to `model://` URIs. So "
+"existing simulation assets can be loaded by \"installing\" the models "
+"directory and exporting the model paths to your environment."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:81
+msgid ""
+"This can be automated using colcon environment hooks (shell scripts provided "
+"by a ROS package) in a [DSV file](https://colcon.readthedocs.io/en/released/"
+"developer/environment.html?highlight=dsv#dsv-files). Whenever you source the "
+"setup file in a workspace these environment hooks are also being sourced. "
+"See an [example](https://github.com/gazebosim/ros_gz_project_template/tree/"
+"main/ros_gz_example_description/hooks) of prepending the model share path to "
+"`GZ_SIM_RESOURCE_PATH` which enables Gazebo to load models from a ROS "
+"package using the `model://` URI."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:83
+msgid "Development"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:85
+msgid "Choose a ROS and Gazebo [combination](ros_installation)"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:87
+msgid ""
+"Note: If you're using a specific and unsupported Gazebo version with ROS 2, "
+"you might need to set the `GZ_VERSION` environment variable, for example:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:89
+msgid "export GZ_VERSION=garden\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:93
+msgid "Install dependencies"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:95
+msgid ""
+"cd ~/project_ws\n"
+"source /opt/ros/<ROS_DISTRO>/setup.bash\n"
+"sudo rosdep init\n"
+"rosdep update\n"
+"rosdep install --from-paths src --ignore-src -r -i -y --rosdistro "
+"<ROS_DISTRO>\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:103
+msgid "Modify"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:105
+msgid ""
+"Explore the `src/your_project_name` directory to add/modify the packages "
+"associated with your project. There are two primary mechanisms to integrate "
+"ROS 2 and Gazebo depending on your application:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:107
+msgid ""
+"Use [ros_gz_bridge](https://github.com/gazebosim/ros_gz) to dynamically "
+"connect topics between ROS 2 and Gazebo (which is demonstrated as an example "
+"in this template)"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:108
+msgid "Embed ROS 2 directly in a Gazebo system plugin"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:110
+msgid ""
+"The main consideration is in choosing the depth of integration is required "
+"between ROS and Gazebo. Using the bridge keeps dependencies separate and "
+"Gazebo systems don't have to know about ROS. By embedding ROS 2 nodes "
+"directly allows accessing the [EntityComponentManager](https://gazebosim.org/"
+"api/sim/7/classignition_1_1gazebo_1_1EntityComponentManager.html) within a "
+"Gazebo plugin."
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:112
+msgid "Build"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:114
+msgid ""
+"cd ~/project_ws\n"
+"colcon build --cmake-args -DBUILD_TESTING=ON\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:119
+msgid "Usage"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:121
+msgid "Source the workspace"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:123
+msgid ". ~/project_ws/install/setup.sh\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:127
+msgid "Launch the simulation and visualize in RViz:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:129
+msgid ""
+"To visualize your robot model and the data generated by your ROS 2 nodes, "
+"open a new terminal and launch:"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:131
+msgid "ros2 launch ros_gz_example_bringup diff_drive.launch.py\n"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:135
+msgid "ROSCon 2022"
+msgstr ""
+
+#: ../../../ros_gz_project_template_guide.md:137
+msgid ""
+"Check out a ROSCon 2022 talk titled [ROS 2 and Gazebo Integration Best "
+"Practices](https://vimeo.com/showcase/9954564/video/767127300), to learn "
+"more about best practices of integrating simulation with ROS 2, drawn from "
+"accumulated experience and successful deployments. The talk will "
+"additionally cover tips and techniques to ease migration to the latest "
+"versions."
+msgstr ""
