@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_osx_src.md:1
+msgid "Source Installation on macOS"
+msgstr ""
+
+#: ../../../install_osx_src.md:3
+msgid ""
+"This tutorial will work for macOS Catalina 10.15 and macOS BigSur 10.16."
+msgstr ""
+
+#: ../../../install_osx_src.md:5
+msgid "Install tools"
+msgstr ""
+
+#: ../../../install_osx_src.md:7
+msgid ""
+"The use of some additional tools is recommended to help with the source "
+"compilation, although other ways of correctly getting and building the "
+"sources are also possible."
+msgstr ""
+
+#: ../../../install_osx_src.md:10
+msgid ""
+"The easiest way to get the sources of all libraries is to use [vcstool]"
+"(https://github.com/dirk-thomas/vcstool)."
+msgstr ""
+
+#: ../../../install_osx_src.md:13
+msgid ""
+"To compile all the different libraries and ign-gazebo in the right order "
+"[colcon](https://colcon.readthedocs.io/en/released/) is recommended. The "
+"colcon tool is available on all platforms using pip (or pip3, if pip fails)."
+msgstr ""
+
+#: ../../../install_osx_src.md:17
+msgid "Python3 from homebrew"
+msgstr ""
+
+#: ../../../install_osx_src.md:19
+msgid ""
+"Tools and dependencies for Fortress can be installed using the [homebrew "
+"package manager](https://brew.sh/). The homebrew tool can be installed by "
+"entering the following in a terminal:"
+msgstr ""
+
+#: ../../../install_osx_src.md:22
+msgid ""
+"/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/"
+"install/master/install.sh)\"\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:26
+msgid ""
+"Fortress is compatible with Python3; it can be installed by running the "
+"following in a terminal:"
+msgstr ""
+
+#: ../../../install_osx_src.md:28
+msgid "brew install python3\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:32
+msgid "vcstool and colcon from pip"
+msgstr ""
+
+#: ../../../install_osx_src.md:34
+msgid "PIP is available on all platforms:"
+msgstr ""
+
+#: ../../../install_osx_src.md:36
+msgid "python3 -m pip install vcstool\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:40
+msgid "python3 -m pip install -U colcon-common-extensions\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:44
+msgid "Getting the sources"
+msgstr ""
+
+#: ../../../install_osx_src.md:46
+msgid ""
+"The first step is to create a developer workspace in which `vcstool` and "
+"`colcon` can work:"
+msgstr ""
+
+#: ../../../install_osx_src.md:49
+msgid ""
+"mkdir -p ~/workspace/src\n"
+"cd ~/workspace/src\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:54
+msgid ""
+"All the sources of ignition-fortress are declared in a yaml file. Download"
+msgstr ""
+
+#: ../../../install_osx_src.md:55
+msgid ""
+"vcs import --input https://raw.githubusercontent.com/ignition-tooling/"
+"gazebodistro/master/collection-fortress.yaml src\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:59
+msgid ""
+"Use `vcstool` to automatically retrieve all the Ignition libraries sources "
+"from their repositories."
+msgstr ""
+
+#: ../../../install_osx_src.md:62
+msgid "The src subdirectory should contain all the sources ready to be built."
+msgstr ""
+
+#: ../../../install_osx_src.md:65
+msgid "Install dependencies"
+msgstr ""
+
+#: ../../../install_osx_src.md:67
+msgid "Add `osrf/simulation` to Homebrew formulae"
+msgstr ""
+
+#: ../../../install_osx_src.md:69
+msgid ""
+"brew update\n"
+"brew tap osrf/simulation\n"
+"brew trust osrf/simulation\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:75
+msgid "Install all dependencies:"
+msgstr ""
+
+#: ../../../install_osx_src.md:77
+msgid "Dependency for Ogre:"
+msgstr ""
+
+#: ../../../install_osx_src.md:79
+msgid "brew cask install xquartz\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:83
+msgid "General dependencies:"
+msgstr ""
+
+#: ../../../install_osx_src.md:85
+msgid ""
+"brew install assimp boost bullet cmake cppzmq dartsim doxygen eigen fcl "
+"ffmpeg flann freeimage freetype gflags google-benchmark gts ipopt irrlicht "
+"jsoncpp libccd libyaml libzzip libzip nlopt ode open-scene-graph ossp-uuid "
+"ogre1.9 ogre2.2 pkg-config protobuf qt qwt rapidjson ruby tbb tinyxml "
+"tinyxml2 urdfdom zeromq\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:89
+msgid ""
+"`qt@5` is a \"keg only\" Homebrew formula and its path must be explicitly "
+"configured before building Gazebo:"
+msgstr ""
+
+#: ../../../install_osx_src.md:91
+msgid ""
+"# qt@5\n"
+"export CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH:+$CMAKE_PREFIX_PATH:}`brew --"
+"prefix qt@5`\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:96
+msgid "Unlink `qt` to avoid conflicts with other versions of qt (e.g. qt6)"
+msgstr ""
+
+#: ../../../install_osx_src.md:98
+msgid "brew unlink qt\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:102
+msgid "Install compiler requirements"
+msgstr ""
+
+#: ../../../install_osx_src.md:104
+msgid "The Ignition Libraries require the Xcode 10 compiler on MacOS Mojave."
+msgstr ""
+
+#: ../../../install_osx_src.md:106
+msgid ""
+"On Mac machines, gcc is acquired by installing Xcode command line tools. The "
+"required version of Xcode for Fortress is Xcode 10.3, which can be "
+"downloaded from [Apple Developer Site](https://developer.apple.com/download/"
+"more/). You will need to sign in to your Apple account and download the "
+"Mojave version of Xcode command line tools. Command line tools can also be "
+"obtained by downloading Xcode from the Apple App Store (installing the full "
+"app may take over an hour)."
+msgstr ""
+
+#: ../../../install_osx_src.md:113
+msgid "Building the Ignition Libraries in MacOS Catalina (10.15)"
+msgstr ""
+
+#: ../../../install_osx_src.md:115
+msgid ""
+"If you want to compile Ignition Libraries in MacOS Catalina (10.15) you will "
+"need to apply some patches in your filesystem:"
+msgstr ""
+
+#: ../../../install_osx_src.md:117
+msgid ""
+"`/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/"
+"Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Ruby.framework/"
+"Headers/ruby/ruby/intern.h`"
+msgstr ""
+
+#: ../../../install_osx_src.md:119
+msgid "Create a file called `intern.patch` with the following content:"
+msgstr ""
+
+#: ../../../install_osx_src.md:121
+msgid ""
+"--- intern.h    2019-12-16 18:17:08.000000000 +0100\n"
+"+++ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/"
+"Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Ruby.framework/"
+"Headers/ruby/ruby/intern.h\n"
+"@@ -14,6 +14,10 @@\n"
+" #ifndef RUBY_INTERN_H\n"
+" #define RUBY_INTERN_H 1\n"
+"\n"
+"+#if __cplusplus > 199711L\n"
+"+#define register      // Deprecated in C++11.\n"
+"+#endif  // #if __cplusplus > 199711L\n"
+"+\n"
+" #if defined(__cplusplus)\n"
+" extern \"C\" {\n"
+" #if 0\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:137 ../../../install_osx_src.md:161
+msgid "Now we can apply the patch:"
+msgstr ""
+
+#: ../../../install_osx_src.md:139
+msgid "sudo patch -p0 < intern.patch\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:143
+msgid ""
+"`/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/"
+"Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Ruby.framework/"
+"Headers/ruby/ruby/config.h`"
+msgstr ""
+
+#: ../../../install_osx_src.md:145
+msgid "Create a file called `config.patch` with the following content:"
+msgstr ""
+
+#: ../../../install_osx_src.md:147
+msgid ""
+"--- config.h    2019-12-16 18:19:13.000000000 +0100\n"
+"+++ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/"
+"Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Ruby.framework/"
+"Headers/ruby/ruby/config.h\n"
+"@@ -410,6 +410,6 @@\n"
+" #define RUBY_PLATFORM_CPU \"x86_64\"\n"
+" #endif /* defined __x86_64__ &&! defined RUBY_PLATFORM_CPU */\n"
+" #define RUBY_PLATFORM_OS \"darwin19\"\n"
+"-#define RUBY_ARCH\"universal-\"RUBY_PLATFORM_OS\n"
+"-#define RUBY_PLATFORM\"universal.\"RUBY_PLATFORM_CPU\"-\"RUBY_PLATFORM_OS\n"
+"+#define RUBY_ARCH \"universal-\" RUBY_PLATFORM_OS\n"
+"+#define RUBY_PLATFORM \"universal.\" RUBY_PLATFORM_CPU \"-\" "
+"RUBY_PLATFORM_OS\n"
+" #endif /* INCLUDE_RUBY_CONFIG_H */\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:163
+msgid "sudo patch -p0 < config.patch\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:167
+msgid "Building the Ignition Libraries"
+msgstr ""
+
+#: ../../../install_osx_src.md:169
+msgid ""
+"Once the compiler and all the sources are in place it is time to compile "
+"them. Start the procedure by changing into the workspace and listing the "
+"packages recognized by `colcon`:"
+msgstr ""
+
+#: ../../../install_osx_src.md:173
+msgid ""
+"cd ~/workspace/\n"
+"colcon graph\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:178
+msgid ""
+"`colcon graph` should list the Ignition libraries with an [interdependency "
+"diagram](https://colcon.readthedocs.io/en/released/reference/verb/graph."
+"html#example-output). If that is the case, then you are ready to build the "
+"whole set of libraries:"
+msgstr ""
+
+#: ../../../install_osx_src.md:183
+msgid "colcon build --merge-install\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:187
+msgid "To speed up the build process, you could also disable tests by using"
+msgstr ""
+
+#: ../../../install_osx_src.md:189
+msgid "colcon build --cmake-args -DBUILD_TESTING=OFF --merge-install\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:193
+msgid ""
+"To use debuggers activate debug symbols. Gazebo will run slower, but you'll "
+"be able to use GDB:"
+msgstr ""
+
+#: ../../../install_osx_src.md:195
+msgid ""
+"colcon build --cmake-args ' -DBUILD_TESTING=OFF' ' -DCMAKE_BUILD_TYPE=Debug' "
+"--merge-install\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:199
+msgid "To build a specific package with all its dependent packages:"
+msgstr ""
+
+#: ../../../install_osx_src.md:201
+msgid "colcon build --merge-install --packages-up-to PACKAGE_NAME\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:205
+msgid "To build a single package:"
+msgstr ""
+
+#: ../../../install_osx_src.md:207
+msgid "colcon build --merge-install --packages-select PACKAGE_NAME\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:211
+msgid ""
+"Visit [colcon documentation](https://colcon.readthedocs.io/en/released/#) to "
+"view more `colcon` build and test options."
+msgstr ""
+
+#: ../../../install_osx_src.md:213
+msgid "If there are no errors, all the binaries should be ready to use."
+msgstr ""
+
+#: ../../../install_osx_src.md:215
+msgid "Using the workspace"
+msgstr ""
+
+#: ../../../install_osx_src.md:217
+msgid "The workspace needs to be sourced every time a new terminal is used."
+msgstr ""
+
+#: ../../../install_osx_src.md:219
+msgid "Run the following command to source the workspace in bash:"
+msgstr ""
+
+#: ../../../install_osx_src.md:221
+msgid ". ~/workspace/install/setup.bash\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:225
+msgid "Or in zsh:"
+msgstr ""
+
+#: ../../../install_osx_src.md:227
+msgid ". ~/workspace/install/setup.zsh\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:231
+msgid ""
+"This is the end of the source install instructions; head back to the "
+"[Getting started](getstarted) page to start using Ignition!"
+msgstr ""
+
+#: ../../../install_osx_src.md:234
+msgid "Uninstalling source-based install"
+msgstr ""
+
+#: ../../../install_osx_src.md:236
+msgid ""
+"If you need to uninstall Ignition or switch to a binary-based install once "
+"you have already installed the library from source, navigate to your source "
+"code directory's build folders and run `make uninstall`:"
+msgstr ""
+
+#: ../../../install_osx_src.md:240
+msgid ""
+"cd /workspace\n"
+"sudo make uninstall\n"
+msgstr ""
+
+#: ../../../install_osx_src.md:245
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install_osx_src.md:247
+msgid "See [Troubleshooting](troubleshooting.md#macos)"
+msgstr ""

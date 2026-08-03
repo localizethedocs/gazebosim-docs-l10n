@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ros2_interop.md:1
+msgid "ROS 2 Interoperability"
+msgstr ""
+
+#: ../../../ros2_interop.md:3
+msgid ""
+"`rrbot` is a simple two-link robotic arm with revolute joints, and this "
+"tutorial serves as an illustrative example using the same to demonstrate the "
+"interoperability of ROS 2 and Gazebo Sim."
+msgstr ""
+
+#: ../../../ros2_interop.md:5
+msgid "Overview"
+msgstr ""
+
+#: ../../../ros2_interop.md:6
+msgid ""
+"We'll leverage ROS 2's communication and control mechanisms to interact with "
+"the robot. Gazebo is used as the simulation environment, providing realistic "
+"physics simulation and visualization of the `rrbot` robot arm. The robot "
+"model is described using [SDFormat](http://sdformat.org/) (Simulation "
+"Description Format), which defines the robot's structure, joints, links, and "
+"their properties. While Gazebo's physics engine simulates the dynamics of "
+"the robot, [RViz](https://github.com/ros2/rviz), a visualization tool in ROS "
+"2, displays the robot model and its motion based on data published by the "
+"control nodes, all using the same robot description file. Users can interact "
+"with `rrbot` through ROS 2 commands to move the robot's arms or retrieve "
+"joint state information."
+msgstr ""
+
+#: ../../../ros2_interop.md:11
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../ros2_interop.md:13
+msgid ""
+"A working installation of ROS 2 and Gazebo is required to go further. Please "
+"follow the [Install Gazebo and ROS document](ros_installation)."
+msgstr ""
+
+#: ../../../ros2_interop.md:14
+msgid "Basic familiarity with ROS concepts and terminal commands."
+msgstr ""
+
+#: ../../../ros2_interop.md:15
+msgid ""
+"Check out [ROS 2 Integration](ros2_integration) to get familiar with "
+"[`ros_ign_bridge`](https://github.com/gazebosim/ros_gz) before starting this "
+"tutorial."
+msgstr ""
+
+#: ../../../ros2_interop.md:17
+msgid "Setup"
+msgstr ""
+
+#: ../../../ros2_interop.md:19
+msgid ""
+"Start a fresh ROS 2 Python launch file or add the following nodes in your "
+"project's main launch file. We aim to achieve:"
+msgstr ""
+
+#: ../../../ros2_interop.md:20
+msgid "A robot model development and test setup"
+msgstr ""
+
+#: ../../../ros2_interop.md:21
+msgid ""
+"Configure RViz (and other ROS 2 tools) to control a robot model simulated by "
+"a Gazebo world"
+msgstr ""
+
+#: ../../../ros2_interop.md:23
+msgid ""
+"Note: The full source code for this tutorial can be found in the "
+"[ros_gz_example_bringup package](https://github.com/gazebosim/"
+"ros_gz_project_template/tree/main/ros_gz_example_bringup/launch) launch "
+"files."
+msgstr ""
+
+#: ../../../ros2_interop.md:25
+msgid "Implementation"
+msgstr ""
+
+#: ../../../ros2_interop.md:27
+msgid "Load robot description to the parameter server"
+msgstr ""
+
+#: ../../../ros2_interop.md:29
+msgid ""
+"Load the robot description file to set the `robot_description` parameter on "
+"the parameter server."
+msgstr ""
+
+#: ../../../ros2_interop.md:31
+msgid ""
+"    sdf_file = os.path.join(pkg_project_description, 'models', 'rrbot', "
+"'model.sdf')\n"
+"    with open(sdf_file, 'r') as infp:\n"
+"        robot_desc = infp.read()\n"
+msgstr ""
+
+#: ../../../ros2_interop.md:37
+msgid "Launch state publisher nodes"
+msgstr ""
+
+#: ../../../ros2_interop.md:39
+msgid ""
+"For publishing and controlling the robot pose, we need joint states of the "
+"robot."
+msgstr ""
+
+#: ../../../ros2_interop.md:41
+msgid "![jsp](tutorials/ros2_integration/jsp_diagram.jpg)"
+msgstr ""
+
+#: ../../../ros2_interop.md:41
+msgid "jsp"
+msgstr ""
+
+#: ../../../ros2_interop.md:43
+msgid ""
+"The [`joint_state_publisher`](https://github.com/ros/joint_state_publisher) "
+"reads the `robot_description` parameter from the parameter server, finds all "
+"of the non-fixed joints and publishes a [JointState](https://docs.ros.org/en/"
+"api/sensor_msgs/html/msg/JointState.html) message with all those joints "
+"defined."
+msgstr ""
+
+#: ../../../ros2_interop.md:44
+msgid ""
+" joint_state_publisher_gui = Node(\n"
+"     package='joint_state_publisher_gui',\n"
+"     executable='joint_state_publisher_gui',\n"
+"     name='joint_state_publisher_gui',\n"
+"     arguments=[sdf_file],\n"
+"     output=['screen']\n"
+" )\n"
+msgstr ""
+
+#: ../../../ros2_interop.md:53
+msgid ""
+"Visualize in RViz and with the help of the `joint_state_publisher_gui`, "
+"configure your robot model by adjusting joint states and poses using the "
+"slider."
+msgstr ""
+
+#: ../../../ros2_interop.md:55
+msgid "![jsp_gui](tutorials/ros2_integration/jsp_gui.png)"
+msgstr ""
+
+#: ../../../ros2_interop.md:55
+msgid "jsp_gui"
+msgstr ""
+
+#: ../../../ros2_interop.md:57
+msgid ""
+"See [documentation](http://docs.ros.org/en/rolling/p/"
+"joint_state_publisher_gui/) for node API. This functionality is useful "
+"during initial development of the model. At this point we have achieved the "
+"first aim defined in [Setup](#setup)."
+msgstr ""
+
+#: ../../../ros2_interop.md:61
+msgid ""
+"Now if you'd want to extend this to visualize robot motion, we need "
+"positions and transforms. The [`robot_state_publisher`](https://github.com/"
+"ros/robot_state_publisher) takes the description and joint angles of the "
+"robot as inputs and publishes the 3D poses of the robot links, using a "
+"kinematic tree model of the robot."
+msgstr ""
+
+#: ../../../ros2_interop.md:63
+msgid ""
+"robot_state_publisher = Node(\n"
+"    package='robot_state_publisher',\n"
+"    executable='robot_state_publisher',\n"
+"    name='robot_state_publisher',\n"
+"    output='both',\n"
+"    parameters=[\n"
+"        {'use_sim_time': True},\n"
+"        {'robot_description': robot_desc},\n"
+"    ]\n"
+")\n"
+msgstr ""
+
+#: ../../../ros2_interop.md:75
+msgid ""
+"These 3D poses are published on the `/tf` topic which is useful to track/"
+"plan the robot's motion, communicate between different parts of the robot or "
+"evaluate the robot's performance."
+msgstr ""
+
+#: ../../../ros2_interop.md:77
+msgid "Configure a communication bridge"
+msgstr ""
+
+#: ../../../ros2_interop.md:79
+msgid ""
+"These joint states can either come from `joint_state_publisher` as seen "
+"earlier or from simulated [JointStatePub](https://gazebosim.org/api/gazebo/6/"
+"classignition_1_1gazebo_1_1systems_1_1JointStatePublisher.html) system's "
+"`joint_state` message."
+msgstr ""
+
+#: ../../../ros2_interop.md:81
+msgid ""
+"Configure a bridge between ROS topic `/joint_states` and Gazebo topic `/"
+"world/demo/model/diff_drive/joint_state` by adding remappings in the node "
+"setup or by creating a [bridge.yaml](https://github.com/gazebosim/"
+"ros_gz_project_template/blob/main/ros_gz_example_bringup/config/"
+"ros_gz_example_bridge.yaml):"
+msgstr ""
+
+#: ../../../ros2_interop.md:83
+msgid ""
+"- ros_topic_name: \"/joint_states\"\n"
+"  ign_topic_name: \"/world/demo/model/diff_drive/joint_state\"\n"
+"  ros_type_name: \"sensor_msgs/msg/JointState\"\n"
+"  ign_type_name: \"ign.msgs.Model\"\n"
+msgstr ""
+
+#: ../../../ros2_interop.md:90
+msgid "Learn more about the bridge from [ROS 2 Integration](ros2_integration)."
+msgstr ""
+
+#: ../../../ros2_interop.md:92
+msgid "Maintaining a single robot description format"
+msgstr ""
+
+#: ../../../ros2_interop.md:94
+msgid ""
+"The main pain point of using existing simulation assets with ROS 2 tools was "
+"updating URDF files into a Gazebo-readable format. This is no longer "
+"required. If you are maintaining a URDF and an SDF file in a project, you "
+"can now drop the URDF and just use the SDF for both ROS and Gazebo."
+msgstr ""
+
+#: ../../../ros2_interop.md:96
+msgid ""
+"This is made possible by `sdformat_urdf`, a parser plugin library that "
+"converts an SDF file to URDF C++ DOM structures, making it understandle by "
+"the ROS 2 ecosystem. Although, there are some limitations of the plugin, "
+"like not all SDFormat tags are compatible. For example, if you have any "
+"sensors attached to a joint, it won't be parsed. More details [here](https://"
+"github.com/ros/sdformat_urdf/tree/ros2/sdformat_urdf)."
+msgstr ""
+
+#: ../../../ros2_interop.md:99
+msgid ""
+"To embed this functionality, we simply need to print the SDFormat file to "
+"the `/robot_description` ROS topic, and internally ROS will find a suitable "
+"parser, `sdformat_urdf` in this case, to read the file. This is already done "
+"while configuring the `robot_state_publisher` earlier."
+msgstr ""
+
+#: ../../../ros2_interop.md:101
+msgid "Run RViz and Gazebo"
+msgstr ""
+
+#: ../../../ros2_interop.md:103
+msgid ""
+"The second aim defined in [Setup](#setup) is essentially maintaining only "
+"one robot description format which now can be controlled directly with "
+"Gazebo. Using the SDFormat XML description of a robot, the simulator "
+"publishes model joint states. And `robot_state_publisher` handles turning "
+"those joint states into `tf`s which is used by RViz and other ROS tools. "
+"This enables visualizing a model in RViz simulated by Gazebo."
+msgstr ""
+
+#: ../../../ros2_interop.md:108
+msgid "![gz_rviz](tutorials/ros2_integration/gz_rviz.gif)"
+msgstr ""
+
+#: ../../../ros2_interop.md:108
+msgid "gz_rviz"
+msgstr ""
+
+#: ../../../ros2_interop.md:110
+msgid "Conclusion"
+msgstr ""
+
+#: ../../../ros2_interop.md:112
+msgid ""
+"Configure this functionality to enhance your existing ROS and Gazebo "
+"project. `ros_gz_project_template` provides an organized structure for ROS 2 "
+"and Gazebo projects, including necessary directories, build files, and "
+"launch scripts. See [Getting Started with `ros_gz_project_template` for ROS "
+"2 and Gazebo Development](ros_gz_project_template_guide) for guidance on "
+"using the template."
+msgstr ""
