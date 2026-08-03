@@ -51,4 +51,4 @@ msgstr ""
 
 #: ../../../releasing/bump_major.md:14
 msgid "Update gzdev"
-msgstr ""
+msgstr "更新 gzdev"

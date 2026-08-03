@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../projects_using_gazebo.md:1
 msgid "Projects using Gazebo"
-msgstr ""
+msgstr "使用 Gazebo 的專案"
 
 #: ../../../projects_using_gazebo.md:3
 msgid ""
