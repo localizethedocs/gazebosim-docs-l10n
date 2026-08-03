@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo citadel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../fuel_copyright.md:1
+msgid "What is Copyright"
+msgstr ""
+
+#: ../../../fuel_copyright.md:3
+msgid ""
+"**This page was mostly copied from [Google's Copyright page](https://support."
+"google.com/legal/answer/3463239?hl=en&ref_topic=4558877).**"
+msgstr ""
+
+#: ../../../fuel_copyright.md:5
+msgid "Which types of work are subject to copyright?"
+msgstr ""
+
+#: ../../../fuel_copyright.md:7
+msgid ""
+"Copyright ownership gives the owner the exclusive right to use the work, "
+"with some exceptions. When a person creates an original work, fixed in a "
+"tangible medium, he or she automatically owns copyright to the work."
+msgstr ""
+
+#: ../../../fuel_copyright.md:9
+msgid "Many types of works are eligible for copyright protection, for example:"
+msgstr ""
+
+#: ../../../fuel_copyright.md:11
+msgid "Audiovisual works, such as TV shows, movies, and online videos"
+msgstr ""
+
+#: ../../../fuel_copyright.md:12
+msgid "Sound recordings and musical compositions"
+msgstr ""
+
+#: ../../../fuel_copyright.md:13
+msgid ""
+"Written works, such as lectures, articles, books, and musical compositions"
+msgstr ""
+
+#: ../../../fuel_copyright.md:14
+msgid "Visual works, such as paintings, posters, and advertisements"
+msgstr ""
+
+#: ../../../fuel_copyright.md:15
+msgid "Video games and computer software"
+msgstr ""
+
+#: ../../../fuel_copyright.md:16
+msgid "Dramatic works, such as plays and musicals"
+msgstr ""
+
+#: ../../../fuel_copyright.md:18
+msgid ""
+"The [Copyright Office](https://www.copyright.gov/) has information online, "
+"and you can check with a lawyer if you want to know more."
+msgstr ""
+
+#: ../../../fuel_copyright.md:20
+msgid "Is it possible to use a copyright-protected work without infringing?"
+msgstr ""
+
+#: ../../../fuel_copyright.md:22
+msgid ""
+"Yes, in some circumstances, it is possible to use a copyright-protected work "
+"without infringing the owner’s copyright. For more about this, you may wish "
+"to learn about fair use. It is important to note that your content can be "
+"removed in response to a claim of copyright infringement, even if you have..."
+msgstr ""
+
+#: ../../../fuel_copyright.md:24
+msgid "Given credit to the copyright owner"
+msgstr ""
+
+#: ../../../fuel_copyright.md:25
+msgid "Refrained from monetizing the infringing content"
+msgstr ""
+
+#: ../../../fuel_copyright.md:26
+msgid "Charged for a copy of the content in question"
+msgstr ""
+
+#: ../../../fuel_copyright.md:27
+msgid "Noticed similar content that appear elsewhere on the internet"
+msgstr ""
+
+#: ../../../fuel_copyright.md:28
+msgid "Purchased the content including a hard or digital copy"
+msgstr ""
+
+#: ../../../fuel_copyright.md:29
+msgid "Recorded the content yourself from TV, a movie theater, or the radio"
+msgstr ""
+
+#: ../../../fuel_copyright.md:30
+msgid ""
+"Copied the content yourself from a textbook, a movie poster or photograph"
+msgstr ""
+
+#: ../../../fuel_copyright.md:31
+msgid "Stated that “no copyright infringement is intended”"
+msgstr ""
+
+#: ../../../fuel_copyright.md:32
+msgid ""
+"Some content creators choose to make their work available for reuse with "
+"certain requirements. For more about this, you may wish to learn about the "
+"[Creative Commons license](https://creativecommons.org/licenses/)."
+msgstr ""
+
+#: ../../../fuel_copyright.md:34
+msgid "Can Open Robotics determine copyright ownership?"
+msgstr ""
+
+#: ../../../fuel_copyright.md:36
+msgid ""
+"No. Open Robotics isn’t able to mediate rights ownership disputes. When we "
+"receive a complete and valid takedown notice, see below, we remove the "
+"content as the law requires. When we receive a valid counter notification we "
+"forward it to the person who requested the removal. If there is still a "
+"dispute it’s up to the parties involved to resolve the issue in court."
+msgstr ""
+
+#: ../../../fuel_copyright.md:38
+msgid ""
+"What is the difference between copyright and trademark? What about patents?"
+msgstr ""
+
+#: ../../../fuel_copyright.md:40
+msgid ""
+"Copyright is just one form of intellectual property. It is not the same as "
+"trademark, which protects brand names, mottos, logos, and other source "
+"identifiers from being used by others for certain purposes. It is also "
+"different from patent law, which protects inventions."
+msgstr ""
+
+#: ../../../fuel_copyright.md:42
+msgid "What is the difference between copyright and privacy?"
+msgstr ""
+
+#: ../../../fuel_copyright.md:44
+msgid ""
+"Just because you appear in a video, image or audio recording does not mean "
+"you own the copyright to it. For example, if your friend took a picture of "
+"you, she would own the copyright to the image that she took. If your friend, "
+"or someone else, uploaded a video, image or recording of you without your "
+"permission, and you feel it violates your privacy or safety, you may wish to "
+"notify us at info@osrfoundation.org."
+msgstr ""
+
+#: ../../../fuel_copyright.md:46
+msgid "Copyright Infringement Notification Requirements"
+msgstr ""
+
+#: ../../../fuel_copyright.md:48
+msgid ""
+"The easiest way to file a complaint is to send an email to "
+"info@osrfoundation.org."
+msgstr ""
+
+#: ../../../fuel_copyright.md:50
+msgid ""
+"Copyright notifications must include the following elements. Without this "
+"information, we will be unable to take action on your request:"
+msgstr ""
+
+#: ../../../fuel_copyright.md:52
+msgid "Your contact information"
+msgstr ""
+
+#: ../../../fuel_copyright.md:54
+msgid ""
+"You’ll need to provide information that will allow us to contact you "
+"regarding your complaint, such as an email address, physical address or "
+"telephone number."
+msgstr ""
+
+#: ../../../fuel_copyright.md:56
+msgid "A description of your work that you believe has been infringed"
+msgstr ""
+
+#: ../../../fuel_copyright.md:58
+msgid ""
+"In your complaint, be sure to clearly and completely describe the "
+"copyrighted content you are seeking to protect. If multiple copyrighted "
+"works are covered in your complaint, the law allows a representative list of "
+"such works."
+msgstr ""
+
+#: ../../../fuel_copyright.md:60
+msgid "Each allegedly infringing URL"
+msgstr ""
+
+#: ../../../fuel_copyright.md:62
+msgid ""
+"Your complaint must contain the specific URL of the content you believe "
+"infringes your rights, or we will be unable to locate it. General "
+"information about the location of the content is not adequate. Please "
+"include the URL(s) of the exact content at issue."
+msgstr ""
+
+#: ../../../fuel_copyright.md:64
+msgid "You must agree to and affirm both of the following statements:"
+msgstr ""
+
+#: ../../../fuel_copyright.md:66
+msgid ""
+"“I have a good faith belief that use of the copyrighted materials described "
+"above as allegedly infringing is not authorized by the copyright owner, its "
+"agent, or the law.”"
+msgstr ""
+
+#: ../../../fuel_copyright.md:68
+msgid "And"
+msgstr ""
+
+#: ../../../fuel_copyright.md:70
+msgid ""
+"“The information in this notification is accurate and I swear, under penalty "
+"of perjury, that I am the copyright owner or am authorized to act on behalf "
+"of the owner of an exclusive right that is allegedly infringed.”"
+msgstr ""
+
+#: ../../../fuel_copyright.md:72
+msgid "Your signature"
+msgstr ""
+
+#: ../../../fuel_copyright.md:74
+msgid ""
+"Complete complaints require the physical or electronic signature of the "
+"copyright owner or a representative authorized to act on their behalf. To "
+"satisfy this requirement, you may type your full legal name to act as your "
+"signature at the bottom of your complaint."
+msgstr ""
