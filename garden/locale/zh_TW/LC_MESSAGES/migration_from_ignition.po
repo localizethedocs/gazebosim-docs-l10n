@@ -1,0 +1,1228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo garden\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../migration_from_ignition.md:1
+msgid "Migration Guide"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:3
+msgid "Hello Gazebo community!!"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:5
+msgid ""
+"In April 2022, it was announced that [we’d be retiring the “Ignition” name "
+"in favor of “Gazebo”.](https://community.gazebosim.org/t/a-new-era-for-"
+"gazebo/1356) This migration guide will serve you help you execute the "
+"necessary changes in your own packages, and luckily it won’t be as "
+"troublesome as the move from Gazebo Classic!"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:8
+#: ../../../migration_from_ignition.md:179
+msgid "Overview"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:10
+msgid "Changes"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:12
+msgid "So what’s happening in practice? In summary:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:14
+msgid ""
+"Whenever the name `Ignition` or `ign` is used, the Gazebo counterpart "
+"(`Gazebo` or `gz`) is used instead, preserving case"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:15
+msgid "`ign-gazebo` / `Ignition Gazebo` became `gz-sim` / `Gazebo Sim`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:16
+msgid "The Ignition logo has been replaced by the Gazebo logo."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:18
+msgid "These changes were made in:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:20
+#: ../../../migration_from_ignition.md:116
+msgid "Websites"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:21
+#: ../../../migration_from_ignition.md:112
+msgid "GitHub organizations and repositories"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:22
+msgid "Documentation"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:23
+msgid "UIs"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:24
+msgid ""
+"Namespaces, command line tools, shared libraries, directories, APIs, files"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:26
+msgid ""
+"This means that a bulk of the migration effort on a user's part will involve "
+"intelligent find-and-replaces of filenames, directories, and source code. "
+"You may also look at the [tracking GitHub issue](https://github.com/gazebo-"
+"tooling/release-tools/issues/698) if you need to trace any changes made to "
+"support the migration in the core libraries."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:29
+msgid "Tick-tocks and Hard-tocks"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:31
+msgid ""
+"This section provides just an overview of the different changes made, for a "
+"more detailed listing of tick-tocks, see the migration file in each of the "
+"individual core libraries’ repositories:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:33
+msgid ""
+"[gz-cmake](https://github.com/gazebosim/gz-cmake/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:34
+msgid ""
+"[gz-common](https://github.com/gazebosim/gz-common/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:35
+msgid ""
+"[gz-fuel-tools](https://github.com/gazebosim/gz-fuel-tools/blob/main/"
+"Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:36
+msgid "[gz-gui](https://github.com/gazebosim/gz-gui/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:37
+msgid ""
+"[gz-launch](https://github.com/gazebosim/gz-launch/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:38
+msgid "[gz-math](https://github.com/gazebosim/gz-math/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:39
+msgid "[gz-msgs](https://github.com/gazebosim/gz-msgs/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:40
+msgid ""
+"[gz-physics](https://github.com/gazebosim/gz-physics/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:41
+msgid ""
+"[gz-plugin](https://github.com/gazebosim/gz-plugin/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:42
+msgid ""
+"[gz-rendering](https://github.com/gazebosim/gz-rendering/blob/main/Migration."
+"md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:43
+msgid ""
+"[gz-sensors](https://github.com/gazebosim/gz-sensors/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:44
+msgid "[gz-sim](https://github.com/gazebosim/gz-sim/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:45
+msgid ""
+"[gz-tools](https://github.com/gazebosim/gz-tools/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:46
+msgid ""
+"[gz-transport](https://github.com/gazebosim/gz-transport/blob/main/Migration."
+"md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:47
+msgid ""
+"[gz-utils](https://github.com/gazebosim/gz-utils/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:48
+msgid ""
+"[sdformat](https://github.com/gazebosim/sdformat/blob/main/Migration.md)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:50
+msgid ""
+"Additionally the migration pointers in a later section of this migration "
+"guide should help you get your packages ready and working with Gazebo."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:52
+msgid ""
+"Generally speaking, you should still be able to use either the Ignition "
+"counterpart or Gazebo counterpart for **most things** if you are using "
+"Garden, due to explicit tick-tocking logic written in the stack. Just note "
+"that using the Ignition counterpart will generally cause deprecation "
+"warnings to be emitted."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:55
+msgid "Tick-tocks"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:57
+msgid ""
+"Tick-tocks for the following are implemented, though not all of them will "
+"emit deprecation warnings. These tick-tocks are implemented either as "
+"aliases, or otherwise have some sort of redirection mechanism (e.g. "
+"symlinks, directory retargets, string replacements in source) to target the "
+"Gazebo counterpart instead."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:60
+msgid ""
+"Also, in the source code, most of these tick-tocks will have an associated "
+"comment calling out that they are deprecated, or have a `GZ_DEPRECATED()` "
+"macro call."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:63
+#: ../../../migration_from_ignition.md:129
+#: ../../../migration_from_ignition.md:417
+msgid "**Namespaces**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:65
+msgid "Python namespaces"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:66
+msgid "e.g. `ignition.math.XXX` → `gz.math.XXX`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:67
+msgid "C++ namespaces"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:68
+msgid "e.g. `ignition::gazebo::XXX` → `gz::sim::XXX`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:69
+msgid "Message namespaces and packages"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:70
+msgid ""
+"e.g. `ignition.msgs.XXX` → `gz.msgs.XXX`, `ignition/msgs/header.proto` → `gz/"
+"msgs/header.proto`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:72
+#: ../../../migration_from_ignition.md:134
+msgid "**Source**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:74
+msgid "Class names, members, functions, and variables in public headers"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:75
+msgid "e.g. `IgnitionFormatter` → `GzFormatter`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:76
+msgid "Public headers"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:77
+msgid "e.g. `include/ignition` → `include/gz`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:78
+msgid "Plugins"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:79
+msgid ""
+"e.g. `ignition::gazebo::systems::LiftDrag` → `gz::sim::systems::LiftDrag`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:80
+msgid "Shared libraries"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:81
+msgid ""
+"e.g. `libignition-gazebo-buoyancy-engine-system.so` → `libgz-sim-buoyancy-"
+"engine-system.so`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:82
+msgid "You may remove the `lib` and `.so` prefix and suffixes!"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:83
+msgid ""
+"e.g. `libignition-gazebo-buoyancy-engine-system.so` → `gz-sim-buoyancy-"
+"engine-system`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:84
+msgid "C++ Macros in public headers"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:85
+msgid "e.g. `IGN_PARTITION` → `GZ_PARTITION`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:87
+#: ../../../migration_from_ignition.md:139
+msgid "**CMake and Packaging**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:89
+msgid "CMake macros/functions"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:90
+msgid "e.g. `ign_find_package()` → `gz_find_package()`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:91
+msgid "CMake macro/function arguments"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:92
+msgid "e.g. `NO_IGNITION_PREFIX` → `NO_PROJECT_PREFIX`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:93
+msgid "CMake variables*"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:94
+msgid "e.g. `IgnOGRE2_FOUND` → `GzOGRE2_FOUND`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:95
+msgid ""
+"Not every CMake variable is tick-tocked, but most of the ones that are used "
+"in downstream libraries are"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:96
+msgid "CMake packages found by `gz_find_package()`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:97
+msgid "e.g. `gz_find_package(IgnCURL)` → `gz_find_package(GzCURL)`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:98
+msgid "Debian packages"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:99
+msgid "e.g. `libignition-cmake3-dev` → `libgz-cmake3-dev`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:101
+#: ../../../migration_from_ignition.md:148
+msgid "**Misc.**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:103
+msgid "Environment variables (names and values)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:104
+msgid "e.g. `IGN_GAZEBO_RESOURCE_PATH` → `GZ_SIM_RESOURCE_PATH`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:105
+msgid "Command line"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:106
+msgid "e.g. `ign` → `gz`, `ign gazebo` → `gz sim`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:107
+msgid "GUI QML"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:108
+msgid "e.g. `IgnSpinBox` → `GzSpinBox`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:109
+msgid "Topics* (typically in tests)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:110
+msgid "e.g. `/ignition/XXX` → `/gz/XXX`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:111
+msgid "**Note:** `/gazebo` is NOT migrated to `/sim`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:113
+msgid "e.g. `ignitionrobotics` → `gazebosim` , `ign-cmake` → `gz-cmake`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:114
+msgid "GitHub actions and workflows"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:115
+msgid "e.g. `ignition-tooling` → `gazebo-tooling`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:117
+msgid ""
+"e.g. [ignitionrobotics.org](http://ignitionrobotics.org) → [gazebosim.org]"
+"(http://gazebosim.org)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:118
+msgid "SDF and launch tags"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:119
+msgid "e.g. `<ignition-gui>` → `<gz-gui>`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:120
+msgid "SDF namespaces"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:121
+msgid "e.g. `ignition:type`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:124
+msgid "Hard-tocks"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:126
+msgid ""
+"There are some exceptions that have been hard-tocked instead, meaning that "
+"you **MUST** use the Gazebo counterpart. Using the Ignition counterpart will "
+"likely cause compilation or something else to break (unless it’s just a "
+"documentation change.)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:131
+msgid "Ruby namespaces"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:132
+msgid "e.g. `ignition/math` → `gz/math`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:136
+msgid "Install space"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:137
+msgid "e.g. `install/share/ignition` → `install/share/gz`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:141
+msgid "Most includeable CMake files in `gz-cmake`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:142
+msgid "e.g. `IgnUtils.cmake` → `GzUtils.cmake`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:143
+msgid "Gazebo library CMake project names"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:144
+msgid "e.g. `ignition-utils2` → `gz-utils2`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:145
+msgid "Internally used CMake variables"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:146
+msgid "e.g. `IGN_TRANSPORT_VER` → `GZ_TRANSPORT_VER`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:150
+msgid "Gazebo launchfiles and tags"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:151
+msgid "e.g. `sim.ign` → `sim.gzlaunch`, `<ign`  → `<gz`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:152
+msgid "Config and log paths (PENDING)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:153
+msgid "e.g. `~/.ignition/gui/log` → `~/.gz/gui/log`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:154
+msgid ""
+"Some config paths have been tick-tocked (e.g. `~/.ignition/gazebo/plugins`)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:155
+msgid "Fuel URL (PENDING)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:156
+msgid "e.g. https://fuel.ignitionrobotics.org"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:157
+msgid "Fuel cache paths (ALSO PENDING)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:158
+msgid "e.g. `~/.ignition/fuel` → `~/.gz/fuel`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:159
+msgid "Library names in documentation and comments"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:160
+msgid "e.g. Ignition Gazebo → Gazebo Sim"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:161
+msgid "`gz-launch` Websocket server"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:162
+msgid "e.g. `ign.js` → `gz.js`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:164
+msgid ""
+"Also, anything that is internal to the core Gazebo libraries and not used in "
+"downstream libraries (e.g. header guards, private headers or source, tests, "
+"documentation) is hard-tocked."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:166
+msgid "Untocks"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:168
+msgid ""
+"A very small selection of things have not been migrated, mostly for "
+"backwards compatibility reasons (e.g. supporting Fortress.)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:170
+msgid ""
+"Branch names for versions of Gazebo libraries targeting releases before "
+"Garden"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:171
+msgid "e.g. `ign-cmake2`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:172
+msgid "Some links"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:173
+msgid ""
+"e.g. [https://osrf-migration.github.io/ignition-gh-pages](https://osrf-"
+"migration.github.io/ignition-gh-pages)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:174
+msgid "Fuel user agent related"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:175
+msgid "e.g. `X-Ign-Resource-Version`, `IgnitionFuelTools`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:177
+msgid "Migration"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:181
+msgid ""
+"The following migration guidelines are just that—guidelines and suggestions "
+"for how to get your package migrated, that should cover most general cases."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:183
+msgid ""
+"Just keep in mind the overarching goal of replacing every Ignition "
+"counterpart (`IGN`, `Ign`, `Ignition`, `ign`, `ignition`) to the Gazebo "
+"counterpart (`GZ`, `Gz`, `gz`)."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:185
+msgid "Recommendations"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:187
+msgid "What might help greatly is to:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:189
+msgid "Make ample use of regex and `sed`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:190
+msgid ""
+"The migration guide will be giving suggestions for what regex expressions to "
+"use, but **always review before executing the replace**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:191
+msgid "Pay attention to case!!"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:192
+msgid ""
+"Use an editor to review changes, and source control to allow for easy "
+"rollbacks"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:193
+msgid ""
+"Pay attention to compilation warnings/errors, which usually (but not always) "
+"give suggestions for what to replace!"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:194
+msgid ""
+"If in doubt, trace the change to changes listed in the [tracking issue]"
+"(https://github.com/gazebo-tooling/release-tools/issues/698)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:196
+msgid ""
+"Also, if you are building the Gazebo stack from source, you should do a "
+"clean, fresh rebuild and install. Delete your `build` and `install` "
+"directories, and run the build with `--merge-install`."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:199
+msgid "Gotchas"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:201
+msgid ""
+"Most of the migration effort you should do is mainly finding and replacing "
+"instances of Ignition-related terms with the Gazebo-related one."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:203
+msgid ""
+"However, here are a lot of edge cases that make it difficult to create a "
+"script to handle the migration (leading to errors or bugs), so before the "
+"migration steps are suggested, it would be good to know some of these cases."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:205
+msgid "Case-sensitivity not respected"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:206
+msgid "e.g. `IGNITION_ADD_PLUGIN` → `gz_ADD_PLUGIN`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:207
+msgid "Greedy matches"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:208
+msgid "e.g. `Align` → `Algz`, `unsigned` → `unsgzed`, `signal` → `sgzal`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:209
+msgid "Not migrating “gazebo” to “sim”"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:210
+msgid "e.g. `ign-gazebo` → `gz-gazebo` (it should be `gz-sim`)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:211
+msgid "Matching `ign` before `ignition`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:212
+msgid "e.g. `ignition-cmake3` → `gzition-cmake3`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:213
+msgid "Migrating a library that should not be migrated"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:214
+msgid "e.g. `ignition-cmake2` → `gz-cmake2`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:215
+msgid "Grammar"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:216
+msgid "e.g. “an Ignition library” → “**an** Gazebo library”"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:218
+msgid "Additionally, take note of the following behaviors:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:220
+msgid ""
+"Pre-existing config files do not get overwritten, so if you'd like to use "
+"your old configurations or have a config file in a custom location, you "
+"might need to manually migrate Ignition-counterpart references in your "
+"config files to get them to point to the appropriate counterpart"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:221
+msgid ""
+"For example, a prior config file targeting `gz-sim` file could be using an "
+"`ignition::gazebo::systems::Physics` plugin. You might encounter deprecation "
+"warnings because that reference has not yet been migrated."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:224
+msgid ""
+"Because the install spaces have changed, if you have hard-coded locations "
+"involving `ignition`, you might need to migrate them to `gz`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:226
+msgid "Migration Steps"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:228
+msgid ""
+"It’s important to execute the steps within each of the individual sections "
+"in-order! The steps will typically go from specific to general."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:230
+msgid "Migrate Files and File References"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:232
+msgid ""
+"In your package root, look for files and directories matching the (case-"
+"insensitive) pattern of `ign(ition)?[_|-]gazebo`, and migrate `ign` / "
+"`ignition` appropriately to `gz`, and `gazebo` to `sim`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:233
+msgid ""
+"In your package root, look for files and directories with (case-insensitive) "
+"`ign` / `ignition`, and move them to `gz`, matching case"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:234
+msgid ""
+"Update all internal references to the migrated files and directories in (1) "
+"and (2) in your package"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:236
+msgid "Migrate CMake"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:238
+msgid "In `CMakeLists.txt` files (and their references in your source files!):"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:240
+msgid "**Variables and macro/function calls**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:242
+#: ../../../migration_from_ignition.md:291
+msgid ""
+"Find: IGN(ITION)?_GAZEBO\n"
+"Replace: GZ_SIM\n"
+"\n"
+"Find: ign(ition)?_gazebo\n"
+"Replace: gz_sim\n"
+"\n"
+"Find: IGN(ITION)?_\n"
+"Replace: GZ_\n"
+"\n"
+"Find: ign(ition)?_\n"
+"Replace: gz_\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:256
+msgid "**Includes**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:258
+msgid ""
+"Find: include\\(Ign\n"
+"Replace: include(Gz\n"
+"\n"
+"Find: include\\(ign\n"
+"Replace: include(gz\n"
+"\n"
+"Find: gz_find_package\\(ign-\n"
+"Replace: gz_find_package(gz-\n"
+"\n"
+"Find: gz_find_package\\(Ign(ition)?\n"
+"Replace: gz_find_package(Gz-\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:272
+msgid "**Project Names**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:274
+msgid ""
+"Find: ignition-gazebo\n"
+"Replace: gz-sim\n"
+"\n"
+"Find: ignition-\n"
+"Replace: gz-\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:282
+msgid ""
+"**Note:** Be wary that sometimes CMake arguments trickle down to the source "
+"files, so ensure you also migrate them appropriately"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:284
+msgid "Migrate Macros and Environment Variables"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:286
+msgid ""
+"[Helpful list of env var migrations](https://github.com/gazebo-tooling/"
+"release-tools/issues/734)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:287
+msgid ""
+"[Helpful list of macro migrations](https://github.com/gazebo-tooling/release-"
+"tools/issues/737) (see the toggled drop-down block, some are skipped!)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:289
+msgid "Migrate source macros and environment variables"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:305
+msgid ""
+"For environment variables, you can use the same approach as with macros, but "
+"pay attention to the values stored in the environment variables! (e.g. "
+"paths.)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:307
+msgid ""
+"Additionally, the logging macros have also been migrated! Migrate any uses!"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:309
+msgid "`ignerr` -> `gzerr`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:310
+msgid "`ignwarn` -> `gzwarn`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:311
+msgid "`ignmsg` -> `gzmsg`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:312
+msgid "`igndbg` -> `gzdbg`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:313
+msgid "`ignlog` -> `gzlog`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:314
+msgid "`ignLogInit` -> `gzLogInit`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:315
+msgid "`ignLogClose` -> `gzLogClose`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:316
+msgid "`ignLogDirectory` -> `gzLogDirectory`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:318
+msgid "Migrate SDF"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:320
+msgid "In `.sdf` files:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:322
+msgid ""
+"Find: <ignition\n"
+"Replace: <gz\n"
+"\n"
+"Find: </ignition\n"
+"Replace: </gz\n"
+"\n"
+"Find: ignition:\n"
+"Replace: gz:\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:333
+msgid "Some examples:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:335
+msgid "`<gz:odometer`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:336
+msgid "`<gz-gui`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:338
+msgid "Migrate Plugins and Shared Libraries"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:340
+msgid ""
+"The plugin finder is able to find plugins even if their filenames are "
+"stripped of `lib` and `.so`."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:342
+msgid "In `.sdf` files and source files (e.g. `.cc`):"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:344
+msgid ""
+"Find: (lib)?ign(ition)?-gazebo([^. ]*)\\.so\n"
+"Replace: gz-sim\\3\n"
+"\n"
+"Find: (lib)?ign(ition)?([^. ]*)\\.so\n"
+"Replace: gz\\3\n"
+"\n"
+"Find: ignition::gazebo\n"
+"Replace: gz::sim\n"
+"\n"
+"Find: ignition::\n"
+"Replace: gz::\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:358
+msgid "Migrate Bindings"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:360
+msgid "In Python files (e.g. `.py`)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:362
+msgid ""
+"Find: ignition.gazebo\n"
+"Replace: gz.sim\n"
+"\n"
+"Find: ignition.\n"
+"Replace: gz.\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:370
+msgid "In Ruby files (e.g. `.i`, `.rb`)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:372
+msgid ""
+"Find: ign(ition)?/\n"
+"Replace: gz/\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:377
+msgid "Migrate Messages"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:379
+msgid "In your message definitions"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:381
+msgid ""
+"Find: ign(ition)?\\.gazebo\n"
+"Replace: gz.sim\n"
+"\n"
+"Find: ign(ition)?/gazebo\n"
+"Replace: gz/sim\n"
+"\n"
+"Find: ign(ition)?\\.\n"
+"Replace: gz.\n"
+"\n"
+"Find: ign(ition)?/\n"
+"Replace: gz/\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:395
+msgid "Migrate Headers and Sources"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:397
+msgid "Sweeping checks everywhere (pay special attention to reviewing these!)"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:399
+msgid "**Headers**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:401
+msgid ""
+"Find: #include\\s*([<\"])ign(ition)?/gazebo\n"
+"Replace: #include \\1gz/sim\n"
+"\n"
+"Find: #include\\s*([<\"])ign(ition)?/\n"
+"Replace: #include \\1gz/\n"
+"\n"
+"// Note: You should be wary of the IGNITION GAZEBO case for the following\n"
+"// and adjust accordingly\n"
+"Find: #([^\\s]*)\\s+(.*)IGN(?:ITION)?_(.*)_(H+)_(.*)$\n"
+"Replace: #$1 $2GZ_$3_$4_$5\n"
+"\n"
+"Find: #endif\\s*// GZ(.*)_H\n"
+"Replace: #endif  // GZ$1_H\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:419
+msgid ""
+"Find: namespace\\s*ignition\n"
+"Replace: namespace gz\n"
+"\n"
+"Find: namespace\\s*gazebo\n"
+"Replace: namespace sim\n"
+"\n"
+"Find: ignition::gazebo\n"
+"Replace: gz::sim\n"
+"\n"
+"Find: Ignition::Gazebo\n"
+"Replace: Gz::Sim\n"
+"\n"
+"Find: ignition::\n"
+"Replace: gz::\n"
+"\n"
+"Find: Ignition::\n"
+"Replace: Gz::\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:439
+msgid "**Everything Else**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:441
+msgid "You probably want to manually inspect:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:443
+msgid "`Ign`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:444
+msgid "`ignition`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:446
+msgid ""
+"And also be mindful that certain instances of `gazebo` (usually as part of "
+"an API) need to use `sim` instead."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:448
+msgid "Migrate Your CLI Usage"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:450
+msgid "Where you used to use:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:452
+msgid "ign gazebo shapes.sdf\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:456
+msgid "Now you should use:"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:458
+msgid "gz sim shapes.sdf\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:462
+msgid "Notice that the `gazebo` verb is **deprecated**."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:464
+msgid "Helpful CLI Redirection"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:466
+msgid ""
+"In order to support side-by-side installs of `Garden` and `Fortress`, the "
+"`ign` CLI executable (and the `gazebo` verb) will not be installed for "
+"`Garden`. This means that unless `Fortress` is also installed alongside "
+"`Garden`, CLI usage has to be migrated. Use `gz` instead of `ign`, and `sim` "
+"instead of `gazebo`."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:470
+msgid ""
+"You may add the following script to your `~/.bashrc` file to redirect any "
+"`ign` calls to `gz`, so you won't have to migrate all of your scripts (that "
+"are still using `ign`), though it is still recommended to make the migration."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:472
+msgid ""
+"ign() {\n"
+"  if which ign &> /dev/null; then\n"
+"    $(which ign) \"$@\"\n"
+"  else\n"
+"    if which gz &> /dev/null; then\n"
+"      echo \"[DEPRECATED] ign is deprecated! Please use gz instead!\"\n"
+"      if [ \"$1\" = \"gazebo\" ]; then\n"
+"        echo \"[DEPRECATED] The gazebo verb is deprecated! Please use sim "
+"instead!\"\n"
+"        shift\n"
+"        $(which gz) sim \"$@\"\n"
+"      else\n"
+"        $(which gz) \"$@\"\n"
+"      fi\n"
+"    else\n"
+"      echo \"[ERROR] It seems like you don't have Gazebo installed!\"\n"
+"      return 1\n"
+"    fi\n"
+"  fi\n"
+"}\n"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:494
+msgid "Double-Check"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:496
+msgid ""
+"These might be useful to double-check if you have any lingering stuff, or "
+"erroneously migrated instances"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:498
+msgid "You should match these **case-insensitively**."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:500
+msgid "**Errors**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:502
+msgid "`gz-gazebo`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:503
+msgid "`gzition`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:504
+msgid "`an gz`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:506
+msgid "**Remaining Ign**"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:508
+msgid "`\\.ign(ition)?`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:509
+msgid "`ign(ition)?[-_]`"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:511
+msgid "Additional Packages"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:513
+msgid ""
+"This section details changes that have taken place in some other Gazebo "
+"related packages."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:517
+msgid "ros_gz"
+msgstr ""
+
+#: ../../../migration_from_ignition.md:519
+msgid ""
+"`ros_ign` has been renamed to `ros_gz`. All internal references to `ign` or "
+"`ignition` that pre-Garden versions of Gazebo don't rely on have been "
+"migrated."
+msgstr ""
+
+#: ../../../migration_from_ignition.md:522
+msgid ""
+"If you want to run `ros_gz` demos with custom sim version or sim args, use "
+"the `gz_version` and `gz_args` launch parameters. Using the `ign_version` "
+"launch parameter will also require you to explicitly set the `ign_args` "
+"launch parameters instead."
+msgstr ""
