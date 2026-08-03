@@ -1,5 +1,5 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
-# See accompanying file LICENSE.txt for details.
+# See accompanying file LICENSE-BSD for details.
 
 cmake_minimum_required(VERSION 3.25)
 project(gazebosim-docs-l10n NONE)
@@ -110,7 +110,7 @@ set(BASEURL_HREF "file://${PROJECT_SOURCE_DIR}/out/$CACHE{SPHINX_BUILDER}"
     CACHE STRING "The base URL of the deployed documentation.")
 
 set(VERSION_OF_PYTHON "[default]"
-    CACHE STRING "The Python version to install.")
+    CACHE STRING "The version of Python to install.")
 
 #[============================================================[
 # Directory-Related Variables.
@@ -448,15 +448,17 @@ string(REPLACE ";" "\\\\;" LANGUAGE_LIST "${LANGUAGE_LIST}")
 #]============================================================]
 
 set(SCRIPT_MODE_ENV
-    LANG=en_US.UTF-8
-    LANGUAGE=en_US
-    PYTHONNOUSERSITE=1)
+    LANG=${ENV_LANG}
+    LANGUAGE=${ENV_LANGUAGE}
+    PYTHONNOUSERSITE=${ENV_PYTHONNOUSERSITE})
 
 #[============================================================[
 # Cache variables passed to script mode.
 #]============================================================]
 
 set(SCRIPT_MODE_CACHE
+    # [CMP<NNNN> Defaults]
+    -D CMAKE_POLICY_DEFAULT_CMP0144=${CMAKE_POLICY_DEFAULT_CMP0144}
     # [Cache Variables]
     -D LANGUAGE=${LANGUAGE}
     -D LANGUAGE_SOURCE=${LANGUAGE_SOURCE}
@@ -518,7 +520,7 @@ set(SCRIPT_MODE_CACHE
     -D TAG_SUFFIX=${TAG_SUFFIX})
 
 #[============================================================[
-  Fundamental targets.
+# Fundamental Targets.
 #]============================================================]
 
 add_custom_target(prepare_repositories
@@ -567,16 +569,16 @@ add_custom_target(gettext_compendium
             -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_compendium.cmake
     VERBATIM)
 
-add_custom_target(crowdin_upload_pot
-    COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
-            ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_upload_pot.cmake
-    VERBATIM)
-
 add_custom_target(crowdin_upload_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
             -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_upload_po.cmake
+    VERBATIM)
+
+add_custom_target(crowdin_upload_pot
+    COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
+            ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
+            -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_upload_pot.cmake
     VERBATIM)
 
 add_custom_target(crowdin_download_po
