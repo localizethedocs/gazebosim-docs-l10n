@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo citadel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../troubleshooting.md:3
+msgid "MacOS"
+msgstr ""
+
+#: ../../../troubleshooting.md:5
+msgid "Unable to find `urdf_model.h` error"
+msgstr ""
+
+#: ../../../troubleshooting.md:7
+msgid ""
+"After installing all the dependencies and starting the build process, you "
+"may encounter an error that looks like this:"
+msgstr ""
+
+#: ../../../troubleshooting.md:9
+msgid ""
+"/Users/user/citadel_ws/src/sdformat/src/parser_urdf.cc:30:10: fatal error: "
+"'urdf_model/model.h' file not found\n"
+"#include <urdf_model/model.h>\n"
+"         ^~~~~~~~~~~~~~~~~~~~\n"
+"1 error generated.\n"
+"make[2]: *** [src/CMakeFiles/sdformat9.dir/parser_urdf.cc.o] Error 1\n"
+"make[1]: *** [src/CMakeFiles/sdformat9.dir/all] Error 2\n"
+"make: *** [all] Error 2\n"
+"Failed   <<< sdformat9\t[ Exited with code 2 ]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:20
+msgid ""
+"First check if `urdfdom` and `urdfdom_headers` are installed by running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:22
+msgid "brew install urdfdom urdfdom_headers\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:26
+msgid ""
+"Then if the error persists, compile with the internal version of `urdfdom` "
+"by running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:28
+msgid "colcon build --cmake-args -DUSE_INTERNAL_URDF=ON --merge-install\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:32
+msgid ""
+"This command will ignore the system installation of `urdfdom` and use the "
+"internal version instead."
+msgstr ""
+
+#: ../../../troubleshooting.md:34
+msgid "Unable to load .dylib file"
+msgstr ""
+
+#: ../../../troubleshooting.md:36
+msgid ""
+"When running the `ign gazebo -s` command, an error like the one below may "
+"show up:"
+msgstr ""
+
+#: ../../../troubleshooting.md:38
+msgid ""
+"Error while loading the library [/Users/citadel/citadel_ws/install/lib//"
+"libignition-physics2-dartsim-plugin.2.dylib]: dlopen(/Users/citadel/"
+"citadel_ws/install/lib//libignition-physics2-dartsim-plugin.2.dylib, 5): "
+"Library not loaded: @rpath/libIrrXML.dylib\n"
+"  Referenced from: /usr/local/opt/assimp/lib/libassimp.5.dylib\n"
+"  Reason: image not found\n"
+"[Err] [Physics.cc:275] Unable to load the /Users/citadel/citadel_ws/install/"
+"lib//libignition-physics2-dartsim-plugin.2.dylib library.\n"
+"Escalating to SIGKILL on [Gazebo Sim Server]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:46
+msgid ""
+"The issue is related to OSX System Integrity Protection(SIP). The workaround "
+"is to run `ign` with a different ruby then make sure that ruby is loaded."
+msgstr ""
+
+#: ../../../troubleshooting.md:48
+msgid ""
+"brew install ruby\n"
+"\n"
+"# Add the following to ~/.bashrc\n"
+"export PATH=/usr/local/Cellar/ruby/2.6.5/bin:$PATH\n"
+"\n"
+"# Source ~/.bashrc in terminal\n"
+". ~/.bashrc\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:58
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../../troubleshooting.md:60
+msgid "Out of memory issues"
+msgstr ""
+
+#: ../../../troubleshooting.md:62
+msgid ""
+"There can be out of memory issue during the compilation of Gazebo, "
+"especially during compilation of gz-physics. To prevent out of memory issues "
+"you can restrict the number of jobs:"
+msgstr ""
+
+#: ../../../troubleshooting.md:65
+msgid "MAKEFLAGS=\"-j<Number of jobs> \" colcon build --executor sequential\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:69
+msgid "Unable to create the rendering window"
+msgstr ""
+
+#: ../../../troubleshooting.md:71
+msgid ""
+"If you're getting errors like \"Unable to create the rendering window\", it "
+"could mean you're using an old OpenGL version. Gazebo Sim uses the Ogre 2 "
+"rendering engine by default, which requires an OpenGL version higher than "
+"3.3."
+msgstr ""
+
+#: ../../../troubleshooting.md:75
+msgid ""
+"This can be confirmed by checking the Ogre 2 logs at `~/.ignition/rendering/"
+"ogre2.log`, which should have an error like:"
+msgstr ""
+
+#: ../../../troubleshooting.md:78
+msgid ""
+"\"OGRE EXCEPTION(3:RenderingAPIException): OpenGL 3.3 is not supported. "
+"Please update your graphics card drivers.\""
+msgstr ""
+
+#: ../../../troubleshooting.md:80
+msgid "You can also check your OpenGL version running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:82
+msgid "glxinfo | grep \"OpenGL version\"\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:84
+msgid ""
+"You should be able to use Ogre 1 without any issues however. You can check "
+"if that's working by running with Ogre 1 instead of Ogre 2, such as:"
+msgstr ""
+
+#: ../../../troubleshooting.md:87
+msgid "ign gazebo -v 3 shapes.sdf --render-engine ogre\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:89
+msgid ""
+"If that loads, you can continue to use Ignition with Ogre 1, just use the `--"
+"render-engine ogre` option."
+msgstr ""
+
+#: ../../../troubleshooting.md:92
+msgid ""
+"To enable Ogre 2 support, you'll need to update your computer's OpenGL "
+"version. As suggested on the Ogre logs, this may require updating your "
+"graphics card drivers."
+msgstr ""
+
+#: ../../../troubleshooting.md:96
+msgid ""
+"The Ogre 2 debs from the osrfoundation repository are built from a fork of "
+"Ogre's `v2-1` branch with changes needed for deb packaging and allowing it "
+"to be co-installable with Ogre 1.x. The code can be found here:"
+msgstr ""
+
+#: ../../../troubleshooting.md:100
+msgid "https://github.com/osrf/ogre-2.1-release"
+msgstr ""
+
+#: ../../../troubleshooting.md:102
+msgid "Ignition crashes when an actor is added to the world"
+msgstr ""
+
+#: ../../../troubleshooting.md:104
+msgid ""
+"If you are trying to spawn an actor in your environment and you get an error "
+"like `Assertion !pos.isNan() && \"Invalid vector supplied as parameter\"` "
+"means you are passing nan values to ogre. To fix this you need to do `export "
+"LC_NUMERIC=\"C\"` before running ign gazebo."
+msgstr ""
