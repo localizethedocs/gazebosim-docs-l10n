@@ -1,0 +1,577 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo harmonic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../troubleshooting.md:3
+msgid "Gazebo libraries are not found"
+msgstr ""
+
+#: ../../../troubleshooting.md:4
+msgid "If you see this error message:"
+msgstr ""
+
+#: ../../../troubleshooting.md:6
+msgid ""
+"I cannot find any available 'gz' command:\n"
+"\t* Did you install any Gazebo library?\n"
+"\t* Did you set the GZ_CONFIG_PATH environment variable?\n"
+"\t    E.g.: export GZ_CONFIG_PATH=$HOME/local/share/gz\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:13
+msgid "You should set up the environment variable:"
+msgstr ""
+
+#: ../../../troubleshooting.md:15
+msgid ""
+"# replace <path_to_install_dir> to your Gazebo installation directory\n"
+"GZ_CONFIG_PATH=<path_to_install_dir>/share/gz/\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:20
+msgid "macOS"
+msgstr ""
+
+#: ../../../troubleshooting.md:22
+msgid "Maximum number of open files reached `ulimit` error"
+msgstr ""
+
+#: ../../../troubleshooting.md:23
+msgid ""
+"When installing using homebrew, you may see the following error message:"
+msgstr ""
+
+#: ../../../troubleshooting.md:25
+msgid ""
+"Error: The maximum number of open files on this system has been reached. Use "
+"'ulimit -n' to increase this limit.\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:29
+msgid ""
+"As suggested in the error message, run the command below and check the "
+"output. The default value is set to `256` which is too low."
+msgstr ""
+
+#: ../../../troubleshooting.md:30
+msgid "ulimit -n\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:34
+msgid ""
+"Run the following command to increase the open files `ulimit` and then "
+"proceed with the homebrew install:"
+msgstr ""
+
+#: ../../../troubleshooting.md:35
+msgid "ulimit -n 10240\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:39
+msgid "Unable to find `urdf_model.h` error"
+msgstr ""
+
+#: ../../../troubleshooting.md:40
+msgid ""
+"After installing all the dependencies and starting the build process, you "
+"may encounter an error that looks like this:"
+msgstr ""
+
+#: ../../../troubleshooting.md:42
+msgid ""
+"/Users/user/harmonic_ws/src/sdformat/src/parser_urdf.cc:30:10: fatal error: "
+"'urdf_model/model.h' file not found\n"
+"#include <urdf_model/model.h>\n"
+"         ^~~~~~~~~~~~~~~~~~~~\n"
+"1 error generated.\n"
+"make[2]: *** [src/CMakeFiles/sdformat9.dir/parser_urdf.cc.o] Error 1\n"
+"make[1]: *** [src/CMakeFiles/sdformat9.dir/all] Error 2\n"
+"make: *** [all] Error 2\n"
+"Failed   <<< sdformat9\t[ Exited with code 2 ]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:53
+msgid ""
+"First check if `urdfdom` and `urdfdom_headers` are installed by running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:55
+msgid "brew install urdfdom urdfdom_headers\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:59
+msgid ""
+"Then if the error persists, compile with the internal version of `urdfdom` "
+"by running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:61
+msgid "colcon build --cmake-args -DUSE_INTERNAL_URDF=ON --merge-install\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:65
+msgid ""
+"This command will ignore the system installation of `urdfdom` and use the "
+"internal version instead."
+msgstr ""
+
+#: ../../../troubleshooting.md:67
+msgid "Unable to load .dylib file"
+msgstr ""
+
+#: ../../../troubleshooting.md:68
+msgid ""
+"When running the `gz sim -s` command, an error like the one below may show "
+"up:"
+msgstr ""
+
+#: ../../../troubleshooting.md:70
+msgid ""
+"Error while loading the library [/Users/harmonic/harmonic_ws/install/lib//"
+"libgz-physics6-dartsim-plugin.6.dylib]: dlopen(/Users/harmonic/harmonic_ws/"
+"install/lib//libgz-physics6-dartsim-plugin.6.dylib, 5): Library not loaded: "
+"@rpath/libIrrXML.dylib\n"
+"  Referenced from: /usr/local/opt/assimp/lib/libassimp.5.dylib\n"
+"  Reason: image not found\n"
+"[Err] [Physics.cc:275] Unable to load the /Users/harmonic/harmonic_ws/"
+"install/lib//libgz-physics6-dartsim-plugin.6.dylib library.\n"
+"Escalating to SIGKILL on [Gazebo Sim Server]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:78
+msgid ""
+"The issue is related to OSX System Integrity Protection (SIP). The "
+"workaround is to run `gz` with a different ruby then make sure that ruby is "
+"loaded."
+msgstr ""
+
+#: ../../../troubleshooting.md:80
+msgid ""
+"brew install ruby\n"
+"\n"
+"# Add the following to ~/.bashrc\n"
+"export PATH=/usr/local/Cellar/ruby/2.6.5/bin:$PATH\n"
+"\n"
+"# Source ~/.bashrc in terminal\n"
+". ~/.bashrc\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:90
+msgid ""
+"No rule to make target `'/usr/lib/libm.dylib', needed by 'lib/libgz-physics6-"
+"dartsim-plugin.6.1.0.dylib'. Stop.`"
+msgstr ""
+
+#: ../../../troubleshooting.md:91
+msgid ""
+"Try to run `brew outdated` followed by a `brew upgrade` may fix some of it."
+msgstr ""
+
+#: ../../../troubleshooting.md:93
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../../troubleshooting.md:95
+msgid "Out of memory issues"
+msgstr ""
+
+#: ../../../troubleshooting.md:97
+msgid ""
+"There can be out of memory issue during the compilation of Gazebo, "
+"especially during compilation of gz-physics. To prevent out of memory issues "
+"you can restrict the number of jobs:"
+msgstr ""
+
+#: ../../../troubleshooting.md:100
+msgid "MAKEFLAGS=\"-j<Number of jobs> \" colcon build --executor sequential\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:104
+msgid "Problems with dual Intel and Nvidia GPU systems"
+msgstr ""
+
+#: ../../../troubleshooting.md:106
+msgid ""
+"If you are using a dual Intel/Nvidia system it could be the case that the "
+"simulator is being run under Intel instead of using the Nvidia GPU. Bugs can "
+"vary but there could problems with shadows, incorrect laser scans or other "
+"rendering related issues."
+msgstr ""
+
+#: ../../../troubleshooting.md:111
+msgid "prime-select command line tool"
+msgstr ""
+
+#: ../../../troubleshooting.md:113
+msgid ""
+"Hybrid Intel/Nvidia systems can be configured using the command line tool "
+"prime-select. One option is to use always Nvidia:"
+msgstr ""
+
+#: ../../../troubleshooting.md:116
+msgid ""
+"sudo prime-select nvidia\n"
+"# logout user session and login again\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:119
+msgid ""
+"Other option is to configure the render offload for OpenGL applications to "
+"use Nvidia. This means that your X screen and all normal applications are "
+"handled by the Intel GPU, but all OpenGL applications that you start from "
+"the terminal (including Gazebo) are rendered on the Nvidia GPU."
+msgstr ""
+
+#: ../../../troubleshooting.md:124
+msgid ""
+"# place the lines in your .bashrc if you want the change to be permanent\n"
+"export __NV_PRIME_RENDER_OFFLOAD=1\n"
+"export __GLX_VENDOR_LIBRARY_NAME=nvidia\n"
+"# logout user session and login again\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:129
+msgid "nvidia-settings GUI tool"
+msgstr ""
+
+#: ../../../troubleshooting.md:131
+msgid ""
+"nvidia-settings is a GUI program that helps to configure the options for the "
+"Nvidia graphic cards and includes some controls for hybrid Intel/Nvidia:"
+msgstr ""
+
+#: ../../../troubleshooting.md:134
+msgid ""
+"The section \"PRIME Profiles\" can be used to select that the Nvidia card "
+"controls all the GUI applications by selecting \"NVIDIA (Performance Mode)\"."
+msgstr ""
+
+#: ../../../troubleshooting.md:137
+msgid ""
+"The \"Application Profiles\" can control the use of the Nvidia GPU per "
+"application."
+msgstr ""
+
+#: ../../../troubleshooting.md:139
+msgid "Unable to create the rendering window"
+msgstr ""
+
+#: ../../../troubleshooting.md:141
+msgid ""
+"If you're getting errors like \"Unable to create the rendering window\", it "
+"could mean you're using an old OpenGL version. Gazebo Sim uses the Ogre 2 "
+"rendering engine by default, which requires an OpenGL version higher than "
+"3.3, preferably 4.3+."
+msgstr ""
+
+#: ../../../troubleshooting.md:146
+msgid ""
+"This can be confirmed by checking the Ogre 2 logs at `~/.gz/rendering/ogre2."
+"log`, which should have an error like:"
+msgstr ""
+
+#: ../../../troubleshooting.md:149
+msgid ""
+"\"OGRE EXCEPTION(3:RenderingAPIException): OpenGL 3.3 is not supported. "
+"Please update your graphics card drivers.\"\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:151
+msgid "You can also check your OpenGL version running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:153
+msgid "glxinfo | grep \"OpenGL version\"\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:155
+msgid ""
+"To enable Ogre 2 support, you'll need to update your computer's OpenGL "
+"version. As suggested on the Ogre logs, this may require updating your "
+"graphics card drivers."
+msgstr ""
+
+#: ../../../troubleshooting.md:159
+msgid ""
+"If you still run into OpenGL issues when running Gazebo with Ogre 2, it "
+"could be that certain extensions are not supported by your driver or you are "
+"running inside a virtual machine. In this case, you can try disabling DRI:"
+msgstr ""
+
+#: ../../../troubleshooting.md:163
+msgid "export LIBGL_DRI3_DISABLE=1\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:165
+msgid "or force software rendering"
+msgstr ""
+
+#: ../../../troubleshooting.md:167
+msgid "export LIBGL_ALWAYS_SOFTWARE=1\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:169
+msgid ""
+"If you are using MESA drivers, you can also try overriding the OpenGL version"
+msgstr ""
+
+#: ../../../troubleshooting.md:171
+msgid ""
+"# Override GL version to 3.3\n"
+"export MESA_GL_VERSION_OVERRIDE=3.3\n"
+"\n"
+"# Alternatively, select Core + Forward compatible profile with 3.3\n"
+"export MESA_GL_VERSION_OVERRIDE=3.3FC\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:177
+msgid ""
+"See the [MESA environment variable documentation](https://docs.mesa3d.org/"
+"envvars.html#envvar-MESA_GL_VERSION_OVERRIDE) for more information."
+msgstr ""
+
+#: ../../../troubleshooting.md:180
+msgid ""
+"The Ogre 2 debs from the osrfoundation repository are built from a fork of "
+"Ogre's `v2-3` branch with changes needed for deb packaging and allowing it "
+"to be co-installable with Ogre 1.x. The code can be found here:"
+msgstr ""
+
+#: ../../../troubleshooting.md:184
+msgid "https://github.com/osrf/ogre-2.3-release"
+msgstr ""
+
+#: ../../../troubleshooting.md:186
+msgid ""
+"You should be able to use Ogre 1 without any issues however. You can check "
+"if that's working by running with Ogre 1 instead of Ogre 2, such as:"
+msgstr ""
+
+#: ../../../troubleshooting.md:189
+msgid "gz sim -v 3 shapes.sdf --render-engine ogre\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:191
+msgid ""
+"If that loads, you can continue to use Gazebo with Ogre 1, just use the `--"
+"render-engine ogre` option."
+msgstr ""
+
+#: ../../../troubleshooting.md:194
+msgid "Wayland issues"
+msgstr ""
+
+#: ../../../troubleshooting.md:196
+msgid ""
+"There's an issue with the interaction of Ogre and Qt in Gazebo that prevents "
+"wayland from working properly. You might see an error message like the one "
+"below:"
+msgstr ""
+
+#: ../../../troubleshooting.md:199
+msgid ""
+"Unable to create the rendering window: OGRE EXCEPTION(3:"
+"RenderingAPIException): currentGLContext was specified with no current GL "
+"context in GLXWindow::create at ./RenderSystems/GL3Plus/src/windowing/GLX/"
+"OgreGLXWindow.cpp (line 165)\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:203
+msgid "A workaround is to set `QT_QPA_PLATFORM=xcb`. e.g.:"
+msgstr ""
+
+#: ../../../troubleshooting.md:205
+msgid "QT_QPA_PLATFORM=xcb gz sim -v 4 shapes.sdf\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:209
+msgid ""
+"Another workaround to try is to make sure Gazebo is launched with XWayland "
+"by unsetting the `WAYLAND_DISPLAY` environment variable, e.g."
+msgstr ""
+
+#: ../../../troubleshooting.md:212
+msgid "env -u WAYLAND_DISPLAY gz sim -v 4 shapes.sdf\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:216
+msgid "EGL warnings"
+msgstr ""
+
+#: ../../../troubleshooting.md:218
+msgid "On startup, Gazebo prints out EGL warning messages like the one below:"
+msgstr ""
+
+#: ../../../troubleshooting.md:220
+msgid "libEGL warning: DRI2: failed to create dri screen\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:224
+msgid ""
+"This message is printed out by Ogre 2 on initialization when it enumerates "
+"through devices to query for EGL support. The warning is fine to ignore. "
+"Gazebo should continue to operate without any issues."
+msgstr ""
+
+#: ../../../troubleshooting.md:228
+msgid "Network Configuration Issue"
+msgstr ""
+
+#: ../../../troubleshooting.md:229
+msgid ""
+"Improper network configuration can cause Gazebo to open a window and then "
+"become unresponsive. This issue can be diagnosed by running ```gz sim -v 4 "
+"shapes.sdf``` and checking for the following output:"
+msgstr ""
+
+#: ../../../troubleshooting.md:231
+msgid ""
+"```[GUI] [Dbg] [Gui.cc:343] GUI requesting list of world names. The server "
+"may be busy downloading resources. Please be patient.```"
+msgstr ""
+
+#: ../../../troubleshooting.md:233
+msgid ""
+"To fix this, enable multicast by following the steps at [ROS Enable "
+"Multicast](https://docs.ros.org/en/rolling/How-To-Guides/Installation-"
+"Troubleshooting.html#enable-multicast)."
+msgstr ""
+
+#: ../../../troubleshooting.md:236
+msgid "Windows"
+msgstr ""
+
+#: ../../../troubleshooting.md:238
+msgid ""
+"VisualStudioVersion is not set, please run within a Visual Studio Command "
+"Prompt."
+msgstr ""
+
+#: ../../../troubleshooting.md:239
+msgid ""
+"When you try to compile Gazebo you might see an error in your prompt like:"
+msgstr ""
+
+#: ../../../troubleshooting.md:241
+msgid ""
+"VisualStudioVersion is not set, please run within a Visual Studio Command "
+"Prompt.\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:243
+msgid "In this case execute one of the following commands:"
+msgstr ""
+
+#: ../../../troubleshooting.md:244
+msgid "CMD"
+msgstr ""
+
+#: ../../../troubleshooting.md:245
+msgid ""
+"    \"C:\\Program Files (x86)\\Microsoft Visual "
+"Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_amd64\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:249
+msgid "PowerShell:"
+msgstr ""
+
+#: ../../../troubleshooting.md:250
+msgid ""
+"pushd \"C:\\Program Files (x86)\\Microsoft Visual "
+"Studio\\2019\\Community\\Common7\\Tools\"\n"
+"cmd /c \"VsDevCmd.bat&set\" |\n"
+"foreach {\n"
+"  if ($_ -match \"=\") {\n"
+"    $v = $_.split(\"=\"); set-item -force -path \"ENV:\\$($v[0])\"  -value "
+"\"$($v[1])\"\n"
+"  }\n"
+"}\n"
+"popd\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:261
+msgid "Many errors from setuptools when running colcon"
+msgstr ""
+
+#: ../../../troubleshooting.md:262
+msgid ""
+"When calling `colcon` to build the packages, you may face a wall of Python "
+"errors similar to this one:"
+msgstr ""
+
+#: ../../../troubleshooting.md:264
+msgid ""
+"> colcon graph\n"
+"Traceback (most recent call last):\n"
+"  File \"<string>\", line 1, in <module>\n"
+"ModuleNotFoundError: No module named 'setuptools.extern'\n"
+"[10.385s] colcon.colcon_core.package_identification ERROR Exception in "
+"package identification extension 'python_setup_py' in 'conda\\Lib\\site-"
+"packages\\adodbapi': Command '['D:\\\\programovani\\\\gz-ws\\\\conda\\"
+"\\python.exe', '-c', \"import sys;from setuptools.extern.packaging."
+"specifiers import SpecifierSet;from distutils.core import run_setup;dist = "
+"run_setup(    'setup.py', script_args=('--dry-run',), stop_after='config');"
+"skip_keys = ('cmdclass', 'distclass', 'ext_modules', 'metadata');data = "
+"{    key: value for key, value in dist.__dict__.items()     if (        not "
+"key.startswith('_') and         not callable(value) and         key not in "
+"skip_keys and         key not in dist.display_option_names    )};"
+"data['metadata'] = {    k: v for k, v in dist.metadata.__dict__.items()     "
+"if k not in ('license_files', 'provides_extras')};sys.stdout.buffer."
+"write(repr(data).encode('utf-8'))\"]' returned non-zero exit status 1.\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:272
+msgid ""
+"The messages are quite cryptic and do not point at the root cause. The root "
+"cause is that you have probably created a conda env directory in the same "
+"directory where you have the `src` directory containing the Gazebo sources "
+"(you have probably used `conda create --prefix ...` to create the env "
+"directory at a non-default destination)."
+msgstr ""
+
+#: ../../../troubleshooting.md:274
+msgid "The solution is to move the conda env directory one level up."
+msgstr ""
+
+#: ../../../troubleshooting.md:276
+msgid "E.g., this is the problematic folder structure:"
+msgstr ""
+
+#: ../../../troubleshooting.md:278
+msgid ""
+"gz-ws\\\n"
+"  conda\\  # The conda env\n"
+"  src\\    # The Gazebo sources\n"
+"    gz-sim\\\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:285
+msgid "To fix it, change the structure to something like this:"
+msgstr ""
+
+#: ../../../troubleshooting.md:287
+msgid ""
+"gz-ws\\\n"
+"  src\\\n"
+"    gz-sim\\\n"
+"conda\\\n"
+msgstr ""
