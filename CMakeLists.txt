@@ -156,6 +156,40 @@ include(GitUtils)
 include(JsonUtils)
 
 #[============================================================[
+# Prepare TMPLS_TO_SOURCE_DIR   for 'sphinx_build_pot'  target.
+# Prepare TMPLS_TO_CONFIG_DIR   for 'sphinx_build_docs' target.
+# Prepare LOCALE_TO_SOURCE_DIR  for 'sphinx_build_docs' target.
+#]============================================================]
+
+file(RELATIVE_PATH TMPLS_TO_SOURCE_DIR
+    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
+    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
+
+file(RELATIVE_PATH TMPLS_TO_CONFIG_DIR
+    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}"
+    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
+
+file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
+    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
+    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
+
+#[============================================================[
+# Configure Sphinx verbose arguments based on verbosity level.
+#]============================================================]
+
+if (SPHINX_VERBOSE_LEVEL GREATER 0)
+    set(SPHINX_VERBOSE_ARGS "-")
+    math(EXPR REPEAT_COUNT "${SPHINX_VERBOSE_LEVEL} - 1")
+    foreach(INDEX RANGE ${REPEAT_COUNT})
+        set(SPHINX_VERBOSE_ARGS "${SPHINX_VERBOSE_ARGS}v")
+    endforeach()
+    unset(INDEX)
+    unset(REPEAT_COUNT)
+else()
+    set(SPHINX_VERBOSE_ARGS "")
+endif()
+
+#[============================================================[
 # Read LANGUAGE_LIST from languages.json.
 #]============================================================]
 
@@ -273,40 +307,6 @@ else()
 endif()
 if (NOT "$CACHE{VERSION_OF_PYTHON}" STREQUAL "[default]")
     set(VERSION_OF_PYTHON "$CACHE{VERSION_OF_PYTHON}")
-endif()
-
-#[============================================================[
-# Prepare TMPLS_TO_SOURCE_DIR   for 'sphinx_build_pot'  target.
-# Prepare TMPLS_TO_CONFIG_DIR   for 'sphinx_build_docs' target.
-# Prepare LOCALE_TO_SOURCE_DIR  for 'sphinx_build_docs' target.
-#]============================================================]
-
-file(RELATIVE_PATH TMPLS_TO_SOURCE_DIR
-    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
-    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
-
-file(RELATIVE_PATH TMPLS_TO_CONFIG_DIR
-    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}"
-    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
-
-file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
-    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
-    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
-
-#[============================================================[
-# Configure Sphinx verbose arguments based on verbosity level.
-#]============================================================]
-
-if (SPHINX_VERBOSE_LEVEL GREATER 0)
-    set(SPHINX_VERBOSE_ARGS "-")
-    math(EXPR REPEAT_COUNT "${SPHINX_VERBOSE_LEVEL} - 1")
-    foreach(INDEX RANGE ${REPEAT_COUNT})
-        set(SPHINX_VERBOSE_ARGS "${SPHINX_VERBOSE_ARGS}v")
-    endforeach()
-    unset(INDEX)
-    unset(REPEAT_COUNT)
-else()
-    set(SPHINX_VERBOSE_ARGS "")
 endif()
 
 #[============================================================[
