@@ -70,15 +70,15 @@ msgstr ""
 
 #: ../../../setup_gazebo_in_ci.md:17
 msgid "Fortress"
-msgstr ""
+msgstr "Fortress"
 
 #: ../../../setup_gazebo_in_ci.md:18
 msgid "Harmonic"
-msgstr ""
+msgstr "Harmonic"
 
 #: ../../../setup_gazebo_in_ci.md:19
 msgid "Ionic"
-msgstr ""
+msgstr "Ionic"
 
 #: ../../../setup_gazebo_in_ci.md:21
 msgid "Supported Platforms"
@@ -95,15 +95,21 @@ msgid ""
 "[Ubuntu](https://github.com/marketplace/actions/setup-gazebo-"
 "environment#ubuntu)"
 msgstr ""
+"[Ubuntu](https://github.com/marketplace/actions/setup-gazebo-"
+"environment#ubuntu)"
 
 #: ../../../setup_gazebo_in_ci.md:26
 msgid ""
 "[macOS](https://github.com/marketplace/actions/setup-gazebo-"
 "environment#macos)"
 msgstr ""
+"[macOS](https://github.com/marketplace/actions/setup-gazebo-"
+"environment#macos)"
 
 #: ../../../setup_gazebo_in_ci.md:27
 msgid ""
 "[Windows](https://github.com/marketplace/actions/setup-gazebo-"
 "environment#windows)"
 msgstr ""
+"[Windows](https://github.com/marketplace/actions/setup-gazebo-"
+"environment#windows)"

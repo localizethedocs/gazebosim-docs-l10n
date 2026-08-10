@@ -117,6 +117,10 @@ msgid ""
 "    with open(sdf_file, 'r') as infp:\n"
 "        robot_desc = infp.read()\n"
 msgstr ""
+"    sdf_file = os.path.join(pkg_project_description, 'models', 'rrbot', "
+"'model.sdf')\n"
+"    with open(sdf_file, 'r') as infp:\n"
+"        robot_desc = infp.read()\n"
 
 #: ../../../ros2_interop.md:37
 msgid "Launch state publisher nodes"

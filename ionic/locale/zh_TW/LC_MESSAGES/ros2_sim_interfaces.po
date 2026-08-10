@@ -40,15 +40,15 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:12
 msgid "[Simulation Control](#simulation-control)"
-msgstr ""
+msgstr "[模擬控制](#simulation-control)"
 
 #: ../../../ros2_sim_interfaces.md:13
 msgid "[Entity Management](#entity-management)"
-msgstr ""
+msgstr "[實體管理](#entity-management)"
 
 #: ../../../ros2_sim_interfaces.md:14
 msgid "[State Query](#state-query)"
-msgstr ""
+msgstr "[狀態查詢](#state-query)"
 
 #: ../../../ros2_sim_interfaces.md:15
 msgid "[State Update](#state-update)"
@@ -56,7 +56,7 @@ msgstr "[狀態更新](#state-update)"
 
 #: ../../../ros2_sim_interfaces.md:16
 msgid "[Simulator Information](#simulator-information)"
-msgstr ""
+msgstr "[模擬器資訊](#simulator-information)"
 
 #: ../../../ros2_sim_interfaces.md:18
 msgid "Simulation Control"
@@ -86,11 +86,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`ResetSimulation`"
-msgstr ""
+msgstr "`ResetSimulation`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/reset_simulation`"
-msgstr ""
+msgstr "`/gzserver/reset_simulation`"
 
 #: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:175
 msgid "Service"
@@ -102,11 +102,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`StepSimulation`"
-msgstr ""
+msgstr "`StepSimulation`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/step_simulation`"
-msgstr ""
+msgstr "`/gzserver/step_simulation`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Step the simulation forward by a specified number of steps"
@@ -114,11 +114,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`GetSimulationState`"
-msgstr ""
+msgstr "`GetSimulationState`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/get_simulation_state`"
-msgstr ""
+msgstr "`/gzserver/get_simulation_state`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Get the current simulation state (playing/paused/stopped)"
@@ -126,11 +126,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`SetSimulationState`"
-msgstr ""
+msgstr "`SetSimulationState`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/set_simulation_state`"
-msgstr ""
+msgstr "`/gzserver/set_simulation_state`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Set the simulation state (play/pause/stop)"
@@ -138,11 +138,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`SimulateSteps`"
-msgstr ""
+msgstr "`SimulateSteps`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/simulate_steps`"
-msgstr ""
+msgstr "`/gzserver/simulate_steps`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Action"
@@ -167,6 +167,8 @@ msgid ""
 "ros2 service call /gzserver/reset_simulation simulation_interfaces/srv/"
 "ResetSimulation \"{}\"\n"
 msgstr ""
+"ros2 service call /gzserver/reset_simulation simulation_interfaces/srv/"
+"ResetSimulation \"{}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:38
 msgid "StepSimulation Service"
@@ -181,6 +183,8 @@ msgid ""
 "ros2 service call /gzserver/step_simulation simulation_interfaces/srv/"
 "StepSimulation \"{steps: 10}\"\n"
 msgstr ""
+"ros2 service call /gzserver/step_simulation simulation_interfaces/srv/"
+"StepSimulation \"{steps: 10}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:46
 msgid "GetSimulationState Service"
@@ -195,6 +199,8 @@ msgid ""
 "ros2 service call /gzserver/get_simulation_state simulation_interfaces/srv/"
 "GetSimulationState \"{}\"\n"
 msgstr ""
+"ros2 service call /gzserver/get_simulation_state simulation_interfaces/srv/"
+"GetSimulationState \"{}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:54
 msgid "SetSimulationState Service"
@@ -206,13 +212,15 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:58
 msgid "Set simulation state to stop."
-msgstr ""
+msgstr "將模擬狀態設定為停止。"
 
 #: ../../../ros2_sim_interfaces.md:60
 msgid ""
 "ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
 "SetSimulationState \"{state: {state: 0}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
+"SetSimulationState \"{state: {state: 0}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:64
 msgid "Set simulation state to playing."
@@ -223,6 +231,8 @@ msgid ""
 "ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
 "SetSimulationState \"{state: {state: 1}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
+"SetSimulationState \"{state: {state: 1}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:70
 msgid "Set simulation state to paused."
@@ -233,6 +243,8 @@ msgid ""
 "ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
 "SetSimulationState \"{state: {state: 2}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/set_simulation_state simulation_interfaces/srv/"
+"SetSimulationState \"{state: {state: 2}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:76
 msgid "Set simulation state to quitting."
@@ -261,10 +273,12 @@ msgid ""
 "ros2 action send_goal /gzserver/simulate_steps simulation_interfaces/action/"
 "SimulateSteps \"{steps: 10}\" --feedback\n"
 msgstr ""
+"ros2 action send_goal /gzserver/simulate_steps simulation_interfaces/action/"
+"SimulateSteps \"{steps: 10}\" --feedback\n"
 
 #: ../../../ros2_sim_interfaces.md:90
 msgid "Entity Management"
-msgstr ""
+msgstr "實體管理"
 
 #: ../../../ros2_sim_interfaces.md:92
 msgid ""
@@ -274,11 +288,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`SpawnEntity`"
-msgstr ""
+msgstr "`SpawnEntity`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/spawn_entity`"
-msgstr ""
+msgstr "`/gzserver/spawn_entity`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Spawn a new entity in the simulation at a specific location"
@@ -286,11 +300,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`DeleteEntity`"
-msgstr ""
+msgstr "`DeleteEntity`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/delete_entity`"
-msgstr ""
+msgstr "`/gzserver/delete_entity`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Delete an existing entity by name"
@@ -298,7 +312,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:99
 msgid "SpawnEntity Service"
-msgstr ""
+msgstr "SpawnEntity 服務"
 
 #: ../../../ros2_sim_interfaces.md:101
 msgid "Spawn a new entity in the simulation at a specific location."
@@ -333,6 +347,8 @@ msgid ""
 "ros2 service call /gzserver/delete_entity simulation_interfaces/srv/"
 "DeleteEntity \"{entity: 'my_model'}\"\n"
 msgstr ""
+"ros2 service call /gzserver/delete_entity simulation_interfaces/srv/"
+"DeleteEntity \"{entity: 'my_model'}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:125
 msgid "State Query"
@@ -346,11 +362,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`GetEntityState`"
-msgstr ""
+msgstr "`GetEntityState`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/get_entity_state`"
-msgstr ""
+msgstr "`/gzserver/get_entity_state`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Get the pose and twist of a specific entity"
@@ -358,11 +374,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`GetEntitiesStates`"
-msgstr ""
+msgstr "`GetEntitiesStates`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/get_entities_states`"
-msgstr ""
+msgstr "`/gzserver/get_entities_states`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Get the state for multiple entities (optionally filtered)"
@@ -370,11 +386,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`GetEntities`"
-msgstr ""
+msgstr "`GetEntities`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/get_entities`"
-msgstr ""
+msgstr "`/gzserver/get_entities`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Get a list of entities (optionally filtered)"
@@ -382,7 +398,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:135
 msgid "GetEntityState Service"
-msgstr ""
+msgstr "GetEntityState 服務"
 
 #: ../../../ros2_sim_interfaces.md:137
 msgid "Get the pose and twist of a specific entity."
@@ -393,10 +409,12 @@ msgid ""
 "ros2 service call /gzserver/get_entity_state simulation_interfaces/srv/"
 "GetEntityState \"{entity: 'my_model'}\"\n"
 msgstr ""
+"ros2 service call /gzserver/get_entity_state simulation_interfaces/srv/"
+"GetEntityState \"{entity: 'my_model'}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:143
 msgid "GetEntitiesStates Service"
-msgstr ""
+msgstr "GetEntitiesStates 服務"
 
 #: ../../../ros2_sim_interfaces.md:145
 msgid "Get the state of multiple entities (optionally filtered)."
@@ -407,10 +425,12 @@ msgid ""
 "ros2 service call /gzserver/get_entities_states simulation_interfaces/srv/"
 "GetEntitiesStates \"{filters: {filter: ''}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/get_entities_states simulation_interfaces/srv/"
+"GetEntitiesStates \"{filters: {filter: ''}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:151
 msgid "GetEntites Service"
-msgstr ""
+msgstr "GetEntites 服務"
 
 #: ../../../ros2_sim_interfaces.md:153
 msgid "Get the list of entities (optionally filtered)."
@@ -421,10 +441,12 @@ msgid ""
 "ros2 service call /gzserver/get_entities simulation_interfaces/src/"
 "GetEntities \"{filters: {filter: ''}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/get_entities simulation_interfaces/src/"
+"GetEntities \"{filters: {filter: ''}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:159
 msgid "State Update"
-msgstr ""
+msgstr "狀態更新"
 
 #: ../../../ros2_sim_interfaces.md:161
 msgid "The following interfaces are used to set entity states."
@@ -432,11 +454,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`SetEntityState`"
-msgstr ""
+msgstr "`SetEntityState`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "`/gzserver/set_entity_state`"
-msgstr ""
+msgstr "`/gzserver/set_entity_state`"
 
 #: ../../../ros2_sim_interfaces.md:0
 msgid "Set the pose and twist of a specific entity"
@@ -444,7 +466,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:167
 msgid "SetEntityState Service"
-msgstr ""
+msgstr "SetEntityState 服務"
 
 #: ../../../ros2_sim_interfaces.md:169
 msgid "Set the pose and twist of a specific entity."
@@ -456,6 +478,9 @@ msgid ""
 "SetEntityState \"{ entity: 'my_model', state: {pose: { position: { x: -2.0, "
 "z: 0.5 }}, twist: {linear: {x: 0.5}}}}\"\n"
 msgstr ""
+"ros2 service call /gzserver/set_entity_state simulation_interfaces/srv/"
+"SetEntityState \"{ entity: 'my_model', state: {pose: { position: { x: -2.0, "
+"z: 0.5 }}, twist: {linear: {x: 0.5}}}}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:176
 msgid ""
@@ -473,7 +498,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:182
 msgid "Simulator Information"
-msgstr ""
+msgstr "模擬器資訊"
 
 #: ../../../ros2_sim_interfaces.md:184
 msgid ""
@@ -483,11 +508,11 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:175
 msgid "`GetSimulatorFeatures`"
-msgstr ""
+msgstr "`GetSimulatorFeatures`"
 
 #: ../../../ros2_sim_interfaces.md:175
 msgid "`/gzserver/get_simulator_features`"
-msgstr ""
+msgstr "`/gzserver/get_simulator_features`"
 
 #: ../../../ros2_sim_interfaces.md:175
 msgid "Query which interface features are supported"
@@ -495,7 +520,7 @@ msgstr ""
 
 #: ../../../ros2_sim_interfaces.md:191
 msgid "GetSimulatorFeatures Service"
-msgstr ""
+msgstr "GetSimulatorFeatures 服務"
 
 #: ../../../ros2_sim_interfaces.md:193
 msgid "Query which interface features are supported."
@@ -506,10 +531,12 @@ msgid ""
 "ros2 service call /gzserver/get_simulator_features simulation_interfaces/srv/"
 "GetSimulationFeatures \"{}\"\n"
 msgstr ""
+"ros2 service call /gzserver/get_simulator_features simulation_interfaces/srv/"
+"GetSimulationFeatures \"{}\"\n"
 
 #: ../../../ros2_sim_interfaces.md:199
 msgid "Known Limitations"
-msgstr ""
+msgstr "已知的限制"
 
 #: ../../../ros2_sim_interfaces.md:201
 msgid ""

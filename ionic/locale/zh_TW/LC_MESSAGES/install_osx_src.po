@@ -112,6 +112,8 @@ msgid ""
 "mkdir -p ~/workspace/src\n"
 "cd ~/workspace/src\n"
 msgstr ""
+"mkdir -p ~/workspace/src\n"
+"cd ~/workspace/src\n"
 
 #: ../../../install_osx_src.md:56
 msgid ""
@@ -191,6 +193,8 @@ msgid ""
 "cd ~/workspace/\n"
 "colcon graph\n"
 msgstr ""
+"cd ~/workspace/\n"
+"colcon graph\n"
 
 #: ../../../install_osx_src.md:103
 msgid ""
@@ -278,7 +282,7 @@ msgstr ""
 
 #: ../../../install_osx_src.md:152
 msgid ". ~/workspace/install/setup.zsh\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.zsh\n"
 
 #: ../../../install_osx_src.md:156
 msgid "Or if you are using bash:"
