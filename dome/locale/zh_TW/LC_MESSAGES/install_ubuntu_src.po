@@ -163,6 +163,8 @@ msgid ""
 "mkdir -p ~/workspace/src\n"
 "cd ~/workspace/src\n"
 msgstr ""
+"mkdir -p ~/workspace/src\n"
+"cd ~/workspace/src\n"
 
 #: ../../../install_ubuntu_src.md:83
 msgid ""
@@ -294,6 +296,8 @@ msgid ""
 "cd ~/workspace/\n"
 "colcon graph\n"
 msgstr ""
+"cd ~/workspace/\n"
+"colcon graph\n"
 
 #: ../../../install_ubuntu_src.md:161
 msgid ""
@@ -355,7 +359,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:198
 msgid ". ~/workspace/install/setup.bash\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.bash\n"
 
 #: ../../../install_ubuntu_src.md:202
 msgid "Or in zsh:"
@@ -363,7 +367,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:204
 msgid ". ~/workspace/install/setup.zsh\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.zsh\n"
 
 #: ../../../install_ubuntu_src.md:208
 msgid ""
@@ -397,7 +401,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:224
 msgid "rm -rf ~/workspace\n"
-msgstr ""
+msgstr "rm -rf ~/workspace\n"
 
 #: ../../../install_ubuntu_src.md:228
 msgid ""
