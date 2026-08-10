@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../fuel_insert.md:10
 msgid "gz sim empty.sdf\n"
-msgstr ""
+msgstr "gz sim empty.sdf\n"
 
 #: ../../../fuel_insert.md:14
 msgid ""

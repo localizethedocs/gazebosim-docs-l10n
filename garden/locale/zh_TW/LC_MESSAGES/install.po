@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../../install.md:53
 msgid "Supported platforms"
-msgstr ""
+msgstr "支援平臺"
 
 #: ../../../install.md:55
 msgid ""

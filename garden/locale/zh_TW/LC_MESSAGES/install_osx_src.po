@@ -109,6 +109,8 @@ msgid ""
 "mkdir -p ~/workspace/src\n"
 "cd ~/workspace/src\n"
 msgstr ""
+"mkdir -p ~/workspace/src\n"
+"cd ~/workspace/src\n"
 
 #: ../../../install_osx_src.md:55
 msgid ""
@@ -303,6 +305,8 @@ msgid ""
 "cd ~/workspace/\n"
 "colcon graph\n"
 msgstr ""
+"cd ~/workspace/\n"
+"colcon graph\n"
 
 #: ../../../install_osx_src.md:178
 msgid ""
@@ -398,7 +402,7 @@ msgstr ""
 
 #: ../../../install_osx_src.md:234
 msgid ". ~/workspace/install/setup.zsh\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.zsh\n"
 
 #: ../../../install_osx_src.md:238
 msgid "You should now be able to launch gazebo:"
