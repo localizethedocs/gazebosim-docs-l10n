@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../architecture.md:1
 msgid "Gazebo Sim Architecture"
-msgstr ""
+msgstr "Gazebo Sim 架構"
 
 #: ../../../architecture.md:3
 msgid ""
@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../../architecture.md:62
 msgid "Communication process"
-msgstr ""
+msgstr "通訊過程"
 
 #: ../../../architecture.md:64
 msgid ""

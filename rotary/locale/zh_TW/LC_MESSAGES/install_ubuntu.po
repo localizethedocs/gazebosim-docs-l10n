@@ -64,6 +64,18 @@ msgid ""
 "sudo apt-get update\n"
 "sudo apt-get install gz-rotary\n"
 msgstr ""
+"sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/"
+"keyrings/pkgs-osrf-archive-keyring.gpg\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/"
+"ubuntu-stable $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-stable.list > /dev/null\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/"
+"ubuntu-nightly $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-nightly.list > /dev/null\n"
+"sudo apt-get update\n"
+"sudo apt-get install gz-rotary\n"
 
 #: ../../../install_ubuntu.md:31
 msgid ""
@@ -96,7 +108,7 @@ msgstr ""
 
 #: ../../../install_ubuntu.md:47
 msgid "sudo apt-get install gz-sim-server\n"
-msgstr ""
+msgstr "sudo apt-get install gz-sim-server\n"
 
 #: ../../../install_ubuntu.md:51
 msgid ""
@@ -106,7 +118,7 @@ msgstr ""
 
 #: ../../../install_ubuntu.md:54
 msgid "/usr/libexec/gz/sim/gz-sim-server <world_file.sdf>\n"
-msgstr ""
+msgstr "/usr/libexec/gz/sim/gz-sim-server <world_file.sdf>\n"
 
 #: ../../../install_ubuntu.md:59
 msgid ""

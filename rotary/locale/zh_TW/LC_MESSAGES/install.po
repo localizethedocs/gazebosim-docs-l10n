@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../../../install.md:41
 msgid "Supported platforms"
-msgstr ""
+msgstr "支援平臺"
 
 #: ../../../install.md:43
 msgid "These are the **officially** supported platforms:"

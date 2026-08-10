@@ -137,6 +137,8 @@ msgid ""
 "mkdir -p ~/workspace/src\n"
 "cd ~/workspace/src\n"
 msgstr ""
+"mkdir -p ~/workspace/src\n"
+"cd ~/workspace/src\n"
 
 #: ../../../install_ubuntu_src.md:68
 msgid ""
@@ -207,6 +209,10 @@ msgid ""
 "  $(sort -u $(find . -iname 'packages-'`lsb_release -cs`'.apt' -o -iname "
 "'packages.apt' | grep -v '/\\.git/') | sed '/gz\\|sdf/d' | tr '\\n' ' ')\n"
 msgstr ""
+"cd ~/workspace/src\n"
+"sudo apt -y install \\\n"
+"  $(sort -u $(find . -iname 'packages-'`lsb_release -cs`'.apt' -o -iname "
+"'packages.apt' | grep -v '/\\.git/') | sed '/gz\\|sdf/d' | tr '\\n' ' ')\n"
 
 #: ../../../install_ubuntu_src.md:107
 msgid ""
@@ -222,6 +228,9 @@ msgid ""
 "rosdep install -i --from-path . -y \\\n"
 "    --skip-keys \"DART libogre-dev libogre-next-2.3-dev\"\n"
 msgstr ""
+"cd ~/workspace/src\n"
+"rosdep install -i --from-path . -y \\\n"
+"    --skip-keys \"DART libogre-dev libogre-next-2.3-dev\"\n"
 
 #: ../../../install_ubuntu_src.md:118
 msgid ""
@@ -267,6 +276,8 @@ msgid ""
 "cd ~/workspace/\n"
 "colcon graph\n"
 msgstr ""
+"cd ~/workspace/\n"
+"colcon graph\n"
 
 #: ../../../install_ubuntu_src.md:145
 msgid ""
@@ -353,7 +364,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:197
 msgid ". ~/workspace/install/setup.bash\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.bash\n"
 
 #: ../../../install_ubuntu_src.md:201
 msgid "Or in zsh:"
@@ -361,7 +372,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:203
 msgid ". ~/workspace/install/setup.zsh\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.zsh\n"
 
 #: ../../../install_ubuntu_src.md:207
 msgid ""
@@ -395,7 +406,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:223
 msgid "rm -rf ~/workspace\n"
-msgstr ""
+msgstr "rm -rf ~/workspace\n"
 
 #: ../../../install_ubuntu_src.md:227
 msgid ""
