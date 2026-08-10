@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../troubleshooting.md:17
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../../troubleshooting.md:19
 msgid "Unable to find `urdf_model.h` error"

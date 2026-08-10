@@ -512,7 +512,7 @@ msgstr ""
 
 #: ../../../sdf_worlds.md:266
 msgid "Download the model"
-msgstr ""
+msgstr "下載模型"
 
 #: ../../../sdf_worlds.md:268
 msgid ""

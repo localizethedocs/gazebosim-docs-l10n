@@ -119,7 +119,7 @@ msgstr ""
 
 #: ../../../manipulating_models.md:45
 msgid "Translate Mode"
-msgstr ""
+msgstr "平移模式"
 
 #: ../../../manipulating_models.md:47
 msgid ""

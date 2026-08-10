@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../../gui.md:39
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../../gui.md:41
 msgid "After running `shapes.sdf`, you should see the following screen:"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../gui.md:43
 msgid "shapes.sdf"
-msgstr ""
+msgstr "shapes.sdf"
 
 #: ../../../gui.md:45
 msgid "The interface consists of several sections:"

@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../releasing/release_repositories.md:10
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #: ../../../releasing/release_repositories.md:12
 msgid "TODO"
