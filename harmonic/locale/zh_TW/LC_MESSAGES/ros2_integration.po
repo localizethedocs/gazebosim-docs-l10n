@@ -373,7 +373,7 @@ msgstr ""
 
 #: ../../../ros2_integration.md:176
 msgid "gz sim empty.sdf\n"
-msgstr ""
+msgstr "gz sim empty.sdf\n"
 
 #: ../../../ros2_integration.md:180
 msgid ""

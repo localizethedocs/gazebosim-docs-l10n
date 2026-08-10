@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../support.md:29
 msgid "Gazebo version"
-msgstr ""
+msgstr "Gazebo 版本"
 
 #: ../../../support.md:30
 msgid "What you were trying to do"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../../support.md:56
 msgid "Pull requests"
-msgstr ""
+msgstr "拉取請求"
 
 #: ../../../support.md:58
 msgid ""

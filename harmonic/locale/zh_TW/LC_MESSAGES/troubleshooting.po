@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../troubleshooting.md:20
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../../troubleshooting.md:22
 msgid "Maximum number of open files reached `ulimit` error"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../troubleshooting.md:30
 msgid "ulimit -n\n"
-msgstr ""
+msgstr "ulimit -n\n"
 
 #: ../../../troubleshooting.md:34
 msgid ""

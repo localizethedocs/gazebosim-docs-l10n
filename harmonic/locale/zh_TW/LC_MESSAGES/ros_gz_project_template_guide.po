@@ -45,6 +45,8 @@ msgid ""
 "mkdir -p ~/project_ws/src\n"
 "cd ~/project_ws/src\n"
 msgstr ""
+"mkdir -p ~/project_ws/src\n"
+"cd ~/project_ws/src\n"
 
 #: ../../../ros_gz_project_template_guide.md:14
 msgid ""
@@ -78,11 +80,11 @@ msgstr ""
 
 #: ../../../ros_gz_project_template_guide.md:27
 msgid "mv ros_gz_project_template your_project_name\n"
-msgstr ""
+msgstr "mv ros_gz_project_template your_project_name\n"
 
 #: ../../../ros_gz_project_template_guide.md:31
 msgid "Package structure"
-msgstr ""
+msgstr "軟體包結構"
 
 #: ../../../ros_gz_project_template_guide.md:33
 msgid "At this point you'll have the following packages in your project:"
@@ -102,6 +104,11 @@ msgid ""
 "     └── ...\n"
 " </pre>\n"
 msgstr ""
+" <pre> ├── CMakeLists.txt\n"
+" ├── package.xml\n"
+" ├── <span style=\"color:#12488B\"><b>src</b></span>\n"
+"     └── ...\n"
+" </pre>\n"
 
 #: ../../../ros_gz_project_template_guide.md:43
 msgid ""
@@ -119,6 +126,12 @@ msgid ""
 "     └── diff_drive.launch.py\n"
 " </pre>\n"
 msgstr ""
+" <pre> ├── <span style=\"color:#12488B\"><b>config</b></span>\n"
+" │   ├── ros_gz_example_bridge.yaml\n"
+" │   └── diff_drive.rviz\n"
+" ├── <span style=\"color:#12488B\"><b>launch</b></span>\n"
+"     └── diff_drive.launch.py\n"
+" </pre>\n"
 
 #: ../../../ros_gz_project_template_guide.md:52
 msgid ""
@@ -136,6 +149,13 @@ msgid ""
 "         └── model.sdf\n"
 " </pre>\n"
 msgstr ""
+" <pre> ├── <span style=\"color:#12488B\"><b>hooks</b></span>\n"
+" │   └── ros_gz_example_description.dsv.in\n"
+" ├── <span style=\"color:#12488B\"><b>models</b></span>\n"
+"     ├── <span style=\"color:#12488B\"><b>diff_drive</b></span>\n"
+"         ├── model.config\n"
+"         └── model.sdf\n"
+" </pre>\n"
 
 #: ../../../ros_gz_project_template_guide.md:62
 msgid ""
@@ -156,6 +176,16 @@ msgid ""
 "         └── diff_drive.sdf\n"
 " </pre>\n"
 msgstr ""
+" <pre> ├── <span style=\"color:#12488B\"><b>include</b></span>\n"
+" │   └── <span style=\"color:#12488B\"><b>ros_gz_example_gazebo</b></span>\n"
+" │       ├── BasicSystem.hh\n"
+" │       └── FullSystem.hh\n"
+" ├── <span style=\"color:#12488B\"><b>src</b></span>\n"
+" │   ├── BasicSystem.cc\n"
+" │   └── FullSystem.cc\n"
+" ├── <span style=\"color:#12488B\"><b>worlds</b></span>\n"
+"         └── diff_drive.sdf\n"
+" </pre>\n"
 
 #: ../../../ros_gz_project_template_guide.md:75
 msgid "Accessing Simulation Assets"
@@ -227,7 +257,7 @@ msgstr ""
 
 #: ../../../ros_gz_project_template_guide.md:103
 msgid "Modify"
-msgstr ""
+msgstr "修改"
 
 #: ../../../ros_gz_project_template_guide.md:105
 msgid ""
@@ -266,6 +296,8 @@ msgid ""
 "cd ~/project_ws\n"
 "colcon build --cmake-args -DBUILD_TESTING=ON\n"
 msgstr ""
+"cd ~/project_ws\n"
+"colcon build --cmake-args -DBUILD_TESTING=ON\n"
 
 #: ../../../ros_gz_project_template_guide.md:119
 msgid "Usage"
@@ -277,7 +309,7 @@ msgstr ""
 
 #: ../../../ros_gz_project_template_guide.md:123
 msgid ". ~/project_ws/install/setup.sh\n"
-msgstr ""
+msgstr ". ~/project_ws/install/setup.sh\n"
 
 #: ../../../ros_gz_project_template_guide.md:127
 msgid "Launch the simulation and visualize in RViz:"
