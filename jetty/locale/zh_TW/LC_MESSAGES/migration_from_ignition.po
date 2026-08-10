@@ -1096,7 +1096,7 @@ msgstr ""
 
 #: ../../../migration_from_ignition.md:455
 msgid "gz sim shapes.sdf\n"
-msgstr ""
+msgstr "gz sim shapes.sdf\n"
 
 #: ../../../migration_from_ignition.md:459
 msgid "Notice that the `gazebo` verb is **deprecated**."

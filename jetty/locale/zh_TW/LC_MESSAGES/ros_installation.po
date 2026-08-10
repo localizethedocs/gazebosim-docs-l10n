@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../../ros_installation.md:65
 msgid "sudo apt-get install ros-${ROS_DISTRO}-ros-gz\n"
-msgstr ""
+msgstr "sudo apt-get install ros-${ROS_DISTRO}-ros-gz\n"
 
 #: ../../../ros_installation.md:69
 msgid ""
@@ -225,7 +225,7 @@ msgstr ""
 
 #: ../../../ros_installation.md:101
 msgid "Installing Gazebo"
-msgstr ""
+msgstr "安裝 Gazebo"
 
 #: ../../../ros_installation.md:103
 msgid "Gazebo Packages for Ubuntu"
@@ -247,7 +247,7 @@ msgstr ""
 
 #: ../../../ros_installation.md:112
 msgid "ROS 2 Humble: Gazebo Fortress"
-msgstr ""
+msgstr "ROS 2 Humble：Gazebo Fortress"
 
 #: ../../../ros_installation.md:113
 msgid "ROS 2 Jazzy: Gazebo Harmonic (ROS vendor packages)"
@@ -267,23 +267,23 @@ msgstr ""
 
 #: ../../../ros_installation.md:118
 msgid "**packages.osrfoundation.org**"
-msgstr ""
+msgstr "**packages.osrfoundation.org**"
 
 #: ../../../ros_installation.md:119
 msgid "Gazebo Fortress"
-msgstr ""
+msgstr "Gazebo Fortress"
 
 #: ../../../ros_installation.md:120
 msgid "Gazebo Harmonic"
-msgstr ""
+msgstr "Gazebo Harmonic"
 
 #: ../../../ros_installation.md:121
 msgid "Gazebo Ionic"
-msgstr ""
+msgstr "Gazebo Ionic"
 
 #: ../../../ros_installation.md:122
 msgid "Gazebo Jetty"
-msgstr ""
+msgstr "Gazebo Jetty"
 
 #: ../../../ros_installation.md:124
 msgid ""
@@ -369,7 +369,7 @@ msgstr ""
 
 #: ../../../ros_installation.md:166
 msgid "`apt-get install ros-humble-ros-gzharmonic`"
-msgstr ""
+msgstr "`apt-get install ros-humble-ros-gzharmonic`"
 
 #: ../../../ros_installation.md:168
 msgid "Using the Latest Gazebo Source Code for a Gazebo Distribution"
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../../../ros_installation.md:0
 msgid "`ros-humble-ros-gzharmonic`"
-msgstr ""
+msgstr "`ros-humble-ros-gzharmonic`"
 
 #: ../../../ros_installation.md:201
 msgid ""

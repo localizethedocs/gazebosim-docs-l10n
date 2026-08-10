@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../governance.md:1
 msgid "Governance"
-msgstr ""
+msgstr "治理"
 
 #: ../../../governance.md:3
 msgid ""

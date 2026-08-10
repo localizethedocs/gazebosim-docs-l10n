@@ -192,6 +192,10 @@ msgid ""
 "  $(sort -u $(find . -iname 'packages-'`lsb_release -cs`'.apt' -o -iname "
 "'packages.apt' | grep -v '/\\.git/') | sed '/gz\\|sdf/d' | tr '\\n' ' ')\n"
 msgstr ""
+"cd ~/workspace/src\n"
+"sudo apt -y install \\\n"
+"  $(sort -u $(find . -iname 'packages-'`lsb_release -cs`'.apt' -o -iname "
+"'packages.apt' | grep -v '/\\.git/') | sed '/gz\\|sdf/d' | tr '\\n' ' ')\n"
 
 #: ../../../install_ubuntu_src.md:98
 msgid ""
@@ -262,6 +266,8 @@ msgid ""
 "cd ~/workspace/\n"
 "colcon graph\n"
 msgstr ""
+"cd ~/workspace/\n"
+"colcon graph\n"
 
 #: ../../../install_ubuntu_src.md:141
 msgid ""
@@ -348,7 +354,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:193
 msgid ". ~/workspace/install/setup.bash\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.bash\n"
 
 #: ../../../install_ubuntu_src.md:197
 msgid "Or in zsh:"
@@ -356,7 +362,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:199
 msgid ". ~/workspace/install/setup.zsh\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.zsh\n"
 
 #: ../../../install_ubuntu_src.md:203
 msgid ""
@@ -390,7 +396,7 @@ msgstr ""
 
 #: ../../../install_ubuntu_src.md:219
 msgid "rm -rf ~/workspace\n"
-msgstr ""
+msgstr "rm -rf ~/workspace\n"
 
 #: ../../../install_ubuntu_src.md:223
 msgid ""

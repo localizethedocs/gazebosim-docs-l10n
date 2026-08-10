@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../gui.md:14
 msgid "gz sim shapes.sdf\n"
-msgstr ""
+msgstr "gz sim shapes.sdf\n"
 
 #: ../../../gui.md:18
 msgid ""
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../../gui.md:41
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../../gui.md:43
 msgid "After running `shapes.sdf`, you should see the following screen:"
@@ -88,11 +88,11 @@ msgstr ""
 
 #: ../../../gui.md:45
 msgid "![shapes.sdf](tutorials/gui/shapes.png)"
-msgstr ""
+msgstr "![shapes.sdf](tutorials/gui/shapes.png)"
 
 #: ../../../gui.md:45
 msgid "shapes.sdf"
-msgstr ""
+msgstr "shapes.sdf"
 
 #: ../../../gui.md:47
 msgid "The interface consists of several sections:"

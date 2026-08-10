@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../getstarted.md:23
 msgid "Step 1: Install"
-msgstr ""
+msgstr "步驟 1：安裝"
 
 #: ../../../getstarted.md:26
 msgid ""
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../../getstarted.md:55
 msgid "Step 2: Run"
-msgstr ""
+msgstr "步驟 2：執行"
 
 #: ../../../getstarted.md:57
 msgid ""
@@ -270,7 +270,7 @@ msgstr ""
 
 #: ../../../getstarted.md:113
 msgid "Step 4: Explore and learn"
-msgstr ""
+msgstr "步驟 4：探索與學習"
 
 #: ../../../getstarted.md:115
 msgid ""
@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../../getstarted.md:123
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../../getstarted.md:125
 msgid ""

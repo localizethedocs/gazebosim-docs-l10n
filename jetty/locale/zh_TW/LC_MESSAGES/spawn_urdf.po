@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../../spawn_urdf.md:20
 msgid "gz sim empty.sdf\n"
-msgstr ""
+msgstr "gz sim empty.sdf\n"
 
 #: ../../../spawn_urdf.md:24
 msgid "You should see a window that looks like this:"
