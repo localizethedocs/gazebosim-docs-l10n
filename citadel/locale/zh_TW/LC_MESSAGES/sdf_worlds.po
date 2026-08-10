@@ -498,7 +498,7 @@ msgstr ""
 
 #: ../../../sdf_worlds.md:252
 msgid "Download the model"
-msgstr ""
+msgstr "下載模型"
 
 #: ../../../sdf_worlds.md:254
 msgid ""

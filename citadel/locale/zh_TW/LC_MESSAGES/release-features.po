@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid "Changelog"
-msgstr ""
+msgstr "變更日誌"
 
 #: ../../../release-features.md:0
 msgid "gz-cmake"
@@ -69,6 +69,7 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-common"
@@ -154,6 +155,7 @@ msgstr ""
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/gz-msgs11/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/gz-msgs11/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-physics"
@@ -164,6 +166,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/gz-physics8/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/gz-physics8/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-plugin"
@@ -178,6 +182,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin3/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-plugin/blob/gz-plugin3/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid "gz-rendering"
@@ -188,6 +194,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/gz-rendering9/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/gz-rendering9/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-sensors"
@@ -198,6 +206,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/gz-sensors9/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/gz-sensors9/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-sim"
@@ -207,6 +217,7 @@ msgstr ""
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/gz-sim9/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/gz-sim9/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-tools"
@@ -221,6 +232,7 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-tools/blob/gz-tools2/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-tools/blob/gz-tools2/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-transport"
@@ -235,6 +247,8 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/gz-transport14/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/gz-transport14/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "gz-utils"
@@ -245,6 +259,7 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils3/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-utils/blob/gz-utils3/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "sdformat"
@@ -258,6 +273,7 @@ msgstr ""
 msgid ""
 "[Changelog](https://github.com/gazebosim/sdformat/blob/sdf15/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/sdformat/blob/sdf15/Changelog.md)"
 
 #: ../../../release-features.md:31
 msgid "Harmonic"
@@ -277,6 +293,7 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake3/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-cmake/blob/gz-cmake3/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "5.x"
@@ -349,17 +366,22 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/gz-rendering8/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/gz-rendering8/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/gz-sensors8/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/gz-sensors8/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/gz-sim8/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/gz-sim8/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "13.x"
@@ -370,16 +392,19 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/gz-transport13/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/gz-transport13/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils2/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-utils/blob/gz-utils2/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf14/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf14/Changelog.md)"
 
 #: ../../../release-features.md:54
 msgid "Garden"
@@ -539,45 +564,58 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools8/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools8/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/gz-gui7/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/gz-gui7/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch6/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/gz-launch6/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/gz-msgs9/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/gz-msgs9/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/gz-physics6/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/gz-physics6/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/gz-rendering7/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/gz-rendering7/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/gz-sensors7/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/gz-sensors7/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/gz-sim7/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/gz-sim7/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "12.x"
@@ -588,10 +626,12 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/gz-transport12/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/gz-transport12/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf13/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf13/Changelog.md)"
 
 #: ../../../release-features.md:106
 msgid "Fortress"
@@ -824,51 +864,65 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-cmake/blob/ign-cmake2/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-cmake/blob/ign-cmake2/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-common/blob/ign-common4/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/ign-common4/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools7/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools7/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui6/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui6/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch5/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch5/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-math/blob/ign-math6/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-math/blob/ign-math6/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs8/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs8/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics5/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics5/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "1.x"
@@ -879,40 +933,52 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-plugin/blob/ign-plugin1/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-plugin/blob/ign-plugin1/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering6/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering6/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors6/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors6/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools1/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-tools/blob/ign-tools1/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport11/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport11/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-utils/blob/ign-utils1/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-utils/blob/ign-utils1/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf12/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf12/Changelog.md)"
 
 #: ../../../release-features.md:172
 msgid "Edifice (EOL)"
@@ -1011,56 +1077,71 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools6/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools6/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo5/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo5/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui5/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui5/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch4/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch4/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs7/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs7/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics4/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics4/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering5/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering5/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors5/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors5/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport10/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport10/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf11/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf11/Changelog.md)"
 
 #: ../../../release-features.md:211
 msgid "Dome (EOL)"
@@ -1164,62 +1245,79 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-common/blob/ign-common3/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/ign-common3/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools5/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools5/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo4/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo4/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui4/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui4/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch3/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch3/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs6/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs6/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics3/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics3/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering4/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering4/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors4/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors4/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport9/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport9/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf10/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf10/Changelog.md)"
 
 #: ../../../release-features.md:249
 msgid "Citadel (LTS)"
@@ -1450,56 +1548,71 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools4/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools4/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo3/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo3/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui3/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui3/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch2/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch2/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs5/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs5/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics2/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics2/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering3/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering3/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors3/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors3/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport8/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport8/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf9/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf9/Changelog.md)"
 
 #: ../../../release-features.md:315
 msgid "Blueprint (EOL)"
@@ -1674,46 +1787,59 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools3/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools3/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo2/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo2/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui2/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui2/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch1/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch1/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs4/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs4/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics1/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics1/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering2/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering2/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors2/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors2/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "0.x"
@@ -1724,16 +1850,20 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools0/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-tools/blob/ign-tools0/Changelog."
+"md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport7/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport7/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf8/Changelog.md)"
-msgstr ""
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf8/Changelog.md)"
 
 #: ../../../release-features.md:375
 msgid "Acropolis (EOL)"
@@ -1818,6 +1948,7 @@ msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo1/Changelog."
 "md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo1/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid "None"
@@ -1827,18 +1958,23 @@ msgstr ""
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs3/Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs3/Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors1/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors1/"
+"Changelog.md)"
 
 #: ../../../release-features.md:0
 msgid ""
 "[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport6/"
 "Changelog.md)"
 msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport6/"
+"Changelog.md)"
 
 #: ../../../release-features.md:84
 msgid ""

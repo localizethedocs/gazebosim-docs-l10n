@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../roadmap.md:1
 msgid "Gazebo Roadmap"
-msgstr ""
+msgstr "Gazebo 路線圖"
 
 #: ../../../roadmap.md:3
 msgid ""
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../roadmap.md:9
 msgid "Gazebo M Roadmap"
-msgstr ""
+msgstr "Gazebo M 路線圖"
 
 #: ../../../roadmap.md:11
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../roadmap.md:27
 msgid "Primary Roadmap"
-msgstr ""
+msgstr "主要路線圖"
 
 #: ../../../roadmap.md:31
 msgid "Migrate Gazebo-classic tutorials"
@@ -70,7 +70,7 @@ msgstr ""
 #: ../../../roadmap.md:76 ../../../roadmap.md:101 ../../../roadmap.md:108
 #: ../../../roadmap.md:116
 msgid "{bdg-primary}`POC:` https://github.com/azeey"
-msgstr ""
+msgstr "{bdg-primary}`POC:` https://github.com/azeey"
 
 #: ../../../roadmap.md:36
 msgid "Zenoh Refinement"
@@ -158,7 +158,7 @@ msgstr ""
 
 #: ../../../roadmap.md:79
 msgid "Secondary Roadmap"
-msgstr ""
+msgstr "次要路線圖"
 
 #: ../../../roadmap.md:82
 msgid "Expose an API similar to SimulationRunner"

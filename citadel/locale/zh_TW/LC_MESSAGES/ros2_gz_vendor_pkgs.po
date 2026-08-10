@@ -467,7 +467,7 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:195
 msgid "Known Limitations"
-msgstr ""
+msgstr "已知的限制"
 
 #: ../../../ros2_gz_vendor_pkgs.md:197
 msgid ""

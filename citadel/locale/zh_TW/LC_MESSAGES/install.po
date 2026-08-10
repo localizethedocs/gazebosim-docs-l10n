@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../../../install.md:48
 msgid "Supported platforms"
-msgstr ""
+msgstr "支援平臺"
 
 #: ../../../install.md:50
 msgid "Citadel is [supported](releases) on the platforms below."

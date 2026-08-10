@@ -108,6 +108,8 @@ msgid ""
 "mkdir -p ~/workspace/src\n"
 "cd ~/workspace/src\n"
 msgstr ""
+"mkdir -p ~/workspace/src\n"
+"cd ~/workspace/src\n"
 
 #: ../../../install_osx_src.md:54
 msgid ""
@@ -310,6 +312,8 @@ msgid ""
 "cd ~/workspace/\n"
 "colcon graph\n"
 msgstr ""
+"cd ~/workspace/\n"
+"colcon graph\n"
 
 #: ../../../install_osx_src.md:183
 msgid ""
@@ -391,7 +395,7 @@ msgstr ""
 
 #: ../../../install_osx_src.md:232
 msgid ". ~/workspace/install/setup.zsh\n"
-msgstr ""
+msgstr ". ~/workspace/install/setup.zsh\n"
 
 #: ../../../install_osx_src.md:236
 msgid ""
