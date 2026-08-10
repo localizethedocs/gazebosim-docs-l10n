@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../../../install.md:49
 msgid "Supported platforms"
-msgstr ""
+msgstr "支援平臺"
 
 #: ../../../install.md:51
 msgid "Edifice is [supported](releases) on the platforms below."

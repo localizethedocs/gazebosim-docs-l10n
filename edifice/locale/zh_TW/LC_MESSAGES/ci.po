@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../ci.md:1
 msgid "Gazebo Continuous Integration"
-msgstr ""
+msgstr "Gazebo 持續整合"
 
 #: ../../../ci.md:3
 msgid ""
@@ -171,11 +171,11 @@ msgstr ""
 
 #: ../../../ci.md:0
 msgid "`<library>-ci-pr_any-homebrew-amd64`"
-msgstr ""
+msgstr "`<library>-ci-pr_any-homebrew-amd64`"
 
 #: ../../../ci.md:0
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../../ci.md:0
 msgid "Homebrew binaries bottled from `osrf/simulation` tap"
