@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo garden\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_ubuntu.md:1
+msgid "Binary Installation on Ubuntu"
+msgstr ""
+
+#: ../../../install_ubuntu.md:3
+msgid ""
+"Garden binaries are provided for Ubuntu Focal and Jammy. The Garden binaries "
+"are hosted in the packages.osrfoundation.org repository. To install all of "
+"them, the metapackage `gz-garden` can be installed."
+msgstr ""
+
+#: ../../../install_ubuntu.md:7
+msgid ""
+"<div class=\"warning\">\n"
+"WARNING: for gazebo-classic (eg. `gazebo11`) users: `gz-garden` cannot be\n"
+"installed alongside with `gazebo11` by default. To facilitate the migration\n"
+"this can be done using the instruction detailed in\n"
+"<a href=\"https://gazebosim.org/docs/garden/"
+"install_gz11_side_by_side\">Installing Gazebo11 side by side with new "
+"Gazebo</a>\n"
+"</div>\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:14
+msgid "First install some necessary tools:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:16
+msgid ""
+"sudo apt-get update\n"
+"sudo apt-get install lsb-release curl gnupg\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:21
+msgid "Then install Gazebo Garden:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:24
+msgid ""
+"sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/"
+"keyrings/pkgs-osrf-archive-keyring.gpg\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] https://packages.osrfoundation.org/gazebo/"
+"ubuntu-stable $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-stable.list > /dev/null\n"
+"sudo apt-get update\n"
+"sudo apt-get install gz-garden\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:31
+msgid ""
+"All libraries should be ready to use and the `gz sim` app ready to be "
+"executed."
+msgstr ""
+
+#: ../../../install_ubuntu.md:33
+msgid ""
+"Head back to the [Getting started](getstarted) page to start using Gazebo!"
+msgstr ""
+
+#: ../../../install_ubuntu.md:37
+msgid "Uninstalling binary install"
+msgstr ""
+
+#: ../../../install_ubuntu.md:39
+msgid ""
+"If you need to uninstall Gazebo or switch to a source-based install once you "
+"have already installed the library from binaries, run the following command:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:42
+msgid "sudo apt remove gz-garden && sudo apt autoremove\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:46
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install_ubuntu.md:48
+msgid "See [Troubleshooting](troubleshooting.md#ubuntu)"
+msgstr ""
