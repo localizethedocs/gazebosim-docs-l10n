@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_windows.md:1
+msgid ""
+"<div class=\"warning\">\n"
+"WARNING: Current Windows support is experimental.\n"
+"</div>\n"
+msgstr ""
+
+#: ../../../install_windows.md:5
+msgid "Binary Installation on Windows 10"
+msgstr ""
+
+#: ../../../install_windows.md:7
+msgid ""
+"Most Ignition packages are available in Windows 10 using the [conda-forge "
+"package manager](https://conda-forge.org/), and the Ignition feedstock "
+"recipes can be found [here](https://github.com/conda-forge?"
+"q=libignition&type=&language=)."
+msgstr ""
+
+#: ../../../install_windows.md:10
+msgid ""
+"The remaining packages currently have an [outstanding ticket](https://github."
+"com/conda-forge/staged-recipes/issues/13551), and will not be supported "
+"until they are added to the `conda-forge` feedstock."
+msgstr ""
+
+#: ../../../install_windows.md:13
+msgid ""
+"Additionally, command line tools, the DART physics engine, and some tests "
+"are not currently supported in Windows."
+msgstr ""
+
+#: ../../../install_windows.md:15
+msgid "In order to use `conda-forge`, you will need to"
+msgstr ""
+
+#: ../../../install_windows.md:16
+msgid ""
+"Install a [Conda package management system](https://docs.conda.io/projects/"
+"conda/en/latest/user-guide/install/download.html). Miniconda suffices. You "
+"will likely want to check the box to add `conda` to your `PATH` during the "
+"installation process so that you won't have to do this step manually."
+msgstr ""
+
+#: ../../../install_windows.md:20
+msgid ""
+"Open a Windows command prompt, being sure to have `conda` added to your "
+"Windows `PATH` system environment variable (you may also need to open a new "
+"command prompt to see any `PATH` changes reflected)."
+msgstr ""
+
+#: ../../../install_windows.md:24
+msgid ""
+"If you did not add Conda to your `PATH` environment variable   during Conda "
+"installation, you may need to navigate to the   location of `condabin` in "
+"order to use the `conda` command.   To find `condabin`, search for "
+"\"Anaconda Prompt\" in the   Windows search field near the Windows button, "
+"open it, run   `where conda`, and look for a line containing the directory "
+"`condabin`."
+msgstr ""
+
+#: ../../../install_windows.md:31
+msgid "Create and activate a new Conda environment:"
+msgstr ""
+
+#: ../../../install_windows.md:32
+msgid ""
+"conda create -n ign-ws\n"
+"conda activate ign-ws\n"
+msgstr ""
+
+#: ../../../install_windows.md:36
+msgid ""
+"Install desired Ignition packages, since all of Ignition isn't currently "
+"supported, you will need to choose which package(s) you want to install "
+"based on your application."
+msgstr ""
+
+#: ../../../install_windows.md:38
+msgid "conda install libignition-<package_name><#> --channel conda-forge\n"
+msgstr ""
+
+#: ../../../install_windows.md:41
+msgid ""
+"Be sure to replace `<package_name>` with your desired package name (ie, "
+"common, msgs, etc.)   and `<#>` with the release version.  If left "
+"unspecified, `conda-forge` will install the   most recently stable release "
+"packages.  Be sure to check the   [high level install instructions](install) "
+"for corresponding version numbers."
+msgstr ""
+
+#: ../../../install_windows.md:46
+msgid "**Note**"
+msgstr ""
+
+#: ../../../install_windows.md:48
+msgid "You can view all available versions of a specific package with:"
+msgstr ""
+
+#: ../../../install_windows.md:49
+msgid "conda search libignition-<package_name>* --channel conda-forge\n"
+msgstr ""
+
+#: ../../../install_windows.md:52
+msgid "and view their dependencies with"
+msgstr ""
+
+#: ../../../install_windows.md:53
+msgid "conda search libignition-<package_name>* --channel conda-forge --info\n"
+msgstr ""
+
+#: ../../../install_windows.md:56
+msgid "and install a specific minor version with"
+msgstr ""
+
+#: ../../../install_windows.md:57
+msgid ""
+"conda install libignition-<package_name>=<major>.<minor>.<patch> --channel "
+"conda-forge\n"
+msgstr ""
+
+#: ../../../install_windows.md:60
+msgid ""
+"where `<major>` is the major release number, `<minor>` is the minor release "
+"number, and `<patch` is the patch release number."
+msgstr ""
+
+#: ../../../install_windows.md:62
+msgid "Uninstalling binary install"
+msgstr ""
+
+#: ../../../install_windows.md:64
+msgid ""
+"If you need to uninstall Ignition or switch to a source-based install once "
+"you have already installed the library from binaries, run the following "
+"command:"
+msgstr ""
+
+#: ../../../install_windows.md:67
+msgid "conda uninstall libignition-<package_name> --channel conda-forge\n"
+msgstr ""
+
+#: ../../../install_windows.md:71
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install_windows.md:73
+msgid "See [Troubleshooting](troubleshooting.md#windows)"
+msgstr ""
