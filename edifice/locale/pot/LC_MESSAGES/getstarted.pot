@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo edifice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-08-31 16:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,6 +80,17 @@ msgid "Gazebo Versions"
 msgstr ""
 
 #: ../../../getstarted.md:25
+msgid "Ubuntu 26.04 Resolute"
+msgstr ""
+
+#: ../../../getstarted.md:25
+msgid ""
+"Gazebo Jetty (coming soon, recommended if using ROS 2 Lyrical), [Gazebo "
+"Rotary](/docs/rotary/install_ubuntu){.external} (recommended if using ROS 2 "
+"Rolling)"
+msgstr ""
+
+#: ../../../getstarted.md:25
 msgid "Ubuntu 24.04 Noble"
 msgstr ""
 
@@ -125,38 +137,38 @@ msgid ""
 "issues/168)."
 msgstr ""
 
-#: ../../../getstarted.md:40
+#: ../../../getstarted.md:41
 msgid ""
 "If the desired platform is not listed above or if a particular feature in a "
 "given [Gazebo release](releases) is needed, there is an installation package "
 "per release available with all the installation options:"
 msgstr ""
 
-#: ../../../getstarted.md:45
+#: ../../../getstarted.md:46
 msgid ""
 "[Gazebo Jetty installation](/docs/jetty/install){.external} options "
 "(Expected: EOL 2031 May)"
 msgstr ""
 
-#: ../../../getstarted.md:46
+#: ../../../getstarted.md:47
 msgid ""
 "[Gazebo Ionic installation](/docs/ionic/install){.external} options (EOL "
 "2026 Dec)"
 msgstr ""
 
-#: ../../../getstarted.md:47
+#: ../../../getstarted.md:48
 msgid ""
 "[Gazebo Harmonic (LTS) installation](/docs/harmonic/install){.external} "
 "options (EOL 2029 May)"
 msgstr ""
 
-#: ../../../getstarted.md:48
+#: ../../../getstarted.md:49
 msgid ""
 "[Gazebo Fortress (LTS) installation](/docs/fortress/install){.external} "
 "options (EOL 2027 May)"
 msgstr ""
 
-#: ../../../getstarted.md:50
+#: ../../../getstarted.md:51
 msgid ""
 "If you want to test the latest, unreleased Gazebo changes from `main`, see "
 "the [Rotary release](/docs/rotary/rotary){.external} documentation. Rotary "
@@ -164,62 +176,62 @@ msgid ""
 "should stick to one of the binary releases above."
 msgstr ""
 
-#: ../../../getstarted.md:55
+#: ../../../getstarted.md:56
 msgid "Step 2: Run"
 msgstr ""
 
-#: ../../../getstarted.md:57
+#: ../../../getstarted.md:58
 msgid ""
 "After installing Gazebo in Step 1, you can launch Gazebo Sim, a 3D robotics "
 "simulator, from a terminal."
 msgstr ""
 
-#: ../../../getstarted.md:60
+#: ../../../getstarted.md:61
 msgid ""
 "If you are on macOS, see specific instructions in the [macOS section]"
 "(#macos)."
 msgstr ""
 
-#: ../../../getstarted.md:62
+#: ../../../getstarted.md:63
 msgid "Launch Gazebo by running:"
 msgstr ""
 
-#: ../../../getstarted.md:64
+#: ../../../getstarted.md:65
 msgid ""
 "gz sim shapes.sdf  # Fortress uses \"ign gazebo\" instead of \"gz sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:68
+#: ../../../getstarted.md:69
 msgid ""
 "This command will launch both the Sim server and Sim GUI with a world that "
 "contains six simple shapes."
 msgstr ""
 
-#: ../../../getstarted.md:71
+#: ../../../getstarted.md:72
 msgid ""
 "Add the `-v 4` command line argument to generate error, warning, "
 "informational, and debugging messages on the console."
 msgstr ""
 
-#: ../../../getstarted.md:74
+#: ../../../getstarted.md:75
 msgid ""
 "gz sim shapes.sdf -v 4  # Fortress uses \"ign gazebo\" instead of \"gz "
 "sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:78
+#: ../../../getstarted.md:79
 msgid ""
 "Gazebo Sim can also be run headless, i.e. without the GUI, by using the `-s` "
 "(server only) flag."
 msgstr ""
 
-#: ../../../getstarted.md:80
+#: ../../../getstarted.md:81
 msgid ""
 "gz sim -s shapes.sdf -v 4  # Fortress uses \"ign gazebo\" instead of \"gz "
 "sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:84
+#: ../../../getstarted.md:85
 msgid ""
 "Similarly, the GUI can be run independently using the `-g` (gui only) flag. "
 "On start, the GUI will attempt to connect to a server instance. If a server "
@@ -227,18 +239,18 @@ msgid ""
 "instances is started."
 msgstr ""
 
-#: ../../../getstarted.md:89
+#: ../../../getstarted.md:90
 msgid "Step 3: Create your own world"
 msgstr ""
 
-#: ../../../getstarted.md:91
+#: ../../../getstarted.md:92
 msgid ""
 "[SDF](http://sdformat.org/) is used to specify the contents of simulation. "
 "Take a look at the available [SDF tutorials](http://sdformat.org/tutorials) "
 "to get started."
 msgstr ""
 
-#: ../../../getstarted.md:95
+#: ../../../getstarted.md:96
 msgid ""
 "Modifying an existing SDF world is also a good way to get started. Gazebo "
 "Sim ships with a number of [example SDF worlds](https://github.com/gazebosim/"
@@ -249,7 +261,7 @@ msgid ""
 "experience a particular feature."
 msgstr ""
 
-#: ../../../getstarted.md:103
+#: ../../../getstarted.md:104
 msgid ""
 "There are a wide variety of simulation resources at your disposal on "
 "[https://app.gazebosim.org/fuel](https://app.gazebosim.org/fuel). If you "
@@ -259,56 +271,56 @@ msgid ""
 "SDF file."
 msgstr ""
 
-#: ../../../getstarted.md:110
+#: ../../../getstarted.md:111
 msgid "![SDF model snippet](images/model_snippet.png)"
 msgstr ""
 
-#: ../../../getstarted.md:110
+#: ../../../getstarted.md:111
 msgid "SDF model snippet"
 msgstr ""
 
-#: ../../../getstarted.md:113
+#: ../../../getstarted.md:114
 msgid "Step 4: Explore and learn"
 msgstr ""
 
-#: ../../../getstarted.md:115
+#: ../../../getstarted.md:116
 msgid ""
 "This tutorial has covered the basics of getting started with Gazebo. There "
 "are more [versioned tutorials](/docs/citadel/tutorials){.external} covering "
 "the basics of the GUI, creating worlds and robots, and more."
 msgstr ""
 
-#: ../../../getstarted.md:119
+#: ../../../getstarted.md:120
 msgid ""
 "Each [Gazebo library](/libs){.external} also has a set of tutorials and "
 "examples. Explore these resources, and don't forget to ask questions and "
 "find solutions at [answers.gazebosim.org](http://answers.gazebosim.org)."
 msgstr ""
 
-#: ../../../getstarted.md:123
+#: ../../../getstarted.md:124
 msgid "macOS"
 msgstr ""
 
-#: ../../../getstarted.md:125
+#: ../../../getstarted.md:126
 msgid ""
 "On macOS, you will need to run Gazebo using two terminals, one for the "
 "server and another for the GUI:"
 msgstr ""
 
-#: ../../../getstarted.md:128
+#: ../../../getstarted.md:129
 msgid ""
 "# launch server in one terminal\n"
 "gz sim -v 4 shapes.sdf -s  # Fortress uses \"ign gazebo\" instead of \"gz "
 "sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:133
+#: ../../../getstarted.md:134
 msgid ""
 "# launch gui in a separate terminal\n"
 "gz sim -v 4 -g  # Fortress uses \"ign gazebo\" instead of \"gz sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:138
+#: ../../../getstarted.md:139
 msgid ""
 "The GUI on macOS is currently known to be unstable. Basic interaction with "
 "the 3D scene such as camera view control and translation / rotation tools "
