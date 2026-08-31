@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo citadel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../fuel_contributing_model.md:1
+msgid "Contributing a New Model"
+msgstr ""
+
+#: ../../../fuel_contributing_model.md:3
+msgid ""
+"The easiest way to contribute a new model is via [https://app.gazebosim.org/"
+"fuel/models/upload](https://app.gazebosim.org/fuel/models/upload)."
+msgstr ""
+
+#: ../../../fuel_contributing_model.md:5
+msgid ""
+"Fuel assumes that a model conforms to [Gazebo's model structure](https://"
+"gazebosim.org/api/sim/8/meshtofuel.html). At minimum, a model must have "
+"model.config and model.sdf files. Image thumbnails can be placed in a "
+"thumbnails subdirectory. These images will be displayed on this website when "
+"viewing the model."
+msgstr ""
