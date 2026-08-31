@@ -1,0 +1,720 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../building_robot.md:1
+msgid "Building your own robot"
+msgstr ""
+
+#: ../../../building_robot.md:3
+msgid ""
+"In this tutorial we will learn how to build our own robot in SDFormat. We "
+"will build a simple two wheeled robot."
+msgstr ""
+
+#: ../../../building_robot.md:5
+msgid ""
+"You can find the finished SDF file for the tutorial [here](https://github."
+"com/gazebosim/docs/blob/master/jetty/tutorials/building_robot/building_robot."
+"sdf)."
+msgstr ""
+
+#: ../../../building_robot.md:7
+msgid "What is SDF"
+msgstr ""
+
+#: ../../../building_robot.md:9
+msgid ""
+"[SDFormat](http://sdformat.org/) (Simulation Description Format), sometimes "
+"abbreviated as SDF, is an XML format that describes objects and environments "
+"for robot simulators, visualization, and control."
+msgstr ""
+
+#: ../../../building_robot.md:11
+msgid "Building a world"
+msgstr ""
+
+#: ../../../building_robot.md:13
+msgid ""
+"We will start by building a simple world and then build our robot in it. "
+"Open a new file called `building_robot.sdf` and copy the following code to "
+"it."
+msgstr ""
+
+#: ../../../building_robot.md:15
+msgid ""
+"<?xml version=\"1.0\" ?>\n"
+"<sdf version=\"1.10\">\n"
+"    <world name=\"car_world\">\n"
+"        <physics name=\"1ms\" type=\"ignored\">\n"
+"            <max_step_size>0.001</max_step_size>\n"
+"            <real_time_factor>1.0</real_time_factor>\n"
+"        </physics>\n"
+"        <plugin\n"
+"            filename=\"gz-sim-physics-system\"\n"
+"            name=\"gz::sim::systems::Physics\">\n"
+"        </plugin>\n"
+"        <plugin\n"
+"            filename=\"gz-sim-user-commands-system\"\n"
+"            name=\"gz::sim::systems::UserCommands\">\n"
+"        </plugin>\n"
+"        <plugin\n"
+"            filename=\"gz-sim-scene-broadcaster-system\"\n"
+"            name=\"gz::sim::systems::SceneBroadcaster\">\n"
+"        </plugin>\n"
+"\n"
+"        <light type=\"directional\" name=\"sun\">\n"
+"            <cast_shadows>true</cast_shadows>\n"
+"            <pose>0 0 10 0 0 0</pose>\n"
+"            <diffuse>0.8 0.8 0.8 1</diffuse>\n"
+"            <specular>0.2 0.2 0.2 1</specular>\n"
+"            <attenuation>\n"
+"                <range>1000</range>\n"
+"                <constant>0.9</constant>\n"
+"                <linear>0.01</linear>\n"
+"                <quadratic>0.001</quadratic>\n"
+"            </attenuation>\n"
+"            <direction>-0.5 0.1 -0.9</direction>\n"
+"        </light>\n"
+"\n"
+"        <model name=\"ground_plane\">\n"
+"            <static>true</static>\n"
+"            <link name=\"link\">\n"
+"                <collision name=\"collision\">\n"
+"                <geometry>\n"
+"                    <plane>\n"
+"                    <normal>0 0 1</normal>\n"
+"                    </plane>\n"
+"                </geometry>\n"
+"                </collision>\n"
+"                <visual name=\"visual\">\n"
+"                <geometry>\n"
+"                    <plane>\n"
+"                    <normal>0 0 1</normal>\n"
+"                    <size>100 100</size>\n"
+"                    </plane>\n"
+"                </geometry>\n"
+"                <material>\n"
+"                    <ambient>0.8 0.8 0.8 1</ambient>\n"
+"                    <diffuse>0.8 0.8 0.8 1</diffuse>\n"
+"                    <specular>0.8 0.8 0.8 1</specular>\n"
+"                </material>\n"
+"                </visual>\n"
+"            </link>\n"
+"        </model>\n"
+"    </world>\n"
+"</sdf>\n"
+msgstr ""
+
+#: ../../../building_robot.md:79
+msgid ""
+"Save the file, navigate to the directory where you saved the file and launch "
+"the simulator:"
+msgstr ""
+
+#: ../../../building_robot.md:81 ../../../building_robot.md:178
+#: ../../../building_robot.md:435
+msgid "`gz sim building_robot.sdf`"
+msgstr ""
+
+#: ../../../building_robot.md:83
+msgid ""
+"**Note**: You can name your file any name and save it anywhere on your "
+"computer."
+msgstr ""
+
+#: ../../../building_robot.md:85
+msgid ""
+"You should see an empty world with just a ground plane and a sun light. "
+"Check [World demo](sdf_worlds) to learn how to build your own world."
+msgstr ""
+
+#: ../../../building_robot.md:87
+msgid "Building a model"
+msgstr ""
+
+#: ../../../building_robot.md:89
+msgid "Under the `</model>` tag we will add our robot model as follows:"
+msgstr ""
+
+#: ../../../building_robot.md:91
+msgid "Defining the model"
+msgstr "定義模型"
+
+#: ../../../building_robot.md:93
+msgid ""
+"<model name='vehicle_blue' canonical_link='chassis'>\n"
+"    <pose relative_to='world'>0 0 0 0 0 0</pose>\n"
+msgstr ""
+
+#: ../../../building_robot.md:98
+msgid ""
+"Here we define the name of our model `vehicle_blue`, which should be a "
+"unique name among its siblings (other tags or models on the same level). "
+"Each model may have one link designated as the `canonical_link`, the "
+"implicit frame of the model is attached to this link. If not defined, the "
+"first `<link>` will be chosen as the canonical link. The `<pose>` tag is "
+"used to define the position and orientation of our model and the "
+"`relative_to` attribute is used to define the pose of the model relative to "
+"any other frame. If `relative_to` is not defined, the model's `<pose>` will "
+"be relative to the world."
+msgstr ""
+
+#: ../../../building_robot.md:103
+msgid ""
+"Let's make our pose relative to the `world`. The values inside the pose tag "
+"are as follows: `<pose>X Y Z R P Y</pose>`, where the `X Y Z` represent the "
+"position of the frame and `R P Y` represent the orientation in roll pitch "
+"yaw. We set them to zeros which makes the two frames (the model and the "
+"world) identical."
+msgstr ""
+
+#: ../../../building_robot.md:106
+msgid "Links forming our robot"
+msgstr ""
+
+#: ../../../building_robot.md:108
+msgid ""
+"Every model is a group of `links` (can be just one link) connected together "
+"with `joints`."
+msgstr ""
+
+#: ../../../building_robot.md:110
+msgid "Chassis"
+msgstr ""
+
+#: ../../../building_robot.md:112
+msgid ""
+"    <link name='chassis'>\n"
+"        <pose relative_to='__model__'>0.5 0 0.4 0 0 0</pose>\n"
+msgstr ""
+
+#: ../../../building_robot.md:117
+msgid ""
+"We define the first link, the `chassis` of our car and it's pose relative to "
+"the `model`."
+msgstr ""
+
+#: ../../../building_robot.md:119
+msgid "Inertial properties"
+msgstr ""
+
+#: ../../../building_robot.md:121
+msgid ""
+"    <inertial> <!--inertial properties of the link mass, inertia matrix-->\n"
+"        <mass>1.14395</mass>\n"
+"        <inertia>\n"
+"            <ixx>0.095329</ixx>\n"
+"            <ixy>0</ixy>\n"
+"            <ixz>0</ixz>\n"
+"            <iyy>0.381317</iyy>\n"
+"            <iyz>0</iyz>\n"
+"            <izz>0.476646</izz>\n"
+"        </inertia>\n"
+"    </inertial>\n"
+msgstr ""
+
+#: ../../../building_robot.md:135
+msgid ""
+"Here we define the inertial properties of the chassis like the `<mass>` and "
+"the `<inertia>` matrix. The values of the inertia matrix for primitive "
+"shapes can be calculated using this [tool](https://amesweb.info/inertia/mass-"
+"moment-of-inertia-calculator.aspx)."
+msgstr ""
+
+#: ../../../building_robot.md:137
+msgid "Visual and collision"
+msgstr ""
+
+#: ../../../building_robot.md:139
+msgid ""
+"    <visual name='visual'>\n"
+"        <geometry>\n"
+"            <box>\n"
+"                <size>2.0 1.0 0.5</size>\n"
+"            </box>\n"
+"        </geometry>\n"
+"        <!--let's add color to our link-->\n"
+"        <material>\n"
+"            <ambient>0.0 0.0 1.0 1</ambient>\n"
+"            <diffuse>0.0 0.0 1.0 1</diffuse>\n"
+"            <specular>0.0 0.0 1.0 1</specular>\n"
+"        </material>\n"
+"    </visual>\n"
+msgstr ""
+
+#: ../../../building_robot.md:155
+msgid ""
+"As the name suggests, the `<visual>` tag is responsible for how our link "
+"will look. We define the shape of our link inside the `<geometry>` tag as a "
+"`<box>` (cuboid) and then specify the three dimensions (in meters) of this "
+"box inside the `<size>` tag. Then, inside the `<material>` tag we define the "
+"material of our link. Here we defined the `<ambient>`, `<diffuse>` and "
+"`<specular>` colors in a set of four numbers red/green/blue/alpha each in "
+"range [0, 1]."
+msgstr ""
+
+#: ../../../building_robot.md:160
+msgid ""
+"        <collision name='collision'>\n"
+"            <geometry>\n"
+"                <box>\n"
+"                    <size>2.0 1.0 0.5</size>\n"
+"                </box>\n"
+"            </geometry>\n"
+"        </collision>\n"
+"    </link>\n"
+"</model>\n"
+msgstr ""
+
+#: ../../../building_robot.md:172
+msgid ""
+"The `<collision>` tag defines the collision properties of the link, how our "
+"link will react with other objects and the effect of the physics engine on "
+"it."
+msgstr ""
+
+#: ../../../building_robot.md:174
+msgid ""
+"**Note**: `<collision>` can be different from the visual properties, for "
+"example, simpler collision models are often used to reduce computation time."
+msgstr ""
+
+#: ../../../building_robot.md:176
+msgid ""
+"After copying all the parts above into the world file in order, run the "
+"world again:"
+msgstr ""
+
+#: ../../../building_robot.md:180
+msgid "Our model should look like this:"
+msgstr ""
+
+#: ../../../building_robot.md:182
+msgid "![car chassis](tutorials/building_robot/chassis.png)"
+msgstr ""
+
+#: ../../../building_robot.md:182
+msgid "car chassis"
+msgstr ""
+
+#: ../../../building_robot.md:184
+msgid ""
+"In the top left toolbar, click the Translate icon, then select your model. "
+"You should see three axes like this:"
+msgstr ""
+
+#: ../../../building_robot.md:187
+msgid "![model_axis](tutorials/building_robot/model_axis.png)"
+msgstr ""
+
+#: ../../../building_robot.md:187
+msgid "model_axis"
+msgstr ""
+
+#: ../../../building_robot.md:189
+msgid ""
+"These are the axes of our model where red is the x-axis, green is the y-axis "
+"and blue is the z-axis."
+msgstr ""
+
+#: ../../../building_robot.md:191
+msgid "Left wheel"
+msgstr ""
+
+#: ../../../building_robot.md:193
+msgid ""
+"Let's add wheels to our robot. The following code goes after the `</link>` "
+"tag and before the `</model>` tag. All the links and joints belonging to the "
+"same model should be defined before the `</model>`."
+msgstr ""
+
+#: ../../../building_robot.md:195
+msgid ""
+"<link name='left_wheel'>\n"
+"    <pose relative_to=\"chassis\">-0.5 0.6 0 -1.5707 0 0</pose>\n"
+"    <inertial>\n"
+"        <mass>1</mass>\n"
+"        <inertia>\n"
+"            <ixx>0.043333</ixx>\n"
+"            <ixy>0</ixy>\n"
+"            <ixz>0</ixz>\n"
+"            <iyy>0.043333</iyy>\n"
+"            <iyz>0</iyz>\n"
+"            <izz>0.08</izz>\n"
+"        </inertia>\n"
+"    </inertial>\n"
+msgstr ""
+
+#: ../../../building_robot.md:211
+msgid ""
+"We defined the name of our link `left_wheel` and then defined its `<pose>` "
+"`relative_to` the `chassis` link. The wheel needed to be placed on the left "
+"to the back of the `chassis` so that's why we chose the values for `pose` as "
+"`-0.5 0.6 0`. Also, our wheel is a cylinder, but on its side. That's why we "
+"defined the orientation value as `-1.5707 0 0` which is a `-90` degree "
+"rotation around the x-axis (the angles are in radians). Then we defined the "
+"`inertial` properties of the wheel, the `mass` and the `inertia` matrix."
+msgstr ""
+
+#: ../../../building_robot.md:217
+msgid "Visualization and Collision"
+msgstr ""
+
+#: ../../../building_robot.md:219
+msgid ""
+"    <visual name='visual'>\n"
+"        <geometry>\n"
+"            <cylinder>\n"
+"                <radius>0.4</radius>\n"
+"                <length>0.2</length>\n"
+"            </cylinder>\n"
+"        </geometry>\n"
+"        <material>\n"
+"            <ambient>1.0 0.0 0.0 1</ambient>\n"
+"            <diffuse>1.0 0.0 0.0 1</diffuse>\n"
+"            <specular>1.0 0.0 0.0 1</specular>\n"
+"        </material>\n"
+"    </visual>\n"
+"    <collision name='collision'>\n"
+"        <geometry>\n"
+"            <cylinder>\n"
+"                <radius>0.4</radius>\n"
+"                <length>0.2</length>\n"
+"            </cylinder>\n"
+"        </geometry>\n"
+"    </collision>\n"
+"</link>\n"
+msgstr ""
+
+#: ../../../building_robot.md:244
+msgid ""
+"The `<visual>` and  the `<collision>` properties are similar to the previous "
+"link, except the shape of our link has the shape of `<cylinder>` that "
+"requires two attributes: the `<radius>` and the `<length>` of the cylinder. "
+"Save the file and run the world again, our model should look like this:"
+msgstr ""
+
+#: ../../../building_robot.md:247
+msgid "![this](tutorials/building_robot/car_left_wheel.png)"
+msgstr ""
+
+#: ../../../building_robot.md:247
+msgid "this"
+msgstr ""
+
+#: ../../../building_robot.md:249
+msgid "Right wheel"
+msgstr ""
+
+#: ../../../building_robot.md:251
+msgid ""
+"<!--The same as left wheel but with different position-->\n"
+"<link name='right_wheel'>\n"
+"    <pose relative_to=\"chassis\">-0.5 -0.6 0 -1.5707 0 0</pose> <!--angles "
+"are in radian-->\n"
+"    <inertial>\n"
+"        <mass>1</mass>\n"
+"        <inertia>\n"
+"            <ixx>0.043333</ixx>\n"
+"            <ixy>0</ixy>\n"
+"            <ixz>0</ixz>\n"
+"            <iyy>0.043333</iyy>\n"
+"            <iyz>0</iyz>\n"
+"            <izz>0.08</izz>\n"
+"        </inertia>\n"
+"    </inertial>\n"
+"    <visual name='visual'>\n"
+"        <geometry>\n"
+"            <cylinder>\n"
+"                <radius>0.4</radius>\n"
+"                <length>0.2</length>\n"
+"            </cylinder>\n"
+"        </geometry>\n"
+"        <material>\n"
+"            <ambient>1.0 0.0 0.0 1</ambient>\n"
+"            <diffuse>1.0 0.0 0.0 1</diffuse>\n"
+"            <specular>1.0 0.0 0.0 1</specular>\n"
+"        </material>\n"
+"    </visual>\n"
+"    <collision name='collision'>\n"
+"        <geometry>\n"
+"            <cylinder>\n"
+"                <radius>0.4</radius>\n"
+"                <length>0.2</length>\n"
+"            </cylinder>\n"
+"        </geometry>\n"
+"    </collision>\n"
+"</link>\n"
+msgstr ""
+
+#: ../../../building_robot.md:290
+msgid "The right wheel is similar to the left wheel except for its position."
+msgstr ""
+
+#: ../../../building_robot.md:292
+msgid "Defining an arbitrary frame"
+msgstr ""
+
+#: ../../../building_robot.md:294
+msgid ""
+"As of SDF 1.7 (Fortress uses SDF 1.8), we can define arbitrary frames. It "
+"takes two attributes:"
+msgstr ""
+
+#: ../../../building_robot.md:296
+msgid "`name`: the name of the frame"
+msgstr ""
+
+#: ../../../building_robot.md:297
+msgid ""
+"`attached_to`: the name of the frame or the link to which this frame is "
+"attached."
+msgstr ""
+
+#: ../../../building_robot.md:299
+msgid "Let's add a frame for our caster wheel as follows:"
+msgstr ""
+
+#: ../../../building_robot.md:301
+msgid ""
+"<frame name=\"caster_frame\" attached_to='chassis'>\n"
+"    <pose>0.8 0 -0.2 0 0 0</pose>\n"
+"</frame>\n"
+msgstr ""
+
+#: ../../../building_robot.md:307
+msgid ""
+"We gave our frame name `caster_frame` and attached it to the `chassis` link, "
+"then the `<pose>` tag to define the position and orientation of the frame. "
+"We didn't use the `relative_to` attribute so the pose is with respect to the "
+"frame named in the `attached_to` attribute, `chassis` in our case."
+msgstr ""
+
+#: ../../../building_robot.md:310
+msgid "Caster wheel"
+msgstr ""
+
+#: ../../../building_robot.md:312
+msgid ""
+"<!--caster wheel-->\n"
+"<link name='caster'>\n"
+"    <pose relative_to='caster_frame'/>\n"
+"    <inertial>\n"
+"        <mass>1</mass>\n"
+"        <inertia>\n"
+"            <ixx>0.016</ixx>\n"
+"            <ixy>0</ixy>\n"
+"            <ixz>0</ixz>\n"
+"            <iyy>0.016</iyy>\n"
+"            <iyz>0</iyz>\n"
+"            <izz>0.016</izz>\n"
+"        </inertia>\n"
+"    </inertial>\n"
+"    <visual name='visual'>\n"
+"        <geometry>\n"
+"            <sphere>\n"
+"                <radius>0.2</radius>\n"
+"            </sphere>\n"
+"        </geometry>\n"
+"        <material>\n"
+"            <ambient>0.0 1 0.0 1</ambient>\n"
+"            <diffuse>0.0 1 0.0 1</diffuse>\n"
+"            <specular>0.0 1 0.0 1</specular>\n"
+"        </material>\n"
+"    </visual>\n"
+"    <collision name='collision'>\n"
+"        <geometry>\n"
+"            <sphere>\n"
+"                <radius>0.2</radius>\n"
+"            </sphere>\n"
+"        </geometry>\n"
+"    </collision>\n"
+"</link>\n"
+msgstr ""
+
+#: ../../../building_robot.md:349
+msgid ""
+"Our last link is the `caster` and its pose is with respect to the frame "
+"`caster_frame` we defined above. As you could notice we closed the `pose` "
+"tag without defining the position or the orientation; in this case the pose "
+"of the link is the same as (identity) the frame in `relative_to`."
+msgstr ""
+
+#: ../../../building_robot.md:352
+msgid ""
+"In the `<visual>` and `<collision>` tags we defined a different shape "
+"`<sphere>` which requires the `<radius>` of the sphere."
+msgstr ""
+
+#: ../../../building_robot.md:354
+msgid "Connecting links together (joints)"
+msgstr ""
+
+#: ../../../building_robot.md:356
+msgid ""
+"We need to connect these links together; here comes the job of the `<joint>` "
+"tag. The joint tag connects two links together and defines how they will "
+"move with respect to each other. Inside the `<joint>` tag we need to define "
+"the two links to connect and their relations (way of movement)."
+msgstr ""
+
+#: ../../../building_robot.md:360
+msgid "Left wheel joint"
+msgstr ""
+
+#: ../../../building_robot.md:362
+msgid ""
+"<joint name='left_wheel_joint' type='revolute'>\n"
+"    <pose relative_to='left_wheel'/>\n"
+msgstr ""
+
+#: ../../../building_robot.md:367
+msgid ""
+"Our first joint is the `left_wheel_joint`. It takes two attributes: the name "
+"`name='left_wheel_joint'` and the type `type='revolute'`. the `revolute` "
+"type gives 1 rotational degree of freedom with joint limits. The pose of the "
+"joint is the same as the child link frame, which is the `left_wheel` frame."
+msgstr ""
+
+#: ../../../building_robot.md:372
+msgid ""
+"    <parent>chassis</parent>\n"
+"    <child>left_wheel</child>\n"
+msgstr ""
+
+#: ../../../building_robot.md:377
+msgid ""
+"Every joint connects two links (bodies) together. Here we connect the "
+"`chassis` with the `left_wheel`. `chassis` is the parent link and "
+"`left_wheel` is the child link."
+msgstr ""
+
+#: ../../../building_robot.md:381
+msgid ""
+"    <axis>\n"
+"        <xyz expressed_in='__model__'>0 1 0</xyz> <!--can be defined as any "
+"frame or even arbitrary frames-->\n"
+"        <limit>\n"
+"            <lower>-1.79769e+308</lower>    <!--negative infinity-->\n"
+"            <upper>1.79769e+308</upper>     <!--positive infinity-->\n"
+"        </limit>\n"
+"    </axis>\n"
+"</joint>\n"
+msgstr ""
+
+#: ../../../building_robot.md:392
+msgid ""
+"Here we define the axis of rotation. The axis of rotation can be any frame, "
+"not just the `parent` or the `child` link. We chose the y-axis with respect "
+"to the `model` frame so we put `1` in the y element and zeros in the others. "
+"For the revolute joint we need to define the `<limits>` of our rotation "
+"angle in the `<lower>` and `<upper>` tags."
+msgstr ""
+
+#: ../../../building_robot.md:397
+msgid "**Note**: The angles are in radians."
+msgstr ""
+
+#: ../../../building_robot.md:399
+msgid "Right wheel joint"
+msgstr ""
+
+#: ../../../building_robot.md:401
+msgid ""
+"The `right_wheel_joint` is very similar except for the pose of the joint. "
+"This joint connects the `right_wheel` with the `chassis`."
+msgstr ""
+
+#: ../../../building_robot.md:404
+msgid ""
+"<joint name='right_wheel_joint' type='revolute'>\n"
+"    <pose relative_to='right_wheel'/>\n"
+"    <parent>chassis</parent>\n"
+"    <child>right_wheel</child>\n"
+"    <axis>\n"
+"        <xyz expressed_in='__model__'>0 1 0</xyz>\n"
+"        <limit>\n"
+"            <lower>-1.79769e+308</lower>    <!--negative infinity-->\n"
+"            <upper>1.79769e+308</upper>     <!--positive infinity-->\n"
+"        </limit>\n"
+"    </axis>\n"
+"</joint>\n"
+msgstr ""
+
+#: ../../../building_robot.md:419
+msgid "Caster wheel joint"
+msgstr ""
+
+#: ../../../building_robot.md:421
+msgid ""
+"For the caster we need a different type of joint (connection). We used "
+"`type='ball'` which gives 3 rotational degrees of freedom."
+msgstr ""
+
+#: ../../../building_robot.md:424
+msgid ""
+"<joint name='caster_wheel' type='ball'>\n"
+"    <parent>chassis</parent>\n"
+"    <child>caster</child>\n"
+"</joint>\n"
+msgstr ""
+
+#: ../../../building_robot.md:431
+msgid "Conclusion"
+msgstr ""
+
+#: ../../../building_robot.md:433
+msgid "Run the world:"
+msgstr ""
+
+#: ../../../building_robot.md:437
+msgid "It should look like this:"
+msgstr ""
+
+#: ../../../building_robot.md:439
+msgid "![two_wheeled_robot](tutorials/building_robot/two_wheeled_robot.png)"
+msgstr ""
+
+#: ../../../building_robot.md:439
+msgid "two_wheeled_robot"
+msgstr ""
+
+#: ../../../building_robot.md:441
+msgid ""
+"Hurray! We build our first robot. You can learn more details about SDFormat "
+"tags [here](http://sdformat.org/spec). In the next [tutorial](moving_robot) "
+"we will learn how to move our robot around."
+msgstr ""
+
+#: ../../../building_robot.md:443
+msgid "Video walk-through"
+msgstr ""
+
+#: ../../../building_robot.md:445
+msgid ""
+"A video walk-through of this tutorial is available from our YouTube channel: "
+"[Gazebo tutorials: Building a robot](https://youtu.be/Z-gjU0KAjiw)."
+msgstr ""
+
+#: ../../../building_robot.md:447
+msgid ""
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Z-"
+"gjU0KAjiw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-"
+"media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+msgstr ""

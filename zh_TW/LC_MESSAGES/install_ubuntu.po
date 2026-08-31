@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_ubuntu.md:1
+msgid "Binary Installation on Ubuntu"
+msgstr ""
+
+#: ../../../install_ubuntu.md:3
+msgid ""
+"Jetty binaries are provided for Ubuntu Noble (24.04). The Jetty binaries are "
+"hosted in the packages.osrfoundation.org repository. To install all of them, "
+"the metapackage `gz-jetty` can be installed."
+msgstr ""
+
+#: ../../../install_ubuntu.md:7
+msgid "First install some necessary tools:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:9
+msgid ""
+"sudo apt-get update\n"
+"sudo apt-get install curl lsb-release gnupg\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:14
+msgid "Then install Gazebo Jetty:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:17
+msgid ""
+"sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/"
+"keyrings/pkgs-osrf-archive-keyring.gpg\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] https://packages.osrfoundation.org/gazebo/"
+"ubuntu-stable $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-stable.list > /dev/null\n"
+"sudo apt-get update\n"
+"sudo apt-get install gz-jetty\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:24
+msgid ""
+"All libraries should be ready to use and the `gz sim` app ready to be "
+"executed."
+msgstr ""
+
+#: ../../../install_ubuntu.md:26
+msgid ""
+"Head back to the [Getting started](getstarted) page to start using Gazebo!"
+msgstr ""
+
+#: ../../../install_ubuntu.md:30
+msgid "Server-only installation"
+msgstr ""
+
+#: ../../../install_ubuntu.md:32
+msgid ""
+"For headless and CI environments where the GUI is not needed, the `gz-sim10-"
+"server` package provides a lightweight alternative. It installs only the "
+"Gazebo simulation server (`gz-sim-server`) without any GUI or Qt "
+"dependencies, resulting in a significantly smaller installation footprint."
+msgstr ""
+
+#: ../../../install_ubuntu.md:37
+msgid ""
+"After configuring the repository (same as above), install the server-only "
+"package:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:40
+msgid "sudo apt-get install gz-sim10-server\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:44
+msgid ""
+"The server-only package includes the DART physics engine and the core "
+"simulation server plugins. To start a headless simulation:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:47
+msgid "/usr/libexec/gz/sim10/gz-sim-server <world_file.sdf>\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:52
+msgid ""
+"The server-only binary is installed at `/usr/libexec/gz/sim10/gz-sim-"
+"server`, which is not in the `PATH` by default. The regular `gz sim -s` "
+"command is not available in the server-only installation since it requires "
+"the full `gz-sim10-cli` package."
+msgstr ""
+
+#: ../../../install_ubuntu.md:58
+msgid "Uninstalling binary install"
+msgstr ""
+
+#: ../../../install_ubuntu.md:60
+msgid ""
+"If you need to uninstall Gazebo or switch to a source-based install once you "
+"have already installed the library from binaries, run the following command:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:63
+msgid "sudo apt remove gz-jetty && sudo apt autoremove\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:67
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install_ubuntu.md:69
+msgid "See [Troubleshooting](troubleshooting.md#ubuntu)"
+msgstr ""
