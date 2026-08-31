@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo harmonic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../fuel_contributing_world.md:1
+msgid "Contributing a New World"
+msgstr ""
+
+#: ../../../fuel_contributing_world.md:3
+msgid ""
+"A world consists of a description of global properties and a set of models "
+"that populate the environment. The description format is [SDF](http://"
+"sdformat.org/), and you can find example worlds at [https://app.gazebosim."
+"org/fuel/worlds](https://app.gazebosim.org/fuel/worlds). Worlds can be used "
+"by simulators to launch and simulate models in a specific environment."
+msgstr ""
+
+#: ../../../fuel_contributing_world.md:7
+msgid ""
+"You can upload a new world to Gazebo by completing the form on [https://app."
+"gazebosim.org/fuel/worlds/upload](https://app.gazebosim.org/fuel/worlds/"
+"upload). The upload form allows you to specify a name for the world, along "
+"with a description and tag data."
+msgstr ""
