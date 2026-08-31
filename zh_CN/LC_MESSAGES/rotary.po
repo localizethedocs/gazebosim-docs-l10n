@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo rotary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../rotary.md:1
+msgid "Rotary release"
+msgstr ""
+
+#: ../../../rotary.md:3
+msgid ""
+"**Rotary** is a rolling release stream of Gazebo built continuously from the "
+"`main` branches of every Gazebo library. Unlike the dated codename releases "
+"(Fortress, Harmonic, Jetty, ...), Rotary has no fixed version: it is built "
+"every night. It is intended for Gazebo maintainers, continuous integration "
+"systems, and early adopters who want to test unreleased changes before they "
+"ship in a named collection."
+msgstr ""
+
+#: ../../../rotary.md:11
+msgid ""
+"Rotary is a rolling, unstable stream. Breakage is expected, and versions may "
+"change under you on every `apt upgrade` or `brew upgrade`. Rotary is **not "
+"recommended for production use**. New Gazebo users should install one of the "
+"binary releases listed in [Releases](releases) instead."
+msgstr ""
+
+#: ../../../rotary.md:17
+msgid "Package naming"
+msgstr ""
+
+#: ../../../rotary.md:19
+msgid ""
+"Wherever a Gazebo package name contains `gz-`, a `rotary-` infix is injected "
+"to produce the Rotary alias. The aliases point to unversioned upstream "
+"packages, so installing a Rotary alias always pulls whatever is currently "
+"being built from `main`."
+msgstr ""
+
+#: ../../../rotary.md:24
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../../rotary.md:26
+msgid ""
+"The package names in the table below are examples illustrating the aliasing "
+"rule:"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "Regular package"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "Rotary alias"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`libgz-cmake-dev`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`libgz-rotary-cmake-dev`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`gz-plugin-cli`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`gz-rotary-plugin-cli`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`python3-gz-math`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`python3-gz-rotary-math`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`libsdformat-dev` (*)"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`libgz-rotary-sdformat-dev`"
+msgstr ""
+
+#: ../../../rotary.md:37
+msgid ""
+"(*) sdformat is a special case: its package names do not contain `gz-`, so "
+"the rotary alias adds a `gz-rotary-` prefix."
+msgstr ""
+
+#: ../../../rotary.md:40
+msgid "Homebrew (macOS)"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "Regular formula"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`gz-mathN`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`gz-rotary-math`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`sdformatN`"
+msgstr ""
+
+#: ../../../rotary.md:10
+msgid "`gz-rotary-sdformat`"
+msgstr ""
+
+#: ../../../rotary.md:47
+msgid "Umbrella metapackage"
+msgstr ""
+
+#: ../../../rotary.md:49
+msgid ""
+"On both Ubuntu and Homebrew, the `gz-rotary` metapackage pulls in the full "
+"set of rotary libraries, mirroring how `gz-jetty` or `gz-harmonic` work for "
+"named collections."
+msgstr ""
+
+#: ../../../rotary.md:53
+msgid "Installing Rotary on Ubuntu"
+msgstr ""
+
+#: ../../../rotary.md:56
+msgid ""
+"Rotary binaries are published into the existing **nightly** apt repository "
+"at `http://packages.osrfoundation.org/gazebo/ubuntu-nightly`, so the "
+"versioning scheme documented in [Ubuntu versioning in nightly and prerelease "
+"binaries](releasing/versioning_pre_nightly) applies to Rotary unchanged."
+msgstr ""
+
+#: ../../../rotary.md:63
+msgid "First install the prerequisite tools:"
+msgstr ""
+
+#: ../../../rotary.md:65
+msgid ""
+"sudo apt-get update\n"
+"sudo apt-get install curl lsb-release gnupg\n"
+msgstr ""
+
+#: ../../../rotary.md:70
+msgid ""
+"Add the OSRF GPG key and configure the **nightly** apt repository (which "
+"hosts Rotary packages) that needs the stable repository also to work:"
+msgstr ""
+
+#: ../../../rotary.md:73
+msgid ""
+"sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/"
+"keyrings/pkgs-osrf-archive-keyring.gpg\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/"
+"ubuntu-stable $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-stable.list > /dev/null\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/"
+"ubuntu-nightly $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-nightly.list > /dev/null\n"
+"sudo apt-get update\n"
+msgstr ""
+
+#: ../../../rotary.md:80
+msgid "Then install the Rotary metapackage:"
+msgstr ""
+
+#: ../../../rotary.md:82
+msgid "sudo apt-get install gz-rotary\n"
+msgstr ""
+
+#: ../../../rotary.md:86
+msgid ""
+"All Rotary libraries should be ready to use and the `gz sim` app ready to "
+"run."
+msgstr ""
+
+#: ../../../rotary.md:89
+msgid "Uninstalling Rotary"
+msgstr ""
+
+#: ../../../rotary.md:91
+msgid "sudo apt remove gz-rotary && sudo apt autoremove\n"
+msgstr ""
+
+#: ../../../rotary.md:95
+msgid "Installing Rotary on macOS (Homebrew)"
+msgstr ""
+
+#: ../../../rotary.md:97
+msgid ""
+"Rotary formulae are published through the [`osrf/simulation`](https://github."
+"com/osrf/homebrew-simulation) tap:"
+msgstr ""
+
+#: ../../../rotary.md:100
+msgid ""
+"brew tap osrf/simulation\n"
+"brew trust osrf/simulation\n"
+"brew install gz-rotary\n"
+msgstr ""
+
+#: ../../../rotary.md:106
+msgid ""
+"Per-library formulae are also available using the `gz-rotary-<library>` "
+"naming scheme, for example:"
+msgstr ""
+
+#: ../../../rotary.md:109
+msgid "brew install gz-rotary-math gz-rotary-sim\n"
+msgstr ""
+
+#: ../../../rotary.md:113
+msgid ""
+"The initial rollout of Rotary brew formulae is tracked in [osrf/homebrew-"
+"simulation#3287](https://github.com/osrf/homebrew-simulation/pull/3287)."
+msgstr ""
+
+#: ../../../rotary.md:116
+msgid "Windows"
+msgstr ""
+
+#: ../../../rotary.md:118
+msgid ""
+"There is currently no binary distribution of Rotary on Windows. Windows "
+"users who want to run Rotary need to build it from source."
+msgstr ""
+
+#: ../../../rotary.md:121
+msgid ""
+"The [Source Installation on Windows 10 or 11](install_windows_src) guide "
+"describes the full toolchain (Visual Studio, Pixi, `colcon`) and uses the "
+"Rotary collection file, `collection-rotary.yaml`, from [gazebo-tooling/"
+"gazebodistro](https://github.com/gazebo-tooling/gazebodistro) in its `vcs "
+"import` step:"
+msgstr ""
+
+#: ../../../rotary.md:127
+msgid ""
+"vcs import --input https://raw.githubusercontent.com/gazebo-tooling/"
+"gazebodistro/master/collection-rotary.yaml src/\n"
+msgstr ""
