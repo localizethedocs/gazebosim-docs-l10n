@@ -1,0 +1,1983 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../release-features.md:1
+msgid "Gazebo Release Features"
+msgstr ""
+
+#: ../../../release-features.md:3
+msgid ""
+"Here you will find the set of features that are available in each release."
+msgstr ""
+
+#: ../../../release-features.md:5
+msgid ""
+"Take a look at the [Roadmap](roadmap) for information about upcoming "
+"features, some of which may land in released versions of Gazebo."
+msgstr ""
+
+#: ../../../release-features.md:8
+msgid "Ionic"
+msgstr ""
+
+#: ../../../release-features.md:10
+msgid ""
+"For a complete list of features included in the initial release of Ionic, "
+"please see the [highlights](https://github.com/gazebosim/gz-ionic/blob/main/"
+"highlights.md) and [release notes](https://github.com/gazebosim/gz-ionic/"
+"blob/main/release_notes.md) documentation in the Gazebo Ionic repository."
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "Library name"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "Version"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "Changelog"
+msgstr "變更日誌"
+
+#: ../../../release-features.md:0
+msgid "gz-cmake"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "4.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-common"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "6.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common6/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/gz-common6/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid "gz-fuel-tools"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "10.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools10/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools10/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-gui"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "9.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/gz-gui9/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/gz-gui9/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-launch"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "8.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch8/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/gz-launch8/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid "gz-math"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-math/blob/gz-math8/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-math/blob/gz-math8/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-msgs"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "11.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/gz-msgs11/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/gz-msgs11/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-physics"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/gz-physics8/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/gz-physics8/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-plugin"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "3.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin3/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-plugin/blob/gz-plugin3/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid "gz-rendering"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/gz-rendering9/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/gz-rendering9/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-sensors"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/gz-sensors9/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/gz-sensors9/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-sim"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/gz-sim9/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/gz-sim9/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-tools"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "2.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-tools/blob/gz-tools2/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-tools/blob/gz-tools2/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-transport"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "14.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/gz-transport14/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/gz-transport14/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "gz-utils"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils3/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-utils/blob/gz-utils3/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "sdformat"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid "15.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/sdformat/blob/sdf15/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/sdformat/blob/sdf15/Changelog.md)"
+
+#: ../../../release-features.md:31
+msgid "Harmonic"
+msgstr ""
+
+#: ../../../release-features.md:33
+msgid ""
+"For a complete list of features included in the initial release of Harmonic, "
+"please see the [highlights](https://github.com/gazebosim/gz-harmonic/blob/"
+"main/highlights.md) and [release notes](https://github.com/gazebosim/gz-"
+"harmonic/blob/main/release_notes.md) documentation in the Gazebo Harmonic "
+"repository."
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake3/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-cmake/blob/gz-cmake3/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "5.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common5/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/gz-common5/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools9/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools9/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/gz-gui8/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/gz-gui8/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "7.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch7/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/gz-launch7/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-math/blob/gz-math7/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-math/blob/gz-math7/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/gz-msgs10/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/gz-msgs10/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/gz-physics7/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/gz-physics7/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin2/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-plugin/blob/gz-plugin2/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/gz-rendering8/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/gz-rendering8/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/gz-sensors8/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/gz-sensors8/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/gz-sim8/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/gz-sim8/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "13.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/gz-transport13/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/gz-transport13/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils2/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-utils/blob/gz-utils2/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf14/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf14/Changelog.md)"
+
+#: ../../../release-features.md:54
+msgid "Garden"
+msgstr ""
+
+#: ../../../release-features.md:56
+msgid ""
+"[Point cloud visualization.](https://github.com/gazebosim/gz-sim/issues/1156)"
+msgstr ""
+
+#: ../../../release-features.md:57
+msgid ""
+"[Wide angle camera (Ogre 1).](https://github.com/gazebosim/gz-sensors/"
+"issues/24)"
+msgstr ""
+
+#: ../../../release-features.md:58
+msgid "[DEM heightmaps.](https://github.com/gazebosim/gz-sim/issues/235)"
+msgstr ""
+
+#: ../../../release-features.md:59
+msgid ""
+"[Camera distortion.](https://github.com/gazebosim/gz-sensors/issues/107)"
+msgstr ""
+
+#: ../../../release-features.md:60
+msgid ""
+"[Wind effects configurable on a location basis.](https://github.com/"
+"gazebosim/gz-sim/pull/1357)"
+msgstr ""
+
+#: ../../../release-features.md:61
+msgid ""
+"[Simulation Reset API.](https://github.com/gazebosim/gz-sim/issues/1107)"
+msgstr ""
+
+#: ../../../release-features.md:62
+msgid ""
+"[Renaming Ignition to Gazebo.](https://community.gazebosim.org/t/a-new-era-"
+"for-gazebo/1356)"
+msgstr ""
+
+#: ../../../release-features.md:63
+msgid ""
+"[glTF and GLB mesh support.](https://github.com/gazebosim/gz-common/"
+"issues/344)"
+msgstr ""
+
+#: ../../../release-features.md:64
+msgid ""
+"[Vulkan support (Ogre 2.3)](https://github.com/gazebosim/gz-rendering/"
+"pull/553)"
+msgstr ""
+
+#: ../../../release-features.md:65
+msgid ""
+"[Lunar terrain and coordinates.](https://github.com/gazebosim/sdformat/"
+"pull/1050)"
+msgstr ""
+
+#: ../../../release-features.md:66
+msgid "[Static plugins.](https://github.com/gazebosim/gz-plugin/pull/97)"
+msgstr ""
+
+#: ../../../release-features.md:67
+msgid ""
+"[Conversion between SDF and MJCF.](https://github.com/gazebosim/gz-mujoco/"
+"tree/main/sdformat_mjcf)"
+msgstr ""
+
+#: ../../../release-features.md:68
+msgid ""
+"[Python API for SDFormat.](http://sdformat.org/tutorials?"
+"tut=python_bindings&cat=developers&)"
+msgstr ""
+
+#: ../../../release-features.md:69
+msgid "[Material shininess.](https://github.com/gazebosim/sdformat/pull/985)"
+msgstr ""
+
+#: ../../../release-features.md:70
+msgid ""
+"[Improve Bullet support (new gz-physics plugin for Bullet's Featherstone "
+"API).](https://github.com/gazebosim/gz-physics/issues/44)"
+msgstr ""
+
+#: ../../../release-features.md:71
+msgid ""
+"[Generic physics tests.](https://github.com/gazebosim/gz-physics/issues/50)"
+msgstr ""
+
+#: ../../../release-features.md:72
+msgid ""
+"[Custom rendering sensors.](https://github.com/gazebosim/gz-sim/pull/1804)"
+"[^1]"
+msgstr ""
+
+#: ../../../release-features.md:73
+msgid ""
+"[Environmental lookup sensors.](https://github.com/gazebosim/gz-sim/"
+"pull/1616)"
+msgstr ""
+
+#: ../../../release-features.md:74
+msgid ""
+"[Allow loading SDFormat model files from the command line (instead of world "
+"files only).](https://github.com/gazebosim/gz-sim/pull/1775)"
+msgstr ""
+
+#: ../../../release-features.md:75
+msgid ""
+"[Simple acoustic communication plugin.](https://github.com/gazebosim/gz-sim/"
+"pull/1704)"
+msgstr ""
+
+#: ../../../release-features.md:76
+msgid "[Airspeed sensor.](https://github.com/gazebosim/gz-sensors/pull/305)"
+msgstr ""
+
+#: ../../../release-features.md:77
+msgid ""
+"[Hydrodynamic added mass.](https://github.com/gazebosim/gz-sim/issues/1462)"
+msgstr ""
+
+#: ../../../release-features.md:78
+msgid ""
+"[Magnetometer value based on location.](https://github.com/gazebosim/gz-sim/"
+"pull/1907)"
+msgstr ""
+
+#: ../../../release-features.md:79
+msgid ""
+"[Lens flare support for Ogre and Ogre2.](https://github.com/gazebosim/gz-"
+"rendering/issues/730)"
+msgstr ""
+
+#: ../../../release-features.md:80
+msgid ""
+"[Allow specifying initial simulation time with a CLI argument](https://"
+"github.com/gazebosim/gz-sim/pull/1801)"
+msgstr ""
+
+#: ../../../release-features.md:81
+msgid ""
+"[Joints defined at the world level](https://github.com/gazebosim/sdformat/"
+"issues/1115)"
+msgstr ""
+
+#: ../../../release-features.md:82
+msgid ""
+"[Dynamic wrench application through the GUI (Mouse interaction with "
+"simulated models)](https://github.com/gazebosim/gz-sim/issues/306)"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools8/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/gz-fuel-tools8/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/gz-gui7/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/gz-gui7/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch6/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/gz-launch6/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/gz-msgs9/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/gz-msgs9/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/gz-physics6/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/gz-physics6/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/gz-rendering7/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/gz-rendering7/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/gz-sensors7/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/gz-sensors7/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/gz-sim7/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/gz-sim7/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "12.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/gz-transport12/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/gz-transport12/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf13/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf13/Changelog.md)"
+
+#: ../../../release-features.md:106
+msgid "Fortress"
+msgstr ""
+
+#: ../../../release-features.md:108
+msgid ""
+"[Headless simulation using EGL.](https://github.com/gazebosim/gz-rendering/"
+"issues/223)"
+msgstr ""
+
+#: ../../../release-features.md:109
+msgid ""
+"[Refactor ECM::Each for performance.](https://github.com/gazebosim/gz-sim/"
+"issues/711)"
+msgstr ""
+
+#: ../../../release-features.md:110
+msgid ""
+"[Upgrade to Ogre 2.2.](https://github.com/gazebosim/gz-rendering/issues/223)"
+msgstr ""
+
+#: ../../../release-features.md:111
+msgid ""
+"[Improve `<pose>` tag on SDFormat.](https://github.com/osrf/sdformat/"
+"issues/252)"
+msgstr ""
+
+#: ../../../release-features.md:112
+msgid ""
+"[Heightmaps on Ogre 2](https://github.com/gazebosim/gz-rendering/issues/187)"
+msgstr ""
+
+#: ../../../release-features.md:113
+msgid "[Spherical coordinates](https://github.com/gazebosim/gz-sim/issues/981)"
+msgstr ""
+
+#: ../../../release-features.md:114
+msgid ""
+"[Buoyancy engine](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/"
+"examples/worlds/buoyancy_engine.sdf)"
+msgstr ""
+
+#: ../../../release-features.md:115
+msgid ""
+"[Control lights from ROS 2](https://github.com/gazebosim/ros_gz/pull/187)"
+msgstr ""
+
+#: ../../../release-features.md:116
+msgid ""
+"[Python interface to Gazebo.](https://github.com/gazebosim/gz-sim/issues/789)"
+msgstr ""
+
+#: ../../../release-features.md:117
+msgid "[Custom shaders.](https://github.com/gazebosim/gz-sim/issues/657)"
+msgstr ""
+
+#: ../../../release-features.md:118
+msgid "[Visual plugins.](https://github.com/gazebosim/gz-sim/issues/265)"
+msgstr ""
+
+#: ../../../release-features.md:119
+msgid "[Rendering waves.](https://github.com/gazebosim/gz-rendering/pull/541)"
+msgstr ""
+
+#: ../../../release-features.md:120
+msgid "[Generic comms system.](https://github.com/gazebosim/gz-sim/pull/1416)"
+msgstr ""
+
+#: ../../../release-features.md:121
+msgid "[Wheel slip commands.](https://github.com/gazebosim/gz-sim/pull/1241)"
+msgstr ""
+
+#: ../../../release-features.md:122
+msgid ""
+"[USD importer / exporter.](https://github.com/gazebosim/sdformat/tree/sdf12/"
+"examples/usdConverter)"
+msgstr ""
+
+#: ../../../release-features.md:123
+msgid ""
+"[Bridge Gazebo services to ROS 2 services.](https://github.com/gazebosim/"
+"ros_ign/pull/211)"
+msgstr ""
+
+#: ../../../release-features.md:124
+msgid "[Omniverse application](https://github.com/gazebosim/gz-omni)"
+msgstr ""
+
+#: ../../../release-features.md:125
+msgid ""
+"[Pose and Twist with covariance.](https://github.com/gazebosim/gz-msgs/"
+"pull/224)"
+msgstr ""
+
+#: ../../../release-features.md:126
+msgid ""
+"[Kinematic loops for detachable joints.](https://github.com/gazebosim/gz-"
+"physics/pull/352)"
+msgstr ""
+
+#: ../../../release-features.md:127
+msgid ""
+"[ROS bridge configurable via YAML.](https://github.com/gazebosim/ros_gz/"
+"pull/238)"
+msgstr ""
+
+#: ../../../release-features.md:128
+msgid ""
+"[ROS bridge as a node component.](https://github.com/gazebosim/ros_gz/"
+"pull/238)"
+msgstr ""
+
+#: ../../../release-features.md:129
+msgid "[SDF support on ROS 2.](https://github.com/gazebosim/ros_gz/pull/265)"
+msgstr ""
+
+#: ../../../release-features.md:130
+msgid "Sensors"
+msgstr "感測器"
+
+#: ../../../release-features.md:131
+msgid ""
+"[Custom sensors.](https://gazebosim.org/api/sensors/6.0/custom_sensors.html)"
+msgstr ""
+
+#: ../../../release-features.md:132
+msgid ""
+"[Segmentation camera.](https://gazebosim.org/api/sensors/6.0/"
+"segmentationcamera_igngazebo.html)"
+msgstr ""
+
+#: ../../../release-features.md:133
+msgid ""
+"[Joint force-torque sensor.](https://github.com/gazebosim/gz-sensors/"
+"issues/25)"
+msgstr ""
+
+#: ../../../release-features.md:134
+msgid ""
+"[GPS / NavSat sensor.](https://github.com/gazebosim/gz-sensors/issues/23)"
+msgstr ""
+
+#: ../../../release-features.md:135
+msgid ""
+"[Triggered cameras.](https://github.com/gazebosim/gz-sensors/issues/185)"
+msgstr ""
+
+#: ../../../release-features.md:136
+msgid ""
+"[Bounding box camera.](https://github.com/gazebosim/gz-sensors/issues/135)"
+msgstr ""
+
+#: ../../../release-features.md:137
+msgid "GUI features"
+msgstr ""
+
+#: ../../../release-features.md:138
+msgid ""
+"[Consolidate Scene3D with GzScene3D](https://github.com/gazebosim/gz-gui/"
+"issues/137)"
+msgstr ""
+
+#: ../../../release-features.md:139
+msgid "[Visualize wireframes](https://github.com/gazebosim/gz-sim/pull/816)"
+msgstr ""
+
+#: ../../../release-features.md:140
+msgid "[Visualize transparent](https://github.com/gazebosim/gz-sim/pull/878)"
+msgstr ""
+
+#: ../../../release-features.md:141
+msgid "[Visualize inertia](https://github.com/gazebosim/gz-sim/issues/111)"
+msgstr ""
+
+#: ../../../release-features.md:142
+msgid ""
+"[Visualize center of mass](https://github.com/gazebosim/gz-sim/issues/110)"
+msgstr ""
+
+#: ../../../release-features.md:143
+msgid "[Visualize joints](https://github.com/gazebosim/gz-sim/issues/106)"
+msgstr ""
+
+#: ../../../release-features.md:144
+msgid "[Orthographic view](https://github.com/gazebosim/gz-sim/issues/103)"
+msgstr ""
+
+#: ../../../release-features.md:145
+msgid "[System inspector.](https://github.com/gazebosim/gz-sim/issues/191)"
+msgstr ""
+
+#: ../../../release-features.md:146
+msgid ""
+"[Hydrodynamics for water surface vehicles.](https://github.com/gazebosim/gz-"
+"sim/pull/818)"
+msgstr ""
+
+#: ../../../release-features.md:147
+msgid ""
+"[Custom skybox from SDF.](https://github.com/gazebosim/sdformat/pull/1037)"
+msgstr ""
+
+#: ../../../release-features.md:148
+msgid ""
+"[Gz3D: support heightmaps, skybox and particles.](https://github.com/gazebo-"
+"web/gzweb/pull/35)"
+msgstr ""
+
+#: ../../../release-features.md:149
+msgid ""
+"[Tools for creating new Gazebo projects](https://github.com/gazebosim/"
+"gz_pkg_create)"
+msgstr ""
+
+#: ../../../release-features.md:150
+msgid ""
+"[Simplify determination of a sensor's topic name for rendering sensors.]"
+"(https://github.com/gazebosim/gz-sim/pull/1908)"
+msgstr ""
+
+#: ../../../release-features.md:151
+msgid ""
+"[APIs that ease migration from classic.](https://github.com/gazebosim/gz-sim/"
+"issues/325)"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-cmake/blob/ign-cmake2/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-cmake/blob/ign-cmake2/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-common/blob/ign-common4/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/ign-common4/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools7/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools7/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui6/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui6/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch5/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch5/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-math/blob/ign-math6/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-math/blob/ign-math6/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs8/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs8/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics5/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics5/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "1.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-plugin/blob/ign-plugin1/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-plugin/blob/ign-plugin1/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering6/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering6/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors6/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors6/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools1/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-tools/blob/ign-tools1/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport11/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport11/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-utils/blob/ign-utils1/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-utils/blob/ign-utils1/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf12/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf12/Changelog.md)"
+
+#: ../../../release-features.md:172
+msgid "Edifice (EOL)"
+msgstr ""
+
+#: ../../../release-features.md:174
+msgid ""
+"New utility library with minimal dependencies: [Gazebo Utils](https://github."
+"com/gazebosim/gz-utils/)."
+msgstr ""
+
+#: ../../../release-features.md:175
+msgid "[Sky box support.](https://github.com/gazebosim/gz-rendering/issues/98)"
+msgstr ""
+
+#: ../../../release-features.md:176
+msgid "[Lightmap support.](https://github.com/gazebosim/gz-sim/pull/471)"
+msgstr ""
+
+#: ../../../release-features.md:177
+msgid ""
+"[Capsule and ellipsoid geometries.](https://github.com/osrf/sdformat/"
+"issues/376)"
+msgstr ""
+
+#: ../../../release-features.md:178
+msgid "[SDF model composition.](https://github.com/osrf/sdformat/issues/278)"
+msgstr ""
+
+#: ../../../release-features.md:179
+msgid ""
+"[SDFormat interface for non-SDF models.](http://sdformat.org/tutorials?"
+"tut=composition_proposal&cat=pose_semantics_docs&#1-5-minimal-libsdformat-"
+"interface-types-for-non-sdformat-models)"
+msgstr ""
+
+#: ../../../release-features.md:180
+msgid ""
+"[Choose render order for overlapping polygons.](https://github.com/gazebosim/"
+"gz-rendering/pull/188)"
+msgstr ""
+
+#: ../../../release-features.md:181
+msgid "[Light visualization.](https://github.com/gazebosim/gz-sim/issues/193)"
+msgstr ""
+
+#: ../../../release-features.md:182
+msgid ""
+"[Spawn lights from the GUI.](https://github.com/gazebosim/gz-sim/issues/119)"
+msgstr ""
+
+#: ../../../release-features.md:183
+msgid ""
+"[Mecanum wheel controller.](https://github.com/gazebosim/gz-sim/issues/579)"
+msgstr ""
+
+#: ../../../release-features.md:184
+msgid ""
+"[Hydrodynamics.](https://gazebosim.org/api/gazebo/5.0/"
+"classignition_1_1gazebo_1_1systems_1_1Hydrodynamics.html)"
+msgstr ""
+
+#: ../../../release-features.md:185
+msgid "[Ocean currents.](https://github.com/gazebosim/gz-sim/pull/800)"
+msgstr ""
+
+#: ../../../release-features.md:186
+msgid ""
+"[Hook command line tool to binaries instead of libraries.](https://github."
+"com/gazebosim/gz-tools/issues/7)"
+msgstr ""
+
+#: ../../../release-features.md:187
+msgid ""
+"[Heightmap support using Ogre 1 and DART.](https://github.com/gazebosim/gz-"
+"sim/issues/237)"
+msgstr ""
+
+#: ../../../release-features.md:188
+msgid ""
+"[Turn lights on and off.](https://github.com/gazebosim/gz-sim/pull/1343)"
+msgstr ""
+
+#: ../../../release-features.md:189
+msgid ""
+"[Toggle light visualization.](https://github.com/gazebosim/gz-sim/issues/638)"
+msgstr ""
+
+#: ../../../release-features.md:190
+msgid ""
+"[Model photoshoot plugin.](https://github.com/gazebosim/gz-sim/pull/1331)"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools6/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools6/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo5/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo5/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui5/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui5/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch4/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch4/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs7/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs7/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics4/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics4/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering5/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering5/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors5/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors5/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport10/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport10/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf11/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf11/Changelog.md)"
+
+#: ../../../release-features.md:211
+msgid "Dome (EOL)"
+msgstr ""
+
+#: ../../../release-features.md:213
+msgid ""
+"Particle effects on [Gazebo Rendering](https://gazebosim.org/api/"
+"rendering/4.1/particles.html) and [Gazebo Sim](https://github.com/gazebosim/"
+"gz-sim/blob/ign-gazebo4/examples/worlds/particle_emitter.sdf)."
+msgstr ""
+
+#: ../../../release-features.md:214
+msgid "Actor plugins."
+msgstr ""
+
+#: ../../../release-features.md:215
+msgid "Efficient skeleton animations."
+msgstr ""
+
+#: ../../../release-features.md:216
+msgid ""
+"[Optical tactile sensor plugin.](https://community.gazebosim.org/t/gsoc-2020-"
+"ignition-gazebo-optical-tactile-sensor-plugin/618)"
+msgstr ""
+
+#: ../../../release-features.md:217
+msgid ""
+"[Support entity names with spaces.](https://github.com/gazebosim/gz-sim/"
+"issues/239)"
+msgstr ""
+
+#: ../../../release-features.md:218
+msgid "Kinetic energy monitor plugin."
+msgstr ""
+
+#: ../../../release-features.md:219
+msgid ""
+"[Texture-based thermal signature](https://gazebosim.org/api/sensors/4.1/"
+"thermalcameraigngazebo.html) for objects, visible from thermal camera."
+msgstr ""
+
+#: ../../../release-features.md:220
+msgid ""
+"[Web visualization of running simulations](https://gazebosim.org/docs/dome/"
+"web_visualization)."
+msgstr ""
+
+#: ../../../release-features.md:221
+msgid ""
+"[Bullet physics engine.](https://github.com/gazebosim/gz-physics/issues/44)"
+msgstr ""
+
+#: ../../../release-features.md:222
+msgid ""
+"[Parametrized SDF files.](http://sdformat.org/tutorials?"
+"tut=param_passing_proposal)"
+msgstr ""
+
+#: ../../../release-features.md:223
+msgid ""
+"[libSDFormat now uses gz-cmake](https://github.com/gazebosim/sdformat/"
+"issues/181)"
+msgstr ""
+
+#: ../../../release-features.md:224 ../../../release-features.md:337
+msgid "GUI tools:"
+msgstr ""
+
+#: ../../../release-features.md:225
+msgid ""
+"[Plotting](https://community.gazebosim.org/t/gsoc-2020-plotting-tool-for-"
+"ignition/619)"
+msgstr ""
+
+#: ../../../release-features.md:226
+msgid ""
+"[Lidar visualization](https://community.gazebosim.org/t/gsoc-2020-sensor-"
+"data-visualization/638)"
+msgstr ""
+
+#: ../../../release-features.md:227
+msgid ""
+"[Configure physics real time factor and step size.](https://github.com/"
+"gazebosim/gz-sim/pull/536)"
+msgstr ""
+
+#: ../../../release-features.md:228
+msgid ""
+"[Configure lights from the GUI or transport.](https://github.com/gazebosim/"
+"gz-sim/issues/122)"
+msgstr ""
+
+#: ../../../release-features.md:229
+msgid ""
+"[Contact visualization.](https://github.com/gazebosim/gz-sim/issues/234)"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-common/blob/ign-common3/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-common/blob/ign-common3/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools5/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools5/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo4/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo4/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui4/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui4/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch3/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch3/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs6/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs6/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics3/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics3/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering4/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering4/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors4/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors4/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport9/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport9/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf10/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf10/Changelog.md)"
+
+#: ../../../release-features.md:249
+msgid "Citadel (LTS)"
+msgstr ""
+
+#: ../../../release-features.md:251
+msgid "Visual markers."
+msgstr ""
+
+#: ../../../release-features.md:252
+msgid "Animated actors for Ogre 1 and Ogre 2."
+msgstr ""
+
+#: ../../../release-features.md:253
+msgid "Thermal camera sensor."
+msgstr ""
+
+#: ../../../release-features.md:254
+msgid "Emissive texture maps."
+msgstr ""
+
+#: ../../../release-features.md:255
+msgid "SDFormat frame semantics."
+msgstr ""
+
+#: ../../../release-features.md:256
+msgid "Upload and delete models to Fuel from command line."
+msgstr ""
+
+#: ../../../release-features.md:257
+msgid "Buoyancy model."
+msgstr ""
+
+#: ../../../release-features.md:258
+msgid ""
+"[Trivial Physics Engine](https://community.gazebosim.org/t/announcing-new-"
+"physics-engine-tpe-trivial-physics-engine/629)"
+msgstr ""
+
+#: ../../../release-features.md:259
+msgid ""
+"[Tutorial series](https://community.gazebosim.org/t/gsoc-2020-new-ignition-"
+"gazebo-demos/613)."
+msgstr ""
+
+#: ../../../release-features.md:260
+msgid ""
+"[Improved Gazebo Physics documentation.](https://community.gazebosim.org/t/"
+"gsod-2020-ignition-physics-tutorial-and-api-documentation/746)"
+msgstr ""
+
+#: ../../../release-features.md:261
+msgid ""
+"[Custom rendering engines.](https://gazebosim.org/api/rendering/3.2/"
+"renderingplugin.html)"
+msgstr ""
+
+#: ../../../release-features.md:262
+msgid ""
+"[Logical audio sensor and source.](https://gazebosim.org/api/gazebo/3.7/"
+"logicalaudiosensor.html)"
+msgstr ""
+
+#: ../../../release-features.md:263
+msgid ""
+"Lockstepped video recording that can optionally use simulation time instead "
+"of real time."
+msgstr ""
+
+#: ../../../release-features.md:264
+msgid ""
+"[Easier migration of SDF files from Gazebo classic.](https://gazebosim.org/"
+"api/gazebo/3.7/migrationsdf.html)"
+msgstr ""
+
+#: ../../../release-features.md:265
+msgid ""
+"[Binary Windows install through conda-forge.](https://gazebosim.org/docs/"
+"citadel/install_windows)"
+msgstr ""
+
+#: ../../../release-features.md:266
+msgid ""
+"[Restitution coefficient (bouncing).](https://github.com/gazebosim/gz-"
+"physics/pull/139)"
+msgstr ""
+
+#: ../../../release-features.md:267
+msgid ""
+"[Custom retroreflection for objects detected by lidar.](https://github.com/"
+"gazebosim/gz-sim/blob/ign-gazebo3/examples/worlds/"
+"gpu_lidar_retro_values_sensor.sdf)"
+msgstr ""
+
+#: ../../../release-features.md:268
+msgid "[More SDFormat documentation](http://sdformat.org/tutorials)."
+msgstr ""
+
+#: ../../../release-features.md:269
+msgid "Load PBR materials from OBJ."
+msgstr ""
+
+#: ../../../release-features.md:270
+msgid "[Model info CLI.](https://github.com/gazebosim/gz-sim/issues/313)"
+msgstr ""
+
+#: ../../../release-features.md:271
+msgid ""
+"[Test fixture to easily run simulation-based automated tests.](https://"
+"gazebosim.org/api/gazebo/3.9/test_fixture.html)"
+msgstr ""
+
+#: ../../../release-features.md:272
+msgid ""
+"[Drag and drop meshes into the scene.](https://github.com/gazebosim/gz-sim/"
+"pull/939)"
+msgstr ""
+
+#: ../../../release-features.md:273
+msgid "[Tracked vehicles](https://github.com/gazebosim/gz-sim/pull/869)"
+msgstr ""
+
+#: ../../../release-features.md:274
+msgid ""
+"[Python interface for Gazebo Math.](https://github.com/gazebosim/gz-math/"
+"issues/210)"
+msgstr ""
+
+#: ../../../release-features.md:275
+msgid ""
+"[Integration with ros2_control.](https://github.com/gazebosim/"
+"gz_ros2_control/)"
+msgstr ""
+
+#: ../../../release-features.md:276
+msgid ""
+"[gz_ros2_control support for various models](https://github.com/gazbosim/"
+"docs/issues/222)"
+msgstr ""
+
+#: ../../../release-features.md:277
+msgid ""
+"[Polyline extruded 2D geometries](https://github.com/gazebosim/docs/"
+"issues/186)"
+msgstr ""
+
+#: ../../../release-features.md:278
+msgid ""
+"[Apply forces and torques via transport or SDF](https://github.com/gazebosim/"
+"gz-sim/pull/1593)"
+msgstr ""
+
+#: ../../../release-features.md:279
+msgid "New graphical interfaces:"
+msgstr ""
+
+#: ../../../release-features.md:280
+msgid "Widget listing all transport topics."
+msgstr ""
+
+#: ../../../release-features.md:281
+msgid "Widget that publishes keys pressed on the keyboard."
+msgstr ""
+
+#: ../../../release-features.md:282
+msgid "Collision visualization."
+msgstr ""
+
+#: ../../../release-features.md:283
+msgid "[Screenshot widget.](https://gazebosim.org/api/gui/3.5/screenshot.html)"
+msgstr ""
+
+#: ../../../release-features.md:284
+msgid ""
+"[Joint position controller.](https://app.gazebosim.org/OpenRobotics/fuel/"
+"worlds/NAO%20joint%20control)"
+msgstr ""
+
+#: ../../../release-features.md:285
+msgid "[2D teleop widget.](https://github.com/gazebosim/gz-gui/issues/186)"
+msgstr ""
+
+#: ../../../release-features.md:286
+msgid "[3D plot.](https://github.com/gazebosim/gz-sim/issues/231)"
+msgstr ""
+
+#: ../../../release-features.md:287
+msgid "[Notification snackbar](https://github.com/gazebosim/gz-gui/issues/44)"
+msgstr ""
+
+#: ../../../release-features.md:288
+msgid "[Quick start dialog.](https://github.com/gazebosim/gz-sim/issues/1252)"
+msgstr ""
+
+#: ../../../release-features.md:289
+msgid "APIs that make it easier to migrate from Gazebo classic:"
+msgstr ""
+
+#: ../../../release-features.md:290
+msgid "[World](https://gazebosim.org/api/gazebo/3.5/migrationworldapi.html)"
+msgstr ""
+
+#: ../../../release-features.md:291
+msgid "[Model](https://gazebosim.org/api/gazebo/3.5/migrationmodelapi.html)"
+msgstr ""
+
+#: ../../../release-features.md:292
+msgid "[Link](https://gazebosim.org/api/gazebo/3.5/migrationlinkapi.html)"
+msgstr ""
+
+#: ../../../release-features.md:293
+msgid ""
+"[Expose camera calibration parameters.](https://github.com/gazebosim/"
+"sdformat/pull/1088)"
+msgstr ""
+
+#: ../../../release-features.md:294
+msgid ""
+"[Speed up Resource Spawner.](https://github.com/gazebosim/gz-sim/issues/1936)"
+msgstr ""
+
+#: ../../../release-features.md:295
+msgid "[Bash completion](https://github.com/gazebosim/gz-tools/issues/1)"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools4/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools4/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo3/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo3/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui3/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui3/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch2/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch2/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs5/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs5/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics2/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics2/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering3/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering3/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors3/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors3/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport8/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport8/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf9/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf9/Changelog.md)"
+
+#: ../../../release-features.md:315
+msgid "Blueprint (EOL)"
+msgstr ""
+
+#: ../../../release-features.md:317
+msgid ""
+"[Physically based rendering (PBR)](https://en.wikipedia.org/wiki/"
+"Physically_based_rendering) materials."
+msgstr ""
+
+#: ../../../release-features.md:318
+msgid "Air pressure, RGBD and stereo camera sensors."
+msgstr ""
+
+#: ../../../release-features.md:319
+msgid "Global wind model."
+msgstr ""
+
+#: ../../../release-features.md:320
+msgid "Joint state publisher."
+msgstr ""
+
+#: ../../../release-features.md:321
+msgid "Support for UAVs."
+msgstr ""
+
+#: ../../../release-features.md:322
+msgid "Integration of `ign` command line tool into Gazebo Sim."
+msgstr ""
+
+#: ../../../release-features.md:323
+msgid "Logging and playback of simulation state."
+msgstr ""
+
+#: ../../../release-features.md:324
+msgid "Command line tools to control log playback."
+msgstr ""
+
+#: ../../../release-features.md:325
+msgid "Battery model based on vehicle motion and rechargeable batteries."
+msgstr ""
+
+#: ../../../release-features.md:326
+msgid ""
+"Integration of [Google benchmark](https://github.com/google/benchmark) for "
+"performance metrics and analysis."
+msgstr ""
+
+#: ../../../release-features.md:327
+msgid "Tracked vehicle support."
+msgstr ""
+
+#: ../../../release-features.md:328
+msgid "Breadcrumbs plugin."
+msgstr ""
+
+#: ../../../release-features.md:329
+msgid "Position-based PID controller."
+msgstr ""
+
+#: ../../../release-features.md:330
+msgid "Improved resource path handling."
+msgstr ""
+
+#: ../../../release-features.md:331
+msgid "Loading custom physics engine plugins."
+msgstr ""
+
+#: ../../../release-features.md:332
+msgid ""
+"Plugin that publishes a user specified message on an output topic in "
+"response to an input message."
+msgstr ""
+
+#: ../../../release-features.md:333
+msgid "Noise for RGBD camera."
+msgstr ""
+
+#: ../../../release-features.md:334
+msgid "Load worlds from Fuel."
+msgstr ""
+
+#: ../../../release-features.md:335
+msgid ""
+"[Customizable GUI layout](https://gazebosim.org/api/gazebo/3.3/gui_config."
+"html)."
+msgstr ""
+
+#: ../../../release-features.md:336
+msgid ""
+"[Detachable joints](https://gazebosim.org/api/gazebo/4.0/detachablejoints."
+"html)"
+msgstr ""
+
+#: ../../../release-features.md:338
+msgid "GUI tools for model placement, and a new Scene Tree widget."
+msgstr ""
+
+#: ../../../release-features.md:339
+msgid "Translate and rotate models."
+msgstr ""
+
+#: ../../../release-features.md:340
+msgid "Entity tree."
+msgstr ""
+
+#: ../../../release-features.md:341
+msgid "Video recorder."
+msgstr ""
+
+#: ../../../release-features.md:342
+msgid "Move to models."
+msgstr ""
+
+#: ../../../release-features.md:343
+msgid "Follow model."
+msgstr ""
+
+#: ../../../release-features.md:344
+msgid "Delete model."
+msgstr ""
+
+#: ../../../release-features.md:345
+msgid "Grid."
+msgstr ""
+
+#: ../../../release-features.md:346
+msgid "Drag-and-drop models from Fuel to Gazebo Sim UI."
+msgstr ""
+
+#: ../../../release-features.md:347
+msgid "Preset view angles."
+msgstr ""
+
+#: ../../../release-features.md:348
+msgid "Hotkeys for transform modes and snapping."
+msgstr ""
+
+#: ../../../release-features.md:349
+msgid "Entity selection."
+msgstr ""
+
+#: ../../../release-features.md:350
+msgid ""
+"[Align models](https://gazebosim.org/docs/dome/manipulating_models#align-"
+"tool)."
+msgstr ""
+
+#: ../../../release-features.md:351
+msgid "Insert simple shapes."
+msgstr ""
+
+#: ../../../release-features.md:352
+msgid "Insert models from online sources and local directories."
+msgstr ""
+
+#: ../../../release-features.md:353
+msgid "Log playback scrubber."
+msgstr ""
+
+#: ../../../release-features.md:354
+msgid "Save worlds."
+msgstr ""
+
+#: ../../../release-features.md:355
+msgid "Tape measure."
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools3/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-fuel-tools/blob/ign-fuel-tools3/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo2/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo2/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-gui/blob/ign-gui2/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-gui/blob/ign-gui2/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/ign-launch1/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-launch/blob/ign-launch1/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs4/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs4/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-physics/blob/ign-physics1/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-physics/blob/ign-physics1/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-rendering/blob/ign-rendering2/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-rendering/blob/ign-rendering2/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors2/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors2/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "0.x"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools0/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-tools/blob/ign-tools0/Changelog."
+"md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport7/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport7/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "[Changelog](https://github.com/osrf/sdformat/blob/sdf8/Changelog.md)"
+msgstr "[變更日誌](https://github.com/osrf/sdformat/blob/sdf8/Changelog.md)"
+
+#: ../../../release-features.md:375
+msgid "Acropolis (EOL)"
+msgstr ""
+
+#: ../../../release-features.md:377
+msgid ""
+"The first major release of Gazebo focused on the basics of simulation. The "
+"basics primarily encompassed integration of physics, sensors, graphical "
+"tools, and programmatic interfaces."
+msgstr ""
+
+#: ../../../release-features.md:379
+msgid ""
+"Support for [DART](https://dartsim.github.io/) in [Gazebo Physics](/libs/"
+"physics){.external}."
+msgstr ""
+
+#: ../../../release-features.md:380
+msgid ""
+"Ogre1.9 and Ogre2.1 support in [Gazebo Rendering](/libs/rendering){.external}"
+msgstr ""
+
+#: ../../../release-features.md:381
+msgid ""
+"[Entity Component System](https://en.wikipedia.org/wiki/"
+"Entity_component_system) based simulation engine in [Gazebo Sim](/libs/"
+"gazebo){.external}."
+msgstr ""
+
+#: ../../../release-features.md:382
+msgid ""
+"A sensor suite that includes contact sensor, logical camera, monocular "
+"camera, depth camera, LIDAR, magnetometer, altimeter, and IMU is available "
+"through [Gazebo Sensors](/libs/sensors){.external} and [Gazebo Sim](/libs/"
+"gazebo){.external}."
+msgstr ""
+
+#: ../../../release-features.md:383
+msgid ""
+"[Launch system](/libs/launch){.external} capable of running and managing a "
+"set of plugins and executables."
+msgstr ""
+
+#: ../../../release-features.md:384
+msgid ""
+"Cloud-hosted simulation assets provided by [app.gazebosim.org](https://app."
+"gazebosim.org)."
+msgstr ""
+
+#: ../../../release-features.md:385
+msgid "Distributed simulation using lock-stepping."
+msgstr ""
+
+#: ../../../release-features.md:386
+msgid ""
+"Dynamic loading/unloading of simulation models based on the location of "
+"performer, usually a robot."
+msgstr ""
+
+#: ../../../release-features.md:387
+msgid "Simulation state logging."
+msgstr ""
+
+#: ../../../release-features.md:388
+msgid ""
+"Plugin-based GUI system based on [QtQuick](https://en.wikipedia.org/wiki/"
+"Qt_Quick) and [Material Design](https://material.io/design/). Available "
+"plugins include 3D scene viewer, image viewer, topic echo, topic publisher, "
+"world control, and world statistics."
+msgstr ""
+
+#: ../../../release-features.md:392
+msgid ""
+"The Acropolis collection is composed by many different Gazebo libraries. The "
+"collection assures that all libraries all compatible and can be used "
+"together."
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo1/Changelog."
+"md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sim/blob/ign-gazebo1/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid "None"
+msgstr ""
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-msgs/blob/ign-msgs3/Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-msgs/blob/ign-msgs3/Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-sensors/blob/ign-sensors1/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-sensors/blob/ign-sensors1/"
+"Changelog.md)"
+
+#: ../../../release-features.md:0
+msgid ""
+"[Changelog](https://github.com/gazebosim/gz-transport/blob/ign-transport6/"
+"Changelog.md)"
+msgstr ""
+"[變更日誌](https://github.com/gazebosim/gz-transport/blob/ign-transport6/"
+"Changelog.md)"
+
+#: ../../../release-features.md:84
+msgid ""
+"All the functionality for creating custom rendering sensors is in Garden, "
+"but the PR listed, which serves as an example, is only available in Harmonic."
+msgstr ""
