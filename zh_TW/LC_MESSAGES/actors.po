@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo rotary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../actors.md:1 ../../../actors.md:8
+msgid "Actors"
+msgstr ""
+
+#: ../../../actors.md:3
+msgid ""
+"In this tutorial we will learn how to add `actors` to our world and how to "
+"create a scripted animation. You can find the final world of this tutorial "
+"[here](https://github.com/gazebosim/docs/blob/master/rotary/tutorials/actors/"
+"actor_demo.sdf)."
+msgstr ""
+
+#: ../../../actors.md:6
+msgid ""
+"Animations are very useful if we want to have entities following a "
+"predefined path in simulation without being affected by the physics. This "
+"means that they won't fall due to gravity or collide with other objects. "
+"They will however, have a 3D visualization which can be seen by RGB cameras, "
+"and 3D meshes which can be detected by GPU based sensors. The tutorial "
+"explains how to create open-loop trajectories which don't interact with the "
+"rest of the simulation."
+msgstr ""
+
+#: ../../../actors.md:10
+msgid "In Gazebo Sim, an animated model is called an `actor`."
+msgstr ""
+
+#: ../../../actors.md:12
+msgid ""
+"There are two types of animations which can be used separately or combined "
+"together:"
+msgstr ""
+
+#: ../../../actors.md:14
+msgid ""
+"Skeleton animation, which is relative motion between links in one model:"
+msgstr ""
+
+#: ../../../actors.md:16
+msgid "![skeleton_movement](tutorials/actors/skeleton_movement.gif)"
+msgstr ""
+
+#: ../../../actors.md:16
+msgid "skeleton_movement"
+msgstr ""
+
+#: ../../../actors.md:18
+msgid ""
+"Trajectory animation, which carries all of the actor's links around the "
+"world as one group along a trajectory:"
+msgstr ""
+
+#: ../../../actors.md:20
+msgid "![trajectory_movement](tutorials/actors/trajectory_movement.gif)"
+msgstr ""
+
+#: ../../../actors.md:20
+msgid "trajectory_movement"
+msgstr ""
+
+#: ../../../actors.md:22
+msgid "Combined, to achieve a skeleton animation which moves in the world:"
+msgstr ""
+
+#: ../../../actors.md:24
+msgid "![combined_movement](tutorials/actors/combined_movement.gif)"
+msgstr ""
+
+#: ../../../actors.md:24
+msgid "combined_movement"
+msgstr ""
+
+#: ../../../actors.md:26
+msgid "Actors have the following properties:"
+msgstr ""
+
+#: ../../../actors.md:28
+msgid ""
+"No forces are applied on them, be it from gravity or contact or anything else"
+msgstr ""
+
+#: ../../../actors.md:29
+msgid ""
+"Actors support skeleton animation imported from COLLADA (.dae) and BVH (."
+"bvh) files."
+msgstr ""
+
+#: ../../../actors.md:30
+msgid "Actors can have trajectories scripted directly in SDF."
+msgstr ""
+
+#: ../../../actors.md:32
+msgid ""
+"You can check out the full specification for the `<actor>` SDF element [here]"
+"(http://sdformat.org/spec?ver=1.8&elem=actor)."
+msgstr ""
+
+#: ../../../actors.md:35
+msgid "Skeleton"
+msgstr ""
+
+#: ../../../actors.md:37
+msgid ""
+"Gazebo Sim supports two different skeleton animation file formats: COLLADA (."
+"dae) and Biovision Hierarchy (.bvh)."
+msgstr ""
+
+#: ../../../actors.md:39
+msgid ""
+"Open any world, [empty.sdf](https://raw.githubusercontent.com/gazebosim/gz-"
+"sim/main/examples/worlds/empty.sdf) world for example, and add an actor "
+"called `actor_walking` as follows:"
+msgstr ""
+
+#: ../../../actors.md:42
+msgid ""
+"<actor name=\"actor_walking\">\n"
+"    <skin>\n"
+"        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/"
+"files/meshes/walk.dae</filename>\n"
+"        <scale>1.0</scale>\n"
+"    </skin>\n"
+"    <animation name=\"walk\">\n"
+"        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/"
+"files/meshes/walk.dae</filename>\n"
+"        <interpolate_x>true</interpolate_x>\n"
+"    </animation>\n"
+"</actor>\n"
+msgstr ""
+
+#: ../../../actors.md:55
+msgid "Skin"
+msgstr ""
+
+#: ../../../actors.md:57
+msgid ""
+"In the `<skin>` tag we just loaded a COLLADA file `walk.dae` which specifies "
+"how our actor will look. When a COLLADA file is used within the `<skin>` "
+"tags its animation is loaded. The `<scale>` scales the skin's size."
+msgstr ""
+
+#: ../../../actors.md:59
+msgid "Animation"
+msgstr ""
+
+#: ../../../actors.md:61
+msgid ""
+"In the `<animation>` tag we specify how our actor will move using the "
+"`<filename>` tag. `<interpolate_x>` is used to interpolate the animation "
+"within waypoints while following trajectory. Setting it as true allows for a "
+"more realistic and smooth animation. We can combine different skins with "
+"different animations as long as they have compatible skeletons. Now run the "
+"world and we should see our model moving."
+msgstr ""
+
+#: ../../../actors.md:63
+msgid "![actor loaded with skin tag](tutorials/actors/actor_skin.gif)"
+msgstr ""
+
+#: ../../../actors.md:63
+msgid "actor loaded with skin tag"
+msgstr ""
+
+#: ../../../actors.md:65
+msgid ""
+"**Note**: You can find many actors and models on [Gazebo Fuel](https://app."
+"gazebosim.org/fuel)."
+msgstr ""
+
+#: ../../../actors.md:67
+msgid "Scripted trajectory"
+msgstr ""
+
+#: ../../../actors.md:69
+msgid ""
+"This is the high level animation of actors, which consists of specifying a "
+"series of poses to be reached at specific times. Gazebo Sim takes care of "
+"interpolating the motion between them so the movement is fluid."
+msgstr ""
+
+#: ../../../actors.md:71
+msgid ""
+"Animations that have displacement on the X axis, like `walk.dae`, will have "
+"the skeleton animated while following a trajectory. But for animations that "
+"don't, such as `talk_b.dae`, their skeletons won't move if there's a "
+"trajectory."
+msgstr ""
+
+#: ../../../actors.md:73
+msgid ""
+"We can make our actor follow the specified trajectory forever and start "
+"playing as soon as the world is loaded as follows:"
+msgstr ""
+
+#: ../../../actors.md:75
+msgid ""
+"    <script>\n"
+"        <loop>true</loop>\n"
+"        <delay_start>0.000000</delay_start>\n"
+"        <auto_start>true</auto_start>\n"
+msgstr ""
+
+#: ../../../actors.md:82
+msgid "The script is defined between the `<actor>` `</actor>` tags."
+msgstr ""
+
+#: ../../../actors.md:84
+msgid "Inside the `<script>` tag the following parameters are available:"
+msgstr ""
+
+#: ../../../actors.md:86
+msgid ""
+"`loop`: Set this to true for the script to be repeated in a loop. For a "
+"fluid continuous motion, make sure the last waypoint matches the first one, "
+"as we will do."
+msgstr ""
+
+#: ../../../actors.md:88
+msgid ""
+"`delay_start`: This is the time in seconds to wait before starting the "
+"script. If running in a loop, this time will be waited before starting each "
+"cycle."
+msgstr ""
+
+#: ../../../actors.md:90
+msgid ""
+"`auto_start`: Set to true if the animation should start as soon as the "
+"simulation starts playing. It is useful to set this to false if the "
+"animation should start playing only when triggered by a plugin, for example."
+msgstr ""
+
+#: ../../../actors.md:92
+msgid "Let's define the trajectory as a sequence of waypoints:"
+msgstr ""
+
+#: ../../../actors.md:94
+msgid ""
+"        <trajectory id=\"0\" type=\"walk\" tension=\"0.6\">\n"
+"            <waypoint>\n"
+"                <time>0</time>\n"
+"                <pose>0 0 1.0 0 0 0</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>2</time>\n"
+"                <pose>2.0 0 1.0 0 0 0</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>2.5</time>\n"
+"                <pose>2 0 1.0 0 0 1.57</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>4</time>\n"
+"                <pose>2 2 1.0 0 0 1.57</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>4.5</time>\n"
+"                <pose>2 2 1.0 0 0 3.142</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>6</time>\n"
+"                <pose>0 2 1 0 0 3.142</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>6.5</time>\n"
+"                <pose>0 2 1 0 0 -1.57</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>8</time>\n"
+"                <pose>0 0 1.0 0 0 -1.57</pose>\n"
+"            </waypoint>\n"
+"            <waypoint>\n"
+"                <time>8.5</time>\n"
+"                <pose>0 0 1.0 0 0 0</pose>\n"
+"            </waypoint>\n"
+"        </trajectory>\n"
+"    </script>\n"
+msgstr ""
+
+#: ../../../actors.md:136
+msgid ""
+"Within the `<trajectory>` tag we define a series of waypoints which our "
+"actor will follow. The `<trajectory>` has three attributes: `id`, `type`, "
+"and `tension`. The `type` should have the same name as the value specified "
+"in `name` attribute of the `<animation>` tag. Therefore, in this case it is "
+"specified as `walk`. The `tension` parameter is used to control how closely "
+"the trajectory will stick to the given waypoints. The default `tension` "
+"value is zero, which equates to a Catmull-Rom spline, which may cause the "
+"animation to overshoot waypoints. A `tension` value of one will cause the "
+"animation to stick to the waypoints. The `tension` value should be in the "
+"range 0 to 1."
+msgstr ""
+
+#: ../../../actors.md:138
+msgid "Under the `trajectory` tag we define the following:"
+msgstr ""
+
+#: ../../../actors.md:140
+msgid ""
+"`waypoint`: There can be any number of waypoints in a trajectory. Each "
+"waypoint consists of a time and a pose:"
+msgstr ""
+
+#: ../../../actors.md:141
+msgid ""
+"`time`: The time in seconds, counted from the beginning of the script, when "
+"the pose should be reached."
+msgstr ""
+
+#: ../../../actors.md:142
+msgid ""
+"`pose`: The pose which should be reached with respect to the initial actor "
+"pose."
+msgstr ""
+
+#: ../../../actors.md:144
+msgid ""
+"Run the world and we should see our actor moving in a square following the "
+"waypoints."
+msgstr ""
+
+#: ../../../actors.md:146
+msgid "![actor_moving around](tutorials/actors/actor_demo.gif)"
+msgstr ""
+
+#: ../../../actors.md:146
+msgid "actor_moving around"
+msgstr ""
+
+#: ../../../actors.md:148
+msgid "**Notes**:"
+msgstr ""
+
+#: ../../../actors.md:150
+msgid ""
+"The order in which waypoints are defined is not important, they will follow "
+"the given times."
+msgstr ""
+
+#: ../../../actors.md:151
+msgid ""
+"The trajectory is smoothed as a whole. This means that you'll get a fluid "
+"motion, but the exact poses contained in the waypoints might not be reached."
+msgstr ""
+
+#: ../../../actors.md:153
+msgid "Now it's your turn! Try out different trajectory descriptions."
+msgstr ""
+
+#: ../../../actors.md:155
+msgid "Video walk-through"
+msgstr ""
+
+#: ../../../actors.md:157
+msgid ""
+"A video walk-through of this tutorial is available from our YouTube channel: "
+"[Gazebo tutorials: Animated human actors](https://youtu.be/1VZexw67a2o)"
+msgstr ""
+
+#: ../../../actors.md:159
+msgid ""
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/"
+"embed/1VZexw67a2o\" frameborder=\"0\" allow=\"accelerometer; autoplay; "
+"encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+msgstr ""
