@@ -1,0 +1,594 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../sdf_worlds.md:1
+msgid "SDF worlds"
+msgstr ""
+
+#: ../../../sdf_worlds.md:3
+msgid ""
+"In this tutorial we will learn how to build our world using SDF, and how to "
+"add models to it. Open your text editor and add code as you follow along "
+"with this tutorial. You can also download the finished world for this "
+"tutorial from [here](https://github.com/ignitionrobotics/docs/blob/master/"
+"fortress/tutorials/sdf_worlds/world_demo.sdf)."
+msgstr ""
+
+#: ../../../sdf_worlds.md:5
+msgid "Defining a world"
+msgstr ""
+
+#: ../../../sdf_worlds.md:7
+msgid "Every SDF world starts with these tags."
+msgstr ""
+
+#: ../../../sdf_worlds.md:9
+msgid ""
+"<?xml version=\"1.0\" ?>\n"
+"<sdf version=\"1.8\">\n"
+"    <world name=\"world_demo\">\n"
+"    ...\n"
+"    ...\n"
+"    </world>\n"
+"</sdf>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:19
+msgid ""
+"The first two tags define the version of the `XML` and the `SDF`. Then we "
+"have the `<world> </world>` tags between which everything goes."
+msgstr ""
+
+#: ../../../sdf_worlds.md:21
+msgid "Physics"
+msgstr ""
+
+#: ../../../sdf_worlds.md:23
+msgid ""
+"<physics name=\"1ms\" type=\"ignored\">\n"
+"    <max_step_size>0.001</max_step_size>\n"
+"    <real_time_factor>1.0</real_time_factor>\n"
+"</physics>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:30
+msgid ""
+"The physics tag specifies the type and properties of the dynamic engine. We "
+"chose the `name` `1ms` as the step size is 1 millisecond. The `type` is the "
+"type of the dynamic engine (physics library). There are options like, Ode, "
+"Bullet, Simbody and Dart. We set it to `ignored`, as choosing the type of "
+"the physics engine is not done through this tag yet."
+msgstr ""
+
+#: ../../../sdf_worlds.md:32
+msgid ""
+"`<max_step_size>` is the maximum time at which every system in simulation "
+"can interact with the states of the world. The smaller the value, the more "
+"accurate your calculations, but more computation power is needed. "
+"`<real_time_factor>` is the ratio of simulation time to real time."
+msgstr ""
+
+#: ../../../sdf_worlds.md:35
+msgid "Plugins"
+msgstr ""
+
+#: ../../../sdf_worlds.md:37
+msgid "Plugins are a dynamically loaded chunk of code. For example:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:39
+msgid ""
+"<plugin\n"
+"    filename=\"libignition-gazebo-physics-system.so\"\n"
+"    name=\"ignition::gazebo::systems::Physics\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:46
+msgid ""
+"The `Physics` plugin is very important for simulating the dynamics of the "
+"world."
+msgstr ""
+
+#: ../../../sdf_worlds.md:48
+msgid ""
+"<plugin\n"
+"    filename=\"libignition-gazebo-user-commands-system.so\"\n"
+"    name=\"ignition::gazebo::systems::UserCommands\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:55
+msgid ""
+"The `UserCommands` plugin is responsible for creating models, moving models, "
+"deleting them and many other user commands."
+msgstr ""
+
+#: ../../../sdf_worlds.md:57
+msgid ""
+"<plugin\n"
+"    filename=\"libignition-gazebo-scene-broadcaster-system.so\"\n"
+"    name=\"ignition::gazebo::systems::SceneBroadcaster\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:64
+msgid "`SceneBroadcaster` shows our world scene."
+msgstr ""
+
+#: ../../../sdf_worlds.md:66
+msgid "GUI"
+msgstr ""
+
+#: ../../../sdf_worlds.md:68
+msgid ""
+"Now let's define the GUI. Under the `<gui>` tag we specify anything related "
+"to the `GUI` of Ignition."
+msgstr ""
+
+#: ../../../sdf_worlds.md:70
+msgid ""
+"<gui fullscreen=\"0\">\n"
+"    ...\n"
+"    ...\n"
+"</gui>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:77
+msgid ""
+"[ignition-gui](https://github.com/gazebosim/gz-gui/) has a bunch of plugins "
+"to choose from. We will add the ones that are necessary to get our world up "
+"and running with basic functionality."
+msgstr ""
+
+#: ../../../sdf_worlds.md:79
+msgid "Minimal Scene and GzSceneManager plugins"
+msgstr ""
+
+#: ../../../sdf_worlds.md:81
+msgid ""
+"<!-- 3D scene -->\n"
+"<plugin filename=\"MinimalScene\" name=\"3D View\">\n"
+"  <gz-gui>\n"
+"    <title>3D View</title>\n"
+"    <property type=\"bool\" key=\"showTitleBar\">false</property>\n"
+"    <property type=\"string\" key=\"state\">docked</property>\n"
+"  </gz-gui>\n"
+"\n"
+"  <engine>ogre2</engine>\n"
+"  <scene>scene</scene>\n"
+"  <ambient_light>0.4 0.4 0.4</ambient_light>\n"
+"  <background_color>0.8 0.8 0.8</background_color>\n"
+"  <camera_pose>-6 0 6 0 0.5 0</camera_pose>\n"
+"  <camera_clip>\n"
+"    <near>0.25</near>\n"
+"    <far>25000</far>\n"
+"  </camera_clip>\n"
+"</plugin>\n"
+"<plugin filename=\"GzSceneManager\" name=\"Scene Manager\">\n"
+"  <gz-gui>\n"
+"    <property key=\"resizable\" type=\"bool\">false</property>\n"
+"    <property key=\"width\" type=\"double\">5</property>\n"
+"    <property key=\"height\" type=\"double\">5</property>\n"
+"    <property key=\"state\" type=\"string\">floating</property>\n"
+"    <property key=\"showTitleBar\" type=\"bool\">false</property>\n"
+"  </gz-gui>\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:111
+msgid ""
+"The `GzScene3D` plugin is deprecated, from Fortress `MinimalScene` and "
+"`GzSceneManager` are responsible for displaying the 3D scene of our world. "
+"It has the following properties (most of the GUI plugins have them):"
+msgstr ""
+
+#: ../../../sdf_worlds.md:114
+msgid ""
+"`showTitleBar` if true it will show the blue title bar over the plugin with "
+"the name mentioned in the `<title>` tag."
+msgstr ""
+
+#: ../../../sdf_worlds.md:115
+msgid ""
+"`state` is the state of the plugin it can be docked in its place using "
+"`docked` or it can be `floating`."
+msgstr ""
+
+#: ../../../sdf_worlds.md:117
+msgid ""
+"For the rendering engine we can choose `ogre` or `ogre2`. The "
+"`<ambient_light>` and the `<background_color>` specify the ambient and the "
+"background color of the scene. `<camera_pose>` specifies the `X Y Z` "
+"position of the camera followed by its rotation in `Roll Pitch Yaw`."
+msgstr ""
+
+#: ../../../sdf_worlds.md:119
+msgid "World control plugin"
+msgstr ""
+
+#: ../../../sdf_worlds.md:121
+msgid ""
+"<!-- World control -->\n"
+"<plugin filename=\"WorldControl\" name=\"World control\">\n"
+"    <ignition-gui>\n"
+"        <title>World control</title>\n"
+"        <property type=\"bool\" key=\"showTitleBar\">false</property>\n"
+"        <property type=\"bool\" key=\"resizable\">false</property>\n"
+"        <property type=\"double\" key=\"height\">72</property>\n"
+"        <property type=\"double\" key=\"width\">121</property>\n"
+"        <property type=\"double\" key=\"z\">1</property>\n"
+"\n"
+"        <property type=\"string\" key=\"state\">floating</property>\n"
+"        <anchors target=\"3D View\">\n"
+"        <line own=\"left\" target=\"left\"/>\n"
+"        <line own=\"bottom\" target=\"bottom\"/>\n"
+"        </anchors>\n"
+"    </ignition-gui>\n"
+"\n"
+"    <play_pause>true</play_pause>\n"
+"    <step>true</step>\n"
+"    <start_paused>true</start_paused>\n"
+"    <service>/world/world_demo/control</service>\n"
+"    <stats_topic>/world/world_demo/stats</stats_topic>\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:147
+msgid ""
+"The `World control` plugin is responsible for controlling the world. Some of "
+"its properties are the following:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:149
+msgid ""
+"`<play_pause>` if `true` we will have the play-pause button on the bottom "
+"left corner."
+msgstr ""
+
+#: ../../../sdf_worlds.md:150
+msgid ""
+"`<stats_topic>` tag specifies the topic at which the world stats like "
+"simulation time and real time are published on."
+msgstr ""
+
+#: ../../../sdf_worlds.md:151
+msgid ""
+"`<start_paused>` if `true` the simulation will be paused at the start of "
+"Ignition."
+msgstr ""
+
+#: ../../../sdf_worlds.md:153
+msgid "World stats plugin"
+msgstr ""
+
+#: ../../../sdf_worlds.md:155
+msgid ""
+"<!-- World statistics -->\n"
+"<plugin filename=\"WorldStats\" name=\"World stats\">\n"
+"    <ignition-gui>\n"
+"        <title>World stats</title>\n"
+"        <property type=\"bool\" key=\"showTitleBar\">false</property>\n"
+"        <property type=\"bool\" key=\"resizable\">false</property>\n"
+"        <property type=\"double\" key=\"height\">110</property>\n"
+"        <property type=\"double\" key=\"width\">290</property>\n"
+"        <property type=\"double\" key=\"z\">1</property>\n"
+"\n"
+"        <property type=\"string\" key=\"state\">floating</property>\n"
+"        <anchors target=\"3D View\">\n"
+"        <line own=\"right\" target=\"right\"/>\n"
+"        <line own=\"bottom\" target=\"bottom\"/>\n"
+"        </anchors>\n"
+"    </ignition-gui>\n"
+"\n"
+"    <sim_time>true</sim_time>\n"
+"    <real_time>true</real_time>\n"
+"    <real_time_factor>true</real_time_factor>\n"
+"    <iterations>true</iterations>\n"
+"    <topic>/world/world_demo/stats</topic>\n"
+"\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:182
+msgid ""
+"The `World stats` plugin is responsible for displaying the world statistics, "
+"`<sim_time>`, `<real_time>`, `<real_time_factor>` and `<iterations>`."
+msgstr ""
+
+#: ../../../sdf_worlds.md:185
+msgid ""
+"With these tags we can choose what values to display (expand the bottom "
+"right corner to see these values). We can choose which `<topic>` these "
+"values will be published on. Let's try to run the world and listen to that "
+"topic."
+msgstr ""
+
+#: ../../../sdf_worlds.md:187
+msgid "Run the world:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:189 ../../../sdf_worlds.md:292
+msgid "`ign gazebo world_demo.sdf`"
+msgstr ""
+
+#: ../../../sdf_worlds.md:191
+msgid "Press the play button and in another terminal listen to the messages:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:193
+msgid "`ign topic -e -t /world/world_demo/stats`"
+msgstr ""
+
+#: ../../../sdf_worlds.md:195
+msgid "The message should look like this:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:197
+msgid "![world_shapes_stats](tutorials/sdf_worlds/world_stats.png)"
+msgstr ""
+
+#: ../../../sdf_worlds.md:197
+msgid "world_shapes_stats"
+msgstr ""
+
+#: ../../../sdf_worlds.md:199
+msgid "Entity tree"
+msgstr ""
+
+#: ../../../sdf_worlds.md:201
+msgid ""
+"<!-- Entity tree -->\n"
+"<plugin filename=\"EntityTree\" name=\"Entity tree\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:207
+msgid ""
+"In this plugin we can see all the entities of our world (everything in "
+"simulation is considered an \"entity\"). We can see the different models, "
+"sun and also their links, visuals and collisions."
+msgstr ""
+
+#: ../../../sdf_worlds.md:209
+msgid "![Entity tree plugin](tutorials/sdf_worlds/entity_tree.png)"
+msgstr ""
+
+#: ../../../sdf_worlds.md:209
+msgid "Entity tree plugin"
+msgstr ""
+
+#: ../../../sdf_worlds.md:211
+msgid "It is blank because we didn't add anything to our world yet."
+msgstr ""
+
+#: ../../../sdf_worlds.md:213
+msgid ""
+"There are a bunch of useful ignition-gui plugins like the `Transform "
+"control` plugin that allows us to manipulate different components of our "
+"world, and translate and rotate the entities. Check out this [tutorial]"
+"(manipulating_models) explaining how to manipulate models."
+msgstr ""
+
+#: ../../../sdf_worlds.md:215
+msgid ""
+"The plugins can also be added from the GUI using the plugin drop-down menu "
+"in the top right corner of Ignition. Now that we are done with the GUI, "
+"let's add different elements to our world. **Don't** forget to add the "
+"closing tag `</gui>`."
+msgstr ""
+
+#: ../../../sdf_worlds.md:217
+msgid "Light"
+msgstr ""
+
+#: ../../../sdf_worlds.md:219
+msgid ""
+"<light type=\"directional\" name=\"sun\">\n"
+"    <cast_shadows>true</cast_shadows>\n"
+"    <pose>0 0 10 0 0 0</pose>\n"
+"    <diffuse>0.8 0.8 0.8 1</diffuse>\n"
+"    <specular>0.2 0.2 0.2 1</specular>\n"
+"    <attenuation>\n"
+"        <range>1000</range>\n"
+"        <constant>0.9</constant>\n"
+"        <linear>0.01</linear>\n"
+"        <quadratic>0.001</quadratic>\n"
+"    </attenuation>\n"
+"    <direction>-0.5 0.1 -0.9</direction>\n"
+"</light>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:235
+msgid ""
+"`<light>` specifies the light source in the world. The `<type>` of the light "
+"can be `point`, `directional` or `spot`."
+msgstr ""
+
+#: ../../../sdf_worlds.md:236
+msgid ""
+"`<pose>` is the position (x,y,z) and orientation (roll, pitch, yaw) of the "
+"light element with respect to the frame mentioned in the `relative_to "
+"attribute`; in our case (`relative_to` attribute is ignored) it is relative "
+"to the world."
+msgstr ""
+
+#: ../../../sdf_worlds.md:237
+msgid ""
+"`<cast_shadows>` when true the light will cast shadows. `<diffuse>` and "
+"`<specular>` are the diffuse and specular light color."
+msgstr ""
+
+#: ../../../sdf_worlds.md:238
+msgid "`<attenuation>` specifies the light attenuation properties, which are:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:240
+msgid "`<range>` is range of light."
+msgstr ""
+
+#: ../../../sdf_worlds.md:241
+msgid ""
+"`<constant>` is the constant attenuation factor, `1` never attenuate and `0` "
+"complete attenuation."
+msgstr ""
+
+#: ../../../sdf_worlds.md:242
+msgid ""
+"`<linear>` is the linear attenuation factor, `1` means attenuate evenly over "
+"the distance."
+msgstr ""
+
+#: ../../../sdf_worlds.md:243
+msgid ""
+"`<quadratic>` is the quadratic attenuation factor. It adds curvature to the "
+"attenuation."
+msgstr ""
+
+#: ../../../sdf_worlds.md:244
+msgid ""
+"`<direction>` is direction of the light, only applicable to spot and "
+"directional light."
+msgstr ""
+
+#: ../../../sdf_worlds.md:246
+msgid "Adding models"
+msgstr ""
+
+#: ../../../sdf_worlds.md:248
+msgid ""
+"Instead of building our own models we can use already built ones. [Ignition "
+"Fuel](https://app.gazebosim.org/fuel) hosts hundreds of models that can "
+"easily be added to an Ignition world. Models can be added as follows."
+msgstr ""
+
+#: ../../../sdf_worlds.md:250
+msgid "Spawning a model"
+msgstr ""
+
+#: ../../../sdf_worlds.md:252
+msgid ""
+"For adding various models from fuel to your world checkout this [tutorial]"
+"(fuel_insert)."
+msgstr ""
+
+#: ../../../sdf_worlds.md:254
+msgid "Include the model URI"
+msgstr ""
+
+#: ../../../sdf_worlds.md:256
+msgid ""
+"Another way of adding the model to your world is to use the model link. "
+"Visit the [Ignition Fuel website](https://app.gazebosim.org/fuel). Choose "
+"the model you like and click on the `<>` icon on the model description page. "
+"This will copy an SDF snippet to your clipboard, then paste it in your world "
+"right above the closing `</world>` tag, like this:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:258
+msgid ""
+"<include>\n"
+"    <uri>\n"
+"    https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke\n"
+"    </uri>\n"
+"</include>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:266
+msgid "Download the model"
+msgstr ""
+
+#: ../../../sdf_worlds.md:268
+msgid ""
+"The previous methods download your model on run time. For saving the model "
+"permanently you can download the model from fuel, and then refer to it like "
+"this:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:270
+msgid ""
+"<include>\n"
+"    <uri>\n"
+"    model://Coke\n"
+"    </uri>\n"
+"</include>\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:278
+msgid ""
+"We need to set `IGN_GAZEBO_RESOURCE_PATH` environment variable to the parent "
+"folder of our model. For example, if our directory looks like this:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:280
+msgid ""
+"world_tutorial<br/>\n"
+"├── Coke <br/>\n"
+"└── world_demo.sdf\n"
+msgstr ""
+
+#: ../../../sdf_worlds.md:286
+msgid "Then we have to set it to the `world_tutorial` directory, like this:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:288
+msgid "`export IGN_GAZEBO_RESOURCE_PATH=\"$HOME/world_tutorial\"`"
+msgstr ""
+
+#: ../../../sdf_worlds.md:290
+msgid "Run your world:"
+msgstr ""
+
+#: ../../../sdf_worlds.md:294
+msgid ""
+"You should see the model in the origin of the world. You can also set its "
+"coordinates using the `<pose>`tag."
+msgstr ""
+
+#: ../../../sdf_worlds.md:296
+msgid "![world with can](tutorials/sdf_worlds/coke_world.png)"
+msgstr ""
+
+#: ../../../sdf_worlds.md:296
+msgid "world with can"
+msgstr ""
+
+#: ../../../sdf_worlds.md:298
+msgid ""
+"Now that you have a custom world, the [next tutorial](sensors) will teach "
+"you how to add sensors to a robot to allow it to interact with the world "
+"around it."
+msgstr ""
+
+#: ../../../sdf_worlds.md:300
+msgid "Video walk-through"
+msgstr ""
+
+#: ../../../sdf_worlds.md:302
+msgid ""
+"A video walk-through of this tutorial is available from our YouTube channel: "
+"[Ignition tutorials: Creating worlds](https://youtu.be/48TX-XJ14Gs)."
+msgstr ""
+
+#: ../../../sdf_worlds.md:304
+msgid ""
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/"
+"embed/48TX-XJ14Gs\" frameborder=\"0\" allow=\"accelerometer; autoplay; "
+"encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+msgstr ""

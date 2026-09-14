@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../fuel_content_deletion_policy.md:1
+msgid "Content Deletion Policy"
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:3
+msgid ""
+"This section describes our policy for deleting content, such as simulation "
+"models, that you have added to this web service. This does not cover account "
+"deletion, or deletion of inappropriate content."
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:7
+msgid ""
+"We place few restrictions when adding content to this service, however "
+"deletion of content can cause downstream harm. For example, another user or "
+"organization may depend on a model you have added. Deletion of your model "
+"can then lead to breaking changes. We adhere to the following rules in order "
+"to strike a balance between content deletion and the needs of other users."
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:13
+msgid ""
+"You can delete any content that you have created and uploaded, but the "
+"content will remain in a soft-deleted state for one month."
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:14
+msgid ""
+"**Soft-delete** Is when content is marked as deleted, but remains available "
+"for download."
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:15
+msgid ""
+"Users who have a dependency on your deleted content will be notified of the "
+"deletion."
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:16
+msgid "Content will be permanently removed after the soft-delete period."
+msgstr ""
+
+#: ../../../fuel_content_deletion_policy.md:18
+msgid ""
+"This policy provides time for users to copy content that is in the public "
+"domain, or make other arrangements before data is deleted. For additional "
+"help, please contact gazebo+support@openrobotics.org."
+msgstr ""
