@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo dome\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../troubleshooting.md:3
+msgid "macOS"
+msgstr "macOS"
+
+#: ../../../troubleshooting.md:5 ../../../troubleshooting.md:75
+msgid "Unable to find `urdf_model.h` error"
+msgstr ""
+
+#: ../../../troubleshooting.md:7 ../../../troubleshooting.md:77
+msgid ""
+"After installing all the dependencies and starting the build process, you "
+"may encounter an error that looks like this:"
+msgstr ""
+
+#: ../../../troubleshooting.md:9
+msgid ""
+"/Users/user/dome_ws/src/sdformat/src/parser_urdf.cc:30:10: fatal error: "
+"'urdf_model/model.h' file not found\n"
+"#include <urdf_model/model.h>\n"
+"         ^~~~~~~~~~~~~~~~~~~~\n"
+"1 error generated.\n"
+"make[2]: *** [src/CMakeFiles/sdformat9.dir/parser_urdf.cc.o] Error 1\n"
+"make[1]: *** [src/CMakeFiles/sdformat9.dir/all] Error 2\n"
+"make: *** [all] Error 2\n"
+"Failed   <<< sdformat9\t[ Exited with code 2 ]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:20 ../../../troubleshooting.md:90
+msgid ""
+"First check if `urdfdom` and `urdfdom_headers` are installed by running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:22 ../../../troubleshooting.md:92
+msgid "brew install urdfdom urdfdom_headers\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:26 ../../../troubleshooting.md:96
+msgid ""
+"Then if the error persists, compile with the internal version of `urdfdom` "
+"by running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:28 ../../../troubleshooting.md:98
+msgid "colcon build --cmake-args -DUSE_INTERNAL_URDF=ON --merge-install\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:32 ../../../troubleshooting.md:102
+msgid ""
+"This command will ignore the system installation of `urdfdom` and use the "
+"internal version instead."
+msgstr ""
+
+#: ../../../troubleshooting.md:34 ../../../troubleshooting.md:104
+msgid "Unable to load .dylib file"
+msgstr ""
+
+#: ../../../troubleshooting.md:36 ../../../troubleshooting.md:106
+msgid ""
+"When running the `ign gazebo -s` command, an error like the one below may "
+"show up:"
+msgstr ""
+
+#: ../../../troubleshooting.md:38
+msgid ""
+"Error while loading the library [/Users/dome/dome_ws/install/lib//"
+"libignition-physics2-dartsim-plugin.2.dylib]: dlopen(/Users/dome/dome_ws/"
+"install/lib//libignition-physics2-dartsim-plugin.2.dylib, 5): Library not "
+"loaded: @rpath/libIrrXML.dylib\n"
+"  Referenced from: /usr/local/opt/assimp/lib/libassimp.5.dylib\n"
+"  Reason: image not found\n"
+"[Err] [Physics.cc:275] Unable to load the /Users/dome/dome_ws/install/lib//"
+"libignition-physics2-dartsim-plugin.2.dylib library.\n"
+"Escalating to SIGKILL on [Gazebo Sim Server]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:46 ../../../troubleshooting.md:116
+msgid ""
+"The issue is related to OSX System Integrity Protection(SIP). The workaround "
+"is to run `ign` with a different ruby then make sure that ruby is loaded."
+msgstr ""
+
+#: ../../../troubleshooting.md:48 ../../../troubleshooting.md:118
+msgid ""
+"brew install ruby\n"
+"\n"
+"# Add the following to ~/.bashrc\n"
+"export PATH=/usr/local/Cellar/ruby/2.6.5/bin:$PATH\n"
+"\n"
+"# Source ~/.bashrc in terminal\n"
+". ~/.bashrc\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:58
+msgid "Ignition libraries are not found"
+msgstr ""
+
+#: ../../../troubleshooting.md:60
+msgid "If you see this error message:"
+msgstr ""
+
+#: ../../../troubleshooting.md:62
+msgid ""
+"I cannot find any available 'ign' command:\n"
+"\t* Did you install any ignition library?\n"
+"\t* Did you set the IGN_CONFIG_PATH environment variable?\n"
+"\t    E.g.: export IGN_CONFIG_PATH=$HOME/local/share/ignition\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:69
+msgid ""
+"You should set up the environment variable `IGN_CONFIG_PATH=/usr/local/share/"
+"ignition/`"
+msgstr ""
+
+#: ../../../troubleshooting.md:71
+msgid ""
+"No rule to make target `/usr/lib/libm.dylib', needed by `lib/libignition-"
+"physics3-dartsim-plugin.3.1.0.dylib'.  Stop."
+msgstr ""
+
+#: ../../../troubleshooting.md:73
+msgid ""
+"Try to run `brew outdated` followed by a `brew upgrade` may fix some of it."
+msgstr ""
+
+#: ../../../troubleshooting.md:79
+msgid ""
+"/Users/user/edifice_ws/src/sdformat/src/parser_urdf.cc:30:10: fatal error: "
+"'urdf_model/model.h' file not found\n"
+"#include <urdf_model/model.h>\n"
+"         ^~~~~~~~~~~~~~~~~~~~\n"
+"1 error generated.\n"
+"make[2]: *** [src/CMakeFiles/sdformat9.dir/parser_urdf.cc.o] Error 1\n"
+"make[1]: *** [src/CMakeFiles/sdformat9.dir/all] Error 2\n"
+"make: *** [all] Error 2\n"
+"Failed   <<< sdformat9\t[ Exited with code 2 ]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:108
+msgid ""
+"Error while loading the library [/Users/edifice/edifice_ws/install/lib//"
+"libignition-physics2-dartsim-plugin.2.dylib]: dlopen(/Users/edifice/"
+"edifice_ws/install/lib//libignition-physics2-dartsim-plugin.2.dylib, 5): "
+"Library not loaded: @rpath/libIrrXML.dylib\n"
+"  Referenced from: /usr/local/opt/assimp/lib/libassimp.5.dylib\n"
+"  Reason: image not found\n"
+"[Err] [Physics.cc:275] Unable to load the /Users/edifice/edifice_ws/install/"
+"lib//libignition-physics2-dartsim-plugin.2.dylib library.\n"
+"Escalating to SIGKILL on [Gazebo Sim Server]\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:128
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../../troubleshooting.md:130
+msgid "Unable to create the rendering window"
+msgstr ""
+
+#: ../../../troubleshooting.md:132
+msgid ""
+"If you're getting errors like \"Unable to create the rendering window\", it "
+"could mean you're using an old OpenGL version. Gazebo Sim uses the Ogre 2 "
+"rendering engine by default, which requires an OpenGL version higher than "
+"3.3."
+msgstr ""
+
+#: ../../../troubleshooting.md:136
+msgid ""
+"This can be confirmed by checking the Ogre 2 logs at `~/.ignition/rendering/"
+"ogre2.log`, which should have an error like:"
+msgstr ""
+
+#: ../../../troubleshooting.md:139
+msgid ""
+"\"OGRE EXCEPTION(3:RenderingAPIException): OpenGL 3.3 is not supported. "
+"Please update your graphics card drivers.\""
+msgstr ""
+
+#: ../../../troubleshooting.md:141
+msgid "You can also check your OpenGL version running:"
+msgstr ""
+
+#: ../../../troubleshooting.md:143
+msgid "glxinfo | grep \"OpenGL version\"\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:145
+msgid ""
+"You should be able to use Ogre 1 without any issues however. You can check "
+"if that's working by running a world which uses Ogre 1 instead of Ogre 2, "
+"such as:"
+msgstr ""
+
+#: ../../../troubleshooting.md:148
+msgid "ign gazebo -v 3 lights.sdf\n"
+msgstr ""
+
+#: ../../../troubleshooting.md:150
+msgid ""
+"If that loads, you can continue to use Ignition with Ogre 1, just use the `--"
+"render-engine ogre` option."
+msgstr ""
+
+#: ../../../troubleshooting.md:153
+msgid ""
+"To enable Ogre 2 support, you'll need to update your computer's OpenGL "
+"version. As suggested on the Ogre logs, this may require updating your "
+"graphics card drivers."
+msgstr ""
+
+#: ../../../troubleshooting.md:157
+msgid ""
+"The Ogre 2 debs from the osrfoundation repository are built from a fork of "
+"Ogre's `v2-1` branch with changes needed for deb packaging and allowing it "
+"to be co-installable with Ogre 1.x. The code can be found here:"
+msgstr ""
+
+#: ../../../troubleshooting.md:161
+msgid "https://github.com/osrf/ogre-2.1-release"
+msgstr ""
