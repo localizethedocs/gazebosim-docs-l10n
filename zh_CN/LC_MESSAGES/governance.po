@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo rotary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../governance.md:1
+msgid "Governance"
+msgstr ""
+
+#: ../../../governance.md:3
+msgid ""
+"The Gazebo project, a project under the Open Source Robotics Foundation, is "
+"managed by the Open Source Robotics Alliance (OSRA). The OSRA-appointed "
+"Technical Governance Committee provides oversight of the project, while the "
+"Project Management Committee is responsible for day-to-day operations. This "
+"document outlines these entities and their respective roles and "
+"responsibilities. For further information, please refer to [OSRA website]"
+"(https://osralliance.org/how-it-works/)."
+msgstr ""
+
+#: ../../../governance.md:11
+msgid "Open Source Robotics Alliance (OSRA)"
+msgstr ""
+
+#: ../../../governance.md:13
+msgid ""
+"The Open Source Robotics Foundation (OSRF) established the Open Source "
+"Robotics Alliance (OSRA) to enhance the governance of its open-source "
+"projects including Gazebo. Inspired by the success of organizations like The "
+"Linux Foundation and the Eclipse Foundation, OSRA aims to provide funding, "
+"encourage greater community involvement, and ensure the long-term stability "
+"of these projects. The OSRA has a Technical Governance Committee that "
+"oversees the technical aspects of the projects."
+msgstr ""
+
+#: ../../../governance.md:21
+msgid "Technical Governance Committee (TGC)"
+msgstr ""
+
+#: ../../../governance.md:23
+msgid ""
+"The TGC provides guidance and oversight to each of the projects. Its "
+"responsibilities include approving proposed activities of each Project "
+"Management Committee (PMC), approving Project Leader nominations, and "
+"reporting to the OSRF Board on the activities of the OSRA and status of each "
+"project."
+msgstr ""
+
+#: ../../../governance.md:28
+msgid "Gazebo PMC Meetings"
+msgstr ""
+
+#: ../../../governance.md:30
+msgid ""
+"Community members are encouraged to *observe* the Gazebo PMC meetings and "
+"submit agenda items via a PMC constituent. To add an item to the Gazebo PMC "
+"agenda please contact one of the PMC constituents list below. Gazebo PMC "
+"meetings are conducted using Zoom and presently occur every Monday. To join "
+"the Gazebo PMC meeting please use the [link available in our official OSRA "
+"Google calendar](https://calendar.google.com/calendar/u/0/embed?"
+"src=agf3kajirket8khktupm9go748@group.calendar.google.com&ctz=Etc%2FUTC)."
+msgstr ""
+
+#: ../../../governance.md:35
+msgid "The Gazebo Project Management Committee (PMC)"
+msgstr ""
+
+#: ../../../governance.md:37
+msgid ""
+"The Gazebo PMC is responsible for the day-to-day management of the Gazebo "
+"project including setting the project’s roadmap, coordinating development "
+"activities from individual contributors, and facilitating community "
+"engagement. The PMC is also responsible for electing the Project Leader and "
+"approving PMC member and committer nominations. The PMC consists of the "
+"Project Leader, Members (individuals with full voting rights), a Supporting "
+"Individual Representative, and the Chair of the TGC."
+msgstr ""
+
+#: ../../../governance.md:45
+msgid "Committers"
+msgstr ""
+
+#: ../../../governance.md:47
+msgid ""
+"The Gazebo project also has committers. These are individuals who have "
+"commit access to one or more of the Gazebo repositories and help the PMC "
+"maintain the project by contributing code, reviewing pull requests, and "
+"responding to issues, etc. While committers typically don't have voting "
+"rights within the PMC and aren't considered PMC members, it's possible to "
+"hold both roles. Conversely, all PMC members are required to be committers."
+msgstr ""
+
+#: ../../../governance.md:54
+msgid "Current Gazebo PMC Constituents"
+msgstr ""
+
+#: ../../../governance.md:56
+msgid "The Gazebo PMC currently consists of the following individuals:"
+msgstr ""
+
+#: ../../../governance.md:58 ../../../governance.md:79
+msgid "<!-- Alphabetized by last name -->\n"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Name"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Affiliation"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Github Handle"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "PMC Role"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Time Zone (optional)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Carlos Agüero"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[Honu Robotics](https://honurobotics.com)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[caguero](https://github.com/caguero)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Member"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "CET (UTC+2)/CET (UTC+1)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Michael Carroll"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[Intrinsic](https://www.intrinsic.ai/)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[mjcarroll](https://github.com/mjcarroll)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "CST (UTC-6)/CDT (UTC-5)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Ian Chen"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[iche033](https://github.com/iche033)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "PST (UTC-8)/PDT (UTC-7)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Alejandro Hernández"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[ahcorde](https://github.com/ahcorde)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Jenn Nguyen"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[jennuine](https://github.com/jennuine)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Benjamin Perseghetti"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[Rudis Labs](https://github.com/rudislabs)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[bperseghetti](https://github.com/bperseghetti)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "EST (UTC-5)/EDT (UTC-4)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Steve Peters"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[scpeters](https://github.com/scpeters)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Jose Luis Rivero"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[jrivero](https://github.com/j-rivero)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Silvio Traversaro"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[Italian Institute of Technology](https://www.iit.it)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[traversaro](https://github.com/traversaro)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "CEST (UTC+2)/CET (UTC+1)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Addisu Z. Taddese"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[azeey](https://github.com/azeey)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Project Leader"
+msgstr ""
+
+#: ../../../governance.md:74
+msgid "Current Gazebo Committers"
+msgstr ""
+
+#: ../../../governance.md:76
+msgid ""
+"The Gazebo Committers (who are not also PMC members) currently consist of "
+"the following individuals:"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Arjo Chakravarty"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[arjo129](https://github.com/arjo129)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "SST (UTC+8)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Shameek Ganguly"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[shameekganguly](https://github.com/shameekganguly)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "Saurabh Kamat"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[ROS-Industrial](https://rosindustrial.org/)"
+msgstr ""
+
+#: ../../../governance.md:0
+msgid "[sauk2](https://github.com/sauk2)"
+msgstr ""

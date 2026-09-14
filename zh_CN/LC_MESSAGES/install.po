@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo rotary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install.md:52
+msgid "Binary Ubuntu Install"
+msgstr ""
+
+#: ../../../install.md:52
+msgid "Ubuntu Source Install"
+msgstr ""
+
+#: ../../../install.md:52
+msgid "macOS Source Install"
+msgstr ""
+
+#: ../../../install.md:52
+msgid "Windows Source Install"
+msgstr ""
+
+#: ../../../install.md:52
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install.md:1
+msgid "Gazebo Rotary"
+msgstr ""
+
+#: ../../../install.md:3
+msgid ""
+"Gazebo Rotary is a Rolling Release stream of Gazebo, built nightly from the "
+"`main` branches of every Gazebo library. It is intended for maintainers, CI "
+"systems, and early adopters. **Not recommended for production use** — for a "
+"stable release see [Releases](releases)."
+msgstr ""
+
+#: ../../../install.md:8
+msgid "Binary installation instructions"
+msgstr ""
+
+#: ../../../install.md:10
+msgid "Binary installation is the recommended method of installing Gazebo."
+msgstr ""
+
+#: ../../../install.md:12
+msgid "[Binary Installation on Ubuntu](install_ubuntu)"
+msgstr ""
+
+#: ../../../install.md:13
+msgid ""
+"macOS: no binary distribution; see [source installation on macOS]"
+"(install_osx_src)"
+msgstr ""
+
+#: ../../../install.md:14
+msgid ""
+"Windows: no binary distribution; see [Source Installation on Windows]"
+"(install_windows_src)."
+msgstr ""
+
+#: ../../../install.md:16
+msgid "Server-only installation"
+msgstr ""
+
+#: ../../../install.md:18
+msgid ""
+"A server-only package is available on Ubuntu for headless and CI "
+"environments. It installs the Gazebo server without GUI components, avoiding "
+"Qt and extra X11 dependencies to provide a much lighter installation."
+msgstr ""
+
+#: ../../../install.md:22
+msgid ""
+"[Server-only Installation on Ubuntu](install_ubuntu.md#server-only-"
+"installation)"
+msgstr ""
+
+#: ../../../install.md:24
+msgid "Source Installation instructions"
+msgstr ""
+
+#: ../../../install.md:26
+msgid ""
+"Source installation is recommended for users planning on altering Gazebo's "
+"source code (advanced)."
+msgstr ""
+
+#: ../../../install.md:28
+msgid "[Source Installation on Ubuntu](install_ubuntu_src)"
+msgstr ""
+
+#: ../../../install.md:29
+msgid "[Source Installation on macOS](install_osx_src)"
+msgstr ""
+
+#: ../../../install.md:30
+msgid "[Source Installation on Windows](install_windows_src)"
+msgstr ""
+
+#: ../../../install.md:32
+msgid "Rotary Libraries"
+msgstr ""
+
+#: ../../../install.md:34
+msgid ""
+"The Rotary collection is composed of many different Gazebo libraries. The "
+"collection assures that all libraries are compatible and can be used "
+"together."
+msgstr ""
+
+#: ../../../install.md:37
+msgid ""
+"The best location to know the current versions of the rotary distribution is "
+"to check [collection-rotary.yaml](https://raw.githubusercontent.com/gazebo-"
+"tooling/gazebodistro/master/collection-rotary.yaml)."
+msgstr ""
+
+#: ../../../install.md:41
+msgid "Supported platforms"
+msgstr ""
+
+#: ../../../install.md:43
+msgid "These are the **officially** supported platforms:"
+msgstr ""
+
+#: ../../../install.md:45
+msgid ""
+"**Ubuntu Noble (amd64)** — nightly binary packages at `packages."
+"osrfoundation.org/gazebo/ubuntu-nightly`."
+msgstr ""
+
+#: ../../../install.md:47
+msgid ""
+"**Ubuntu Resolute (amd64)** — nightly binary packages at `packages."
+"osrfoundation.org/gazebo/ubuntu-nightly`."
+msgstr ""
+
+#: ../../../install.md:49
+msgid ""
+"**macOS** — formulae from the [`osrf/simulation`](https://github.com/osrf/"
+"homebrew-simulation) Homebrew tap."
+msgstr ""
+
+#: ../../../install.md:50
+msgid "**Windows** — no binary; build from source."
+msgstr ""
