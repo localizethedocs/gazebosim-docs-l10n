@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo blueprint\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ros_integration.md:1
+msgid "ROS Integration"
+msgstr ""
+
+#: ../../../ros_integration.md:3
+msgid ""
+"Most of the Ignition libraries use [Ignition Transport](https://github.com/"
+"gazebosim/gz-transport) to exchange data between different software "
+"components. This tutorial details how to interface with [ROS](http://www.ros."
+"org/), enabling the ability to use tools such as [Rviz](http://wiki.ros.org/"
+"rviz) for robot or sensor visualization."
+msgstr ""
+
+#: ../../../ros_integration.md:9
+msgid ""
+"**Important**: The packages documented here used to have the `ros1_` prefix "
+"instead of `ros_`. Please update your code accordingly in order to avoid "
+"adverse effects."
+msgstr ""
+
+#: ../../../ros_integration.md:13
+msgid "ros_ign_bridge to the rescue"
+msgstr ""
+
+#: ../../../ros_integration.md:15
+msgid ""
+"ros_ign_bridge provides a network bridge which enables the exchange of "
+"messages between ROS 1 and Ignition Transport. Its support is limited to "
+"only certain message types. Please, read this [README](https://github.com/"
+"osrf/ros_ign_bridge) to verify if your message type is supported by the "
+"bridge."
+msgstr ""
+
+#: ../../../ros_integration.md:20
+msgid "How to install ros_ign_bridge"
+msgstr ""
+
+#: ../../../ros_integration.md:22
+msgid "Binary install"
+msgstr ""
+
+#: ../../../ros_integration.md:24
+msgid ""
+"The repository `packages.osrfoundation.org` hosts binary packages for Ubuntu "
+"Bionic. To install the binaries"
+msgstr ""
+
+#: ../../../ros_integration.md:27
+msgid ""
+"sudo sh -c 'echo \"deb http://packages.osrfoundation.org/gazebo/ubuntu-"
+"stable `lsb_release -cs` main\" > /etc/apt/sources.list.d/gazebo-stable."
+"list'\n"
+"sudo apt-get install ros-ign-bridge\n"
+msgstr ""
+
+#: ../../../ros_integration.md:32
+msgid "Source install"
+msgstr ""
+
+#: ../../../ros_integration.md:34
+msgid ""
+"See the [prerequisites](https://github.com/osrf/ros_ign/tree/melodic/"
+"ros_ign_bridge#prerequisites) and [install section](https://github.com/osrf/"
+"ros_ign/tree/melodic/ros_ign_bridge#building-the-bridge-from-source) of the "
+"bridge documentation. This tutorial requires Ubuntu Bionic or newer."
+msgstr ""
+
+#: ../../../ros_integration.md:38
+msgid ""
+"Assuming that you have ROS Melodic, you can install all dependencies with:"
+msgstr ""
+
+#: ../../../ros_integration.md:40
+msgid ""
+"sudo apt install ros-melodic-desktop ros-melodic-rqt-image-view libignition-"
+"common3-dev libignition-transport7-dev\n"
+msgstr ""
+
+#: ../../../ros_integration.md:44
+msgid "Run the bridge and exchange images"
+msgstr ""
+
+#: ../../../ros_integration.md:46
+msgid ""
+"In this example, we're going to generate Ignition Transport images using "
+"Gazebo, that will be converted into ROS 1 images, and visualized with "
+"rqt_viewer."
+msgstr ""
+
+#: ../../../ros_integration.md:48
+msgid "First we start a ROS 1 `roscore`:"
+msgstr ""
+
+#: ../../../ros_integration.md:50
+msgid ""
+"# Shell A:\n"
+". /opt/ros/melodic/setup.bash\n"
+"roscore\n"
+msgstr ""
+
+#: ../../../ros_integration.md:56
+msgid "Then we start Gazebo."
+msgstr ""
+
+#: ../../../ros_integration.md:58
+msgid ""
+"# Shell B:\n"
+"ign gazebo -r camera_sensor.sdf\n"
+msgstr ""
+
+#: ../../../ros_integration.md:63
+msgid ""
+"Gazebo should be running and publishing images over the `/camera` topic. "
+"Let's verify it:"
+msgstr ""
+
+#: ../../../ros_integration.md:66
+msgid ""
+"# Shell C:\n"
+"ign topic -l | grep \"^/camera\"\n"
+"/camera\n"
+msgstr ""
+
+#: ../../../ros_integration.md:72
+msgid "Then we start the parameter bridge with the previous topic."
+msgstr ""
+
+#: ../../../ros_integration.md:74
+msgid ""
+"If you perform a from source installation, please source the setup.bash (not "
+"needed for binary packages):"
+msgstr ""
+
+#: ../../../ros_integration.md:77
+msgid ""
+"# Shell D:\n"
+". ~/bridge_ws/install/setup.bash\n"
+msgstr ""
+
+#: ../../../ros_integration.md:82
+msgid "Run the bridge:"
+msgstr ""
+
+#: ../../../ros_integration.md:84
+msgid ""
+"# Shell D:\n"
+"rosrun ros_ign_bridge parameter_bridge /camera@sensor_msgs/Image@ignition."
+"msgs.Image\n"
+msgstr ""
+
+#: ../../../ros_integration.md:89
+msgid "Now we start the ROS 1 GUI:"
+msgstr ""
+
+#: ../../../ros_integration.md:91
+msgid ""
+"# Shell E:\n"
+". /opt/ros/melodic/setup.bash\n"
+"rqt_image_view /camera\n"
+msgstr ""
+
+#: ../../../ros_integration.md:97
+msgid ""
+"You should see the current images in `rqt_image_view` which are coming from "
+"Gazebo (published as Ignition Msgs over Ignition Transport)."
+msgstr ""
+
+#: ../../../ros_integration.md:100
+msgid ""
+"The screenshot shows all the shell windows and their expected content (it "
+"was taken using ROS Melodic):"
+msgstr ""
+
+#: ../../../ros_integration.md:104
+msgid ""
+"![Ignition Transport images and ROS 1 rqt](img/bridge_image_exchange_gz-sim."
+"png)"
+msgstr ""
+
+#: ../../../ros_integration.md:104
+msgid "Ignition Transport images and ROS 1 rqt"
+msgstr ""
