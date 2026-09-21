@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../releases.md:1
+msgid "Gazebo Releases"
+msgstr ""
+
+#: ../../../releases.md:3
+msgid "This page details the set of past and planned releases."
+msgstr ""
+
+#: ../../../releases.md:5
+msgid "What is a Release?"
+msgstr ""
+
+#: ../../../releases.md:7
+msgid ""
+"A release of Gazebo consists of a set of versioned [Gazebo Libraries](/libs)"
+"{.external}. Each library follows [semantic versioning](https://semver.org){."
+"external}, and the major version of a library is guaranteed not to change "
+"with an Gazebo release. This essentially means you can develop code against "
+"a release of Gazebo without the worry of breaking changes being made "
+"upstream."
+msgstr ""
+
+#: ../../../releases.md:9
+msgid "Naming Scheme"
+msgstr ""
+
+#: ../../../releases.md:11
+msgid ""
+"A Gazebo release follows the form \"Gazebo Codename\", for example Gazebo "
+"Acropolis. The codename is alphabetically increasing, and chosen to fall "
+"loosely within the architectural domain."
+msgstr ""
+
+#: ../../../releases.md:13
+msgid "Rolling releases"
+msgstr ""
+
+#: ../../../releases.md:15
+msgid ""
+"Separate from the dated codename releases listed below, Gazebo also "
+"publishes a rolling release stream called **Rotary**, built continuously "
+"from the `main` branches of every Gazebo library every night. Rotary is not "
+"tied to codename or major version and is intended for maintainers, CI "
+"systems, and early adopters. See the [Rotary release](https://gazebosim.org/"
+"docs/rotary/rotary) page for details and installation instructions."
+msgstr ""
+
+#: ../../../releases.md:23
+msgid "Release List"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Name"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Date"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "EOL date"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Notes"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Rotary](https://gazebosim.org/docs/rotary)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Rolling"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "—"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Experimental"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "M"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Mar, 2027"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Dec, 2028"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Jetty](https://gazebosim.org/docs/jetty)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2025"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "May, 2031"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Long-term support (LTS)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Ionic](https://gazebosim.org/docs/ionic)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2024"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Dec, 2026"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Harmonic](https://gazebosim.org/docs/harmonic)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2023"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "May, 2029"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Garden](https://gazebosim.org/docs/garden)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2022"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Nov, 2024"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "End of life (EOL)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Fortress](https://gazebosim.org/docs/fortress)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2021"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "May, 2027"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Edifice](https://gazebosim.org/docs/edifice)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Mar, 2021"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Mar, 2022"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Dome](https://gazebosim.org/docs/dome)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2020"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Dec, 2021"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Citadel](https://gazebosim.org/docs/citadel)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Dec, 2019"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Dec, 2024"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Blueprint](https://gazebosim.org/docs/blueprint)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "May, 2019"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Dec, 2020"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "[Acropolis](https://gazebosim.org/docs/acropolis)"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Feb, 2019"
+msgstr ""
+
+#: ../../../releases.md:0
+msgid "Sep, 2019"
+msgstr ""
+
+#: ../../../releases.md:59
+msgid "Library Versions"
+msgstr ""
+
+#: ../../../releases.md:61
+msgid ""
+"Gazebo adheres to [semantic versioning](https://semver.org), with the "
+"addition that ABI is considered part of the public interface. In summary:"
+msgstr ""
+
+#: ../../../releases.md:64
+msgid "**Major** version increased when incompatible ABI/API changes are made."
+msgstr ""
+
+#: ../../../releases.md:65
+msgid ""
+"**Minor** version increased when functionality has been added in a backwards-"
+"compatible manner, but it may not be forward-compatible. That is, code "
+"compiled against minor `N` will work with minor `N+1`, but code compiled "
+"against minor `N+1` may not work with minor `N`."
+msgstr ""
+
+#: ../../../releases.md:69
+msgid ""
+"**Patch** version increased when backwards-compatible bug fixes are released."
+msgstr ""
+
+#: ../../../releases.md:70
+msgid ""
+"**Pre-release** version used before making stable releases, using the `~` "
+"separator."
+msgstr ""
+
+#: ../../../releases.md:73
+msgid "Deprecation strategy"
+msgstr ""
+
+#: ../../../releases.md:75
+msgid ""
+"Where possible, a tick-tock deprecation strategy is used during major "
+"version increments. Deprecated code produces compile-time or runtime "
+"warnings (tick). These warnings serve as notification to users that their "
+"code should be upgraded. The next major release removes the deprecated "
+"functionality (tock)."
+msgstr ""
+
+#: ../../../releases.md:80
+msgid "Example of function `foo` deprecated and replaced by function `bar`:"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "Version"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "API"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "gz-(N)"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "void foo();"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "gz-(N+1)"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "void foo() GZ_DEPRECATED(N+1); <br> void bar();"
+msgstr ""
+
+#: ../../../releases.md:85
+msgid "<br>"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "gz-(N+2)"
+msgstr ""
+
+#: ../../../releases.md:40
+msgid "void bar();"
+msgstr ""
+
+#: ../../../releases.md:88
+msgid "Support lifecycle"
+msgstr ""
+
+#: ../../../releases.md:90
+msgid ""
+"Check out [this table](https://github.com/gazebosim/docs/blob/master/tools/"
+"versions.md) for a list of release and EOL dates for all versions of all "
+"libraries."
+msgstr ""
+
+#: ../../../releases.md:93
+msgid "Supported platforms"
+msgstr ""
+
+#: ../../../releases.md:95
+msgid ""
+"Platforms are defined as a combination of operating system and architecture. "
+"For example, \"Ubuntu Noble on amd64\"."
+msgstr ""
+
+#: ../../../releases.md:98
+msgid ""
+"Each release is targeted at a specific set of platforms. A support level "
+"applies to an entire Gazebo release, including all library versions within "
+"it. The supported platforms for each release are listed on their home pages "
+"(i.e. [Harmonic](https://gazebosim.org/docs/harmonic))."
+msgstr ""
+
+#: ../../../releases.md:103
+msgid "In general, there are three categories of support for a platform:"
+msgstr ""
+
+#: ../../../releases.md:105
+msgid ""
+"**Official support**: Officially supported platforms are regularly tested on "
+"continuous integration and released as binary packages. Errors or bugs "
+"discovered in these platforms are prioritized for correction by the "
+"development team. Significant errors discovered in these platforms can "
+"impact release dates and we strive to resolve all known high priority errors "
+"in officially supported platforms prior to new version releases."
+msgstr ""
+
+#: ../../../releases.md:111
+msgid ""
+"**Best-effort support**: Platforms supported at best-effort may be regularly "
+"tested on continuous integration and / or released as binary packages. "
+"Errors may be present in released versions for these platforms. Known errors "
+"in best-effort platforms will be addressed subject to resource availability "
+"on a best-effort basis and may or may not be corrected prior to new releases."
+msgstr ""
+
+#: ../../../releases.md:116
+msgid ""
+"**No effort to support**: All platforms not included under official or best-"
+"effort support are considered not supported. If a release is functional in a "
+"platform that isn't supported at a point in time, there are no guarantees "
+"that it will remain so in the future. Pull requests addressing issues on "
+"these platforms may be considered if they don't break any supported "
+"platforms and reviewed as time allows."
+msgstr ""
+
+#: ../../../releases.md:123
+msgid ""
+"If you or your company are interested in directly supporting, or sponsoring "
+"the support of other platforms, please contact `info@openrobotics.org`."
+msgstr ""
