@@ -1,0 +1,21 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# Simulation Tutorials
+
+```{toctree}
+:maxdepth: 1
+:titlesonly:
+
+Building your own robot <building_robot>
+Moving the robot <moving_robot>
+SDF worlds <sdf_worlds>
+Sensors <sensors>
+Actors <actors>
+Understanding the GUI <gui>
+Manipulating Models <manipulating_models>
+Model Insertion from Fuel <fuel_insert>
+Keyboard Shortcuts <hotkeys>
+Spawn URDF <spawn_urdf>
+```
