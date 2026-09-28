@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../library_howtos.md:1
+msgid "Gazebo Library How-To Guides"
+msgstr ""
+
+#: ../../../library_howtos.md:3
+msgid ""
+"See the *API & Tutorials* sections on the [Libraries page](/libs){.external} "
+"page for more specific content correlating to each Gazebo library."
+msgstr ""
+
+#: ../../../library_howtos.md:5
+msgid "The entrypoint library is Sim."
+msgstr ""
+
+#: ../../../library_howtos.md:8
+msgid "[Sim](/api/sim/6/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:9
+msgid "Other libraries:"
+msgstr ""
+
+#: ../../../library_howtos.md:12
+msgid "[Cmake](/api/cmake/2/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:13
+msgid "[Common](/api/common/4/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:14
+msgid "[Fuel_tools](/api/fuel_tools/7/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:15
+msgid "[Gui](/api/gui/6/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:16
+msgid "[Launch](/api/launch/5/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:17
+msgid "[Math](/api/math/6/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:18
+msgid "[Msgs](/api/msgs/8/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:19
+msgid "[Physics](/api/physics/5/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:20
+msgid "[Plugin](/api/plugin/1/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:21
+msgid "[Rendering](/api/rendering/6/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:22
+msgid "[Sdformat](/api/sdformat/12/){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:23
+msgid "[Sensors](/api/sensors/6/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:24
+msgid "[Tools](/api/tools/1/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:25
+msgid "[Transport](/api/transport/11/tutorials.html){.external}"
+msgstr ""
+
+#: ../../../library_howtos.md:26
+msgid "[Utils](/api/utils/1/tutorials.html){.external}"
+msgstr ""
