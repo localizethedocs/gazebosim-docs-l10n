@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo harmonic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_osx.md:1
+msgid "Binary Installation on macOS"
+msgstr ""
+
+#: ../../../install_osx.md:3
+msgid ""
+"All the Harmonic binaries are available in Big Sur and Monterey using the "
+"[Homebrew package manager](https://brew.sh/). After installing Homebrew, "
+"Gazebo Harmonic can be installed running:"
+msgstr ""
+
+#: ../../../install_osx.md:6
+msgid ""
+"brew tap osrf/simulation\n"
+"brew trust osrf/simulation\n"
+"brew install gz-harmonic\n"
+msgstr ""
+
+#: ../../../install_osx.md:12
+msgid ""
+"All libraries should be ready to use and the `gz sim -s` server app ready to "
+"be executed."
+msgstr ""
+
+#: ../../../install_osx.md:14
+msgid ""
+"Head back to the [Getting started](getstarted) page to start using Gazebo!"
+msgstr ""
+
+#: ../../../install_osx.md:17
+msgid "Uninstalling binary install"
+msgstr ""
+
+#: ../../../install_osx.md:19
+msgid ""
+"If you need to uninstall Gazebo or switch to a source-based install once you "
+"have already installed the library from binaries, run the following command:"
+msgstr ""
+
+#: ../../../install_osx.md:22
+msgid "brew uninstall gz-harmonic\n"
+msgstr ""
+
+#: ../../../install_osx.md:26
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install_osx.md:28
+msgid "See [Troubleshooting](troubleshooting.md#macos)"
+msgstr ""
