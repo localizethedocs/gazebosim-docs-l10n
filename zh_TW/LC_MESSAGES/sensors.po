@@ -1,0 +1,870 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo rotary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../sensors.md:1
+msgid "Sensors"
+msgstr "感測器"
+
+#: ../../../sensors.md:3
+msgid ""
+"**Note:** This tutorial is a continuation from the [Moving the robot "
+"tutorial](moving_robot)."
+msgstr ""
+
+#: ../../../sensors.md:6
+msgid ""
+"In this tutorial we will learn how to add sensors to our robot and to other "
+"models in our world. We will use three different sensors: an IMU sensor, a "
+"Contact sensor and a Lidar sensor. We will also learn how to launch multiple "
+"tasks with just one file using `gz launch`."
+msgstr ""
+
+#: ../../../sensors.md:11
+msgid ""
+"You can find the final world of this tutorial showing all these plugins in "
+"use [here](https://github.com/gazebosim/docs/blob/master/rotary/tutorials/"
+"sensors/sensor_tutorial.sdf). You may also find an extensive set of world "
+"examples with many possible sensors and actuation capabilities in [`gz-sim/"
+"examples/worlds`](https://github.com/gazebosim/gz-sim/tree/main/examples/"
+"worlds) for individual examples. The full set of sensors can be found in the "
+"[`gz-sensors` library](https://github.com/gazebosim/gz-sensors). If using "
+"ROS, you can see demo launches and bridging configuration for these examples "
+"[here](https://github.com/gazebosim/ros_gz/tree/ros2/ros_gz_sim_demos/"
+"launch)."
+msgstr ""
+
+#: ../../../sensors.md:16
+msgid "Preliminaries"
+msgstr ""
+
+#: ../../../sensors.md:18
+msgid ""
+"When adding a `plugin` to an SDF file which does not currently contain one, "
+"the default plugins are not loaded. Before adding a sensor, make sure to add "
+"in a couple of logical defaults to your world so that it is possible to "
+"continue to use the GZ GUI:"
+msgstr ""
+
+#: ../../../sensors.md:20
+msgid ""
+"<sdf version='1.9'>\n"
+"  <world name='demo'>\n"
+"    <plugin\n"
+"        filename=\"gz-sim-physics-system\"\n"
+"        name=\"gz::sim::systems::Physics\">\n"
+"    </plugin>\n"
+"    <plugin\n"
+"        filename=\"gz-sim-scene-broadcaster-system\"\n"
+"        name=\"gz::sim::systems::SceneBroadcaster\">\n"
+"    </plugin>\n"
+"\n"
+"    <!-- ... -->\n"
+msgstr ""
+
+#: ../../../sensors.md:35
+msgid "IMU sensor"
+msgstr ""
+
+#: ../../../sensors.md:37
+msgid ""
+"The inertial measurement unit (IMU) outputs the `orientation` of our robot "
+"in quaternions, the `angular_velocity` in the three axes (X, Y, Z), and the "
+"`linear_acceleration` in the three axes. Let's use our [moving_robot.sdf]"
+"(https://github.com/gazebosim/docs/blob/master/rotary/tutorials/moving_robot/"
+"moving_robot.sdf) world and modify it. Create a new file `sensor_tutorial."
+"sdf` and add the code from `moving_robot.sdf` to it. To define the `IMU` "
+"sensor add this code under the `<world>` tag:"
+msgstr ""
+
+#: ../../../sensors.md:44
+msgid ""
+"<plugin filename=\"gz-sim-imu-system\"\n"
+"        name=\"gz::sim::systems::Imu\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sensors.md:50
+msgid ""
+"This code defines the `IMU` sensor plugin to be used in our world. Now we "
+"can add the `IMU` sensor to our robot as follows:"
+msgstr ""
+
+#: ../../../sensors.md:53
+msgid ""
+"<sensor name=\"imu_sensor\" type=\"imu\">\n"
+"    <always_on>1</always_on>\n"
+"    <update_rate>1</update_rate>\n"
+"    <visualize>true</visualize>\n"
+"    <topic>imu</topic>\n"
+"</sensor>\n"
+msgstr ""
+
+#: ../../../sensors.md:62
+msgid ""
+"The sensor is usually added to one of the links of our model; we added  it "
+"under the `chassis` link."
+msgstr ""
+
+#: ../../../sensors.md:65
+msgid "Let's describe the tags:"
+msgstr ""
+
+#: ../../../sensors.md:67
+msgid ""
+"`<always_on>` if true the sensor will always be updated according to the "
+"update rate."
+msgstr ""
+
+#: ../../../sensors.md:69
+msgid "`<update_rate>` the frequency at which the sensor data is generated."
+msgstr ""
+
+#: ../../../sensors.md:70
+msgid "`<visualize>` if true the sensor is visualized in the GUI."
+msgstr ""
+
+#: ../../../sensors.md:71
+msgid "`<topic>` name of the topic on which data is published."
+msgstr ""
+
+#: ../../../sensors.md:73
+msgid "**Note:** Not all the tags are supported for all sensors yet."
+msgstr ""
+
+#: ../../../sensors.md:75
+msgid "Read data from IMU"
+msgstr ""
+
+#: ../../../sensors.md:77
+msgid ""
+"To read the data from the `IMU`, run the world in one terminal and press the "
+"play button:"
+msgstr ""
+
+#: ../../../sensors.md:79 ../../../sensors.md:175 ../../../sensors.md:279
+msgid "`gz sim sensor_tutorial.sdf`"
+msgstr ""
+
+#: ../../../sensors.md:81
+msgid "In another terminal, run:"
+msgstr ""
+
+#: ../../../sensors.md:83
+msgid "`gz topic -e -t /imu`"
+msgstr ""
+
+#: ../../../sensors.md:85
+msgid ""
+"The last command listens to the messages sent over the `/imu` topic. The IMU "
+"data are `orientation`, `angular_velocity` and `linear_acceleration` as "
+"described above. It should look like this:"
+msgstr ""
+
+#: ../../../sensors.md:87
+msgid "![Imu_message](tutorials/sensors/imu_msgs.png)"
+msgstr ""
+
+#: ../../../sensors.md:87
+msgid "Imu_message"
+msgstr ""
+
+#: ../../../sensors.md:89
+msgid ""
+"Move your robot forward using the keyboard up key. To do so, don't forget to "
+"enable the Key Publisher Plugin. You should see the sensor values changing."
+msgstr ""
+
+#: ../../../sensors.md:91
+msgid "Contact sensor"
+msgstr ""
+
+#: ../../../sensors.md:93
+msgid ""
+"Let's introduce a different type of sensor, the `contact` sensor. You can "
+"guess from the name that this sensor gives indication when it touches "
+"(contacts) something else. We will build an obstacle (wall) and add the "
+"contact sensor to it. If the robot hits the obstacle it will stop, "
+"preventing the robot from damaging itself. Let's first build the obstacle as "
+"follows:"
+msgstr ""
+
+#: ../../../sensors.md:100
+msgid ""
+"<model name='wall'>\n"
+"    <static>true</static>\n"
+"    <pose>5 0 0 0 0 0</pose><!--pose relative to the world-->\n"
+"    <link name='box'>\n"
+"        <visual name='visual'>\n"
+"            <geometry>\n"
+"                <box>\n"
+"                    <size>0.5 10.0 2.0</size>\n"
+"                </box>\n"
+"            </geometry>\n"
+"            <!--let's add color to our link-->\n"
+"            <material>\n"
+"                <ambient>0.0 0.0 1.0 1</ambient>\n"
+"                <diffuse>0.0 0.0 1.0 1</diffuse>\n"
+"                <specular>0.0 0.0 1.0 1</specular>\n"
+"            </material>\n"
+"        </visual>\n"
+"        <collision name='collision'>\n"
+"            <geometry>\n"
+"                <box>\n"
+"                    <size>0.5 10.0 2.0</size>\n"
+"                </box>\n"
+"            </geometry>\n"
+"        </collision>\n"
+"    </link>\n"
+"</model>\n"
+msgstr ""
+
+#: ../../../sensors.md:129
+msgid ""
+"It is just a simple model with one link of box shape. You can check the "
+"[Build your own robot tutorial](building_robot) to learn how to build models."
+msgstr ""
+
+#: ../../../sensors.md:131
+msgid ""
+"Now run the world and make sure that the wall appears in the simulation like "
+"this:"
+msgstr ""
+
+#: ../../../sensors.md:133
+msgid "![wall_in_world](tutorials/sensors/sensor_wall.png)"
+msgstr ""
+
+#: ../../../sensors.md:133
+msgid "wall_in_world"
+msgstr ""
+
+#: ../../../sensors.md:135
+msgid ""
+"Let's add the contact sensor to the wall. As with the `IMU` sensor, we "
+"should first define the `Contact` sensor by adding the following code:"
+msgstr ""
+
+#: ../../../sensors.md:137
+msgid ""
+"<plugin filename=\"gz-sim-contact-system\"\n"
+"        name=\"gz::sim::systems::Contact\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sensors.md:143
+msgid ""
+"Now we can add the `contact` sensor to the `box` link of the `wall` model:"
+msgstr ""
+
+#: ../../../sensors.md:145
+msgid ""
+"<sensor name='sensor_contact' type='contact'>\n"
+"    <contact>\n"
+"        <collision>collision</collision>\n"
+"    </contact>\n"
+"</sensor>\n"
+msgstr ""
+
+#: ../../../sensors.md:153
+msgid ""
+"The definition of the `<sensor>` is straight forward, we just define the "
+"`name` and the `type` of the sensor. And inside the `collision` we define "
+"the box link collision name which is `collision`."
+msgstr ""
+
+#: ../../../sensors.md:155
+msgid ""
+"We need also to add the `TouchPlugin` under the `wall` model as follows:"
+msgstr ""
+
+#: ../../../sensors.md:157
+msgid ""
+"<plugin filename=\"gz-sim-touchplugin-system\"\n"
+"        name=\"gz::sim::systems::TouchPlugin\">\n"
+"    <target>vehicle_blue</target>\n"
+"    <namespace>wall</namespace>\n"
+"    <time>0.001</time>\n"
+"    <enabled>true</enabled>\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sensors.md:167
+msgid ""
+"The `TouchPlugin` will publish (send) a message when the `wall` has been "
+"touched. The tags of the plugin are as follows:"
+msgstr ""
+
+#: ../../../sensors.md:170
+msgid ""
+"`<target>` which will be in contact with our wall, in our case "
+"`vehicle_blue`."
+msgstr ""
+
+#: ../../../sensors.md:171
+msgid ""
+"`<namespace>` takes the namespace of our topic, so when our robot hits the "
+"wall it will send a message to `/wall/touched` topic."
+msgstr ""
+
+#: ../../../sensors.md:173
+msgid "Run the world in one terminal:"
+msgstr ""
+
+#: ../../../sensors.md:177
+msgid "In another terminal, listen to the `/wall/touched` topic:"
+msgstr ""
+
+#: ../../../sensors.md:179
+msgid "`gz topic -e -t /wall/touched`"
+msgstr "`gz topic -e -t /wall/touched`"
+
+#: ../../../sensors.md:181
+msgid ""
+"Drive your robot forward to the wall using the keyboard arrow keys. Make "
+"sure to start the simulation by hitting the play button, and enable the Key "
+"Publisher plugin as well by clicking on the plugins dropdown list (vertical "
+"ellipsis), then selecting \"Key Publisher\"."
+msgstr ""
+
+#: ../../../sensors.md:183
+msgid ""
+"When you hit the bump you should see a message `data: true` on the terminal "
+"where you ran the `gz topic -e -t /wall/touched`."
+msgstr ""
+
+#: ../../../sensors.md:185
+msgid ""
+"Now we can use the `TriggeredPublisher` plugin to make our robot stop when "
+"hits the wall as follows:"
+msgstr ""
+
+#: ../../../sensors.md:187
+msgid ""
+"<plugin filename=\"gz-sim-triggered-publisher-system\"\n"
+"        name=\"gz::sim::systems::TriggeredPublisher\">\n"
+"    <input type=\"gz.msgs.Boolean\" topic=\"/wall/touched\">\n"
+"        <match>data: true</match>\n"
+"    </input>\n"
+"    <output type=\"gz.msgs.Twist\" topic=\"/cmd_vel\">\n"
+"        linear: {x: 0.0}, angular: {z: 0.0}\n"
+"    </output>\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../sensors.md:199
+msgid ""
+"As explained in the [Moving robot tutorial](moving_robot), we can publish an "
+"output depending on a received input. So when we receive `data: true` on the "
+"`/wall/touched` topic we publish `linear: {x: 0.0}, angular: {z: 0.0}` to "
+"make our robot stop."
+msgstr ""
+
+#: ../../../sensors.md:204
+msgid "Lidar sensor"
+msgstr ""
+
+#: ../../../sensors.md:206
+msgid ""
+"We don't want our robot to touch the wall at all because this may cause some "
+"damage, so instead of the contact sensor we can use the Lidar. Lidar is an "
+"acronym for \"light detection and ranging\". This sensor can help us detect "
+"obstacles around the robot. We will use it to measure the distance between "
+"our robot and the wall."
+msgstr ""
+
+#: ../../../sensors.md:208
+msgid ""
+"First let's create a frame to fix our lidar to. This should be added inside "
+"of the `vehicle_blue` `<model>` tag, since the lidar frame is attached to "
+"the robot's `chassis`:"
+msgstr ""
+
+#: ../../../sensors.md:210
+msgid ""
+"<frame name=\"lidar_frame\" attached_to='chassis'>\n"
+"    <pose>0.8 0 0.5 0 0 0</pose>\n"
+"</frame>\n"
+msgstr ""
+"<frame name=\"lidar_frame\" attached_to='chassis'>\n"
+"    <pose>0.8 0 0.5 0 0 0</pose>\n"
+"</frame>\n"
+
+#: ../../../sensors.md:216
+msgid ""
+"Then add this plugin under the `<world>` tag, to be able to use the `lidar` "
+"sensor:"
+msgstr ""
+
+#: ../../../sensors.md:218
+msgid ""
+"    <plugin\n"
+"      filename=\"gz-sim-sensors-system\"\n"
+"      name=\"gz::sim::systems::Sensors\">\n"
+"      <render_engine>ogre2</render_engine>\n"
+"    </plugin>\n"
+msgstr ""
+"    <plugin\n"
+"      filename=\"gz-sim-sensors-system\"\n"
+"      name=\"gz::sim::systems::Sensors\">\n"
+"      <render_engine>ogre2</render_engine>\n"
+"    </plugin>\n"
+
+#: ../../../sensors.md:226
+msgid "Under the `chassis` link we can add the `lidar` sensor as follows:"
+msgstr ""
+
+#: ../../../sensors.md:228
+msgid ""
+"<sensor name='gpu_lidar' type='gpu_lidar'>\"\n"
+"    <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>\n"
+"    <topic>lidar</topic>\n"
+"    <update_rate>10</update_rate>\n"
+"    <ray>\n"
+"        <scan>\n"
+"            <horizontal>\n"
+"                <samples>640</samples>\n"
+"                <resolution>1</resolution>\n"
+"                <min_angle>-1.396263</min_angle>\n"
+"                <max_angle>1.396263</max_angle>\n"
+"            </horizontal>\n"
+"            <vertical>\n"
+"                <samples>1</samples>\n"
+"                <resolution>0.01</resolution>\n"
+"                <min_angle>0</min_angle>\n"
+"                <max_angle>0</max_angle>\n"
+"            </vertical>\n"
+"        </scan>\n"
+"        <range>\n"
+"            <min>0.08</min>\n"
+"            <max>10.0</max>\n"
+"            <resolution>0.01</resolution>\n"
+"        </range>\n"
+"    </ray>\n"
+"    <always_on>1</always_on>\n"
+"    <visualize>true</visualize>\n"
+"</sensor>\n"
+msgstr ""
+"<sensor name='gpu_lidar' type='gpu_lidar'>\"\n"
+"    <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>\n"
+"    <topic>lidar</topic>\n"
+"    <update_rate>10</update_rate>\n"
+"    <ray>\n"
+"        <scan>\n"
+"            <horizontal>\n"
+"                <samples>640</samples>\n"
+"                <resolution>1</resolution>\n"
+"                <min_angle>-1.396263</min_angle>\n"
+"                <max_angle>1.396263</max_angle>\n"
+"            </horizontal>\n"
+"            <vertical>\n"
+"                <samples>1</samples>\n"
+"                <resolution>0.01</resolution>\n"
+"                <min_angle>0</min_angle>\n"
+"                <max_angle>0</max_angle>\n"
+"            </vertical>\n"
+"        </scan>\n"
+"        <range>\n"
+"            <min>0.08</min>\n"
+"            <max>10.0</max>\n"
+"            <resolution>0.01</resolution>\n"
+"        </range>\n"
+"    </ray>\n"
+"    <always_on>1</always_on>\n"
+"    <visualize>true</visualize>\n"
+"</sensor>\n"
+
+#: ../../../sensors.md:259
+msgid ""
+"First we defined the `name` and `type` of our sensor, then we defined its "
+"`<pose>` relative to the `lidar_frame`."
+msgstr ""
+
+#: ../../../sensors.md:261
+msgid ""
+"In the `<topic>` we define the topic on which the lidar data will be "
+"published."
+msgstr ""
+
+#: ../../../sensors.md:262
+msgid ""
+"`<update_rate>` is the frequency at which the `lidar` data is generated, in "
+"our case `10 Hz` which is equal to `0.1 sec`."
+msgstr ""
+
+#: ../../../sensors.md:264
+msgid ""
+"Under the `<horizontal>` and `<vertical>` tags we define the properties of "
+"the horizontal and vertical laser rays."
+msgstr ""
+
+#: ../../../sensors.md:266
+msgid ""
+"`<samples>` is the number of simulated lidar rays to generate per complete "
+"laser sweep cycle."
+msgstr ""
+
+#: ../../../sensors.md:268
+msgid ""
+"`<resolution>`: this number is multiplied by samples to determine the number "
+"range data points."
+msgstr ""
+
+#: ../../../sensors.md:270
+msgid ""
+"The `<min_angle>` and `<max_angle>` are the angle range of the generated "
+"rays."
+msgstr ""
+
+#: ../../../sensors.md:271
+msgid "Under the `<range>` we define range properties of each simulated ray"
+msgstr ""
+
+#: ../../../sensors.md:272
+msgid ""
+"`<min>` and `<max>` define the minimum and maximum distance for each lidar "
+"ray."
+msgstr ""
+
+#: ../../../sensors.md:273
+msgid ""
+"The `<resolution>` tag here defines the linear resolution of each lidar ray."
+msgstr ""
+
+#: ../../../sensors.md:274
+msgid ""
+"`<always_on>`: if true the sensor will always be updated according to the "
+"`<update_rate>`."
+msgstr ""
+
+#: ../../../sensors.md:275
+msgid "`<visualize>`: if true the sensor is visualized in the GUI."
+msgstr ""
+
+#: ../../../sensors.md:277
+msgid "Now run the world and press the play button in the bottom-left corner:"
+msgstr ""
+
+#: ../../../sensors.md:281
+msgid ""
+"Look at the lidar messages on the `/lidar` topic, specifically the `ranges` "
+"data:"
+msgstr ""
+
+#: ../../../sensors.md:283
+msgid "`gz topic -e -t /lidar`"
+msgstr ""
+
+#: ../../../sensors.md:285
+msgid "The lidar message has the following attributes:"
+msgstr ""
+
+#: ../../../sensors.md:287
+msgid ""
+"message LaserScan\n"
+"{\n"
+"  Header header              = 1;\n"
+"\n"
+"  string frame               = 2;\n"
+"  Pose world_pose            = 3;\n"
+"  double angle_min           = 4;\n"
+"  double angle_max           = 5;\n"
+"  double angle_step          = 6;\n"
+"  double range_min           = 7;\n"
+"  double range_max           = 8;\n"
+"  uint32 count               = 9;\n"
+"  double vertical_angle_min  = 10;\n"
+"  double vertical_angle_max  = 11;\n"
+"  double vertical_angle_step = 12;\n"
+"  uint32 vertical_count      = 13;\n"
+"\n"
+"  repeated double ranges              = 14;\n"
+"  repeated double intensities         = 15;\n"
+"}\n"
+msgstr ""
+"message LaserScan\n"
+"{\n"
+"  Header header              = 1;\n"
+"\n"
+"  string frame               = 2;\n"
+"  Pose world_pose            = 3;\n"
+"  double angle_min           = 4;\n"
+"  double angle_max           = 5;\n"
+"  double angle_step          = 6;\n"
+"  double range_min           = 7;\n"
+"  double range_max           = 8;\n"
+"  uint32 count               = 9;\n"
+"  double vertical_angle_min  = 10;\n"
+"  double vertical_angle_max  = 11;\n"
+"  double vertical_angle_step = 12;\n"
+"  uint32 vertical_count      = 13;\n"
+"\n"
+"  repeated double ranges              = 14;\n"
+"  repeated double intensities         = 15;\n"
+"}\n"
+
+#: ../../../sensors.md:310
+msgid "Avoid the wall"
+msgstr ""
+
+#: ../../../sensors.md:312
+msgid ""
+"Now as we have the lidar on our robot, we can use the `ranges` data and make "
+"our robot avoid hitting the wall. To do that, we'll write a short C++ "
+"program that listens to the sensor data and sends velocity commands to the "
+"robot. This program is called a node. We will build a node that subscribes "
+"to the `/lidar` topic and reads its data. Have a look at this [tutorial]"
+"(https://gazebosim.org/api/transport/15/messages.html) to learn how to build "
+"a `publisher` and a `subscriber` node. You can download the finished node "
+"for this demo from [here](https://github.com/gazebosim/docs/blob/master/"
+"rotary/tutorials/sensors/lidar_node.cc)."
+msgstr ""
+
+#: ../../../sensors.md:322
+msgid "The lidar_node"
+msgstr ""
+
+#: ../../../sensors.md:324
+msgid ""
+"std::string topic_pub = \"/cmd_vel\";\n"
+"gz::transport::Node node;\n"
+"auto pub = node.Advertise<gz::msgs::Twist>(topic_pub);\n"
+msgstr ""
+"std::string topic_pub = \"/cmd_vel\";\n"
+"gz::transport::Node node;\n"
+"auto pub = node.Advertise<gz::msgs::Twist>(topic_pub);\n"
+
+#: ../../../sensors.md:330
+msgid ""
+"We declare a `node` which will publish to `cmd_vel` topic. Then advertise "
+"our node."
+msgstr ""
+
+#: ../../../sensors.md:332
+msgid ""
+"void cb(const gz::msgs::LaserScan &_msg)\n"
+"{\n"
+"  gz::msgs::Twist data;\n"
+"\n"
+"  bool allMore = true;\n"
+"  for (int i = 0; i < _msg.ranges_size(); i++)\n"
+"  {\n"
+"    if (_msg.ranges(i) < 1.0)\n"
+"    {\n"
+"      allMore = false;\n"
+"      break;\n"
+"    }\n"
+"  }\n"
+"  if (allMore) //if all bigger than one\n"
+"  {\n"
+"    data.mutable_linear()->set_x(0.5);\n"
+"    data.mutable_angular()->set_z(0.0);\n"
+"  }\n"
+"  else\n"
+"  {\n"
+"    data.mutable_linear()->set_x(0.0);\n"
+"    data.mutable_angular()->set_z(0.5);\n"
+"  }\n"
+"  pub.Publish(data);\n"
+"}\n"
+msgstr ""
+"void cb(const gz::msgs::LaserScan &_msg)\n"
+"{\n"
+"  gz::msgs::Twist data;\n"
+"\n"
+"  bool allMore = true;\n"
+"  for (int i = 0; i < _msg.ranges_size(); i++)\n"
+"  {\n"
+"    if (_msg.ranges(i) < 1.0)\n"
+"    {\n"
+"      allMore = false;\n"
+"      break;\n"
+"    }\n"
+"  }\n"
+"  if (allMore) //if all bigger than one\n"
+"  {\n"
+"    data.mutable_linear()->set_x(0.5);\n"
+"    data.mutable_angular()->set_z(0.0);\n"
+"  }\n"
+"  else\n"
+"  {\n"
+"    data.mutable_linear()->set_x(0.0);\n"
+"    data.mutable_angular()->set_z(0.5);\n"
+"  }\n"
+"  pub.Publish(data);\n"
+"}\n"
+
+#: ../../../sensors.md:360
+msgid ""
+"Inside the callback function we check if the range of all rays are bigger "
+"than `1.0`. If so we publish a message to our car to move forward. Otherwise "
+"we make the robot rotate."
+msgstr ""
+
+#: ../../../sensors.md:363
+msgid ""
+"int main(int argc, char **argv)\n"
+"{\n"
+"    std::string topic_sub = \"/lidar\";\n"
+"    // Subscribe to a topic by registering a callback.\n"
+"    if (!node.Subscribe(topic_sub, cb))\n"
+"    {\n"
+"        std::cerr << \"Error subscribing to topic [\" << topic_sub << \"]\" "
+"<< std::endl;\n"
+"        return -1;\n"
+"    }\n"
+"\n"
+"    // Zzzzzz.\n"
+"    gz::transport::waitForShutdown();\n"
+"\n"
+"    return 0;\n"
+"}\n"
+msgstr ""
+
+#: ../../../sensors.md:381
+msgid ""
+"Inside the main we subscribe to the `lidar` topic, and wait until the node "
+"is shut down."
+msgstr ""
+
+#: ../../../sensors.md:383
+msgid "Build the node"
+msgstr ""
+
+#: ../../../sensors.md:385
+msgid ""
+"Download the [CMakeLists.txt](https://github.com/gazebosim/docs/blob/master/"
+"rotary/tutorials/sensors/CMakeLists.txt), and in the same folder of "
+"`lidar_node` create `build/` directory:"
+msgstr ""
+
+#: ../../../sensors.md:387
+msgid ""
+"mkdir build\n"
+"cd build\n"
+msgstr ""
+"mkdir build\n"
+"cd build\n"
+
+#: ../../../sensors.md:392
+msgid "Run cmake and build the code:"
+msgstr ""
+
+#: ../../../sensors.md:394
+msgid ""
+"cmake ..\n"
+"make lidar_node\n"
+msgstr ""
+"cmake ..\n"
+"make lidar_node\n"
+
+#: ../../../sensors.md:399
+msgid "Run the node"
+msgstr ""
+
+#: ../../../sensors.md:401
+msgid "Run the node from terminal 1:"
+msgstr ""
+
+#: ../../../sensors.md:403
+msgid "./build/lidar_node\n"
+msgstr ""
+
+#: ../../../sensors.md:407
+msgid "Run the world from terminal 2:"
+msgstr ""
+
+#: ../../../sensors.md:409
+msgid "gz sim sensor_tutorial.sdf\n"
+msgstr ""
+
+#: ../../../sensors.md:413
+msgid ""
+"Now you can see the robot move forward and as it approaches the wall it "
+"starts to turn left until it's clear and moves forward again (be sure to "
+"press the play button in the bottom-left corner to make the robot start "
+"moving)."
+msgstr ""
+
+#: ../../../sensors.md:415
+msgid "Gazebo launch"
+msgstr ""
+
+#: ../../../sensors.md:417
+msgid ""
+"Instead of running two different tasks from two different terminals we can "
+"make a launch file which will run the `sensor_world` and the `lidar_node` at "
+"the same time. Open your text editor and add the following code."
+msgstr ""
+
+#: ../../../sensors.md:419
+msgid ""
+"<?xml version='1.0'?>\n"
+"<gz version='1.0'>\n"
+"  <executable name='sensor-world'>\n"
+"    <command>gz sim sensor_tutorial.sdf</command>\n"
+"  </executable>\n"
+"\n"
+"  <executable name='lidar_node'>\n"
+"    <command>./build/lidar_node</command>\n"
+"  </executable>\n"
+"\n"
+"</gz>\n"
+msgstr ""
+
+#: ../../../sensors.md:433
+msgid ""
+"The launch file is an XML file. We simply define what commands will run "
+"under the `<executable>` tag. The first command is `gz sim sensor_tutorial."
+"sdf` which launches the world. And the second command is `./build/"
+"lidar_node` which runs the `lidar_node`. Save the file as `sensor_launch."
+"gzlaunch`, and then run it using the following command:"
+msgstr ""
+
+#: ../../../sensors.md:438
+msgid "gz launch sensor_launch.gzlaunch\n"
+msgstr ""
+
+#: ../../../sensors.md:442
+msgid ""
+"Press the play button to start the simulation. Hurray! Our robot is now "
+"moving and avoiding the wall."
+msgstr ""
+
+#: ../../../sensors.md:444
+msgid ""
+"To add even more complexity to your simulation, learn how to add actors to a "
+"world in the [next tutorial](actors)."
+msgstr ""
+
+#: ../../../sensors.md:446
+msgid "Video walk-through"
+msgstr ""
+
+#: ../../../sensors.md:448
+msgid ""
+"A video walk-through of this tutorial is available from our YouTube channel: "
+"[Gazebo tutorials: Sensors](https://youtu.be/WcFyGPEfhHc)"
+msgstr ""
+
+#: ../../../sensors.md:450
+msgid ""
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"WcFyGPEfhHc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-"
+"media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+msgstr ""
