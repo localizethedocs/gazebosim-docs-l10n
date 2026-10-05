@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo citadel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ign_docker_env.md:1
+msgid "Dockerized Development on Ubuntu"
+msgstr ""
+
+#: ../../../ign_docker_env.md:3
+msgid ""
+"These instructions are meant for advanced users, and currently do not "
+"include all steps to copy-and-paste. These instructions apply to [Ubuntu]"
+"(https://hub.docker.com/_/ubuntu) as the base image. These instructions "
+"create a Ubuntu Docker container ready for building, testing and running "
+"Ignition."
+msgstr ""
+
+#: ../../../ign_docker_env.md:7
+msgid "Install tools"
+msgstr ""
+
+#: ../../../ign_docker_env.md:9
+msgid ""
+"An off-the-shelf Docker container for development of Ignition is not "
+"available. https://github.com/ignition-tooling/gzdev provides tooling to "
+"build such a container for you. The following tools are required to be "
+"installed on the host machine:"
+msgstr ""
+
+#: ../../../ign_docker_env.md:13
+msgid ""
+"git - If not already installed consider [Ubuntu Binary Install]"
+"(install_ubuntu)"
+msgstr ""
+
+#: ../../../ign_docker_env.md:14
+msgid ""
+"Docker - If not already installed consider [Ubuntu Source Install]"
+"(install_ubuntu_src)"
+msgstr ""
+
+#: ../../../ign_docker_env.md:15
+msgid ""
+"gzdev - [ignition-tooling/gzdev](https://github.com/ignition-tooling/gzdev)"
+msgstr ""
+
+#: ../../../ign_docker_env.md:16
+msgid "vcstool - [dirk-thomas/vcstool](https://github.com/dirk-thomas/vcstool)"
+msgstr ""
+
+#: ../../../ign_docker_env.md:18
+msgid "Using gzdev ign-docker-env"
+msgstr ""
+
+#: ../../../ign_docker_env.md:20
+msgid ""
+"Detailed instructions are available in the [gzdev repository](https://github."
+"com/ignition-tooling/gzdev#using-ign-docker-env-to-build-ignition-"
+"repositories-from-source)."
+msgstr ""
+
+#: ../../../ign_docker_env.md:22
+msgid "High level instructions:"
+msgstr ""
+
+#: ../../../ign_docker_env.md:24
+msgid ""
+"Create a workspace with the source to mount into a container using `vcstool`"
+msgstr ""
+
+#: ../../../ign_docker_env.md:25
+msgid ""
+"Use `gzdev ign-docker-env` to build and start a container with `--vol` "
+"pointing to the previously created workspace"
+msgstr ""
+
+#: ../../../ign_docker_env.md:26
+msgid ""
+"See [Ubuntu Source Install section on building](install_ubuntu_src."
+"md#building-the-ignition-libraries) for instructions to work with a source "
+"install"
+msgstr ""
+
+#: ../../../ign_docker_env.md:27
+msgid "Consider [Contributing](contributing)"
+msgstr ""
+
+#: ../../../ign_docker_env.md:29
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../ign_docker_env.md:31
+msgid "See [Troubleshooting](troubleshooting)"
+msgstr ""
