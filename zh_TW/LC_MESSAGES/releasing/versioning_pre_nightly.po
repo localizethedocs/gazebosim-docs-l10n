@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo acropolis\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../releasing/versioning_pre_nightly.md:1
+msgid "Debian/Ubuntu versioning in nightly and prerelease binaries"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:3
+msgid ""
+"Binary packages produced for prerelease and nightly builds have some "
+"particularities to establish the priority among them nicely."
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:6
+msgid ""
+"**Prereleases** for version `X.Y.Z` are created as candidates of the stable "
+"release of `X.Y.Z` so the stable needs to have precedence over prereleases "
+"when both are available through different repositories."
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:10
+msgid ""
+"**Nightlies** for version `X.Y.Z` are snapshots of development code merged "
+"on top of a released version `X.Y.Z`. This includes features and/or patches "
+"that will be shipped into the next release. Therefore nightlies need to have "
+"precedence over stable releases. Another use case for nightlies is to serve "
+"as continuous unstable releases when preparing a new version `X.Y.Z`. In "
+"this scenario the stable release should have precedence over the nightlies "
+"generated before it. To get this precedence, the nightly version uses the "
+"trick of setting the version to `{X-1.99.99}` (i.e: if the version to "
+"release is `9.0.0`, the nightlies used before the version will use "
+"`8.99.99`)."
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:20
+msgid "Version schemes"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:22
+msgid ""
+"**Prerelease** versioning scheme: `{upcoming_version}~pre{prerelease_version}"
+"`"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:24
+msgid ""
+"`upcoming_version`: upstream version target for current prerelease series (e."
+"g., `X.Y.Z`)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:25
+msgid "`prerelease_version`: prerelease version number in the series"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:27
+msgid ""
+"**Nightly** uses the following versioning scheme: "
+"`{current_released_version}+git{date}+{nightly_revision}r{hash}-"
+"{nightly_revision}`"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:29
+msgid ""
+"`current_released_version`: will be the latest version released available in "
+"the changelog file of the corresponding `*-release` repo. If the nightly is "
+"used for an upcoming release (for example, gazebo10 where X is 10) then "
+"{X-1}.99.99-1 (gazebo10_9.99.99-1) form will be used until prereleases or "
+"final release."
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:34
+msgid "`date`: timestamp YYYY-MM-DD"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:36
+msgid ""
+"`hash`: git hash corresponding to code HEAD used in the nightly build.  Used "
+"for information proposes."
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:39
+msgid ""
+"`nightly_revision`:  revision number to apply to the nightly. It is also "
+"used to generate a new nightly using the same date timestamp."
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:42
+msgid "Versions when mixing stable, prerelease and nightly"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:44
+msgid ""
+"Which version has priority when using prerelease and stable repositories?"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:46
+#: ../../../releasing/versioning_pre_nightly.md:56
+#: ../../../releasing/versioning_pre_nightly.md:68
+msgid "packageA version: `1.0.0-1` (stable)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:47
+msgid "packageA prerelease: `1.0.1~pre1-1` (prerelease)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:48
+msgid "packageA prerelease: `1.0.1~pre2-1` (prerelease)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:49
+#: ../../../releasing/versioning_pre_nightly.md:58
+msgid "packageA version: `1.0.1-1` (stable)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:51
+msgid "Order: `1.0.1-1` > `1.0.1~pre2-1` > `1.0.1~pre1-1` > `1.0.0`"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:53
+msgid "Which version has priority when using nightly and stable repositories?"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:55
+msgid "packageA version: `0.99.99+git201501011r2212b5136299-1` (nightly)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:57
+msgid "packageA version: `1.0.0-1+git20150303r6912b5136236-1` (nightly)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:60
+msgid ""
+"Order: `1.0.1-1` > `1.0.0-1+git20150303r6912b5136236-1` > `1.0.0-1` > "
+"`0.99.99+git20150101r2212b5136299-1`"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:62
+msgid ""
+"Which version has priority when using nightly, prerelease and stable "
+"repositories?"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:64
+msgid "packageA version: `0.99.99+git20150101r2212b5136299-1` (nightly)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:65
+msgid "packageA prerelease: `1.0.0~pre1` (prerelease)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:66
+msgid "packageA version: `1.0.0~pre1+git20150101r2212b5136299-1` (nightly)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:67
+msgid "packageA prerelease: `1.0.0~pre2-1` (prerelease)"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:70
+msgid ""
+"Order: `1.0.0-1` > `1.0.0~pre2-1` > `1.0.0~pre1+git20150101r2212b5136299-1` "
+"> `1.0.0~pre1-1` > `0.99.99+git20150101r2212b5136299-1`"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:72
+msgid "MacOS versioning in unstable packages"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:74
+msgid ""
+"Some Brew packages have unstable versions, snapshots of software not "
+"corresponding to an official release. The version scheme is typically: "
+"`{current_released_version}~${osrf_revision}~{date}~{hash}`"
+msgstr ""
+
+#: ../../../releasing/versioning_pre_nightly.md:76
+msgid ""
+"`osrf_revision`: correspond to the revision number that identifies the  "
+"packaging metadata being used in the Brew formulae."
+msgstr ""
