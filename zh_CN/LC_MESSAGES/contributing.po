@@ -1,0 +1,1751 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo fortress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contributing.md:1
+msgid "Contributing to Gazebo"
+msgstr ""
+
+#: ../../../contributing.md:3
+msgid "Thank you for your interest in contributing to Gazebo!"
+msgstr ""
+
+#: ../../../contributing.md:5
+msgid ""
+"The following is a set of guidelines for contributing to Gazebo and its "
+"components, which are hosted in the [Gazebo Organization](https://github.com/"
+"gazebosim) on GitHub. These are mostly guidelines, not rules. Use your best "
+"judgment, and feel free to propose changes to this document in a pull "
+"request."
+msgstr ""
+
+#: ../../../contributing.md:11
+msgid "Code of Conduct"
+msgstr ""
+
+#: ../../../contributing.md:13
+msgid ""
+"This project and everyone participating in it is governed by the [Gazebo "
+"Code of Conduct](https://github.com/gazebosim/gz-sim/blob/main/"
+"CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. "
+"Please report unacceptable behavior at [https://gazebosim.org/support]"
+"(https://gazebosim.org/support)."
+msgstr ""
+
+#: ../../../contributing.md:17
+msgid "Project Design"
+msgstr ""
+
+#: ../../../contributing.md:19
+msgid "Repository List"
+msgstr ""
+
+#: ../../../contributing.md:21
+msgid ""
+"The following is a list of the major Gazebo repositories. A complete list "
+"can be found at [https://github.com/gazebosim/](https://github.com/"
+"gazebosim/)."
+msgstr ""
+
+#: ../../../contributing.md:25
+msgid ""
+"[gz-cmake](https://github.com/gazebosim/gz-cmake): CMake modules used to "
+"configure and build Gazebo libraries."
+msgstr ""
+
+#: ../../../contributing.md:27
+msgid ""
+"[gz-common](https://github.com/gazebosim/gz-common): Set of general purpose "
+"components and utilities, such as 3D mesh processing, console logging, and "
+"signal handling."
+msgstr ""
+
+#: ../../../contributing.md:30
+msgid ""
+"[gz-fuel-tools](https://github.com/gazebosim/gz-fuel-tools): Interact with "
+"Gazebo Fuel servers."
+msgstr ""
+
+#: ../../../contributing.md:32
+msgid ""
+"[gz-sim](https://github.com/gazebosim/gz-sim): A high-fidelity 3D rigid-body "
+"dynamic simulator."
+msgstr ""
+
+#: ../../../contributing.md:34
+msgid ""
+"[gz-gui](https://github.com/gazebosim/gz-gui): QT-based library to configure "
+"and manage graphical applications."
+msgstr ""
+
+#: ../../../contributing.md:36
+msgid ""
+"[gz-launch](https://github.com/gazebosim/gz-launch): Launch executables and "
+"plugins."
+msgstr ""
+
+#: ../../../contributing.md:38
+msgid ""
+"[gz-math](https://github.com/gazebosim/gz-math): A math library targeted "
+"toward robotic applications."
+msgstr ""
+
+#: ../../../contributing.md:40
+msgid ""
+"[gz-msgs](https://github.com/gazebosim/gz-msgs): Protobuf messages and "
+"utilities for simulation and robotics."
+msgstr ""
+
+#: ../../../contributing.md:42
+msgid ""
+"[gz-physics](https://github.com/gazebosim/gz-physics): Plugin based library "
+"for physics simulation."
+msgstr ""
+
+#: ../../../contributing.md:44
+msgid ""
+"[gz-plugin](https://github.com/gazebosim/gz-plugin): Library for "
+"registering, loading, and managing plugin libraries."
+msgstr ""
+
+#: ../../../contributing.md:46
+msgid ""
+"[gz-rendering](https://github.com/gazebosim/gz-rendering): Library that "
+"supports rendering through different engines, such as [OGRE](https://www."
+"ogre3d.org/) and [Optix](https://developer.nvidia.com/optix)."
+msgstr ""
+
+#: ../../../contributing.md:49
+msgid ""
+"[gz-sensors](https://github.com/gazebosim/gz-sensors): A set of models that "
+"generate realistic sensor data."
+msgstr ""
+
+#: ../../../contributing.md:51
+msgid ""
+"[gz-tools](https://github.com/gazebosim/gz-tools): Provides the `gz` command "
+"line interface that can be configured and used by multiple libraries."
+msgstr ""
+
+#: ../../../contributing.md:54
+msgid ""
+"[gz-transport](https://github.com/gazebosim/gz-transport): High performance "
+"inter- and intra-process communication based on [ZeroMQ](http://zeromq.org/) "
+"and [Protobuf](https://developers.google.com/protocol-buffers/)."
+msgstr ""
+
+#: ../../../contributing.md:57
+msgid ""
+"[gz-utils](https://github.com/gazebosim/gz-utils): General purpose classes "
+"and functions with minimal dependencies."
+msgstr ""
+
+#: ../../../contributing.md:59
+msgid "[sdformat](https://github.com/osrf/sdformat): World description format."
+msgstr ""
+
+#: ../../../contributing.md:61
+msgid "Gazebo Architecture"
+msgstr ""
+
+#: ../../../contributing.md:63
+msgid "Documents describing the architecture of Gazebo are listed here:"
+msgstr ""
+
+#: ../../../contributing.md:65
+msgid "[Gazebo Sim Architecture](architecture)"
+msgstr ""
+
+#: ../../../contributing.md:67
+msgid "How to Contribute"
+msgstr ""
+
+#: ../../../contributing.md:69
+msgid "Reporting Bugs"
+msgstr ""
+
+#: ../../../contributing.md:71
+msgid "**Before Submitting a Bug Report**"
+msgstr ""
+
+#: ../../../contributing.md:73
+msgid ""
+"Check the [questions and answers forum](http://answers.gazebosim.org). Your "
+"issue may have already been resolved."
+msgstr ""
+
+#: ../../../contributing.md:74
+msgid ""
+"Determine [the repository](contributing.md#repository-list) which should "
+"receive the problem."
+msgstr ""
+
+#: ../../../contributing.md:75
+msgid ""
+"Search the repository's issues to see if the same or similar problem has "
+"been opened. If it has and the issue is still open, then add a comment to "
+"the existing issue. Otherwise, create a new issue."
+msgstr ""
+
+#: ../../../contributing.md:79
+msgid "**How to Submit a Good Bug Report**"
+msgstr ""
+
+#: ../../../contributing.md:81
+msgid ""
+"Create an issue on the repository that is related to your bug, explain the "
+"problem, and include additional details to help maintainers reproduce the "
+"problem. Refer to the [Short, Self Contained, Correct (Compilable), Example "
+"Guide](http://sscce.org/) as well as the following tips:"
+msgstr ""
+
+#: ../../../contributing.md:86
+msgid ""
+"**Use a clear and descriptive title** for the issue to identify the problem."
+msgstr ""
+
+#: ../../../contributing.md:87
+msgid ""
+"**Describe the exact steps which reproduce the problem** in as many details "
+"as possible. When listing steps, don't just say what you did, but explain "
+"how you did it."
+msgstr ""
+
+#: ../../../contributing.md:88
+msgid ""
+"**Provide specific examples to demonstrate the steps.** Include links to "
+"files or projects, or copy/pasteable snippets, which you use in those "
+"examples."
+msgstr ""
+
+#: ../../../contributing.md:89
+msgid ""
+"**Describe the behavior you observed after following the steps** and point "
+"out what exactly is the problem with that behavior."
+msgstr ""
+
+#: ../../../contributing.md:90
+msgid "**Explain which behavior you expected to see instead and why**."
+msgstr ""
+
+#: ../../../contributing.md:91 ../../../contributing.md:145
+msgid ""
+"**Include screenshots and animated GIFs** which show you following the "
+"described steps and clearly demonstrate the problem. See [Creating GIFs]"
+"(contributing.md#creating-gifs) for GIF creation utilities."
+msgstr ""
+
+#: ../../../contributing.md:92
+msgid ""
+"**If the problem wasn't triggered by a specific action**, describe what you "
+"were doing before the problem happened and share more information using the "
+"guidelines below."
+msgstr ""
+
+#: ../../../contributing.md:94
+msgid "Provide more context by answering these questions:"
+msgstr ""
+
+#: ../../../contributing.md:96
+msgid ""
+"**Did the problem start happening recently** (e.g. after updating to a new "
+"version) or was this always a problem?"
+msgstr ""
+
+#: ../../../contributing.md:97
+msgid ""
+"If the problem started happening recently, **can you reproduce the problem "
+"in an older version?** What's the most recent version in which the problem "
+"doesn't happen?"
+msgstr ""
+
+#: ../../../contributing.md:98
+msgid ""
+"**Can you reliably reproduce the issue?** If not, provide details about how "
+"often the problem happens and under which conditions it normally happens."
+msgstr ""
+
+#: ../../../contributing.md:99
+msgid ""
+"If the problem is related to working with files, **does the problem happen "
+"for all files and projects or only some?** Does the problem happen only when "
+"working with local or remote files, with files of a specific type (e.g. only "
+"Collada or SDF), or with large files or files with very long lines? Is there "
+"anything else special about the files you are using?"
+msgstr ""
+
+#: ../../../contributing.md:101
+msgid "Include details about your configuration and environment:"
+msgstr ""
+
+#: ../../../contributing.md:103
+msgid "**Which version of Gazebo are you using**?"
+msgstr ""
+
+#: ../../../contributing.md:104
+msgid "**What's the name and version of the OS you're using**?"
+msgstr ""
+
+#: ../../../contributing.md:105
+msgid ""
+"**Are you running Gazebo in a virtual machine?** If so, which VM software "
+"are you using and which operating systems and versions are used for the host "
+"and the guest?"
+msgstr ""
+
+#: ../../../contributing.md:107
+msgid "Suggesting Enhancements"
+msgstr ""
+
+#: ../../../contributing.md:109
+msgid ""
+"This section guides you through submitting an enhancement suggestion, "
+"including completely new features and minor improvements to existing "
+"functionality. Following these guidelines helps maintainers and the "
+"community understand your suggestion and find related suggestions."
+msgstr ""
+
+#: ../../../contributing.md:114
+msgid ""
+"Before creating enhancement suggestions, please check [this list]"
+"(contributing.md#before-submitting-an-enhancement-suggestion) as you might "
+"find out that you don't need to create one. When you are creating an "
+"enhancement suggestion, please [include as many details as possible]"
+"(contributing.md#how-do-i-submit-a-good-enhancement-suggestion). When "
+"filling in the issue form for an enhancement suggestion, include the steps "
+"that you imagine you would take if the feature you're requesting existed."
+msgstr ""
+
+#: ../../../contributing.md:123
+msgid "Before Submitting An Enhancement Suggestion"
+msgstr ""
+
+#: ../../../contributing.md:125
+msgid ""
+"**Check if you're using the latest software version**. A more recent version "
+"may contain your desired feature."
+msgstr ""
+
+#: ../../../contributing.md:126
+msgid ""
+"**Check if there's already [a library](https://gazebosim.org/libs) which "
+"provides that enhancement.**"
+msgstr ""
+
+#: ../../../contributing.md:127
+msgid ""
+"**Determine [which repository the enhancement should be suggested in]"
+"(contributing.md#repository-list).**"
+msgstr ""
+
+#: ../../../contributing.md:128
+msgid ""
+"**Perform a [cursory search](https://github.com/search?"
+"q=org%3Agazebosim&type=Issues)** to see if the enhancement has already been "
+"suggested. If it has, add a comment to the existing issue instead of opening "
+"a new one."
+msgstr ""
+
+#: ../../../contributing.md:129
+msgid ""
+"**Ask on the [community forum](https://community.gazebosim.org) about your "
+"feature.** Someone else might already have started, and you might be able to "
+"help."
+msgstr ""
+
+#: ../../../contributing.md:133
+msgid "How Do I Submit A (Good) Enhancement Suggestion?"
+msgstr ""
+
+#: ../../../contributing.md:135
+msgid ""
+"Enhancement suggestions are tracked as [GitHub issues](https://help.github."
+"com/en/github/managing-your-work-on-github/about-issues). After you've "
+"determined [which repository](contributing.md#repository-list) your "
+"enhancement suggestion is related to, create an issue on that repository and "
+"provide the following information:"
+msgstr ""
+
+#: ../../../contributing.md:141
+msgid ""
+"**Use a clear and descriptive title** for the issue to identify the "
+"suggestion."
+msgstr ""
+
+#: ../../../contributing.md:142
+msgid ""
+"**Provide a step-by-step description of the suggested enhancement** in as "
+"many details as possible."
+msgstr ""
+
+#: ../../../contributing.md:143
+msgid ""
+"**Provide specific examples to demonstrate the steps**. Include copy/"
+"pasteable snippets which you use in those examples, as [Markdown code blocks]"
+"(https://help.github.com/en/github/writing-on-github/creating-and-"
+"highlighting-code-blocks)."
+msgstr ""
+
+#: ../../../contributing.md:144
+msgid ""
+"**Describe the current behavior** and **explain which behavior you expected "
+"to see instead** and why."
+msgstr ""
+
+#: ../../../contributing.md:146
+msgid ""
+"**Explain why this enhancement would be useful** to most users and isn't "
+"something that can or should be implemented as a separate application."
+msgstr ""
+
+#: ../../../contributing.md:147
+msgid "**Specify which version of Gazebo you're using.**"
+msgstr ""
+
+#: ../../../contributing.md:148
+msgid "**Specify the name and version of the OS you're using.**"
+msgstr ""
+
+#: ../../../contributing.md:150
+msgid "Contributing Code"
+msgstr ""
+
+#: ../../../contributing.md:152
+msgid ""
+"We follow a development process designed to reduce errors, encourage "
+"collaboration, and make high quality code. Review the following to get "
+"acquainted with this development process."
+msgstr ""
+
+#: ../../../contributing.md:156
+msgid ""
+"**Read the [Reporting Bugs](contributing.md#reporting-bugs) and [Suggesting "
+"Enhancements](contributing.md#suggesting-enhancements)** sections first."
+msgstr ""
+
+#: ../../../contributing.md:158
+msgid ""
+"**Fork the Gazebo library** you want to contribute to. This will create your "
+"own personal copy of the library. All of your development should take place "
+"in your fork."
+msgstr ""
+
+#: ../../../contributing.md:161
+msgid ""
+"An important thing to do is create a remote pointing to the [upstream remote "
+"repository](https://docs.github.com/en/github/collaborating-with-issues-and-"
+"pull-requests/configuring-a-remote-for-a-fork). This way, you can always "
+"check for modifications on the original repository and **always** keep your "
+"fork repository up to date."
+msgstr ""
+
+#: ../../../contributing.md:163
+msgid "**Choose a base branch.**"
+msgstr ""
+
+#: ../../../contributing.md:164
+msgid ""
+"If your changes will break API or ABI, then base your new branch off of "
+"`main`."
+msgstr ""
+
+#: ../../../contributing.md:165
+msgid ""
+"If you are making interdependent changes to multiple repositories without "
+"breaking API or ABI, it is also recommended to base your new branches off of "
+"`main` to simplify automated testing of the changes and the review process. "
+"Your changes may be backported to an existing release once all the changes "
+"have been merged."
+msgstr ""
+
+#: ../../../contributing.md:170
+msgid ""
+"If your changes don't break API/ABI and you would like them to be released "
+"to an existing release with major version `N`, then use branch `gz-"
+"<library>N` as the base."
+msgstr ""
+
+#: ../../../contributing.md:174
+msgid ""
+"**Work out of a branch** Always work out of a new branch, one that is not a "
+"release / main branch. This is a good habit to get in, and will make your "
+"life easier."
+msgstr ""
+
+#: ../../../contributing.md:178
+msgid "**Write your code.** This is the fun part, but is good to remember:"
+msgstr ""
+
+#: ../../../contributing.md:179
+msgid ""
+"Always [signoff on your commits](https://docs.github.com/en/repositories/"
+"managing-your-repositorys-settings-and-features/managing-repository-settings/"
+"managing-the-commit-signoff-policy-for-your-repository#about-commit-"
+"signoffs) (See the bullet about Developer Certificate of Origin in the "
+"[Process](contributing.md#process) section below)"
+msgstr ""
+
+#: ../../../contributing.md:180
+msgid ""
+"Look at the existing code and try to maintain the existing style and pattern "
+"as much as possible"
+msgstr ""
+
+#: ../../../contributing.md:181
+msgid "**Always** keep your branch updated with the original repository"
+msgstr ""
+
+#: ../../../contributing.md:183
+msgid ""
+"**Write tests.** In most cases, a pull request will only be accepted if it "
+"has tests. See the [Writing Tests](contributing.md#writing-tests) section "
+"below for more information."
+msgstr ""
+
+#: ../../../contributing.md:187
+msgid ""
+"**Resolve compiler warnings.** Code must have zero compile warnings, or at "
+"least make sure your pull request is not adding new warnings."
+msgstr ""
+
+#: ../../../contributing.md:189
+msgid "**Follow the [style guide](contributing.md#style-guides).**"
+msgstr ""
+
+#: ../../../contributing.md:191
+msgid ""
+"Static code checking analyzes your code for bugs, such as potential memory  "
+"leaks, and style. Most Gazebo libraries use the `cppcheck` static code  "
+"checker, and a modified version `cpplint`. Ubuntu  users can install via:"
+msgstr ""
+
+#: ../../../contributing.md:196
+msgid " sudo apt-get install cppcheck\n"
+msgstr ""
+
+#: ../../../contributing.md:198
+msgid ""
+"To check your code, run the following script from the `build` folder of the "
+"project that you're working on.  If you're working on *gz-math*, for "
+"instance, the path for the folder should be something similar to `~/"
+"citadel_ws/build/gz-math6`.  The path example is assuming you followed [our "
+"installation instructions](install) using colcon."
+msgstr ""
+
+#: ../../../contributing.md:202
+msgid "Then, run the script inside this folder:"
+msgstr ""
+
+#: ../../../contributing.md:204
+msgid " make codecheck\n"
+msgstr ""
+
+#: ../../../contributing.md:206
+msgid ""
+"This may take a few minutes to run. Fix all errors and warnings until  the "
+"output looks like:"
+msgstr ""
+
+#: ../../../contributing.md:209
+msgid " Built target codecheck\n"
+msgstr ""
+
+#: ../../../contributing.md:211
+msgid ""
+"The tool does not catch all style errors. See the [code style](contributing."
+"md#style-guides) section below for more information."
+msgstr ""
+
+#: ../../../contributing.md:213
+msgid "**(optional) Use clang-tidy for additional checks.**"
+msgstr ""
+
+#: ../../../contributing.md:215
+msgid "clang-tidy should return no errors when run against the code base."
+msgstr ""
+
+#: ../../../contributing.md:217
+msgid "Ubuntu users can install via:"
+msgstr ""
+
+#: ../../../contributing.md:219
+msgid " sudo apt-get install clang-tidy-6.0 libclang-6.0-dev python-yaml\n"
+msgstr ""
+
+#: ../../../contributing.md:221
+msgid "clang-tidy can then be executed by running from the source dir:"
+msgstr ""
+
+#: ../../../contributing.md:223
+msgid " ./tools/clang_tidy.sh\n"
+msgstr ""
+
+#: ../../../contributing.md:225
+msgid "Address issues that are found."
+msgstr ""
+
+#: ../../../contributing.md:227
+msgid ""
+"If you are feeling adventurous, you can experiment with adding additional "
+"checks to the `.clang-tidy` file by referencing the full list of options in "
+"the [clang-tidy documentation](http://clang.llvm.org/extra/clang-tidy/checks/"
+"list.html)"
+msgstr ""
+
+#: ../../../contributing.md:229
+msgid ""
+"**Tests must pass.** You can check by running `make test` in  your build "
+"directory. Running tests may take a bit of time, be patient."
+msgstr ""
+
+#: ../../../contributing.md:232
+msgid ""
+"**Write documentation.** Document all your code. Every class, function, "
+"member variable must have doxygen comments. All code in source files must "
+"have documentation that describes the functionality. This will help "
+"reviewers and future developers."
+msgstr ""
+
+#: ../../../contributing.md:234
+msgid ""
+"**Review your code.** Before submitting your code through a pull request, "
+"take some time to review everything line-by-line. The review process will go "
+"much faster if you make sure everything is perfect before other people look "
+"at your code.  There is a bit of the human-condition involved here. Folks "
+"are less likely to spend time reviewing your code if it's sloppy."
+msgstr ""
+
+#: ../../../contributing.md:240
+msgid "**Make small pull requests**"
+msgstr ""
+
+#: ../../../contributing.md:242
+msgid ""
+"A large pull request is hard to review, and will take a long time. It is  "
+"worth your time to split a large pull request into multiple smaller pull  "
+"requests. For reference, here are a few examples:"
+msgstr ""
+
+#: ../../../contributing.md:246
+msgid "[Small, very nice](https://github.com/osrf/gazebo/pull/2789)"
+msgstr ""
+
+#: ../../../contributing.md:248
+msgid "[Medium, still okay](https://github.com/osrf/gazebo/pull/2784)"
+msgstr ""
+
+#: ../../../contributing.md:250
+msgid "[Too large](https://github.com/osrf/gazebo/pull/2776)"
+msgstr ""
+
+#: ../../../contributing.md:252
+msgid ""
+"**Submit a pull request** to the Gazebo library through GitHub when you're "
+"ready."
+msgstr ""
+
+#: ../../../contributing.md:254
+msgid "**Check Continuous integration**"
+msgstr ""
+
+#: ../../../contributing.md:256
+msgid ""
+"The moment you make a pull request, a few test jobs  will be started. These "
+"jobs will build your branch on Linux, Mac and  Windows, run all tests and "
+"check for warnings."
+msgstr ""
+
+#: ../../../contributing.md:260
+msgid ""
+"Check the [Continuous Integration guide](ci)  for information on how to "
+"interpret the results."
+msgstr ""
+
+#: ../../../contributing.md:263
+msgid ""
+"**Respond to reviewers.** At least two other people have to approve your "
+"pull request before it can be merged. Please be responsive to any questions "
+"and comments."
+msgstr ""
+
+#: ../../../contributing.md:265
+msgid ""
+"**Done, phew.** Once you have met all the requirements, your code will be "
+"merged. Thanks for improving Gazebo!"
+msgstr ""
+
+#: ../../../contributing.md:267
+msgid "Tracking Progress"
+msgstr ""
+
+#: ../../../contributing.md:269
+msgid ""
+"Gazebo development progress is tracked publicly using a GitHub project "
+"board. Using project boards ensures the community has visibility to what’s "
+"coming up, external contributors can understand where they can help, and the "
+"reasoning behind development decisions are visible to everyone."
+msgstr ""
+
+#: ../../../contributing.md:274
+msgid ""
+"Contributors should look at the [\"Core development\" board](https://github."
+"com/orgs/gazebosim/projects/3), though it's possible we may have other "
+"boards in our organization at various times."
+msgstr ""
+
+#: ../../../contributing.md:276
+msgid "Repositories"
+msgstr ""
+
+#: ../../../contributing.md:278
+msgid ""
+"The following repositories from [Gazebo](https://github.com/gazebosim/) are "
+"tracked:"
+msgstr ""
+
+#: ../../../contributing.md:280
+msgid "[gz-cmake](https://github.com/gazebosim/gz-cmake)"
+msgstr ""
+
+#: ../../../contributing.md:281
+msgid "[gz-common](https://github.com/gazebosim/gz-common)"
+msgstr ""
+
+#: ../../../contributing.md:282
+msgid "[gz-fuel-tools](https://github.com/gazebosim/gz-fuel-tools)"
+msgstr ""
+
+#: ../../../contributing.md:283
+msgid "[gz-gazebo](https://github.com/gazebosim/gz-sim)"
+msgstr ""
+
+#: ../../../contributing.md:284
+msgid "[gz-gui](https://github.com/gazebosim/gz-gui)"
+msgstr ""
+
+#: ../../../contributing.md:285
+msgid "[gz-launch](https://github.com/gazebosim/gz-launch)"
+msgstr ""
+
+#: ../../../contributing.md:286
+msgid "[gz-math](https://github.com/gazebosim/gz-math)"
+msgstr ""
+
+#: ../../../contributing.md:287
+msgid "[gz-msgs](https://github.com/gazebosim/gz-msgs)"
+msgstr ""
+
+#: ../../../contributing.md:288
+msgid "[gz-physics](https://github.com/gazebosim/gz-physics)"
+msgstr ""
+
+#: ../../../contributing.md:289
+msgid "[gz-plugin](https://github.com/gazebosim/gz-plugin)"
+msgstr ""
+
+#: ../../../contributing.md:290
+msgid "[gz-rendering](https://github.com/gazebosim/gz-rendering)"
+msgstr ""
+
+#: ../../../contributing.md:291
+msgid "[gz-sensors](https://github.com/gazebosim/gz-sensors)"
+msgstr ""
+
+#: ../../../contributing.md:292
+msgid "[gz-tools](https://github.com/gazebosim/gz-tools)"
+msgstr ""
+
+#: ../../../contributing.md:293
+msgid "[gz-transport](https://github.com/gazebosim/gz-transport)"
+msgstr ""
+
+#: ../../../contributing.md:294
+msgid "[gz-utils](https://github.com/gazebosim/gz-utils)"
+msgstr ""
+
+#: ../../../contributing.md:295
+msgid "[docs](https://github.com/gazebosim/docs/)"
+msgstr ""
+
+#: ../../../contributing.md:296
+msgid "[design](https://github.com/gazebosim/design)"
+msgstr ""
+
+#: ../../../contributing.md:297
+msgid "[ros_gz](https://github.com/gazebosim/ros_gz)"
+msgstr ""
+
+#: ../../../contributing.md:300
+msgid ""
+"New issues and pull requests, and issue and pull request statuses, from "
+"across the tracked repositories are all automatically synced with the same "
+"board."
+msgstr ""
+
+#: ../../../contributing.md:302
+msgid ""
+"Unfortunately, GitHub boards' cross-org support is poor. The following repos "
+"can't be handled automatically and have to be manually tracked on the board "
+"along with the ones listed above:"
+msgstr ""
+
+#: ../../../contributing.md:305
+msgid "[sdformat](https://github.com/osrf/sdformat)"
+msgstr ""
+
+#: ../../../contributing.md:306
+msgid "[gazebo](https://github.com/osrf/gazebo)"
+msgstr ""
+
+#: ../../../contributing.md:307
+msgid "[homebrew-simulation](https://github.com/osrf/homebrew-simulation)"
+msgstr ""
+
+#: ../../../contributing.md:308
+msgid "[gazebo_ros_pkgs](https://github.com/ros-simulation/gazebo_ros_pkgs/)"
+msgstr ""
+
+#: ../../../contributing.md:309
+msgid "[release-tools](https://github.com/gazebo-tooling/release-tools)"
+msgstr ""
+
+#: ../../../contributing.md:310
+msgid "[gazebodistro](https://github.com/gazebo-tooling/gazebodistro)"
+msgstr ""
+
+#: ../../../contributing.md:312
+msgid "Board Columns"
+msgstr ""
+
+#: ../../../contributing.md:314
+msgid "The project board columns are defined below:"
+msgstr ""
+
+#: ../../../contributing.md:316
+msgid "**Inbox**: New issues and pull requests"
+msgstr ""
+
+#: ../../../contributing.md:317
+msgid "**To do**: Issues ready to be worked on."
+msgstr ""
+
+#: ../../../contributing.md:318
+msgid ""
+"**In progress**: Issues being worked on / pull requests being iterated on."
+msgstr ""
+
+#: ../../../contributing.md:319
+msgid "**In review**: Pull requests under review / issues requesting feedback."
+msgstr ""
+
+#: ../../../contributing.md:320
+msgid "**Done**: Closed issues / pull requests (cleared from time to time)."
+msgstr ""
+
+#: ../../../contributing.md:322
+msgid ""
+"If a ticket is not on the board, it means that the core team is not planning "
+"to work on it, but the community is welcome to do so."
+msgstr ""
+
+#: ../../../contributing.md:325
+msgid "Process"
+msgstr ""
+
+#: ../../../contributing.md:327
+msgid "All Gazebo team members actively:"
+msgstr ""
+
+#: ../../../contributing.md:329
+msgid ""
+"**Watch** all Gazebo repositories to receive email notifications of new "
+"issues / pull requests"
+msgstr ""
+
+#: ../../../contributing.md:330
+msgid "Provide **feedback** to issues as soon as possible"
+msgstr ""
+
+#: ../../../contributing.md:331
+msgid "**Review** pull requests as soon as possible"
+msgstr ""
+
+#: ../../../contributing.md:333
+msgid "Team members can review pull requests already under review or approved"
+msgstr ""
+
+#: ../../../contributing.md:334
+msgid "Team members can provide some feedback without doing a full review"
+msgstr ""
+
+#: ../../../contributing.md:336
+msgid "During weekly simulation meetings, the team:"
+msgstr ""
+
+#: ../../../contributing.md:338
+msgid "Discusses the **Done** column and archives all tickets"
+msgstr ""
+
+#: ../../../contributing.md:339
+msgid ""
+"Discusses the **In Review** column and makes sure all pull requests have "
+"reviewers"
+msgstr ""
+
+#: ../../../contributing.md:340
+msgid "Discusses the **In Progress** column"
+msgstr ""
+
+#: ../../../contributing.md:341
+msgid "Quickly **triages** the inbox, if there’s anything left in it"
+msgstr ""
+
+#: ../../../contributing.md:343
+msgid ""
+"If we won’t work on an issue in the near future, **remove** it from the "
+"board."
+msgstr ""
+
+#: ../../../contributing.md:344
+msgid ""
+"If we think the issue should be tackled, label it **[help wanted](https://"
+"github.com/search?"
+"q=org%3Agazebosim+label%3A%22help+wanted%22&state=open&type=Issues)**."
+msgstr ""
+
+#: ../../../contributing.md:345
+msgid ""
+"If we’re going to work on an issue, move it to **To Do**, no assignment "
+"necessary initially."
+msgstr ""
+
+#: ../../../contributing.md:346
+msgid "If we won’t review a pull request in the near future, **close** it."
+msgstr ""
+
+#: ../../../contributing.md:348
+msgid "When opening a pull-request:"
+msgstr ""
+
+#: ../../../contributing.md:350
+msgid ""
+"**Labels** according to the targeted collection(s) (blueprint, citadel, etc) "
+"will be added automatically"
+msgstr ""
+
+#: ../../../contributing.md:351
+msgid "Add yourself as the **assignee**"
+msgstr ""
+
+#: ../../../contributing.md:353
+msgid "Maintainers of each repo will be also automatically assigned"
+msgstr ""
+
+#: ../../../contributing.md:355
+msgid ""
+"It will be automatically triaged to the “Core development” **project board**"
+msgstr ""
+
+#: ../../../contributing.md:356
+msgid "Add **reviewers** as appropriate"
+msgstr ""
+
+#: ../../../contributing.md:358
+msgid ""
+"If reviewers won’t be able to review soon, they can remove themselves and "
+"also let the original author know"
+msgstr ""
+
+#: ../../../contributing.md:360
+msgid "Pull requests can be merged when:"
+msgstr ""
+
+#: ../../../contributing.md:362
+msgid "They have at least 1 approval from a member of the core team"
+msgstr ""
+
+#: ../../../contributing.md:363
+msgid "There are no unresolved comments"
+msgstr ""
+
+#: ../../../contributing.md:364
+msgid "CI is passing"
+msgstr ""
+
+#: ../../../contributing.md:365
+msgid ""
+"[Developer Certificate of Origin](https://developercertificate.org/) (DCO) "
+"check is passing"
+msgstr ""
+
+#: ../../../contributing.md:367
+msgid ""
+"DCO is a declaration of ownership, basically saying that you created the "
+"contribution and that it is suitable to be covered under an open source "
+"license (not proprietary)."
+msgstr ""
+
+#: ../../../contributing.md:368
+msgid ""
+"All you have to do is end your commit message with `Signed-off-by: Your Full "
+"Name <your.name@email.com>`"
+msgstr ""
+
+#: ../../../contributing.md:369
+msgid ""
+"If your `user.name` and `user.email` configurations are set up in git, then "
+"you can simply run `git commit -s` to have your signature automatically "
+"appended."
+msgstr ""
+
+#: ../../../contributing.md:372
+msgid "Merging strategy:"
+msgstr ""
+
+#: ../../../contributing.md:374
+msgid ""
+"For internal contributions, give the original author some time to hit the "
+"merge button themselves / check directly with them if it’s ok to merge."
+msgstr ""
+
+#: ../../../contributing.md:375
+msgid "Default to “squash and merge”"
+msgstr ""
+
+#: ../../../contributing.md:376
+msgid ""
+"Review the pull request title and reword if necessary since this will be "
+"part of the commit message."
+msgstr ""
+
+#: ../../../contributing.md:377
+msgid ""
+"Make sure the commit message concisely captures the core ideas of the pull "
+"request and contains all authors' signatures."
+msgstr ""
+
+#: ../../../contributing.md:378
+msgid ""
+"“Rebase and merge” when moving files (do a `git mv` as a separate commit)."
+msgstr ""
+
+#: ../../../contributing.md:379
+msgid ""
+"“Create a merge commit” when porting changes forward. \"Rebase and merge\" "
+"when porting backwards."
+msgstr ""
+
+#: ../../../contributing.md:380
+msgid ""
+"Refrain from force-pushing while the PR is under review (which includes "
+"rebasing and squashing)."
+msgstr ""
+
+#: ../../../contributing.md:382
+msgid "Porting changes across branches:"
+msgstr ""
+
+#: ../../../contributing.md:384
+msgid ""
+"Pull requests should target the latest [supported version](releases) where "
+"the changes can be added in a backwards-compatible way (no API / ABI / "
+"behavior break in released branches)."
+msgstr ""
+
+#: ../../../contributing.md:387
+msgid ""
+"To backport a pull request (i.e. from a higher version to a lower version), "
+"use `git cherry-pick` instead of `git merge`, for example:"
+msgstr ""
+
+#: ../../../contributing.md:390
+msgid ""
+"  git checkout gz-<library>N\n"
+"  git pull\n"
+"  git checkout gz-<library>M\n"
+"  git pull\n"
+"  git checkout -b N_to_M_<date>\n"
+"  git cherry-pick <commits from version N>\n"
+"  # Fix conflicts\n"
+"  git commit -sam\"Backport from N to M\"\n"
+"  # Open pull request\n"
+"  # Do not squash, rebase instead\n"
+msgstr ""
+
+#: ../../../contributing.md:401
+msgid ""
+"Alternatively, you can use `mergify` to create backports. Go to the original "
+"pull request and add a comment:"
+msgstr ""
+
+#: ../../../contributing.md:404
+msgid "  @mergifyio backport gz-<library>M\n"
+msgstr ""
+
+#: ../../../contributing.md:406
+msgid "where `M` is the version to backport to."
+msgstr ""
+
+#: ../../../contributing.md:408
+msgid ""
+"In certain cases when a pull request is merged into an older release branch, "
+"a maintainer will **forward-port** changes to newer release branches all the "
+"way up to `main`."
+msgstr ""
+
+#: ../../../contributing.md:411
+msgid ""
+"See [this list](https://github.com/gazebosim/docs/blob/master/tools/"
+"branch_comparisons.md) to check if a branch needs porting."
+msgstr ""
+
+#: ../../../contributing.md:412
+msgid ""
+"The merge forward can be done with `git merge` in order to keep the commit "
+"history and so it's easier to compare branches. For example:"
+msgstr ""
+
+#: ../../../contributing.md:415
+msgid ""
+"  git checkout gz-<library>M\n"
+"  git pull\n"
+"  git checkout gz-<library>N\n"
+"  git pull\n"
+"  git checkout -b username/M_to_N_<date> # It's important to do this before "
+"`git merge`\n"
+"  git merge gz-<library>M\n"
+"  # Fix conflicts\n"
+"  git commit -sam\"Merge M into N\"\n"
+"  # Open pull request\n"
+"  # Do not squash or rebase, create a merge commit\n"
+msgstr ""
+
+#: ../../../contributing.md:427
+msgid "Writing Tests"
+msgstr ""
+
+#: ../../../contributing.md:429
+msgid ""
+"Most Gazebo libraries use [GTest](http://code.google.com/p/googletest) for "
+"general testing and [QTest](http://doc.qt.io/qt-5/qtest.html) for GUI tests. "
+"There are a few kinds of tests:"
+msgstr ""
+
+#: ../../../contributing.md:433
+msgid ""
+"**Unit tests**: all classes should have corresponding unit tests. These live "
+"in the same directory as the source code and are suffixed by `_TEST`."
+msgstr ""
+
+#: ../../../contributing.md:436
+msgid ""
+"**Integration tests**: tests which verify how many classes are working "
+"together go under the `tests/integration` directory."
+msgstr ""
+
+#: ../../../contributing.md:438
+msgid ""
+"**Regression tests**: tests which fix broken features go under `tests/"
+"regression` and are prefixed by the issue number on library's issue tracker."
+msgstr ""
+
+#: ../../../contributing.md:440
+msgid ""
+"**Performance tests**: tests that are designed to check performance "
+"characteristics, such as CPU or memory usage, go under `tests/performance`."
+msgstr ""
+
+#: ../../../contributing.md:443
+msgid ""
+"Before creating a new integration or performance test file, check the "
+"current test files. If one closely matches the topic of your new code, "
+"simply add a new test function to the file. Otherwise, create a new test "
+"file, and write your test."
+msgstr ""
+
+#: ../../../contributing.md:448
+msgid "Test Coverage"
+msgstr ""
+
+#: ../../../contributing.md:450
+msgid ""
+"The goal is to achieve 100% line and branch coverage. However, this is not "
+"always possible due to complexity, analysis tools misreporting coverage, and "
+"time constraints. Try to write as complete of a test suite as possible, and "
+"use the coverage analysis tools as guide. If you have trouble writing a test "
+"please ask for help in your pull request."
+msgstr ""
+
+#: ../../../contributing.md:456
+msgid ""
+"Gazebo CMake provides build target called `make coverage` that produces a "
+"code coverage report. You'll need to have [lcov](http://ltp.sourceforge.net/"
+"coverage/lcov.php) and [gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html) "
+"installed."
+msgstr ""
+
+#: ../../../contributing.md:459
+msgid "In your `build` folder, compile with `-DCMAKE_BUILD_TYPE=Coverage`"
+msgstr ""
+
+#: ../../../contributing.md:461 ../../../contributing.md:474
+msgid "If using plain cmake:"
+msgstr ""
+
+#: ../../../contributing.md:463
+msgid ""
+" cd <path to build directory>\n"
+" cmake -DCMAKE_BUILD_TYPE=Coverage ..\n"
+" make\n"
+msgstr ""
+
+#: ../../../contributing.md:467 ../../../contributing.md:479
+msgid "If using a colcon workspace:"
+msgstr ""
+
+#: ../../../contributing.md:469
+msgid ""
+" cd <path to colcon workspace>\n"
+" colcon build --cmake-args -DCMAKE_BUILD_TYPE=Coverage --merge-install\n"
+msgstr ""
+
+#: ../../../contributing.md:472
+msgid "Run a single test, or all the tests"
+msgstr ""
+
+#: ../../../contributing.md:476
+msgid ""
+"./bin/UNIT_<TestName>_Test   # single test\n"
+" make test                   # all tests\n"
+msgstr ""
+
+#: ../../../contributing.md:481
+msgid "Run single/specific test:"
+msgstr ""
+
+#: ../../../contributing.md:483
+msgid ""
+"colcon test --ctest-args -R <part of test name> --merge-install\n"
+"# or\n"
+"./build/<package_name>/bin/UNIT_<TestName>_TEST\n"
+msgstr ""
+
+#: ../../../contributing.md:489
+msgid "Run all tests for a single package:"
+msgstr ""
+
+#: ../../../contributing.md:491
+msgid "colcon test --packages-select <package_name> --merge-install\n"
+msgstr ""
+
+#: ../../../contributing.md:495
+msgid "Run all tests for all packages in the workspace:"
+msgstr ""
+
+#: ../../../contributing.md:497
+msgid "colcon test --merge-install\n"
+msgstr ""
+
+#: ../../../contributing.md:501
+msgid ""
+"When using `colcon test`, all test results end up in the `log` directory.  "
+"You can check `log/latest_test` to see the latest results."
+msgstr ""
+
+#: ../../../contributing.md:504
+msgid "Make the coverage report"
+msgstr ""
+
+#: ../../../contributing.md:506
+msgid " make coverage\n"
+msgstr ""
+
+#: ../../../contributing.md:508
+msgid "View the coverage report"
+msgstr ""
+
+#: ../../../contributing.md:510
+msgid " firefox coverage/index.html\n"
+msgstr ""
+
+#: ../../../contributing.md:512
+msgid "Sanitizers"
+msgstr ""
+
+#: ../../../contributing.md:514
+msgid ""
+"Sanitizers capture very detailed information during runtime about code "
+"quality issues and print them to stderr."
+msgstr ""
+
+#: ../../../contributing.md:516
+msgid "Install dependencies"
+msgstr ""
+
+#: ../../../contributing.md:518
+msgid "Install and enable Colcon mixin package:"
+msgstr ""
+
+#: ../../../contributing.md:520
+msgid ""
+"pip3 install colcon-mixin\n"
+"colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-"
+"mixin-repository/master/index.yaml\n"
+"colcon mixin update default\n"
+msgstr ""
+
+#: ../../../contributing.md:526
+msgid "Install colcon-sanitizer-reports (Recommended):"
+msgstr ""
+
+#: ../../../contributing.md:528
+msgid ""
+"git clone https://github.com/colcon/colcon-sanitizer-reports.git\n"
+"cd colcon-sanitizer-reports\n"
+"sudo python3 setup.py install\n"
+msgstr ""
+
+#: ../../../contributing.md:534
+msgid ""
+"You can find more details [here](https://github.com/colcon/colcon-sanitizer-"
+"reports/blob/master/README.rst) about the installation process."
+msgstr ""
+
+#: ../../../contributing.md:536
+msgid "Compiling the code and running the tests"
+msgstr ""
+
+#: ../../../contributing.md:538
+msgid ""
+"Create a Gazebo workspace for ASAN/TSAN related tasks. Refer to the "
+"[official documentation to get all the Gazebo sources](install_ubuntu_src."
+"md#getting-the-sources)."
+msgstr ""
+
+#: ../../../contributing.md:541
+msgid "First, compile all packages:"
+msgstr ""
+
+#: ../../../contributing.md:543
+msgid "ASan"
+msgstr ""
+
+#: ../../../contributing.md:544
+msgid ""
+"cd ~/workspace  # you will need to be exactly in this directory\n"
+"colcon build --build-base=build-asan --install-base=install-asan \\\n"
+"    --cmake-args -DCMAKE_BUILD_TYPE=Debug \\\n"
+"    --mixin asan-gcc\n"
+msgstr ""
+
+#: ../../../contributing.md:551
+msgid "TSan"
+msgstr ""
+
+#: ../../../contributing.md:552
+msgid ""
+"# Equivalent command for tsan:\n"
+"# You can either use different workspaces or the same one.\n"
+"colcon build --build-base=build-tsan --install-base=install-tsan \\\n"
+"    --cmake-args -DCMAKE_BUILD_TYPE=Debug \\\n"
+"    --mixin tsan\n"
+msgstr ""
+
+#: ../../../contributing.md:560
+msgid ""
+"**IMPORTANT:** Do not forget to pass ``-DCMAKE_BUILD_TYPE=Debug`` to ensure "
+"that debugging symbols are generated. This allows ASAN/TSAN to report files "
+"and line numbers in backtraces."
+msgstr ""
+
+#: ../../../contributing.md:564
+msgid ""
+"Once the compilation is finished, colcon will report that all packages have "
+"been compiled but some had “stderr output”. This is fine."
+msgstr ""
+
+#: ../../../contributing.md:567
+msgid "To run the tests for ASan:"
+msgstr ""
+
+#: ../../../contributing.md:568
+msgid ""
+"cd ~/workspace  # you will need to be exactly in this directory\n"
+"colcon test --build-base=build-asan --install-base=install-asan \\\n"
+"    --event-handlers sanitizer_report+\n"
+msgstr ""
+
+#: ../../../contributing.md:574
+msgid "To run tests for TSan"
+msgstr ""
+
+#: ../../../contributing.md:575
+msgid ""
+" cd ~/workspace  # you will need to be exactly in this directory\n"
+"colcon test --build-base=build-tsan --install-base=install-tsan \\\n"
+"  --event-handlers sanitizer_report+\n"
+msgstr ""
+
+#: ../../../contributing.md:581
+msgid ""
+"Omit the `--event-handlers` flag if you did not install colcon-sanitizer-"
+"reports."
+msgstr ""
+
+#: ../../../contributing.md:583
+msgid ""
+"Some tests may fail, this is OK. Once done, you can look at the test logs or "
+"`sanitizer_report.csv`. Examples from tests logs:"
+msgstr ""
+
+#: ../../../contributing.md:586
+msgid ""
+"cd ~/workspace  # you will need to be exactly in this directory\n"
+"cd log/latest_test\n"
+"# Displays three lines after the beginning of a ASAN reported issue.\n"
+"grep -R '==.*==ERROR: .*Sanitizer' -A 3\n"
+msgstr ""
+
+#: ../../../contributing.md:593
+msgid ""
+"Review [Appendix - ASAN/TSAN Issues Zoology](https://github.com/colcon/"
+"colcon-sanitizer-reports/blob/master/README.rst#appendix---asantsan-issues-"
+"zoology) to review which kind of failures you can find in this kind of "
+"reports."
+msgstr ""
+
+#: ../../../contributing.md:596
+msgid "Style Guides"
+msgstr ""
+
+#: ../../../contributing.md:598
+msgid ""
+"You can check code for compliance by running the following command from a "
+"build folder:"
+msgstr ""
+
+#: ../../../contributing.md:601
+msgid "    make codecheck\n"
+msgstr ""
+
+#: ../../../contributing.md:603
+msgid ""
+"In general, we follow [Google's style guide](https://google.github.io/"
+"styleguide/cppguide.html) and rules set forth by `cppcheck`. However, we "
+"have added some extras listed below."
+msgstr ""
+
+#: ../../../contributing.md:605
+msgid "**This pointer**"
+msgstr ""
+
+#: ../../../contributing.md:606
+msgid ""
+"All class attributes and member functions must be accessed using the `this-"
+">` pointer. Here is an [example](https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/src/Server.cc#L89)."
+msgstr ""
+
+#: ../../../contributing.md:608
+msgid "**Underscore function parameters**"
+msgstr ""
+
+#: ../../../contributing.md:609
+msgid ""
+"All function parameters must start with an underscore. Here is an [example]"
+"(https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/src/Server.cc#L173-L174)."
+msgstr ""
+
+#: ../../../contributing.md:611
+msgid "**Do not cuddle braces**"
+msgstr ""
+
+#: ../../../contributing.md:612
+msgid ""
+"All braces must be on their own line. Here is an [example](https://github."
+"com/gazebosim/gz-sim/blob/de5b025968c9cf0cfbfd8a852458482e87c70c6c/src/"
+"Server.cc#L245-L253)."
+msgstr ""
+
+#: ../../../contributing.md:614
+msgid "**Multi-line code blocks**"
+msgstr ""
+
+#: ../../../contributing.md:615
+msgid ""
+"If a block of code spans multiple lines and is part of a flow control "
+"statement, such as an `if`, then it must be wrapped in braces. Here is an "
+"[example](https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/src/Server.cc#L295-L299)."
+msgstr ""
+
+#: ../../../contributing.md:617
+msgid "**++ operator**"
+msgstr ""
+
+#: ../../../contributing.md:618
+msgid ""
+"This occurs mostly in `for` loops. Prefix the `++` operator, which is "
+"[slightly more efficient than postfix in some cases](https://github.com/"
+"gazebosim/gz-sim/blob/de5b025968c9cf0cfbfd8a852458482e87c70c6c/src/"
+"EntityComponentManager_TEST.cc#L108)."
+msgstr ""
+
+#: ../../../contributing.md:620
+msgid "**PIMPL/Opaque pointer**"
+msgstr ""
+
+#: ../../../contributing.md:621
+msgid ""
+"If you are writing a new class, it must use a private data pointer. Here is "
+"an [example](https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/"
+"EntityComponentManager.hh#L682), and you can read more [here](https://en."
+"wikipedia.org/wiki/Opaque_pointer)."
+msgstr ""
+
+#: ../../../contributing.md:623
+msgid "**const functions**"
+msgstr ""
+
+#: ../../../contributing.md:624
+msgid ""
+"Any class function that does not change a member variable should be marked "
+"as `const`. Here is an [example](https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/"
+"EntityComponentManager.hh#L453)."
+msgstr ""
+
+#: ../../../contributing.md:626
+msgid "**const parameters**"
+msgstr ""
+
+#: ../../../contributing.md:627
+msgid ""
+"All parameters that are not modified by a function should be marked as "
+"`const`, except for \"Plain Old Data\" (`int`, `bool`, etc). This applies to "
+"parameters that are passed by reference, and pointer. Here is an [example]"
+"(https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/Model."
+"hh#L111-L112)."
+msgstr ""
+
+#: ../../../contributing.md:629
+msgid "**Pointer and reference variables**"
+msgstr ""
+
+#: ../../../contributing.md:630
+msgid ""
+"Place the `*` and `&` next to the variable name, not next to the type. For "
+"example: `int &variable` is good, but `int& variable` is not. Here is an "
+"[example](https://github.com/gazebosim/gz-sim/blob/"
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/Model."
+"hh#L96)."
+msgstr ""
+
+#: ../../../contributing.md:632
+msgid "**Camel case**"
+msgstr ""
+
+#: ../../../contributing.md:633
+msgid ""
+"In general, everything should use camel case. Exceptions include SDF element "
+"names, and protobuf variable names. Here is an [example](https://github.com/"
+"gazebosim/gz-sim/blob/de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/"
+"ignition/gazebo/SdfEntityCreator.hh#L64-L65)."
+msgstr ""
+
+#: ../../../contributing.md:635
+msgid "**Member function names**"
+msgstr ""
+
+#: ../../../contributing.md:636
+msgid ""
+"Member functions, including static member functions, must start with a "
+"capital letter, and capitalize every word."
+msgstr ""
+
+#: ../../../contributing.md:638
+msgid "`void MyClass::MyFunction();` : Good"
+msgstr ""
+
+#: ../../../contributing.md:640
+msgid "`void MyClass::myFunction();` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:642
+msgid "`void MyClass::my_function();` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:644
+msgid "**Free function names**"
+msgstr ""
+
+#: ../../../contributing.md:645
+msgid ""
+"Free functions in namespace and global scope must start with a lowercase "
+"letter, and capitalize every word thereafter. `void myFunction();` : Good"
+msgstr ""
+
+#: ../../../contributing.md:648
+msgid "`void MyFunction();` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:650
+msgid "`void my_function();` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:652
+msgid "**Variable names**"
+msgstr ""
+
+#: ../../../contributing.md:653
+msgid ""
+"Variables must start with a lower case letter, and capitalize every word "
+"thereafter."
+msgstr ""
+
+#: ../../../contributing.md:655
+msgid "`int myVariable;` : Good"
+msgstr ""
+
+#: ../../../contributing.md:657
+msgid "`int myvariable;` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:659
+msgid "`int my_variable;` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:661
+msgid "**No inline comments**"
+msgstr ""
+
+#: ../../../contributing.md:662
+msgid "`//` style comments may not be placed on the same line as code."
+msgstr ""
+
+#: ../../../contributing.md:664
+msgid "`speed *= 0.44704;  // miles per hour to meters per second` : Bad"
+msgstr ""
+
+#: ../../../contributing.md:666
+msgid "**Accessors must not start with `Get`**"
+msgstr ""
+
+#: ../../../contributing.md:667
+msgid ""
+"Member functions granting read access to protected or private data must look "
+"like a noun."
+msgstr ""
+
+#: ../../../contributing.md:669
+msgid "`public: ::ServerConfig ServerConfig() const;` : Allowed"
+msgstr ""
+
+#: ../../../contributing.md:671
+msgid "`public: ServerConfig GetServerConfig() const;` : Not Allowed"
+msgstr ""
+
+#: ../../../contributing.md:673
+msgid "**Corner Cases**"
+msgstr ""
+
+#: ../../../contributing.md:675
+msgid ""
+"A class name may conflict with an accessor function. For example, "
+"`Model(int)` would conflict with a `Model` class. In these cases, try to "
+"follow the `Noun` - `By` pattern. For example:"
+msgstr ""
+
+#: ../../../contributing.md:677
+msgid "`ModelByName(const std::string &_name)` : Allowed"
+msgstr ""
+
+#: ../../../contributing.md:679
+msgid "`ModelById(const int _id)` : Allowed"
+msgstr ""
+
+#: ../../../contributing.md:680
+msgid ""
+"However, if the function does not have a parameter, it may be difficult to "
+"use the `Noun` - `By` pattern. In this case, qualifying the name of the "
+"class with its namespace should avoid the conflict. For example, if there is "
+"class called `Entity` in the `gazebo` namespace and we want to create an "
+"accessor called `Entity()`, we can do the following:"
+msgstr ""
+
+#: ../../../contributing.md:683
+msgid "`public: gazebo::Entity Entity() const;` : Allowed"
+msgstr ""
+
+#: ../../../contributing.md:685
+msgid ""
+"A template function that returns a data type may use a stand-alone `Get`. "
+"For example:"
+msgstr ""
+
+#: ../../../contributing.md:687
+msgid "`public: template<typename T> T Get();` : Allowed"
+msgstr ""
+
+#: ../../../contributing.md:689
+msgid "**Mutators must start with `Set`**"
+msgstr ""
+
+#: ../../../contributing.md:690
+msgid ""
+"Member functions granting write access to protected data must begin with "
+"`Set`."
+msgstr ""
+
+#: ../../../contributing.md:692
+msgid "`public: void SetServerConfig(ServerConfig &_config);` : Allowed"
+msgstr ""
+
+#: ../../../contributing.md:694
+msgid "`public: void ServerConfig(::ServerConfig &_config);` : Not Allowed"
+msgstr ""
+
+#: ../../../contributing.md:696
+msgid "Appendix"
+msgstr ""
+
+#: ../../../contributing.md:699
+msgid "Releasing information for members of development team"
+msgstr ""
+
+#: ../../../contributing.md:701
+msgid ""
+"[Releasing documentation](release) is available for the development team "
+"members. Includes a general overview as well as detailed information about "
+"how to run a new release."
+msgstr ""
+
+#: ../../../contributing.md:705
+msgid "Creating GIFs"
+msgstr ""
+
+#: ../../../contributing.md:707
+msgid ""
+"You can use [LICEcap](https://www.cockos.com/licecap/) to record GIFs on "
+"macOS and Windows, and [Silent Cast](https://github.com/colinkeenan/"
+"silentcast) or [Byzanz](https://github.com/GNOME/byzanz) or [Peek](https://"
+"github.com/phw/peek) on Linux."
+msgstr ""
