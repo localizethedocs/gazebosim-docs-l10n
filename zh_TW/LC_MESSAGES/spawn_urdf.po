@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo dome\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../spawn_urdf.md:1
+msgid "Spawn URDF"
+msgstr ""
+
+#: ../../../spawn_urdf.md:3
+msgid ""
+"This tutorial will cover how to spawn a URDF model in Gazebo Sim. URDF files "
+"are often used in ROS to represent robot models. While SDF can describe a "
+"world with multiple robot models, URDF can only describe one robot model. "
+"More information about URDF can be found at [https://wiki.ros.org/urdf]"
+"(https://wiki.ros.org/urdf)."
+msgstr ""
+
+#: ../../../spawn_urdf.md:8
+msgid "Obtaining a URDF file"
+msgstr ""
+
+#: ../../../spawn_urdf.md:10
+msgid ""
+"This tutorial assumes that the reader already has a URDF file that they'd "
+"like to load into Gazebo Sim. If you are looking for a URDF file to use, you "
+"can use the [`rrbot.urdf`](tutorials/spawn_urdf/rrbot.urdf) that was "
+"preprocessed for you. The `rrbot` robot model is from the "
+"[`gazebo_ros_demos`](https://github.com/ros-simulation/gazebo_ros_demos) "
+"package. You could also use one of the examples listed at [https://wiki.ros."
+"org/urdf/Examples](https://wiki.ros.org/urdf/Examples)."
+msgstr ""
+
+#: ../../../spawn_urdf.md:13
+msgid ""
+"If you have a `xacro` representation of a robot model, you can turn the "
+"`xacro` file into a `URDF` file using the [`xacro`](https://index.ros.org/p/"
+"xacro/) package: see [this tutorial](https://docs.ros.org/en/foxy/Tutorials/"
+"URDF/Using-Xacro-to-Clean-Up-a-URDF-File.html) for more information."
+msgstr ""
+
+#: ../../../spawn_urdf.md:15
+msgid "Spawning the URDF"
+msgstr ""
+
+#: ../../../spawn_urdf.md:17
+msgid ""
+"To spawn a URDF model in Gazebo Sim, we will start a world and make use of "
+"the world's `create` service, which uses the [EntityFactory](https://"
+"gazebosim.org/api/msgs/8/classignition_1_1msgs_1_1EntityFactory.html) "
+"message type."
+msgstr ""
+
+#: ../../../spawn_urdf.md:19
+msgid "Start by launching an empty world in Gazebo Sim:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:20
+msgid "ign gazebo empty.sdf\n"
+msgstr ""
+
+#: ../../../spawn_urdf.md:24
+msgid "You should see a window that looks like this:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:26
+msgid "![empty_world](tutorials/spawn_urdf/empty_world.png)"
+msgstr ""
+
+#: ../../../spawn_urdf.md:26
+msgid "empty_world"
+msgstr ""
+
+#: ../../../spawn_urdf.md:28
+msgid ""
+"In another terminal, get the list of available services by running `ign "
+"service -l`. Look for a `create` service. You should see this service in the "
+"list:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:31
+msgid "/world/empty/create\n"
+msgstr ""
+
+#: ../../../spawn_urdf.md:35
+msgid ""
+"We can double-check that this is the service we want to use by running `ign "
+"service -is /world/empty/create`. This will show us the service's request "
+"and response message types:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:37
+msgid "ignition.msgs.EntityFactory, ignition.msgs.Boolean\n"
+msgstr ""
+
+#: ../../../spawn_urdf.md:41
+msgid ""
+"Now that we have found the service that has an `EntityFactory` request type, "
+"we can call this service and pass the URDF file to the service's request so "
+"that the robot represented by this URDF file is spawned in the Gazebo Sim "
+"world. We do this by setting the desired URDF file to the `sdf_file_name` "
+"field of the `EntityFactory` request message. The [libsdformat](https://"
+"gazebosim.org/libs/sdformat) library will then internally convert the URDF "
+"file to an SDF representation, and load this into the running world."
+msgstr ""
+
+#: ../../../spawn_urdf.md:45
+msgid ""
+"The following command spawns the URDF file `model.urdf` into the Gazebo Sim "
+"world as a model named `urdf_model`:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:46
+msgid ""
+"ign service -s /world/empty/create --reqtype ignition.msgs.EntityFactory --"
+"reptype ignition.msgs.Boolean --timeout 1000 --req 'sdf_filename: \"/path/to/"
+"model.urdf\", name: \"urdf_model\"'\n"
+msgstr ""
+
+#: ../../../spawn_urdf.md:50
+msgid ""
+"If `model.urdf` is the URDF representation of [rrbot.xacro](https://github."
+"com/ros-simulation/gazebo_ros_demos/blob/kinetic-devel/rrbot_description/"
+"urdf/rrbot.xacro) in the `gazebo_ros_demos` package, executing the service "
+"call above should result in a simulation that now looks like this:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:52
+msgid "![urdf_spawned](tutorials/spawn_urdf/urdf_spawned.png)"
+msgstr ""
+
+#: ../../../spawn_urdf.md:52
+msgid "urdf_spawned"
+msgstr ""
+
+#: ../../../spawn_urdf.md:54
+msgid ""
+"We can now play the simulation to make sure that the loaded URDF model "
+"behaves as expected:"
+msgstr ""
+
+#: ../../../spawn_urdf.md:56
+msgid "![urdf_arm_falling](tutorials/spawn_urdf/rrbot.gif)"
+msgstr ""
+
+#: ../../../spawn_urdf.md:56
+msgid "urdf_arm_falling"
+msgstr ""
