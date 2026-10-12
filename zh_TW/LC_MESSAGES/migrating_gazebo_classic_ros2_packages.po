@@ -1,0 +1,1044 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo garden\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:1
+msgid "Migrating ROS 2 packages that use Gazebo Classic"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:3
+msgid ""
+"The Gazebo simulator has its roots in the Gazebo Classic project, but it has "
+"a few significant differences that affect how a ROS 2 project uses the "
+"simulator. One difference is that ROS 2 projects now use the [ros_gz]"
+"(https://github.com/gazebosim/ros_gz) package instead of [gazebo_ros_pkgs]"
+"(https://github.com/ros-simulation/gazebo_ros_pkgs) as the source of launch "
+"files and other useful utilities. Another major difference is that while "
+"[gazebo_ros_pkgs](https://github.com/ros-simulation/gazebo_ros_pkgs) "
+"provided a set of plugins that directly get loaded by Gazebo Classic and run "
+"as part of the simulation to provide an interface between ROS and Gazebo "
+"Classic, [ros_gz](https://github.com/gazebosim/ros_gz) is primarily used as "
+"a bridge between ROS and gz-transport topics. Knowing these conceptual "
+"differences is important in making the transition."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:16
+msgid ""
+"**Note:** Since the name of the project has gone through two major changes, "
+"we highly recommend you read the [history](https://gazebosim.org/about) of "
+"the project to have a better understanding of the terminology used in this "
+"tutorial and elsewhere. As a convention we refer to older versions of "
+"Gazebo, those with release numbers like Gazebo 9 and Gazebo 11 as \"Gazebo "
+"Classic.\" Newer versions of Gazebo, formerly called \"Ignition\", with "
+"lettered releases names like Harmonic, are referred to as just \"Gazebo\" in "
+"this document. This tutorial will show how to migrate an existing ROS 2 "
+"package that uses the `gazebo_ros_pkgs` package to the new `ros_gz`. We will "
+"use the [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations/) package as an example. The complete, migrated "
+"version of `turtlebot3_simulations` covered in this tutorial, can be found "
+"in [this fork](https://github.com/azeey/turtlebot3_simulations/tree/"
+"new_gazebo)."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:30
+msgid ""
+"We'll start by following the [PC Setup](https://emanual.robotis.com/docs/en/"
+"platform/turtlebot3/quick-start/) guide to install the necessary "
+"prerequisites for simulating Turtlebot3. This will install additional "
+"packages, such as [Nav2](https://github.com/ros-planning/navigation2) and "
+"[Cartographer](https://github.com/cartographer-project/cartographer), which "
+"we will be using later on in this tutorial, so make sure to not skip this "
+"step."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:38
+msgid ""
+"The next step is to clone the `turtlebot3_simulation` package. We'll use the "
+"`humble-devel` branch, which at the time of writing had a SHA of `d16cdbe`"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:41
+msgid ""
+"source /opt/ros/humble/setup.bash\n"
+"mkdir -p ~/turtlebot3_ws/src\n"
+"cd ~/turtlebot3_ws/src\n"
+"git clone -b humble-devel https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations/\n"
+msgstr ""
+"source /opt/ros/humble/setup.bash\n"
+"mkdir -p ~/turtlebot3_ws/src\n"
+"cd ~/turtlebot3_ws/src\n"
+"git clone -b humble-devel https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations/\n"
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:48
+msgid "Install dependencies using `rosdep`"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:50
+msgid ""
+"sudo rosdep init # only needed if  using rosdep\n"
+"rosdep install --from-paths . -i -y\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:55
+msgid ""
+"Finally, build the project and check that the Gazebo classic simulation "
+"works. (See the [Gazebo Simulation guide](https://emanual.robotis.com/docs/"
+"en/platform/turtlebot3/simulation/#gazebo-simulation))"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:59
+msgid ""
+"cd ~/turtlebot3_ws\n"
+"colcon build --symlink-install\n"
+"source ~/turtlebot3_ws/install/setup.bash\n"
+"\n"
+"export TURTLEBOT3_MODEL=waffle\n"
+"ros2 launch turtlebot3_gazebo empty_world.launch.py\n"
+msgstr ""
+"cd ~/turtlebot3_ws\n"
+"colcon build --symlink-install\n"
+"source ~/turtlebot3_ws/install/setup.bash\n"
+"\n"
+"export TURTLEBOT3_MODEL=waffle\n"
+"ros2 launch turtlebot3_gazebo empty_world.launch.py\n"
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:68
+msgid ""
+"Here's a screenshot of Turtlebot3 running in Gazebo Classic obtained by "
+"launching `empty_world.launch.py`."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:71
+msgid ""
+"![Screenshot of turtlebot 3 running in Gazebo Classic](images/"
+"gz_ros2_migration/gazebo_classic_turtlebot3.png)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:71
+msgid "Screenshot of turtlebot 3 running in Gazebo Classic"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:73
+msgid ""
+"Once, we're sure that the Gazebo classic simulation is running properly, we "
+"create a new branch in which we'll make the changes to migrate to the new "
+"Gazebo."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:77
+msgid "git checkout -b new_gazebo\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:81
+msgid "The changes we need to make are:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:83
+msgid ""
+"Modify `package.xml` and `CMakeLists.txt` files replacing `gazebo`, "
+"`gazebo_ros_pkgs`, etc with packages from `ros_gz`."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:85
+msgid "Edit launch files that start Gazebo (e.g. `empty_world.launch.py`)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:86
+msgid "Update the world SDFormat file."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:87
+msgid "Edit launch files that spawn models."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:88
+msgid "Edit model SDFormat files."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:89
+msgid "Bridge ROS topics."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:91
+msgid "Update package dependencies"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:93
+msgid ""
+"The turtlebot 3 package depends on `gazebo_ros_pkgs`, which is the package "
+"that provides launch files, plugins, and other utilities for using Gazebo "
+"classic with ROS 2. The equivalent for the new Gazebo is `ros_gz`, but "
+"`ros_gz` is actually a meta-package that contains a few packages. It's okay "
+"to replace `gazebo_ros_pkgs` with `ros_gz` here, but using just the subset "
+"of packages needed for your project will reduce the number of dependencies. "
+"For the `turtlebot3_simulation` package, we will only need `ros_gz_bridge`, "
+"`ros_gz_image`, and `ros_gz_sim` for now. `ros_gz_bridge` and `ros_gz_image` "
+"provide topic bridges between Gazebo and ROS while `ros_gz_sim` provides "
+"launch files and other utilities that help with starting Gazebo and spawning "
+"models."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:104
+msgid ""
+"After making the change, lines 17-21 of `package.xml` will look like this:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:106
+msgid ""
+"...\n"
+"  <depend>geometry_msgs</depend>\n"
+"  <depend>nav_msgs</depend>\n"
+"  <depend>rclcpp</depend>\n"
+"  <depend>ros_gz_bridge</depend>\n"
+"  <depend>ros_gz_image</depend>\n"
+"  <depend>ros_gz_sim</depend>\n"
+"  <depend>sensor_msgs</depend>\n"
+"  <depend>tf2</depend>\n"
+"...\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:119
+msgid ""
+"You can find the [Gazebo Classic package XML file here](https://github.com/"
+"ROBOTIS-GIT/turtlebot3_simulations/blob/"
+"d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/package.xml), and "
+"the [updated Gazebo package XML file here](https://github.com/azeey/"
+"turtlebot3_simulations/blob/new_gazebo/turtlebot3_gazebo/package.xml)."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:124
+msgid ""
+"After making the change, we'll need to install the new dependencies. The "
+"following command will automatically install the necessary Gazebo version."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:127
+msgid "rosdep install --from-paths . -i -y\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:131
+msgid ""
+"This tutorial assumes you are using Gazebo Fortress as it is the version of "
+"Gazebo officially paired with ROS 2 Humble. While it is possible to use "
+"newer versions of Gazebo with ROS 2 Humble, it requires extra work and is "
+"not recommend for most users. See [Installing Gazebo with ROS]"
+"(ros_installation) to learn more. If you intend to switch back and forth "
+"between the new Gazebo and Gazebo Classic, it's best to use Gazebo Fortress "
+"since the newer versions will automatically uninstall Gazebo Classic. With "
+"that being said, the concepts covered by the tutorial should work with newer "
+"versions of ROS 2 and Gazebo."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:141
+msgid "Launch the world"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:143
+msgid ""
+"We now need to edit `turtlebot3_gazebo/launch/empty_world.launch.py` and "
+"replace any use of `gazebo_ros_pkgs`. You can find the [Gazebo Classic empty "
+"world launch file before editing here](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations/blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/launch/empty_world.launch.py), and the [updated Gazebo "
+"empty world launch file here](https://github.com/azeey/"
+"turtlebot3_simulations/blob/new_gazebo/turtlebot3_gazebo/launch/empty_world."
+"launch.py). First replace the call to `get_package_share_directory` to find "
+"`ros_gz_sim`. The code will change from:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:151
+msgid "pkg_gazebo_ros = get_package_share_directory('gazebo_ros')\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:155
+msgid "to:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:157
+msgid "ros_gz_sim = get_package_share_directory('ros_gz_sim')\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:161
+msgid "Next, change `gzserver_cmd` to use `ros_gz_sim`"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:163
+msgid ""
+"gzserver_cmd = IncludeLaunchDescription(\n"
+"    PythonLaunchDescriptionSource(\n"
+"        os.path.join(ros_gz_sim, 'launch', 'gz_sim.launch.py')\n"
+"    ),\n"
+"    launch_arguments={'gz_args': ['-r -s -v4 ', world], 'on_exit_shutdown': "
+"'true'}.items()\n"
+")\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:172
+msgid ""
+"This uses the `gz_sim.launch.py` launch file from the `ros_gz_sim` package. "
+"The launch file takes the `gz_args` argument which is a list of command line "
+"flags that will be passed to `ign gazebo` (`gz sim` in Garden and later). `-"
+"s` causes only the Gazebo server to run without the GUI client and `-r` "
+"tells Gazebo to start running simulation immediately. Lastly, we are using "
+"the `-v4` flag which sets the verbosity level of Gazebo's console output."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:179
+msgid ""
+"**Note:** The list assigned to `gz_args` is concatenated into a string with "
+"code equivalent to `''.join(gz_args)`, so it's important to keep whitespace "
+"where necessary. Note the space after 4 in `'-v4 '`."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:183
+msgid ""
+"The `world` argument will be substituted by `launch` before running Gazebo. "
+"In this launch file, `world` is a python variable, so it is possible to use "
+"python string formatting: `gz_args: f'-s -r -v4 {world}'`. But if we wanted "
+"to use a `LaunchConfiguration` variable for `world`, we will need to use a "
+"list so that `launch` will make the substitution for us."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:189
+msgid ""
+"The `on_exit_shutdown` argument ensures that if the Gazebo server exits for "
+"any reason, the rest of the nodes in the launch file are shutdown"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:192
+msgid ""
+"The GUI client is launched in a similar way, but we change `gz_args` to `-g` "
+"to run just the GUI client."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:195
+msgid ""
+"gzclient_cmd = IncludeLaunchDescription(\n"
+"    PythonLaunchDescriptionSource(\n"
+"        os.path.join(ros_gz_sim, 'launch', 'gz_sim.launch.py')\n"
+"    ),\n"
+"    launch_arguments={'gz_args': '-g -v4 '}.items()\n"
+")\n"
+"\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:205
+msgid ""
+"<!-- This env variable section might not be needed if\n"
+"https://github.com/gazebosim/ros_gz/pull/492 gets merged -->\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:208
+msgid ""
+"Finally, we need to set the environment variable `GZ_SIM_RESOURCE_PATH` so "
+"Gazebo can know where to find models. See the [Finding resource](https://"
+"gazebosim.org/api/sim/8/resources.html) document to learn more about this "
+"environment variable. This was not needed for `gazebo_ros_pkgs` because it "
+"used the `<export>` tag in `package.xml` to populate a similar environment "
+"variable for Gazebo (`GAZEBO_MODEL_PATH`)."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:215
+msgid "First, import `AppendEnvironmentVariable`"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:217
+msgid "from launch.actions import AppendEnvironmentVariable\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:221
+msgid ""
+"and create a `launch` action that appends the environment variable with the "
+"location of the `models` directory in `turtlebot3_gazebo`."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:224
+msgid ""
+"\n"
+"set_env_vars_resources = AppendEnvironmentVariable(\n"
+"        'GZ_SIM_RESOURCE_PATH',\n"
+"        os.path.join(get_package_share_directory('turtlebot3_gazebo'),\n"
+"                     'models'))\n"
+"\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:233
+msgid ""
+"We'll then need to add the action to `ld`, the `LaunchDescription` variable "
+"returned by `generate_launch_description`."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:236
+msgid "ld.add_action(set_env_vars_resources)\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:240
+msgid "<!-- end env variable section -->\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:242
+msgid ""
+"We are now ready to test the launch file. Comment out `ld."
+"add_action(spawn_turtlebot_cmd)` and run:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:245
+msgid "ros2 launch turtlebot3_gazebo empty_world.launch.py\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:249
+msgid ""
+"**More than likely, this will fail** because Gazebo could not find models "
+"referenced in the world SDFormat file. The next step is to fix that."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:252
+msgid ""
+"**Note:** Due to a bug in the GUI client, there might be a lingering `ign "
+"gazebo -g` or `gz sim -g` process after terminating the launch. You can kill "
+"it using `pkill -f -9 'ign gazebo'`"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:256
+msgid "Edit world SDFormat file"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:258
+msgid ""
+"The file we will be editing is `turtlebot3_gazebo/worlds/empty_world.world`. "
+"This file references the models `sun` and `ground_plane`. In Gazebo Classic, "
+"these models were either shipped with the simulator or downloaded from the "
+"gazebo [model repository](https://github.com/osrf/gazebo_models). The new "
+"Gazebo does not ship these models, instead we can use models from Fuel or "
+"add the models directly to the world file."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:265
+msgid ""
+"To use fuel models, replace the `include` tags for `sun` and `ground_place` "
+"with"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:267
+msgid ""
+"<include>\n"
+"  <uri>\n"
+"    https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane\n"
+"  </uri>\n"
+"</include>\n"
+"\n"
+"<include>\n"
+"  <uri>\n"
+"    https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun\n"
+"  </uri>\n"
+"</include>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:281
+msgid ""
+"For reference, you can find the [Gazebo Classic empty world here](https://"
+"github.com/ROBOTIS-GIT/turtlebot3_simulations/blob/"
+"d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/worlds/"
+"empty_world.world), and the [updated new Gazebo empty world here](https://"
+"github.com/azeey/turtlebot3_simulations/blob/new_gazebo/turtlebot3_gazebo/"
+"worlds/empty_world.world). Relaunching `empty_world.launch.py` should now "
+"start the simulator successfully."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:287
+msgid "Spawn model"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:289
+msgid ""
+"In this step, we will modify `turtlebot3_gazebo/launch/spawn_turtlebot3."
+"launch.py`. Again, we need to change `gazebo_ros` to `ros_gz_sim`. We'll "
+"also need to change `spawn_entity.py` to `create`, which is the node in "
+"`ros_gz_sim` that provides model spawning functionality. From the argument "
+"list, `-entity` needs to be replaced with `-name`. You can run `ros2 run "
+"ros_gz_sim create --helpshort` to see more options."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:297
+msgid "The resulting `Node` should look like:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:299
+msgid ""
+"start_gazebo_ros_spawner_cmd = Node(\n"
+"    package='ros_gz_sim',\n"
+"    executable='create',\n"
+"    arguments=[\n"
+"        '-name', TURTLEBOT3_MODEL,\n"
+"        '-file', urdf_path,\n"
+"        '-x', x_pose,\n"
+"        '-y', y_pose,\n"
+"        '-z', '0.01'\n"
+"    ],\n"
+"    output='screen',\n"
+")\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:314
+msgid ""
+"If you uncomment `ld.add_action(spawn_turtlebot_cmd)` in `empty_world.launch."
+"py` and run the launch file, you'll notice errors related to unrecognized "
+"plugins. These are coming from the model SDFormat file, which we will modify "
+"next."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:318
+msgid "Modify the model"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:320
+msgid ""
+"We will be using the `waffle` robot for this tutorial, so we'll edit the "
+"file [`turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf`](https://github."
+"com/ROBOTIS-GIT/turtlebot3_simulations/blob/"
+"d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/models/"
+"turtlebot3_waffle/model.sdf). The changes we need to make are mostly related "
+"to plugins and their parameters. You can reference the Waffle [model SDF "
+"file before editing here](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations/blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf), and [after editing "
+"here](https://github.com/azeey/turtlebot3_simulations/blob/new_gazebo/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf). The following is a "
+"list of all the plugins in the original model. For each plugin, we will "
+"either remove the plugin if it's no longer necessary, or use the equivalent "
+"plugin from the new Gazebo. You can use the Feature comparison page "
+"([Fortress](https://gazebosim.org/docs/fortress/comparison), [Harmonic]"
+"(https://gazebosim.org/docs/harmonic/comparison)) to find out of a Gazebo "
+"Classic feature (e.g. a Sensor type) is available in Gazebo. If an "
+"equivalent plugin is used, we will update the SDF parameters of the plugin "
+"to match the parameters of the new plugin. See the list of systems "
+"([Fortress](https://gazebosim.org/api/gazebo/6/"
+"namespaceignition_1_1gazebo_1_1systems.html), [Harmonic](https://gazebosim."
+"org/api/sim/8/namespacegz_1_1sim_1_1systems.html)) to find equivalent "
+"plugins and their parameters."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:339
+msgid "libgazebo_ros_imu_sensor.so"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:341
+msgid ""
+"[Plugin in the original model](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations/blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf#L89-L94)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:343
+msgid ""
+"This plugin can be removed since there is a generic IMU plugin that handles "
+"all IMU sensors. We will add this to the world later. We will set the "
+"`<topic>` tag inside `<sensor>` to a short topic name to make it easier when "
+"creating a ROS bridge later. The entire `<sensor>` tag should now look like:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:348
+msgid ""
+"<link name=\"imu_link\">\n"
+"  <sensor name=\"tb3_imu\" type=\"imu\">\n"
+"    <always_on>true</always_on>\n"
+"    <update_rate>200</update_rate>\n"
+"    <topic>imu</topic>\n"
+"    <imu>\n"
+"      ... <!-- all the content of <imu> -->\n"
+"    </imu>\n"
+"  </sensor>\n"
+"</link>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:361
+msgid "libgazebo_ros_ray_sensor.so"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:363
+msgid ""
+"[Plugin in the original model](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations//blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf#L157-L164)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:365
+msgid ""
+"Similar to the IMU, we will use a generic plugin loaded into the world for "
+"handling all rendering sensors, which includes Lidar sensors. Currently the "
+"`ray` sensor type, which meant to use the physics engine for generating the "
+"sensor data, is not supported in the new Gazebo, we will need to update it "
+"to `gpu_lidar`. We'll also need to change the `<ray>` tag inside `<sensor>` "
+"to `<lidar>`. The `frame_name` parameter of the plugin will be handled by "
+"setting the `gz_frame_id` parameter in `<sensor>`. Lastly, we'll set the "
+"`<topic>` parameter similar to the IMU sensor. The final `<sensor>` tag for "
+"the Lidar should look like:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:375
+msgid ""
+"<sensor name=\"hls_lfcd_lds\" type=\"gpu_lidar\">\n"
+"  <always_on>true</always_on>\n"
+"  <visualize>true</visualize>\n"
+"  <pose>-0.064 0 0.121 0 0 0</pose>\n"
+"  <update_rate>5</update_rate>\n"
+"  <topic>scan</topic>\n"
+"  <gz_frame_id>base_scan</gz_frame_id>\n"
+"  <lidar>\n"
+"    ... <!-- same content as <ray> in the original -->\n"
+"  </lidar>\n"
+"</sensor>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:389
+msgid "libgazebo_ros_camera.so"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:391
+msgid ""
+"[Plugin in the original model](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations//blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf#L393-L402)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:393
+msgid ""
+"The Camera sensor will also use a generic plugin that handles all rendering "
+"sensors loaded into the world. In the SDF file, we will set the `<topic>` "
+"tag inside `<sensor>`, and the `<camera_info_topic>` inside `<camera>`, both "
+"of which will be used in the ROS bridge later. We will also set the "
+"`<gz_frame_id>` since the default frame id used by the generic plugin in the "
+"new Gazebo is different from the default used by `libgazebo_ros_camera` in "
+"Gazebo Classic. The final `<sensor>` tag should look like:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:401
+msgid ""
+"<sensor name=\"camera\" type=\"camera\">\n"
+"  <always_on>true</always_on>\n"
+"  <visualize>true</visualize>\n"
+"  <update_rate>30</update_rate>\n"
+"  <topic>camera/image_raw</topic>\n"
+"  <gz_frame_id>camera_rgb_frame</gz_frame_id>\n"
+"  <camera name=\"intel_realsense_r200\">\n"
+"    <camera_info_topic>camera/camera_info</camera_info_topic>\n"
+"    ... <!-- all the content of <camera> from the original -->\n"
+"  </camera>\n"
+"</sensor>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:415
+msgid "libgazebo_ros_diff_drive.so"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:417
+msgid ""
+"[Plugin in the original model](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations//blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf#L476-L507)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:419
+msgid ""
+"Since this is a model specific plugin, we will replace it with the "
+"`DiffDrive` plugin. We will match the parameters of "
+"`libgazebo_ros_diff_drive` as much as possible, but exact match may not be "
+"possible. For example, the original plugin has a `max_wheel_acceleration`, "
+"but `gz-sim-diff-drive-system` has `max_linear_acceleration` instead, which "
+"are not equivalent; the latter is a limit on the whole vehicle's linear "
+"acceleration. We can approximate the value by multiplying the wheel "
+"acceleration limit by the radius of the wheel. Refer to the [DiffDrive class "
+"reference](https://gazebosim.org/api/gazebo/6/"
+"classignition_1_1gazebo_1_1systems_1_1DiffDrive.html) for details on each "
+"parameter. Here's the full `<plugin>` tag with comments describing the "
+"mapping from the original plugin."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:431
+msgid ""
+"<plugin filename=\"gz-sim-diff-drive-system\" name=\"gz::sim::systems::"
+"DiffDrive\">\n"
+"  <!-- Remove <ros> tag. -->\n"
+"\n"
+"  <!-- wheels -->\n"
+"  <left_joint>wheel_left_joint</left_joint>\n"
+"  <right_joint>wheel_right_joint</right_joint>\n"
+"\n"
+"  <!-- kinematics -->\n"
+"  <wheel_separation>0.287</wheel_separation>\n"
+"  <wheel_radius>0.033</wheel_radius> <!-- computed from <wheel_diameter> in "
+"the original plugin-->\n"
+"\n"
+"  <!-- limits -->\n"
+"  <max_linear_acceleration>0.033</max_linear_acceleration> <!-- computed "
+"from <max_linear_acceleration> in the original plugin-->\n"
+"\n"
+"  <topic>cmd_vel</topic> <!-- from <commant_topic> -->\n"
+"\n"
+"  <odom_topic>odom</odom_topic> <!-- from <odometry_topic> -->\n"
+"  <frame_id>odom</frame_id> <!-- from <odometry_frame> -->\n"
+"  <child_frame_id>base_footprint</child_frame_id> <!-- from "
+"<robot_base_frame> -->\n"
+"  <odom_publisher_frequency>30</odom_publisher_frequency> <!-- from "
+"<update_rate>-->\n"
+"\n"
+"  <tf_topic>/tf</tf_topic> <!-- Short topic name for tf output -->\n"
+"\n"
+"</plugin>\n"
+"\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:459
+msgid ""
+"The `<wheel_torque>` parameter can be realized by setting effort limits on "
+"each `<joint>`. For example:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:462
+msgid ""
+"<joint name=\"wheel_right_joint\" type=\"revolute\">\n"
+"  <parent>base_link</parent>\n"
+"  <child>wheel_right_link</child>\n"
+"  <pose>0.0 -0.144 0.023 -1.57 0 0</pose>\n"
+"  <axis>\n"
+"    <xyz>0 0 1</xyz>\n"
+"    <limit>\n"
+"      <effort>20</effort> <!-- from <wheel_torque> in "
+"libgazebo_ros_diff_drive.so.-->\n"
+"    </limit>\n"
+"  </axis>\n"
+"</joint>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:476
+msgid "libgazebo_ros_joint_state_publisher.so"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:478
+msgid ""
+"[Plugin in the original model](https://github.com/ROBOTIS-GIT/"
+"turtlebot3_simulations//blob/d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/"
+"turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf#L509-L517)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:480
+msgid ""
+"We will replace this plugin as well with [`JointStatePublisher`](https://"
+"gazebosim.org/api/gazebo/6/"
+"classignition_1_1gazebo_1_1systems_1_1JointStatePublisher.html). The "
+"parameters are mostly similar, however, the `<update_rate>` parameter is not "
+"supported. Here's the full `<plugin>` tag with comments describing the "
+"mapping from the original plugin."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:486
+msgid ""
+"<plugin filename=\"gz-sim-joint-state-publisher-system\"\n"
+"  name=\"gz::sim::systems::JointStatePublisher\">\n"
+"  <topic>joint_states</topic> <!--from <ros><remapping> -->\n"
+"  <joint_name>wheel_left_joint</joint_name>\n"
+"  <joint_name>wheel_right_joint</joint_name>\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:495
+msgid "World plugins"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:497
+msgid ""
+"As mentioned earlier, sensors are handled by generic world level plugins."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:499
+msgid ""
+"<div class=\"warning\">\n"
+"  By default, if there are no world plugins specified, Gazebo adds the "
+"Physics,\n"
+"  SceneBroadcaster, and UserCommands plugins. However, if we specify any\n"
+"  plugins at all, Gazebo will assume we want to override the defaults, so "
+"will not\n"
+"  add any default plugins.\n"
+"</div>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:506
+msgid ""
+"Therefore, we have to add the additional plugins for IMU and Lidar sensors "
+"as well as the ones that would have been added by default. We will once "
+"again edit `turtlebot3_gazebo/worlds/empty_world.world` add the following "
+"right after `<world name=\"default\">`."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:511
+msgid ""
+"<plugin\n"
+"  filename=\"gz-sim-physics-system\"\n"
+"  name=\"gz::sim::systems::Physics\">\n"
+"</plugin>\n"
+"<plugin\n"
+"  filename=\"gz-sim-user-commands-system\"\n"
+"  name=\"gz::sim::systems::UserCommands\">\n"
+"</plugin>\n"
+"<plugin\n"
+"  filename=\"gz-sim-scene-broadcaster-system\"\n"
+"  name=\"gz::sim::systems::SceneBroadcaster\">\n"
+"</plugin>\n"
+"<plugin\n"
+"  filename=\"gz-sim-sensors-system\"\n"
+"  name=\"gz::sim::systems::Sensors\">\n"
+"  <render_engine>ogre2</render_engine>\n"
+"</plugin>\n"
+"<plugin\n"
+"  filename=\"gz-sim-imu-system\"\n"
+"  name=\"gz::sim::systems::Imu\">\n"
+"</plugin>\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:535
+msgid "Bridge ROS topics"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:537
+msgid ""
+"In Gazebo Classic, communication with ROS is enabled by plugins in "
+"`gazebo_ros_pkgs` that directly interface with the simulator. In contrast, "
+"in the new Gazebo, communication with ROS is mainly done through topic "
+"bridges provided by `ros_gz`. The bridge node is a generic node that bridges "
+"topics between `gz-transport` and ROS 2."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:543
+msgid ""
+"To create the bridge, we'll use a `yaml` file that contains the topic names "
+"and their mappings. We'll add a new directory `params` in "
+"`turtlebot3_gazebo` and create `turtlebot3_waffle_bridge.yaml` with the "
+"following content:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:547
+msgid ""
+"# gz topic published by the simulator core\n"
+"- ros_topic_name: \"clock\"\n"
+"  gz_topic_name: \"clock\"\n"
+"  ros_type_name: \"rosgraph_msgs/msg/Clock\"\n"
+"  gz_type_name: \"gz.msgs.Clock\"\n"
+"  direction: GZ_TO_ROS\n"
+"\n"
+"# gz topic published by JointState plugin\n"
+"- ros_topic_name: \"joint_states\"\n"
+"  gz_topic_name: \"joint_states\"\n"
+"  ros_type_name: \"sensor_msgs/msg/JointState\"\n"
+"  gz_type_name: \"gz.msgs.Model\"\n"
+"  direction: GZ_TO_ROS\n"
+"\n"
+"# gz topic published by DiffDrive plugin\n"
+"- ros_topic_name: \"odom\"\n"
+"  gz_topic_name: \"odom\"\n"
+"  ros_type_name: \"nav_msgs/msg/Odometry\"\n"
+"  gz_type_name: \"gz.msgs.Odometry\"\n"
+"  direction: GZ_TO_ROS\n"
+"\n"
+"# gz topic published by DiffDrive plugin\n"
+"- ros_topic_name: \"tf\"\n"
+"  gz_topic_name: \"tf\"\n"
+"  ros_type_name: \"tf2_msgs/msg/TFMessage\"\n"
+"  gz_type_name: \"gz.msgs.Pose_V\"\n"
+"  direction: GZ_TO_ROS\n"
+"\n"
+"# gz topic subscribed to by DiffDrive plugin\n"
+"- ros_topic_name: \"cmd_vel\"\n"
+"  gz_topic_name: \"cmd_vel\"\n"
+"  ros_type_name: \"geometry_msgs/msg/Twist\"\n"
+"  gz_type_name: \"gz.msgs.Twist\"\n"
+"  direction: ROS_TO_GZ\n"
+"\n"
+"# gz topic published by IMU plugin\n"
+"- ros_topic_name: \"imu\"\n"
+"  gz_topic_name: \"imu\"\n"
+"  ros_type_name: \"sensor_msgs/msg/Imu\"\n"
+"  gz_type_name: \"gz.msgs.IMU\"\n"
+"  direction: GZ_TO_ROS\n"
+"\n"
+"# gz topic published by Sensors plugin\n"
+"- ros_topic_name: \"scan\"\n"
+"  gz_topic_name: \"scan\"\n"
+"  ros_type_name: \"sensor_msgs/msg/LaserScan\"\n"
+"  gz_type_name: \"gz.msgs.LaserScan\"\n"
+"  direction: GZ_TO_ROS\n"
+"\n"
+"# gz topic published by Sensors plugin (Camera)\n"
+"- ros_topic_name: \"camera/camera_info\"\n"
+"  gz_topic_name: \"camera/camera_info\"\n"
+"  ros_type_name: \"sensor_msgs/msg/CameraInfo\"\n"
+"  gz_type_name: \"gz.msgs.CameraInfo\"\n"
+"  direction: GZ_TO_ROS\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:605
+msgid ""
+"[The completed yaml file can be found here.](https://github.com/azeey/"
+"turtlebot3_simulations/blob/new_gazebo/turtlebot3_gazebo/params/"
+"turtlebot3_waffle_bridge.yaml) Each entry in the yaml file has a ROS topic "
+"name, a Gazebo topic name, a ROS data/message type, and a direction which "
+"indicates which way messages flow. We will need to update the [`CMakeLists."
+"txt`](https://github.com/azeey/turtlebot3_simulations/blob/"
+"ccb2385fd478e79c898d290d80fa41f35b1bbb83/turtlebot3_gazebo/CMakeLists."
+"txt#L72) file to install the new `params` directory we created. The CMake "
+"`install` command should look like"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:613
+msgid ""
+"install(DIRECTORY launch models params rviz urdf worlds\n"
+"  DESTINATION share/${PROJECT_NAME}/\n"
+")\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:619
+msgid ""
+"Finally, we will edit [`turtlebot3_gazebo/launch/spawn_turtlebot3.launch.py`]"
+"(https://github.com/ROBOTIS-GIT/turtlebot3_simulations//blob/"
+"d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/launch/"
+"spawn_turtlebot3.launch.py), to create the bridge node:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:623
+msgid ""
+"bridge_params = os.path.join(\n"
+"    get_package_share_directory('turtlebot3_gazebo'),\n"
+"    'params',\n"
+"    'turtlebot3_waffle_bridge.yaml'\n"
+")\n"
+"\n"
+"start_gazebo_ros_bridge_cmd = Node(\n"
+"    package='ros_gz_bridge',\n"
+"    executable='parameter_bridge',\n"
+"    arguments=[\n"
+"        '--ros-args',\n"
+"        '-p',\n"
+"        f'config_file:={bridge_params}',\n"
+"    ],\n"
+"    output='screen',\n"
+")\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:642
+msgid ""
+"You might have noticed that in the bridge parameters, we did not include the "
+"`camera/image_raw` topic. While it is possible to bridge the image topic in "
+"a similar manner as all the other topics, we will make use of a specialized "
+"bridge node, [`ros_gz_image`](https://github.com/gazebosim/ros_gz/tree/ros2/"
+"ros_gz_image), which provides a much more efficient bridge for image topics. "
+"We'll add the following snippet to `turtlebot3_gazebo/launch/"
+"spawn_turtlebot3.launch.py`:"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:650
+msgid ""
+"start_gazebo_ros_image_bridge_cmd = Node(\n"
+"    package='ros_gz_image',\n"
+"    executable='image_bridge',\n"
+"    arguments=['/camera/image_raw'],\n"
+"    output='screen',\n"
+")\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:659
+msgid ""
+"Finally, we will add all the new actions to the list of `LaunchDescription`s "
+"returned by the `generate_launch_description` function"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:662
+msgid ""
+"# ...\n"
+"\n"
+"# Add the action to `ld` toward the end of the file\n"
+"\n"
+"ld.add_action(start_gazebo_ros_bridge_cmd)\n"
+"ld.add_action(start_gazebo_ros_image_bridge_cmd)\n"
+"\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:672
+msgid ""
+"You can find the [Gazebo Classic `spawn_turtlebot3.launch.py` file here]"
+"(https://github.com/ROBOTIS-GIT/turtlebot3_simulations/blob/"
+"d16cdbe7ecd601ccad48f87f77b6d89079ec5ac1/turtlebot3_gazebo/launch/"
+"spawn_turtlebot3.launch.py), and the [updated Gazebo `spawn_turtlebot3."
+"launch.py` file here](https://github.com/azeey/turtlebot3_simulations/blob/"
+"new_gazebo/turtlebot3_gazebo/launch/spawn_turtlebot3.launch.py)."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:677
+msgid ""
+"We are now ready to launch the empty world which spawns the waffle robot and "
+"sets up the bridge so that we can communicate with it from ROS 2."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:680
+msgid ""
+"export TURTLEBOT3_MODEL=waffle\n"
+"ros2 launch turtlebot3_gazebo empty_world.launch.py\n"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:685
+msgid ""
+"Here's a screenshot of Turtlebot3 running in Gazebo obtained by launching "
+"`empty_world.launch.py`. The Lidar visualization is enabled by adding the "
+"\"Visualize Lidar\" GUI plugin (see [tutorial](https://gazebosim.org/docs/"
+"fortress/gui) on how to add GUI plugins)."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:690
+msgid ""
+"![Screenshot of turtlebot 3 running in Gazebo](images/gz_ros2_migration/"
+"gazebo_turtlebot3.png)"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:690
+msgid "Screenshot of turtlebot 3 running in Gazebo"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:692
+msgid ""
+"It is also now possible to do the [SLAM](https://emanual.robotis.com/docs/en/"
+"platform/turtlebot3/slam_simulation/) and [Navigation](https://emanual."
+"robotis.com/docs/en/platform/turtlebot3/nav_simulation/) tutorials from the "
+"Turtlebot3 manual (make sure to select the Humble tab). However, it requires "
+"updating `turtlebot3_world.world` and `turtlebot3_world.launch.py` files "
+"according what we've discussed in this tutorial. For reference, those files "
+"have also been migrated in [this fork](https://github.com/azeey/"
+"turtlebot3_simulations/tree/new_gazebo)."
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:702
+msgid "Migrating other files in turtlebot3_gazebo"
+msgstr ""
+
+#: ../../../migrating_gazebo_classic_ros2_packages.md:704
+msgid ""
+"This tutorial does not cover all aspects of migrating models and launch "
+"files from Gazebo classic. Please see the [Gazebo Classic Migration]"
+"(gazebo_classic_migration) document for more resources that help with "
+"migrating other aspects, such as Gazebo Classic plugins, materials and "
+"textures."
+msgstr ""

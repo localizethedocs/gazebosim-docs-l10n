@@ -1,0 +1,494 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo garden\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ros2_gz_vendor_pkgs.md:1
+msgid "ROS 2 Gazebo Vendor Packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:3
+msgid "History of Gazebo packaging before ROS 2 Jazzy"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:5
+msgid ""
+"ROS 2 versions prior to Jazzy used Gazebo packages that were available in "
+"upstream Ubuntu. However, due to the package [update policy of Ubuntu]"
+"(https://wiki.ubuntu.com/StableReleaseUpdates), the Gazebo packages on "
+"upstream Ubuntu did not receive any updates. Thus, upstream Ubuntu almost "
+"always had older versions of Gazebo than what was available from the Gazebo "
+"package repository ([packages.osrfoundation.org](https://packages."
+"osrfoundation.org)). To overcome this, more up-to-date Gazebo packages were "
+"copied to the ROS bootstrap repository ([repos.ros.org](https://repos.ros."
+"org)) which were then copied to the main ROS package repository ([packages."
+"ros.org](https://packages.ros.org)). However, the process was error prone "
+"and keeping package versions in sync between the Gazebo and ROS package "
+"repositories was difficult since this was a manual process."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:17
+msgid "Gazebo vendor packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:19
+msgid ""
+"As of ROS 2 Jazzy, Gazebo is available from the ROS package repository via "
+"vendor packages. A ROS vendor package is a ROS package that provides "
+"software that ROS needs on platforms where it might not be available, or "
+"where a different version than what is available is required [^1]."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:24
+msgid ""
+"The Gazebo vendor packages provide all of the Gazebo libraries to a given "
+"ROS release. The packages are built in the ROS buildfarm and as part of "
+"their build process, fetch the sources of the underlying Gazebo library and "
+"build it. In addition, the vendor packages provide CMake shims that make it "
+"possible to use CMake targets without version numbers."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:30
+msgid ""
+"Each release of ROS 2 is paired with a specific release of Gazebo. For ROS 2 "
+"Jazzy, the vendor packages contain Gazebo libraries from the Harmonic "
+"release. For ROS 2 K-turtle (next release), the vendor packages will contain "
+"Gazebo Ionic. This default pairing is found in the [ROS installation "
+"instructions](ros_installation)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:36
+msgid ""
+"The following is a table of all vendor packages and the underlying Gazebo "
+"library they vendor:"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "Vendor Package"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "Gazebo Library"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz_cmake_vendor](https://github.com/gazebo-release/gz_cmake_vendor)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-cmake](https://github.com/gazebosim/gz-cmake)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz_common_vendor](https://github.com/gazebo-release/gz_common_vendor)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-common](https://github.com/gazebosim/gz-common)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_fuel_tools_vendor](https://github.com/gazebo-release/"
+"gz_fuel_tools_vendor)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-fuel-tools](https://github.com/gazebosim/gz-fuel-tools)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz_gui_vendor](https://github.com/gazebo-release/gz_gui_vendor)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-gui](https://github.com/gazebosim/gz-gui)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_launch_vendor](https://github.com/gazebo-release/gz_launch_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-launch](https://github.com/gazebosim/gz-launch)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz_math_vendor](https://github.com/gazebo-release/gz_math_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-math](https://github.com/gazebosim/gz-math)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz_msgs_vendor](https://github.com/gazebo-release/gz_msgs_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-msgs](https://github.com/gazebosim/gz-msgs)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_physics_vendor](https://github.com/gazebo-release/gz_physics_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-physics](https://github.com/gazebosim/gz-physics)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_plugin_vendor](https://github.com/gazebo-release/gz_plugin_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-plugin](https://github.com/gazebosim/gz-plugin)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_rendering_vendor](https://github.com/gazebo-release/gz_rendering_vendor."
+"git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-rendering](https://github.com/gazebosim/gz-rendering)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_sensors_vendor](https://github.com/gazebo-release/gz_sensors_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-sensors](https://github.com/gazebosim/gz-sensors)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz_sim_vendor](https://github.com/gazebo-release/gz_sim_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-sim](https://github.com/gazebosim/gz-sim)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_tools_vendor](https://github.com/gazebo-release/gz_tools_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-tools](https://github.com/gazebosim/gz-tools)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_transport_vendor](https://github.com/gazebo-release/gz_transport_vendor."
+"git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-transport](https://github.com/gazebosim/gz-transport)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_utils_vendor](https://github.com/gazebo-release/gz_utils_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[gz-utils](https://github.com/gazebosim/gz-utils)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[sdformat_vendor](https://github.com/gazebo-release/sdformat_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[sdformat](https://github.com/gazebosim/sdformat)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:58
+msgid ""
+"In addition to Gazebo libraries, two dependencies of Gazebo are also "
+"vendored:"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "External Library"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_dartsim_vendor](https://github.com/gazebo-release/gz_dartsim_vendor.git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[dartsim](https://github.com/dartsim/dart)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid ""
+"[gz_ogre_next_vendor](https://github.com/gazebo-release/gz_ogre_next_vendor."
+"git)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:0
+msgid "[ogre-next](https://github.com/OGRECave/ogre-next)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:65
+msgid ""
+"**Note:** These two vendor packages are only intended to be consumed by "
+"Gazebo. Use of this vendor package generally (outside of Gazebo) is not "
+"recommended as the underlying library version might change without notice."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:69
+msgid "Running Gazebo from vendor packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:71
+msgid ""
+"To be able to use the `gz` command to run the usual commands, be sure that "
+"at least `gz_tools_vendor` package is installed. To have the `gz` command in "
+"the PATH, source the `setup.bash` from `/opt/ros/${ROS_DISTRO}` as usual."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:75
+msgid ""
+"# Example running gz sim on Jazzy\n"
+"export ROS_DISTRO=jazzy\n"
+"sudo apt-get install ros-${ROS_DISTRO}-gz-tools-vendor ros-${ROS_DISTRO}-gz-"
+"sim-vendor\n"
+". /opt/ros/jazzy/setup.bash\n"
+"gz sim --help\n"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:83
+msgid "Building packages using Gazebo vendor packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:85
+msgid "Declaring dependencies in `package.xml`"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:87
+msgid ""
+"To use a Gazebo vendor package in your project, you'll need to add the "
+"appropriate package in your `package.xml`. For example, if you use the "
+"Gazebo libraries `gz-cmake`, `gz-utils` and `gz-math`, the entries in "
+"`package.xml` will be the following"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:92
+msgid ""
+"  ...\n"
+"  <depend>gz_cmake_vendor</depend>\n"
+"  <depend>gz_utils_vendor</depend>\n"
+"  <depend>gz_math_vendor</depend>\n"
+"  ...\n"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:100
+msgid "CMakeLists.txt for building with Gazebo vendor packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:102
+msgid ""
+"To use a Gazebo library provided by a vendor package, you'll need to "
+"`find_package` the vendor package and the underlying Gazebo library. Calling "
+"`find_package` on the vendor package indicates that the project is \"buying "
+"into\" the CMake shims provided by the vendor package. These shims make it "
+"possible to `find_package` the underlying library and use its CMake targets "
+"without including the version number in the name. Thus, when upgrading to "
+"newer versions of Gazebo, the project `CMakeLists.txt` file would not need "
+"to be modified."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:110
+msgid ""
+"Following the example above, The CMake entry for using `gz-cmake`, `gz-"
+"utils` and `gz-math` will be the following:"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:113
+msgid ""
+"find_package(gz_cmake_vendor REQUIRED)\n"
+"find_package(gz-cmake REQUIRED)\n"
+"find_package(gz_utils_vendor REQUIRED)\n"
+"find_package(gz-utils REQUIRED)\n"
+"find_package(gz_math_vendor REQUIRED)\n"
+"find_package(gz-math REQUIRED)\n"
+"\n"
+"add_executable(test_gz_vendor main.cc)\n"
+"target_link_libraries(test_gz_vendor PUBLIC gz-math::gz-math gz-utils::gz-"
+"utils)\n"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:125
+msgid ""
+"**Note:** The vendor packages use underscores (`_`) while the Gazebo library "
+"names use dashes (`-`)."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:129
+msgid "Expert use cases"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:131
+msgid ""
+"The documentation provided above should cover the users that require to "
+"install and run the Gazebo simulator together with ROS and developing code "
+"that requires of Gazebo and ROS."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:135
+msgid "Below are listed more advanced topics for the expert users."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:137
+msgid "Installing Non-Default Gazebo/ROS 2 Pairings with vendor packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:139
+msgid ""
+"If you want to use a new release of Gazebo that is not officially paired "
+"with the release of ROS you are using (e.g. Gazebo Ionic with ROS 2 Jazzy), "
+"you can follow the following steps:"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:143
+msgid ""
+"Install the binaries from [packages.osrfoundation.org](https://packages."
+"osrfoundation.org). Make sure to install the metapackage that includes all "
+"library components (e.g. gz-ionic, gz-harmonic, etc.)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:146
+msgid ""
+"Clone the set of vendor packages included in [gz_vendor.repos](https://gist."
+"github.com/azeey/a94adb591475ea0e613313d3540ca451) in your workspace using "
+"[vcstool](https://github.com/dirk-thomas/vcstool)."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:149
+msgid ""
+"Checkout the desired branch. The branch names currently track ROS 2 "
+"releases. You'll need to determine the branch based on the [default pairings]"
+"(ros_installation)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:152 ../../../ros2_gz_vendor_pkgs.md:182
+msgid ""
+"Add any additional packages you need that also depend on Gazebo, such as "
+"[`ros_gz`](https://github.com/gazebosim/ros_gz) and [`gz_ros2_control`]"
+"(https://github.com/ros-controls/gz_ros2_control/)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:155
+msgid ""
+"`export GZ_RELAX_VERSION_MATCH=1`. By default, the vendor packages look for "
+"an exact version match of the vendored library to be available in the "
+"system. If the exact version is not found, the sources are fetched and "
+"built. This environment variable causes the vendor package to match just the "
+"major version number."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:160 ../../../ros2_gz_vendor_pkgs.md:193
+msgid "Build the workspace"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:162
+msgid "Gazebo library development with vendor packages"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:164
+msgid ""
+"Building the underlying packages from source might be needed when using a "
+"Gazebo release that is not officially paired with the ROS release you are "
+"using or when developing on a Gazebo library in conjunction with another ROS "
+"package that uses Gazebo directly. You can follow these steps to build the "
+"vendor packages from source:"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:170
+msgid ""
+"Clone the desired release of the Gazebo libraries into a workspace. You can "
+"use a collection file from <https://github.com/gazebo-tooling/gazebodistro> "
+"(e.g. [`collection-harmonic.yaml`](https://github.com/gazebo-tooling/"
+"gazebodistro/blob/master/collection-harmonic.yaml)) with [vcstool](https://"
+"github.com/dirk-thomas/vcstool)."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:175
+msgid ""
+"Clone the set of vendor packages included in [gz_vendor.repos](https://gist."
+"github.com/azeey/a94adb591475ea0e613313d3540ca451) in the same workspace "
+"using [vcstool](https://github.com/dirk-thomas/vcstool)."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:179
+msgid ""
+"Checkout the desired branch. The branch names currently track ROS 2 "
+"releases. You'll need to determine the branch based on the [official "
+"pairings](ros_installation)"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:185
+msgid ""
+"`export GZ_BUILD_FROM_SOURCE=1`. By default, the vendor packages look for an "
+"exact version match of the vendored library to be available in the system. "
+"If the exact version is not found, the sources are fetched and built. Also, "
+"by default, the vendor packages do not depend directly on the Gazebo "
+"libraries you have in your workspace. Setting this environment variable "
+"causes the vendor package to match just the major version number and add "
+"dependencies on the Gazebo libraries being built from source so that the "
+"correct build order is followed."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:195
+msgid "Known Limitations"
+msgstr "已知的限制"
+
+#: ../../../ros2_gz_vendor_pkgs.md:197
+msgid ""
+"The vendor packages are currently built with Python bindings disabled "
+"([issue](https://github.com/gazebo-tooling/gz_vendor/issues/2))"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:199
+msgid ""
+"`gz_dartsim_vendor` and `gz_ogre_next_vendor` currently always build from "
+"source ([gz_dartsim_vendor issue](https://github.com/gazebo-release/"
+"gz_dartsim_vendor/issues/4), [gz_ogre_next_vendor issue](https://github.com/"
+"gazebo-release/gz_ogre_next_vendor/issues/4))"
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:203
+msgid ""
+"When building Gazebo libraries from source, it is not possible to build some "
+"packages from source and install some packages from binaries."
+msgstr ""
+
+#: ../../../ros2_gz_vendor_pkgs.md:206
+msgid "https://robotics.stackexchange.com/a/93262/31574"
+msgstr ""
