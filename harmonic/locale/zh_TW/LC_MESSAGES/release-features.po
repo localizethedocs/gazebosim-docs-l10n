@@ -31,6 +31,8 @@ msgid ""
 "Take a look at the [Roadmap](roadmap) for information about upcoming "
 "features, some of which may land in released versions of Gazebo."
 msgstr ""
+"請參閱[路線圖](roadmap)，瞭解即將推出的功能；其中部分功能可能會在 Gazebo 的發"
+"行版中推出。"
 
 #: ../../../release-features.md:8
 msgid "Ionic"
