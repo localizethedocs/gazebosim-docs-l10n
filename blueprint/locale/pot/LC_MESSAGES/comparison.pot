@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo blueprint\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -422,8 +423,8 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"Use `ignition::gui::KeyPublisher` with `ignition::gazebo::systems::"
-"TriggeredPublisher`"
+"Use `ignition::gui::KeyPublisher` with "
+"`ignition::gazebo::systems::TriggeredPublisher`"
 msgstr ""
 
 #: ../../../comparison.md:0
@@ -516,9 +517,9 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"✓ ([partially via DiffDrivePlugin](https://github.com/gazebosim/gz-sim/"
-"blob/44951e3ddfd238f24182d4d80b1376f0d426bd43/examples/worlds/track_drive."
-"sdf#L2141))"
+"✓ ([partially via DiffDrivePlugin](https://github.com/gazebosim/gz-sim/blob/"
+"44951e3ddfd238f24182d4d80b1376f0d426bd43/examples/worlds/"
+"track_drive.sdf#L2141))"
 msgstr ""
 
 #: ../../../comparison.md:0
@@ -1045,8 +1046,8 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"Most of the stack works, outstanding issues: [command line](https://github."
-"com/gazebosim/gz-sim/issues/25), [render window](https://github.com/"
+"Most of the stack works, outstanding issues: [command line](https://"
+"github.com/gazebosim/gz-sim/issues/25), [render window](https://github.com/"
 "gazebosim/gz-sim/issues/44)"
 msgstr ""
 
