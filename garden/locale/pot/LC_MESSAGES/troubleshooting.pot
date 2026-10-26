@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo garden\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"POT-Creation-Date: 2026-10-26 16:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -249,8 +250,8 @@ msgstr ""
 
 #: ../../../troubleshooting.md:130
 msgid ""
-"This can be confirmed by checking the Ogre 2 logs at `~/.gz/rendering/ogre2."
-"log`, which should have an error like:"
+"This can be confirmed by checking the Ogre 2 logs at `~/.gz/rendering/"
+"ogre2.log`, which should have an error like:"
 msgstr ""
 
 #: ../../../troubleshooting.md:133
@@ -345,10 +346,10 @@ msgstr ""
 
 #: ../../../troubleshooting.md:178
 msgid ""
-"Unable to create the rendering window: OGRE EXCEPTION(3:"
-"RenderingAPIException): currentGLContext was specified with no current GL "
-"context in GLXWindow::create at ./RenderSystems/GL3Plus/src/windowing/GLX/"
-"OgreGLXWindow.cpp (line 165)\n"
+"Unable to create the rendering window: OGRE "
+"EXCEPTION(3:RenderingAPIException): currentGLContext was specified with no "
+"current GL context in GLXWindow::create at ./RenderSystems/GL3Plus/src/"
+"windowing/GLX/OgreGLXWindow.cpp (line 165)\n"
 msgstr ""
 
 #: ../../../troubleshooting.md:182
