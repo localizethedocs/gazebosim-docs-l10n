@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../../getstarted.md:25
 msgid "Gazebo Versions"
-msgstr ""
+msgstr "Gazebo 版本"
 
 #: ../../../getstarted.md:25
 msgid "Ubuntu 24.04 Noble"
