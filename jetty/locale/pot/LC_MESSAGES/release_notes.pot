@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo jetty\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -176,8 +177,8 @@ msgstr ""
 
 #: ../../../release_notes.md:90
 msgid ""
-"[New auto-inertia calculation makes adding objects easier](https://github."
-"com/gazebosim/sdformat/pull/1513)"
+"[New auto-inertia calculation makes adding objects easier](https://"
+"github.com/gazebosim/sdformat/pull/1513)"
 msgstr ""
 
 #: ../../../release_notes.md:92
@@ -237,8 +238,8 @@ msgstr ""
 
 #: ../../../release_notes.md:129
 msgid ""
-"[New Gazebo standalone executables](https://github.com/gazebosim/docs/"
-"pull/611/files#:~:text=https%3A//github.com/gazebosim/gz%2Dsim/pull/2849)"
+"[New Gazebo standalone executables](https://github.com/gazebosim/docs/pull/"
+"611/files#:~:text=https%3A//github.com/gazebosim/gz%2Dsim/pull/2849)"
 msgstr ""
 
 #: ../../../release_notes.md:131
@@ -265,9 +266,9 @@ msgstr ""
 
 #: ../../../release_notes.md:143
 msgid ""
-"[Refactored package names to remove major versions](https://discourse."
-"openrobotics.org/t/version-numbers-removed-from-package-names-in-gazebo-"
-"jetty/48391)"
+"[Refactored package names to remove major versions](https://"
+"discourse.openrobotics.org/t/version-numbers-removed-from-package-names-in-"
+"gazebo-jetty/48391)"
 msgstr ""
 
 #: ../../../release_notes.md:145
