@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo acropolis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 16:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,8 +66,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake4/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -79,8 +80,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common6/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common6/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -120,8 +121,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch8/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch8/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -166,8 +167,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin3/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin3/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -209,8 +210,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-tools/blob/gz-tools2/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-tools/blob/gz-tools2/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -233,8 +234,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils3/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils3/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -265,8 +266,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake3/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-cmake/blob/gz-cmake3/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -275,8 +276,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common5/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-common/blob/gz-common5/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -296,8 +297,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch7/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch7/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -318,8 +319,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin2/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-plugin/blob/gz-plugin2/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -351,8 +352,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils2/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-utils/blob/gz-utils2/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -370,8 +371,8 @@ msgstr ""
 
 #: ../../../release-features.md:57
 msgid ""
-"[Wide angle camera (Ogre 1).](https://github.com/gazebosim/gz-sensors/"
-"issues/24)"
+"[Wide angle camera (Ogre 1).](https://github.com/gazebosim/gz-sensors/issues/"
+"24)"
 msgstr ""
 
 #: ../../../release-features.md:58
@@ -402,20 +403,20 @@ msgstr ""
 
 #: ../../../release-features.md:63
 msgid ""
-"[glTF and GLB mesh support.](https://github.com/gazebosim/gz-common/"
-"issues/344)"
+"[glTF and GLB mesh support.](https://github.com/gazebosim/gz-common/issues/"
+"344)"
 msgstr ""
 
 #: ../../../release-features.md:64
 msgid ""
-"[Vulkan support (Ogre 2.3)](https://github.com/gazebosim/gz-rendering/"
-"pull/553)"
+"[Vulkan support (Ogre 2.3)](https://github.com/gazebosim/gz-rendering/pull/"
+"553)"
 msgstr ""
 
 #: ../../../release-features.md:65
 msgid ""
-"[Lunar terrain and coordinates.](https://github.com/gazebosim/sdformat/"
-"pull/1050)"
+"[Lunar terrain and coordinates.](https://github.com/gazebosim/sdformat/pull/"
+"1050)"
 msgstr ""
 
 #: ../../../release-features.md:66
@@ -457,8 +458,8 @@ msgstr ""
 
 #: ../../../release-features.md:73
 msgid ""
-"[Environmental lookup sensors.](https://github.com/gazebosim/gz-sim/"
-"pull/1616)"
+"[Environmental lookup sensors.](https://github.com/gazebosim/gz-sim/pull/"
+"1616)"
 msgstr ""
 
 #: ../../../release-features.md:74
@@ -525,8 +526,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch6/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-launch/blob/gz-launch6/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -594,8 +595,8 @@ msgstr ""
 
 #: ../../../release-features.md:111
 msgid ""
-"[Improve `<pose>` tag on SDFormat.](https://github.com/osrf/sdformat/"
-"issues/252)"
+"[Improve `<pose>` tag on SDFormat.](https://github.com/osrf/sdformat/issues/"
+"252)"
 msgstr ""
 
 #: ../../../release-features.md:112
@@ -661,8 +662,8 @@ msgstr ""
 
 #: ../../../release-features.md:125
 msgid ""
-"[Pose and Twist with covariance.](https://github.com/gazebosim/gz-msgs/"
-"pull/224)"
+"[Pose and Twist with covariance.](https://github.com/gazebosim/gz-msgs/pull/"
+"224)"
 msgstr ""
 
 #: ../../../release-features.md:126
@@ -673,14 +674,14 @@ msgstr ""
 
 #: ../../../release-features.md:127
 msgid ""
-"[ROS bridge configurable via YAML.](https://github.com/gazebosim/ros_gz/"
-"pull/238)"
+"[ROS bridge configurable via YAML.](https://github.com/gazebosim/ros_gz/pull/"
+"238)"
 msgstr ""
 
 #: ../../../release-features.md:128
 msgid ""
-"[ROS bridge as a node component.](https://github.com/gazebosim/ros_gz/"
-"pull/238)"
+"[ROS bridge as a node component.](https://github.com/gazebosim/ros_gz/pull/"
+"238)"
 msgstr ""
 
 #: ../../../release-features.md:129
@@ -704,8 +705,8 @@ msgstr ""
 
 #: ../../../release-features.md:133
 msgid ""
-"[Joint force-torque sensor.](https://github.com/gazebosim/gz-sensors/"
-"issues/25)"
+"[Joint force-torque sensor.](https://github.com/gazebosim/gz-sensors/issues/"
+"25)"
 msgstr ""
 
 #: ../../../release-features.md:134
@@ -799,8 +800,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-cmake/blob/ign-cmake2/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-cmake/blob/ign-cmake2/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -817,8 +818,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -872,8 +873,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools1/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools1/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -884,8 +885,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-utils/blob/ign-utils1/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-utils/blob/ign-utils1/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -898,8 +899,8 @@ msgstr ""
 
 #: ../../../release-features.md:174
 msgid ""
-"New utility library with minimal dependencies: [Gazebo Utils](https://github."
-"com/gazebosim/gz-utils/)."
+"New utility library with minimal dependencies: [Gazebo Utils](https://"
+"github.com/gazebosim/gz-utils/)."
 msgstr ""
 
 #: ../../../release-features.md:175
@@ -912,8 +913,8 @@ msgstr ""
 
 #: ../../../release-features.md:177
 msgid ""
-"[Capsule and ellipsoid geometries.](https://github.com/osrf/sdformat/"
-"issues/376)"
+"[Capsule and ellipsoid geometries.](https://github.com/osrf/sdformat/issues/"
+"376)"
 msgstr ""
 
 #: ../../../release-features.md:178
@@ -959,8 +960,8 @@ msgstr ""
 
 #: ../../../release-features.md:186
 msgid ""
-"[Hook command line tool to binaries instead of libraries.](https://github."
-"com/gazebosim/gz-tools/issues/7)"
+"[Hook command line tool to binaries instead of libraries.](https://"
+"github.com/gazebosim/gz-tools/issues/7)"
 msgstr ""
 
 #: ../../../release-features.md:187
@@ -992,8 +993,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo5/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo5/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -1046,9 +1047,9 @@ msgstr ""
 
 #: ../../../release-features.md:213
 msgid ""
-"Particle effects on [Gazebo Rendering](https://gazebosim.org/api/"
-"rendering/4.1/particles.html) and [Gazebo Sim](https://github.com/gazebosim/"
-"gz-sim/blob/ign-gazebo4/examples/worlds/particle_emitter.sdf)."
+"Particle effects on [Gazebo Rendering](https://gazebosim.org/api/rendering/"
+"4.1/particles.html) and [Gazebo Sim](https://github.com/gazebosim/gz-sim/"
+"blob/ign-gazebo4/examples/worlds/particle_emitter.sdf)."
 msgstr ""
 
 #: ../../../release-features.md:214
@@ -1100,8 +1101,8 @@ msgstr ""
 
 #: ../../../release-features.md:223
 msgid ""
-"[libSDFormat now uses gz-cmake](https://github.com/gazebosim/sdformat/"
-"issues/181)"
+"[libSDFormat now uses gz-cmake](https://github.com/gazebosim/sdformat/issues/"
+"181)"
 msgstr ""
 
 #: ../../../release-features.md:224 ../../../release-features.md:337
@@ -1151,8 +1152,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo4/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo4/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -1340,8 +1341,8 @@ msgstr ""
 
 #: ../../../release-features.md:277
 msgid ""
-"[Polyline extruded 2D geometries](https://github.com/gazebosim/docs/"
-"issues/186)"
+"[Polyline extruded 2D geometries](https://github.com/gazebosim/docs/issues/"
+"186)"
 msgstr ""
 
 #: ../../../release-features.md:278
@@ -1431,8 +1432,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo3/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo3/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -1563,14 +1564,14 @@ msgstr ""
 
 #: ../../../release-features.md:335
 msgid ""
-"[Customizable GUI layout](https://gazebosim.org/api/gazebo/3.3/gui_config."
-"html)."
+"[Customizable GUI layout](https://gazebosim.org/api/gazebo/3.3/"
+"gui_config.html)."
 msgstr ""
 
 #: ../../../release-features.md:336
 msgid ""
-"[Detachable joints](https://gazebosim.org/api/gazebo/4.0/detachablejoints."
-"html)"
+"[Detachable joints](https://gazebosim.org/api/gazebo/4.0/"
+"detachablejoints.html)"
 msgstr ""
 
 #: ../../../release-features.md:338
@@ -1655,8 +1656,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo2/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo2/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -1699,8 +1700,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools0/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-tools/blob/ign-tools0/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
@@ -1758,8 +1759,8 @@ msgstr ""
 
 #: ../../../release-features.md:384
 msgid ""
-"Cloud-hosted simulation assets provided by [app.gazebosim.org](https://app."
-"gazebosim.org)."
+"Cloud-hosted simulation assets provided by [app.gazebosim.org](https://"
+"app.gazebosim.org)."
 msgstr ""
 
 #: ../../../release-features.md:385
@@ -1793,8 +1794,8 @@ msgstr ""
 
 #: ../../../release-features.md:0
 msgid ""
-"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo1/Changelog."
-"md)"
+"[Changelog](https://github.com/gazebosim/gz-sim/blob/ign-gazebo1/"
+"Changelog.md)"
 msgstr ""
 
 #: ../../../release-features.md:0
