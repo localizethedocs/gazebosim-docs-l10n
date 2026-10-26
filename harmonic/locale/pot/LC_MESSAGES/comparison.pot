@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo harmonic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 16:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1106,8 +1107,8 @@ msgstr ""
 #: ../../../comparison.md:289
 msgid ""
 "For **ROS 2 Rolling**, the Rolling distribution moves with the next future "
-"release of ROS 2 defined in [REP-2000](https://www.ros.org/reps/rep-2000."
-"html)."
+"release of ROS 2 defined in [REP-2000](https://www.ros.org/reps/"
+"rep-2000.html)."
 msgstr ""
 
 #: ../../../comparison.md:292
@@ -1128,8 +1129,8 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"Most of the stack works, outstanding issues: [render window](https://github."
-"com/gazebosim/gz-sim/issues/44)"
+"Most of the stack works, outstanding issues: [render window](https://"
+"github.com/gazebosim/gz-sim/issues/44)"
 msgstr ""
 
 #: ../../../comparison.md:0
