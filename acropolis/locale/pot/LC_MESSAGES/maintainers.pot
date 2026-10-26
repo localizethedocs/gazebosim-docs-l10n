@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo acropolis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 16:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,8 +67,8 @@ msgid ""
 "Assuming the filtering is completed, create a poll on Discourse asking the "
 "community to vote for their favorite name from the filtered list. Explain "
 "that the voting will use a ranked choice system (see [example from Jetty]"
-"(https://discourse.openrobotics.org/t/name-the-next-gazebo-release-gazebo-"
-"k/50040)). The voting should close a day before the community meeting that "
+"(https://discourse.openrobotics.org/t/name-the-next-gazebo-release-gazebo-k/"
+"50040)). The voting should close a day before the community meeting that "
 "will be held to present demos from the new release."
 msgstr ""
 
@@ -113,8 +114,8 @@ msgstr ""
 
 #: ../../../maintainers.md:42
 msgid ""
-"Sept 12 - [Post on discourse asking the community to vote](https://discourse."
-"openrobotics.org/t/name-the-next-gazebo-release-gazebo-k/50040)"
+"Sept 12 - [Post on discourse asking the community to vote](https://"
+"discourse.openrobotics.org/t/name-the-next-gazebo-release-gazebo-k/50040)"
 msgstr ""
 
 #: ../../../maintainers.md:43
@@ -152,8 +153,8 @@ msgstr ""
 
 #: ../../../maintainers.md:52
 msgid ""
-"Sep 9 - [Post on discourse asking the community to vote](https://discourse."
-"openrobotics.org/t/name-the-next-gazebo-release-gazebo-j/48589)"
+"Sep 9 - [Post on discourse asking the community to vote](https://"
+"discourse.openrobotics.org/t/name-the-next-gazebo-release-gazebo-j/48589)"
 msgstr ""
 
 #: ../../../maintainers.md:53
@@ -168,8 +169,8 @@ msgstr ""
 
 #: ../../../maintainers.md:55
 msgid ""
-"Sep 30 - [Release](https://discourse.openrobotics.org/t/gazebo-ionic-"
-"release/49064)"
+"Sep 30 - [Release](https://discourse.openrobotics.org/t/gazebo-ionic-release/"
+"49064)"
 msgstr ""
 
 #: ../../../maintainers.md:57
@@ -187,19 +188,61 @@ msgid ""
 msgstr ""
 
 #: ../../../maintainers.md:62
-msgid ""
-"When merging a PR that will be backported or forward-ported, you **must use "
-"\"Rebase and merge\"**. This ensures a cleaner git history and properly "
-"maintains the original author's commit attribution across branches."
+msgid "When merging backport PRs, two merge strategies are possible:"
 msgstr ""
 
-#: ../../../maintainers.md:66
+#: ../../../maintainers.md:63
+msgid ""
+"If the backport is clean, i.e, no conflicts, use **Rebase and merge**. This "
+"ensures a cleaner git history and properly maintains the original author's "
+"commit attribution across branches."
+msgstr ""
+
+#: ../../../maintainers.md:64
+msgid ""
+"If you had to resolve conflicts, use **Squash and merge** so that the commit "
+"history and changelog entries point to the PR with the changes that resolved "
+"the conflicts."
+msgstr ""
+
+#: ../../../maintainers.md:68
 msgid ""
 "In the event you need to fix conflicts in a backport, please ask another "
 "committer to review your pull request."
 msgstr ""
 
-#: ../../../maintainers.md:69
+#: ../../../maintainers.md:71
+msgid "Backport Timing and Downstream Testing"
+msgstr ""
+
+#: ../../../maintainers.md:73
+msgid ""
+"Committers are permitted to self-approve and merge clean backports that have "
+"no merge conflicts and passing CI (with exceptions for flaky tests and other "
+"known CI failures). However, committers should weigh the tradeoff between "
+"backport velocity and the stability of downstream packages on release "
+"branches."
+msgstr ""
+
+#: ../../../maintainers.md:79
+msgid ""
+"If a feature, deprecation, or bug fix spans multiple pull requests or "
+"affects multiple Gazebo libraries (such as coordinated changes across `gz-"
+"rendering` and `gz-sensors`), backporting individual PRs immediately can "
+"cause transient build or test breakages on stable branches before the full "
+"set of changes is available. In these scenarios, committers should pause "
+"backports until all related pull requests have merged into the `main` "
+"development branch and continuous integration has had an opportunity to "
+"validate downstream packages. Once the complete set of changes is verified "
+"on `main`, the backports should be applied sequentially or in a coordinated "
+"manner to the targeted stable branches."
+msgstr ""
+
+#: ../../../maintainers.md:91
+msgid "Using Mergify"
+msgstr ""
+
+#: ../../../maintainers.md:93
 msgid ""
 "To port a merged PR to other branches, we use Mergify. You can comment on "
 "the PR with the `@mergifyio backport <branches...>` command. The tool below "
@@ -209,7 +252,7 @@ msgid ""
 "tooling/release-tools/blob/master/jenkins-scripts/dsl/gz-collections.yaml)."
 msgstr ""
 
-#: ../../../maintainers.md:71
+#: ../../../maintainers.md:95
 msgid ""
 "<style>\n"
 "  /* Custom placeholder styling */\n"
@@ -247,8 +290,8 @@ msgid ""
 "  </div>\n"
 "</div>\n"
 "\n"
-"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml."
-"min.js\"></script>\n"
+"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-"
+"yaml.min.js\"></script>\n"
 "<script>\n"
 "document.addEventListener('DOMContentLoaded', () => {\n"
 "  const generateBtn = document.getElementById('generate-btn');\n"
@@ -282,8 +325,8 @@ msgid ""
 "    const prNumber = match[3];\n"
 "\n"
 "    try {\n"
-"      const prRes = await fetch(`https://api.github.com/repos/${owner}/"
-"${repo}/pulls/${prNumber}`);\n"
+"      const prRes = await fetch(`https://api.github.com/repos/${owner}/$"
+"{repo}/pulls/${prNumber}`);\n"
 "      if (!prRes.ok) {\n"
 "        if (prRes.status === 403) throw new Error('GitHub API Rate Limit "
 "exceeded.');\n"
@@ -295,8 +338,8 @@ msgid ""
 "\n"
 "      const yamlRes = await fetch('https://raw.githubusercontent.com/gazebo-"
 "tooling/release-tools/master/jenkins-scripts/dsl/gz-collections.yaml');\n"
-"      if (!yamlRes.ok) throw new Error(`Failed to fetch collections: "
-"${yamlRes.status}`);\n"
+"      if (!yamlRes.ok) throw new Error(`Failed to fetch collections: $"
+"{yamlRes.status}`);\n"
 "      const yamlText = await yamlRes.text();\n"
 "      \n"
 "      const data = jsyaml.load(yamlText);\n"
@@ -363,4 +406,40 @@ msgid ""
 "  });\n"
 "});\n"
 "</script>"
+msgstr ""
+
+#: ../../../maintainers.md:232
+msgid "Review Policy for Prerelease Version Bumps"
+msgstr ""
+
+#: ../../../maintainers.md:234
+msgid ""
+"During release preparation or ongoing collection development (such as "
+"preparing prereleases on Rotary), committers regularly open pull requests to "
+"bump prerelease version suffixes (e.g., `X.Y.Z~pre1` to `X.Y.Z~pre2`). To "
+"avoid unnecessary review bottlenecks across the repository collection:"
+msgstr ""
+
+#: ../../../maintainers.md:239
+msgid ""
+"**Advance Notice**: Committers planning a set of prerelease version bumps "
+"should announce their intention ahead of time to the team (e.g., in the "
+"Gazebo PMC Zulip channel)."
+msgstr ""
+
+#: ../../../maintainers.md:242
+msgid ""
+"**Waiving Individual PR Reviews**: Once announced, pull requests that "
+"strictly bump prerelease versions and update related packaging metadata do "
+"not require formal review approvals from other committers, provided CI "
+"passes (with exceptions for flaky tests and other known CI failures)."
+msgstr ""
+
+#: ../../../maintainers.md:247
+msgid ""
+"**Waiting Window**: Committers should observe a waiting window of at least 4 "
+"hours after opening the bump PRs before merging, giving team members an "
+"opportunity to raise any concerns or coordinate dependent release tasks. If "
+"the PRs get approvals, the committer is free to skip the waiting window and "
+"proceed with making the prereleases immediately."
 msgstr ""

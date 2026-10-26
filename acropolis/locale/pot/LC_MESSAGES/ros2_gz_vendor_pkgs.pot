@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo acropolis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 16:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,13 +32,14 @@ msgid ""
 "(https://wiki.ubuntu.com/StableReleaseUpdates), the Gazebo packages on "
 "upstream Ubuntu did not receive any updates. Thus, upstream Ubuntu almost "
 "always had older versions of Gazebo than what was available from the Gazebo "
-"package repository ([packages.osrfoundation.org](https://packages."
-"osrfoundation.org)). To overcome this, more up-to-date Gazebo packages were "
-"copied to the ROS bootstrap repository ([repos.ros.org](https://repos.ros."
-"org)) which were then copied to the main ROS package repository ([packages."
-"ros.org](https://packages.ros.org)). However, the process was error prone "
-"and keeping package versions in sync between the Gazebo and ROS package "
-"repositories was difficult since this was a manual process."
+"package repository ([packages.osrfoundation.org](https://"
+"packages.osrfoundation.org)). To overcome this, more up-to-date Gazebo "
+"packages were copied to the ROS bootstrap repository ([repos.ros.org]"
+"(https://repos.ros.org)) which were then copied to the main ROS package "
+"repository ([packages.ros.org](https://packages.ros.org)). However, the "
+"process was error prone and keeping package versions in sync between the "
+"Gazebo and ROS package repositories was difficult since this was a manual "
+"process."
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:17
@@ -163,8 +165,8 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:0
 msgid ""
-"[gz_rendering_vendor](https://github.com/gazebo-release/gz_rendering_vendor."
-"git)"
+"[gz_rendering_vendor](https://github.com/gazebo-release/"
+"gz_rendering_vendor.git)"
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:0
@@ -199,8 +201,8 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:0
 msgid ""
-"[gz_transport_vendor](https://github.com/gazebo-release/gz_transport_vendor."
-"git)"
+"[gz_transport_vendor](https://github.com/gazebo-release/"
+"gz_transport_vendor.git)"
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:0
@@ -246,8 +248,8 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:0
 msgid ""
-"[gz_ogre_next_vendor](https://github.com/gazebo-release/gz_ogre_next_vendor."
-"git)"
+"[gz_ogre_next_vendor](https://github.com/gazebo-release/"
+"gz_ogre_next_vendor.git)"
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:0
@@ -377,16 +379,16 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:143
 msgid ""
-"Install the binaries from [packages.osrfoundation.org](https://packages."
-"osrfoundation.org). Make sure to install the metapackage that includes all "
-"library components (e.g. gz-ionic, gz-harmonic, etc.)"
+"Install the binaries from [packages.osrfoundation.org](https://"
+"packages.osrfoundation.org). Make sure to install the metapackage that "
+"includes all library components (e.g. gz-ionic, gz-harmonic, etc.)"
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:146
 msgid ""
-"Clone the set of vendor packages included in [gz_vendor.repos](https://gist."
-"github.com/azeey/a94adb591475ea0e613313d3540ca451) in your workspace using "
-"[vcstool](https://github.com/dirk-thomas/vcstool)."
+"Clone the set of vendor packages included in [gz_vendor.repos](https://"
+"gist.github.com/azeey/a94adb591475ea0e613313d3540ca451) in your workspace "
+"using [vcstool](https://github.com/dirk-thomas/vcstool)."
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:149
@@ -440,9 +442,9 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:175
 msgid ""
-"Clone the set of vendor packages included in [gz_vendor.repos](https://gist."
-"github.com/azeey/a94adb591475ea0e613313d3540ca451) in the same workspace "
-"using [vcstool](https://github.com/dirk-thomas/vcstool)."
+"Clone the set of vendor packages included in [gz_vendor.repos](https://"
+"gist.github.com/azeey/a94adb591475ea0e613313d3540ca451) in the same "
+"workspace using [vcstool](https://github.com/dirk-thomas/vcstool)."
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:179
