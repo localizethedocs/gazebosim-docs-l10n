@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo edifice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-10-26 16:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -99,8 +100,8 @@ msgstr ""
 
 #: ../../../actors.md:29
 msgid ""
-"Actors support skeleton animation imported from COLLADA (.dae) and BVH (."
-"bvh) files."
+"Actors support skeleton animation imported from COLLADA (.dae) and BVH "
+"(.bvh) files."
 msgstr ""
 
 #: ../../../actors.md:30
@@ -119,8 +120,8 @@ msgstr ""
 
 #: ../../../actors.md:37
 msgid ""
-"Gazebo Sim supports two different skeleton animation file formats: COLLADA (."
-"dae) and Biovision Hierarchy (.bvh)."
+"Gazebo Sim supports two different skeleton animation file formats: COLLADA "
+"(.dae) and Biovision Hierarchy (.bvh)."
 msgstr ""
 
 #: ../../../actors.md:39
@@ -177,8 +178,8 @@ msgstr ""
 
 #: ../../../actors.md:64
 msgid ""
-"**Note**: You can find many actors and models on [Ignition Fuel](https://app."
-"gazebosim.org/fuel)."
+"**Note**: You can find many actors and models on [Ignition Fuel](https://"
+"app.gazebosim.org/fuel)."
 msgstr ""
 
 #: ../../../actors.md:66
@@ -370,7 +371,7 @@ msgstr ""
 
 #: ../../../actors.md:158
 msgid ""
-"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/"
-"embed/1VZexw67a2o\" frameborder=\"0\" allow=\"accelerometer; autoplay; "
-"encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"1VZexw67a2o\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-"
+"media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
 msgstr ""
