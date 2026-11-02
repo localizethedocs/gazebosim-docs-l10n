@@ -60,8 +60,8 @@ msgstr ""
 
 #: ../../../releasing/versioning_pre_nightly.md:24
 msgid ""
-"`upcoming_version`: upstream version target for current prerelease series (e."
-"g., `X.Y.Z`)"
+"`upcoming_version`: upstream version target for current prerelease series "
+"(e.g., `X.Y.Z`)"
 msgstr ""
 
 #: ../../../releasing/versioning_pre_nightly.md:25
@@ -70,9 +70,8 @@ msgstr ""
 
 #: ../../../releasing/versioning_pre_nightly.md:27
 msgid ""
-"**Nightly** uses the following versioning scheme: "
-"`{current_released_version}+git{date}+{nightly_revision}r{hash}-"
-"{nightly_revision}`"
+"**Nightly** uses the following versioning scheme: `{current_released_version}"
+"+git{date}+{nightly_revision}r{hash}-{nightly_revision}`"
 msgstr ""
 
 #: ../../../releasing/versioning_pre_nightly.md:29

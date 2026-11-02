@@ -38,8 +38,8 @@ msgstr ""
 #: ../../../sensors.md:11
 msgid ""
 "You can find the final world of this tutorial [here](https://github.com/"
-"ignitionrobotics/docs/blob/master/edifice/tutorials/sensors/sensor_tutorial."
-"sdf)"
+"ignitionrobotics/docs/blob/master/edifice/tutorials/sensors/"
+"sensor_tutorial.sdf)"
 msgstr ""
 
 #: ../../../sensors.md:13

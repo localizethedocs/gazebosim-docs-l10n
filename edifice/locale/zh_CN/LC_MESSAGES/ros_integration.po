@@ -25,9 +25,9 @@ msgstr ""
 msgid ""
 "Most of the Ignition libraries use [Ignition Transport](https://github.com/"
 "gazebosim/gz-transport) to exchange data between different software "
-"components. This tutorial details how to interface with [ROS](http://www.ros."
-"org/), enabling the ability to use tools such as [Rviz](http://wiki.ros.org/"
-"rviz) for robot or sensor visualization."
+"components. This tutorial details how to interface with [ROS](http://"
+"www.ros.org/), enabling the ability to use tools such as [Rviz](http://"
+"wiki.ros.org/rviz) for robot or sensor visualization."
 msgstr ""
 
 #: ../../../ros_integration.md:9
@@ -134,8 +134,8 @@ msgid ""
 ". /opt/ros/noetic/setup.bash\n"
 "# If installed from source, make sure you've sourced the ros-ign packages "
 "too\n"
-"rosrun ros_ign_bridge parameter_bridge /camera@sensor_msgs/Image@ignition."
-"msgs.Image\n"
+"rosrun ros_ign_bridge parameter_bridge /camera@sensor_msgs/"
+"Image@ignition.msgs.Image\n"
 msgstr ""
 
 #: ../../../ros_integration.md:67

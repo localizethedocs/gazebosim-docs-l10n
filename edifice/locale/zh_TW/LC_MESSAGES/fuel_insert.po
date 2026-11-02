@@ -52,8 +52,8 @@ msgstr "選擇模型"
 
 #: ../../../fuel_insert.md:17
 msgid ""
-"Fuel's model collection is at [app.gazebosim.org/fuel/models](https://app."
-"gazebosim.org/fuel/models). Head over and browse the available content."
+"Fuel's model collection is at [app.gazebosim.org/fuel/models](https://"
+"app.gazebosim.org/fuel/models). Head over and browse the available content."
 msgstr ""
 
 #: ../../../fuel_insert.md:20
