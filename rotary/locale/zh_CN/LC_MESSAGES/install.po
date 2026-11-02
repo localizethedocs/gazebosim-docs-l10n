@@ -140,14 +140,14 @@ msgstr ""
 
 #: ../../../install.md:45
 msgid ""
-"**Ubuntu Noble (amd64)** — nightly binary packages at `packages."
-"osrfoundation.org/gazebo/ubuntu-nightly`."
+"**Ubuntu Noble (amd64)** — nightly binary packages at "
+"`packages.osrfoundation.org/gazebo/ubuntu-nightly`."
 msgstr ""
 
 #: ../../../install.md:47
 msgid ""
-"**Ubuntu Resolute (amd64)** — nightly binary packages at `packages."
-"osrfoundation.org/gazebo/ubuntu-nightly`."
+"**Ubuntu Resolute (amd64)** — nightly binary packages at "
+"`packages.osrfoundation.org/gazebo/ubuntu-nightly`."
 msgstr ""
 
 #: ../../../install.md:49

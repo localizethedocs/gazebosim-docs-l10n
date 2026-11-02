@@ -134,10 +134,10 @@ msgstr ""
 
 #: ../../../spawn_urdf.md:50
 msgid ""
-"If `model.urdf` is the URDF representation of [`rrbot.urdf`](https://github."
-"com/gazebosim/docs/blob/master/rotary/tutorials/spawn_urdf/rrbot.urdf) in "
-"the `gazebo_ros_demos` package, executing the service call above should "
-"result in a simulation that now looks like this:"
+"If `model.urdf` is the URDF representation of [`rrbot.urdf`](https://"
+"github.com/gazebosim/docs/blob/master/rotary/tutorials/spawn_urdf/"
+"rrbot.urdf) in the `gazebo_ros_demos` package, executing the service call "
+"above should result in a simulation that now looks like this:"
 msgstr ""
 
 #: ../../../spawn_urdf.md:52

@@ -213,8 +213,8 @@ msgstr ""
 
 #: ../../../rotary.md:97
 msgid ""
-"Rotary formulae are published through the [`osrf/simulation`](https://github."
-"com/osrf/homebrew-simulation) tap:"
+"Rotary formulae are published through the [`osrf/simulation`](https://"
+"github.com/osrf/homebrew-simulation) tap:"
 msgstr ""
 
 #: ../../../rotary.md:100
