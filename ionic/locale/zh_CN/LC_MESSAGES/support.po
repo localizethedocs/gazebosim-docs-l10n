@@ -98,8 +98,8 @@ msgstr ""
 #: ../../../support.md:38
 msgid ""
 "To start a discussion with other Gazebo community members, visit the Gazebo "
-"category on Open Robotics Discourse: [Gazebo Discourse](https://discourse."
-"openrobotics.org/c/gazebo/95)"
+"category on Open Robotics Discourse: [Gazebo Discourse](https://"
+"discourse.openrobotics.org/c/gazebo/95)"
 msgstr ""
 
 #: ../../../support.md:42

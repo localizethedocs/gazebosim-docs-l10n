@@ -195,9 +195,9 @@ msgstr ""
 #: ../../../install_osx_src.md:103
 msgid ""
 "`colcon graph` should list the Gazebo libraries with an [interdependency "
-"diagram](https://colcon.readthedocs.io/en/released/reference/verb/graph."
-"html#example-output). If that is the case, then you are ready to build the "
-"whole set of libraries:"
+"diagram](https://colcon.readthedocs.io/en/released/reference/verb/"
+"graph.html#example-output). If that is the case, then you are ready to build "
+"the whole set of libraries:"
 msgstr ""
 
 #: ../../../install_osx_src.md:108
@@ -212,8 +212,8 @@ msgstr ""
 
 #: ../../../install_osx_src.md:114
 msgid ""
-"colcon build --cmake-args -DCMAKE_MACOSX_RPATH=FALSE -"
-"DCMAKE_INSTALL_NAME_DIR=$(pwd)/install/lib --merge-install\n"
+"colcon build --cmake-args -DCMAKE_MACOSX_RPATH=FALSE "
+"-DCMAKE_INSTALL_NAME_DIR=$(pwd)/install/lib --merge-install\n"
 msgstr ""
 
 #: ../../../install_osx_src.md:118

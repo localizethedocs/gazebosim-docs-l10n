@@ -153,8 +153,8 @@ msgstr ""
 
 #: ../../../migration_from_ignition.md:42
 msgid ""
-"[gz-rendering](https://github.com/gazebosim/gz-rendering/blob/main/Migration."
-"md)"
+"[gz-rendering](https://github.com/gazebosim/gz-rendering/blob/main/"
+"Migration.md)"
 msgstr ""
 
 #: ../../../migration_from_ignition.md:43
@@ -173,8 +173,8 @@ msgstr ""
 
 #: ../../../migration_from_ignition.md:46
 msgid ""
-"[gz-transport](https://github.com/gazebosim/gz-transport/blob/main/Migration."
-"md)"
+"[gz-transport](https://github.com/gazebosim/gz-transport/blob/main/"
+"Migration.md)"
 msgstr ""
 
 #: ../../../migration_from_ignition.md:47
