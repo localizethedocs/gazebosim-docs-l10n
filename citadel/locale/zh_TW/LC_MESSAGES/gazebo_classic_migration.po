@@ -108,6 +108,6 @@ msgstr ""
 #: ../../../gazebo_classic_migration.md:40
 msgid ""
 "List of Systems (plugins): [Fortress](https://gazebosim.org/api/gazebo/6/"
-"namespaceignition_1_1gazebo_1_1systems.html) | [Harmonic](https://gazebosim."
-"org/api/sim/8/namespacegz_1_1sim_1_1systems.html)"
+"namespaceignition_1_1gazebo_1_1systems.html) | [Harmonic](https://"
+"gazebosim.org/api/sim/8/namespacegz_1_1sim_1_1systems.html)"
 msgstr ""

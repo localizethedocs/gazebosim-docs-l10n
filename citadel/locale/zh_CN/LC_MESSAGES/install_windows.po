@@ -80,9 +80,9 @@ msgstr ""
 
 #: ../../../install_windows.md:22
 msgid ""
-"The remaining packages currently have an [outstanding ticket](https://github."
-"com/conda-forge/staged-recipes/issues/13551), and will not be supported "
-"until they are added to the `conda-forge` feedstock."
+"The remaining packages currently have an [outstanding ticket](https://"
+"github.com/conda-forge/staged-recipes/issues/13551), and will not be "
+"supported until they are added to the `conda-forge` feedstock."
 msgstr ""
 
 #: ../../../install_windows.md:25

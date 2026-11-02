@@ -29,9 +29,9 @@ msgstr ""
 
 #: ../../../building_robot.md:5
 msgid ""
-"You can find the finished SDF file for the tutorial [here](https://github."
-"com/ignitionrobotics/docs/blob/master/citadel/tutorials/building_robot/"
-"building_robot.sdf)."
+"You can find the finished SDF file for the tutorial [here](https://"
+"github.com/ignitionrobotics/docs/blob/master/citadel/tutorials/"
+"building_robot/building_robot.sdf)."
 msgstr ""
 
 #: ../../../building_robot.md:7

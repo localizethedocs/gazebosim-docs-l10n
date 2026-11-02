@@ -69,8 +69,8 @@ msgstr ""
 
 #: ../../../ign_docker_env.md:20
 msgid ""
-"Detailed instructions are available in the [gzdev repository](https://github."
-"com/ignition-tooling/gzdev#using-ign-docker-env-to-build-ignition-"
+"Detailed instructions are available in the [gzdev repository](https://"
+"github.com/ignition-tooling/gzdev#using-ign-docker-env-to-build-ignition-"
 "repositories-from-source)."
 msgstr ""
 
@@ -91,9 +91,9 @@ msgstr ""
 
 #: ../../../ign_docker_env.md:26
 msgid ""
-"See [Ubuntu Source Install section on building](install_ubuntu_src."
-"md#building-the-ignition-libraries) for instructions to work with a source "
-"install"
+"See [Ubuntu Source Install section on building]"
+"(install_ubuntu_src.md#building-the-ignition-libraries) for instructions to "
+"work with a source install"
 msgstr ""
 
 #: ../../../ign_docker_env.md:27
