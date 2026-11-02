@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo blueprint\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-02 18:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,8 +50,8 @@ msgid ""
 "github.com/marketplace/actions/setup-gazebo-environment) with its source "
 "code hosted at [github.com/gazebo-tooling/setup-gazebo](https://github.com/"
 "gazebo-tooling/setup-gazebo). Also check this [community post](https://"
-"community.gazebosim.org/t/introducing-the-setup-gazebo-github-action/3132) "
-"for more details."
+"discourse.openrobotics.org/t/introducing-the-setup-gazebo-github-action/"
+"48787) for more details."
 msgstr ""
 
 #: ../../../setup_gazebo_in_ci.md:12
@@ -64,19 +65,19 @@ msgid ""
 msgstr ""
 
 #: ../../../setup_gazebo_in_ci.md:16
-msgid "Citadel"
-msgstr ""
-
-#: ../../../setup_gazebo_in_ci.md:17
 msgid "Fortress"
 msgstr ""
 
-#: ../../../setup_gazebo_in_ci.md:18
+#: ../../../setup_gazebo_in_ci.md:17
 msgid "Harmonic"
 msgstr ""
 
-#: ../../../setup_gazebo_in_ci.md:19
+#: ../../../setup_gazebo_in_ci.md:18
 msgid "Ionic"
+msgstr ""
+
+#: ../../../setup_gazebo_in_ci.md:19
+msgid "Jetty"
 msgstr ""
 
 #: ../../../setup_gazebo_in_ci.md:21
