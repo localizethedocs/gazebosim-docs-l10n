@@ -170,9 +170,9 @@ msgstr ""
 
 #: ../../../roadmap.md:85
 msgid ""
-"Improve C++ API provided by convenience classes (e.g. `gz::sim::Model`, `gz::"
-"sim::Link`) so that they are more complete for basic use cases. Users will "
-"still need to access the ECM directly for more advanced user cases."
+"Improve C++ API provided by convenience classes (e.g. `gz::sim::Model`, "
+"`gz::sim::Link`) so that they are more complete for basic use cases. Users "
+"will still need to access the ECM directly for more advanced user cases."
 msgstr ""
 
 #: ../../../roadmap.md:88
@@ -518,8 +518,8 @@ msgstr ""
 
 #: ../../../roadmap.md:202
 msgid ""
-"The official release announcement is made on [Discourse](https://discourse."
-"openrobotics.org/)."
+"The official release announcement is made on [Discourse](https://"
+"discourse.openrobotics.org/)."
 msgstr ""
 
 #: ../../../roadmap.md:204
