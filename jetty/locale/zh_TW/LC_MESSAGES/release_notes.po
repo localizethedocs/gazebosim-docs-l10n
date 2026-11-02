@@ -177,8 +177,8 @@ msgstr ""
 
 #: ../../../release_notes.md:90
 msgid ""
-"[New auto-inertia calculation makes adding objects easier](https://github."
-"com/gazebosim/sdformat/pull/1513)"
+"[New auto-inertia calculation makes adding objects easier](https://"
+"github.com/gazebosim/sdformat/pull/1513)"
 msgstr ""
 
 #: ../../../release_notes.md:92
@@ -238,8 +238,8 @@ msgstr ""
 
 #: ../../../release_notes.md:129
 msgid ""
-"[New Gazebo standalone executables](https://github.com/gazebosim/docs/"
-"pull/611/files#:~:text=https%3A//github.com/gazebosim/gz%2Dsim/pull/2849)"
+"[New Gazebo standalone executables](https://github.com/gazebosim/docs/pull/"
+"611/files#:~:text=https%3A//github.com/gazebosim/gz%2Dsim/pull/2849)"
 msgstr ""
 
 #: ../../../release_notes.md:131
@@ -266,9 +266,9 @@ msgstr ""
 
 #: ../../../release_notes.md:143
 msgid ""
-"[Refactored package names to remove major versions](https://discourse."
-"openrobotics.org/t/version-numbers-removed-from-package-names-in-gazebo-"
-"jetty/48391)"
+"[Refactored package names to remove major versions](https://"
+"discourse.openrobotics.org/t/version-numbers-removed-from-package-names-in-"
+"gazebo-jetty/48391)"
 msgstr ""
 
 #: ../../../release_notes.md:145

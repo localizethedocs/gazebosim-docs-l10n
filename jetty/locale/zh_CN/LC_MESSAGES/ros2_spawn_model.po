@@ -34,16 +34,16 @@ msgstr ""
 
 #: ../../../ros2_spawn_model.md:9
 msgid ""
-"The package `ros_gz_sim` contains a launch file named `gz_spawn_model.launch."
-"py`. You can use it to spawn a new model into an existing simulation. Here's "
-"an example:"
+"The package `ros_gz_sim` contains a launch file named "
+"`gz_spawn_model.launch.py`. You can use it to spawn a new model into an "
+"existing simulation. Here's an example:"
 msgstr ""
 
 #: ../../../ros2_spawn_model.md:13
 msgid ""
 "ros2 launch ros_gz_sim gz_spawn_model.launch.py world:=empty file:=$(ros2 "
-"pkg prefix --share ros_gz_sim_demos)/models/vehicle/model.sdf entity_name:"
-"=my_vehicle x:=5.0 y:=5.0 z:=0.5\n"
+"pkg prefix --share ros_gz_sim_demos)/models/vehicle/model.sdf "
+"entity_name:=my_vehicle x:=5.0 y:=5.0 z:=0.5\n"
 msgstr ""
 
 #: ../../../ros2_spawn_model.md:17
@@ -124,8 +124,8 @@ msgstr ""
 
 #: ../../../ros2_spawn_model.md:70
 msgid ""
-"ros2 launch ros_gz_sim ros_gz_spawn_model.launch.py world:=empty file:"
-"=$(ros2 pkg prefix --share ros_gz_sim_demos)/models/vehicle/model.sdf "
+"ros2 launch ros_gz_sim ros_gz_spawn_model.launch.py world:=empty file:=$"
+"(ros2 pkg prefix --share ros_gz_sim_demos)/models/vehicle/model.sdf "
 "entity_name:=my_vehicle x:=5.0 y:=5.0 z:=0.5 bridge_name:=ros_gz_bridge "
 "config_file:=<path_to_your_YAML_file>\n"
 msgstr ""
