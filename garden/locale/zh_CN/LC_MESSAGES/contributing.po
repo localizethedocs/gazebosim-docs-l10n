@@ -126,8 +126,8 @@ msgstr ""
 #: ../../../contributing.md:46
 msgid ""
 "[gz-rendering](https://github.com/gazebosim/gz-rendering): Library that "
-"supports rendering through different engines, such as [OGRE](https://www."
-"ogre3d.org/) and [Optix](https://developer.nvidia.com/optix)."
+"supports rendering through different engines, such as [OGRE](https://"
+"www.ogre3d.org/) and [Optix](https://developer.nvidia.com/optix)."
 msgstr ""
 
 #: ../../../contributing.md:49
@@ -374,9 +374,9 @@ msgstr ""
 
 #: ../../../contributing.md:135
 msgid ""
-"Enhancement suggestions are tracked as [GitHub issues](https://help.github."
-"com/en/github/managing-your-work-on-github/about-issues). After you've "
-"determined [which repository](contributing.md#repository-list) your "
+"Enhancement suggestions are tracked as [GitHub issues](https://"
+"help.github.com/en/github/managing-your-work-on-github/about-issues). After "
+"you've determined [which repository](contributing.md#repository-list) your "
 "enhancement suggestion is related to, create an issue on that repository and "
 "provide the following information:"
 msgstr ""
@@ -567,8 +567,8 @@ msgstr ""
 
 #: ../../../contributing.md:211
 msgid ""
-"The tool does not catch all style errors. See the [code style](contributing."
-"md#style-guides) section below for more information."
+"The tool does not catch all style errors. See the [code style]"
+"(contributing.md#style-guides) section below for more information."
 msgstr ""
 
 #: ../../../contributing.md:213
@@ -703,9 +703,9 @@ msgstr ""
 
 #: ../../../contributing.md:274
 msgid ""
-"Contributors should look at the [\"Core development\" board](https://github."
-"com/orgs/gazebosim/projects/3), though it's possible we may have other "
-"boards in our organization at various times."
+"Contributors should look at the [\"Core development\" board](https://"
+"github.com/orgs/gazebosim/projects/3), though it's possible we may have "
+"other boards in our organization at various times."
 msgstr ""
 
 #: ../../../contributing.md:276
@@ -1333,8 +1333,8 @@ msgstr ""
 #: ../../../contributing.md:538
 msgid ""
 "Create a Gazebo workspace for ASAN/TSAN related tasks. Refer to the "
-"[official documentation to get all the Gazebo sources](install_ubuntu_src."
-"md#getting-the-sources)."
+"[official documentation to get all the Gazebo sources]"
+"(install_ubuntu_src.md#getting-the-sources)."
 msgstr ""
 
 #: ../../../contributing.md:541
@@ -1478,9 +1478,9 @@ msgstr ""
 
 #: ../../../contributing.md:612
 msgid ""
-"All braces must be on their own line. Here is an [example](https://github."
-"com/gazebosim/gz-sim/blob/de5b025968c9cf0cfbfd8a852458482e87c70c6c/src/"
-"Server.cc#L245-L253)."
+"All braces must be on their own line. Here is an [example](https://"
+"github.com/gazebosim/gz-sim/blob/de5b025968c9cf0cfbfd8a852458482e87c70c6c/"
+"src/Server.cc#L245-L253)."
 msgstr ""
 
 #: ../../../contributing.md:614
@@ -1516,8 +1516,8 @@ msgid ""
 "If you are writing a new class, it must use a private data pointer. Here is "
 "an [example](https://github.com/gazebosim/gz-sim/blob/"
 "de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/"
-"EntityComponentManager.hh#L682), and you can read more [here](https://en."
-"wikipedia.org/wiki/Opaque_pointer)."
+"EntityComponentManager.hh#L682), and you can read more [here](https://"
+"en.wikipedia.org/wiki/Opaque_pointer)."
 msgstr ""
 
 #: ../../../contributing.md:623
@@ -1542,8 +1542,8 @@ msgid ""
 "`const`, except for \"Plain Old Data\" (`int`, `bool`, etc). This applies to "
 "parameters that are passed by reference, and pointer. Here is an [example]"
 "(https://github.com/gazebosim/gz-sim/blob/"
-"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/Model."
-"hh#L111-L112)."
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/"
+"Model.hh#L111-L112)."
 msgstr ""
 
 #: ../../../contributing.md:629
@@ -1555,8 +1555,8 @@ msgid ""
 "Place the `*` and `&` next to the variable name, not next to the type. For "
 "example: `int &variable` is good, but `int& variable` is not. Here is an "
 "[example](https://github.com/gazebosim/gz-sim/blob/"
-"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/Model."
-"hh#L96)."
+"de5b025968c9cf0cfbfd8a852458482e87c70c6c/include/ignition/gazebo/"
+"Model.hh#L96)."
 msgstr ""
 
 #: ../../../contributing.md:632

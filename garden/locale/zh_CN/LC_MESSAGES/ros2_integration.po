@@ -136,8 +136,8 @@ msgstr ""
 #: ../../../ros2_integration.md:54
 msgid ""
 "We started a bridge on `/keyboard/keypress` topic with message of type "
-"`Int32`. For ROS it is `std_msgs/msg/Int32` and for Gazebo it is `gz.msgs."
-"Int32`"
+"`Int32`. For ROS it is `std_msgs/msg/Int32` and for Gazebo it is "
+"`gz.msgs.Int32`"
 msgstr ""
 
 #: ../../../ros2_integration.md:57
