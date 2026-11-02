@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo harmonic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-02 18:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,6 +80,17 @@ msgid "Gazebo Versions"
 msgstr ""
 
 #: ../../../getstarted.md:25
+msgid "Ubuntu 26.04 Resolute"
+msgstr ""
+
+#: ../../../getstarted.md:25
+msgid ""
+"[Gazebo Jetty](/docs/jetty/install_ubuntu){.external} (recommended, also if "
+"using ROS 2 Lyrical) and [Gazebo Rotary](/docs/rotary/install_ubuntu)"
+"{.external} (recommended if using ROS 2 Rolling)"
+msgstr ""
+
+#: ../../../getstarted.md:25
 msgid "Ubuntu 24.04 Noble"
 msgstr ""
 
@@ -86,7 +98,8 @@ msgstr ""
 msgid ""
 "[Gazebo Jetty](/docs/jetty/install_ubuntu){.external} (recommended), [Gazebo "
 "Harmonic](/docs/harmonic/install_ubuntu){.external} (recommended if using "
-"ROS 2 Jazzy) and [Gazebo Ionic](/docs/ionic/install_ubuntu){.external}"
+"ROS 2 Jazzy) and [Gazebo Ionic](/docs/ionic/install_ubuntu){.external} "
+"(recommended if using ROS 2 Kilted)"
 msgstr ""
 
 #: ../../../getstarted.md:25
@@ -101,17 +114,15 @@ msgid ""
 msgstr ""
 
 #: ../../../getstarted.md:25
-msgid "Mac Ventura"
+msgid "macOS Sequoia arm64 (until August 2027)"
 msgstr ""
 
 #: ../../../getstarted.md:25
 msgid ""
-"[Gazebo Harmonic](/docs/harmonic/install_osx){.external} (recommended) and "
-"[Gazebo Fortress](/docs/fortress/install_osx){.external}"
-msgstr ""
-
-#: ../../../getstarted.md:25
-msgid "Mac Monterey"
+"[Gazebo Jetty](/docs/jetty/install_osx){.external} (recommended), [Gazebo "
+"Ionic](/docs/ionic/install_osx){.external}, [Gazebo Harmonic](/docs/harmonic/"
+"install_osx){.external} and [Gazebo Fortress](/docs/fortress/install_osx)"
+"{.external}"
 msgstr ""
 
 #: ../../../getstarted.md:25
@@ -120,9 +131,9 @@ msgstr ""
 
 #: ../../../getstarted.md:25
 msgid ""
-"Support via Conda-Forge is not fully functional, as there are known runtime "
-"issues [see this issue for details](https://github.com/gazebosim/gz-sim/"
-"issues/168)."
+"Experimental support for [Gazebo Jetty](/docs/jetty/install_windows)"
+"{.external} via conda-forge and Pixi. There are known runtime issues, [see "
+"this issue for details](https://github.com/gazebosim/gz-sim/issues/168)."
 msgstr ""
 
 #: ../../../getstarted.md:40
@@ -134,8 +145,8 @@ msgstr ""
 
 #: ../../../getstarted.md:45
 msgid ""
-"[Gazebo Jetty installation](/docs/jetty/install){.external} options "
-"(Expected: EOL 2031 May)"
+"[Gazebo Jetty (LTS) installation](/docs/jetty/install){.external} options "
+"(EOL 2031 May)"
 msgstr ""
 
 #: ../../../getstarted.md:46
@@ -274,7 +285,7 @@ msgstr ""
 #: ../../../getstarted.md:115
 msgid ""
 "This tutorial has covered the basics of getting started with Gazebo. There "
-"are more [versioned tutorials](/docs/citadel/tutorials){.external} covering "
+"are more [versioned tutorials](/docs/latest/tutorials){.external} covering "
 "the basics of the GUI, creating worlds and robots, and more."
 msgstr ""
 
@@ -282,33 +293,34 @@ msgstr ""
 msgid ""
 "Each [Gazebo library](/libs){.external} also has a set of tutorials and "
 "examples. Explore these resources, and don't forget to ask questions and "
-"find solutions at [answers.gazebosim.org](http://answers.gazebosim.org)."
+"find solutions at [Robotics Stack Exchange](https://"
+"robotics.stackexchange.com/) (see [Support](support) for other channels)."
 msgstr ""
 
-#: ../../../getstarted.md:123
+#: ../../../getstarted.md:124
 msgid "macOS"
 msgstr ""
 
-#: ../../../getstarted.md:125
+#: ../../../getstarted.md:126
 msgid ""
 "On macOS, you will need to run Gazebo using two terminals, one for the "
 "server and another for the GUI:"
 msgstr ""
 
-#: ../../../getstarted.md:128
+#: ../../../getstarted.md:129
 msgid ""
 "# launch server in one terminal\n"
 "gz sim -v 4 shapes.sdf -s  # Fortress uses \"ign gazebo\" instead of \"gz "
 "sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:133
+#: ../../../getstarted.md:134
 msgid ""
 "# launch gui in a separate terminal\n"
 "gz sim -v 4 -g  # Fortress uses \"ign gazebo\" instead of \"gz sim\"\n"
 msgstr ""
 
-#: ../../../getstarted.md:138
+#: ../../../getstarted.md:139
 msgid ""
 "The GUI on macOS is currently known to be unstable. Basic interaction with "
 "the 3D scene such as camera view control and translation / rotation tools "
