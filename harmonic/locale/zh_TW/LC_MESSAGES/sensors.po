@@ -830,10 +830,10 @@ msgstr ""
 #: ../../../sensors.md:433
 msgid ""
 "The launch file is an XML file. We simply define what commands will run "
-"under the `<executable>` tag. The first command is `gz sim sensor_tutorial."
-"sdf` which launches the world. And the second command is `./build/"
-"lidar_node` which runs the `lidar_node`. Save the file as `sensor_launch."
-"gzlaunch`, and then run it using the following command:"
+"under the `<executable>` tag. The first command is `gz sim "
+"sensor_tutorial.sdf` which launches the world. And the second command is `./"
+"build/lidar_node` which runs the `lidar_node`. Save the file as "
+"`sensor_launch.gzlaunch`, and then run it using the following command:"
 msgstr ""
 
 #: ../../../sensors.md:438

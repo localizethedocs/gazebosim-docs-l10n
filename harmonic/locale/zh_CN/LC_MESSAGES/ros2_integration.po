@@ -70,8 +70,8 @@ msgstr ""
 
 #: ../../../ros2_integration.md:20
 msgid ""
-"ros2 run ros_gz_bridge parameter_bridge /scan@sensor_msgs/msg/LaserScan@gz."
-"msgs.LaserScan\n"
+"ros2 run ros_gz_bridge parameter_bridge /scan@sensor_msgs/msg/"
+"LaserScan@gz.msgs.LaserScan\n"
 msgstr ""
 
 #: ../../../ros2_integration.md:24
@@ -180,8 +180,8 @@ msgstr ""
 
 #: ../../../ros2_integration.md:66
 msgid ""
-"The package `ros_gz_bridge` contains a launch file named `ros_gz_bridge."
-"launch.py`. You can use it to start a ROS 2 and Gazebo bridge."
+"The package `ros_gz_bridge` contains a launch file named "
+"`ros_gz_bridge.launch.py`. You can use it to start a ROS 2 and Gazebo bridge."
 msgstr ""
 
 #: ../../../ros2_integration.md:69
@@ -246,8 +246,8 @@ msgstr ""
 #: ../../../ros2_integration.md:93
 msgid ""
 "More info about using QOS overrides can be found [here](https://docs.ros.org/"
-"en/jazzy/How-To-Guides/Overriding-QoS-Policies-For-Recording-And-Playback."
-"html#using-qos-overrides)"
+"en/jazzy/How-To-Guides/Overriding-QoS-Policies-For-Recording-And-"
+"Playback.html#using-qos-overrides)"
 msgstr ""
 
 #: ../../../ros2_integration.md:95
@@ -291,8 +291,8 @@ msgstr ""
 msgid ""
 "Here's a simplified example of a Python launch file used to load a bridge "
 "from Python, a more comprehensive example can be viewed [here](https://"
-"github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/launch/ros_gz_bridge."
-"launch.py):"
+"github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/launch/"
+"ros_gz_bridge.launch.py):"
 msgstr ""
 
 #: ../../../ros2_integration.md:121
@@ -361,8 +361,8 @@ msgstr ""
 #: ../../../ros2_integration.md:171
 msgid ""
 "We started a bridge on `/keyboard/keypress` topic with message of type "
-"`Int32`. For ROS it is `std_msgs/msg/Int32` and for Gazebo it is `gz.msgs."
-"Int32`"
+"`Int32`. For ROS it is `std_msgs/msg/Int32` and for Gazebo it is "
+"`gz.msgs.Int32`"
 msgstr ""
 
 #: ../../../ros2_integration.md:174
