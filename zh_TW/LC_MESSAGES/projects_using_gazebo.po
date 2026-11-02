@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo edifice\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../projects_using_gazebo.md:1
+msgid "Projects using Gazebo"
+msgstr "使用 Gazebo 的專案"
+
+#: ../../../projects_using_gazebo.md:3
+msgid ""
+"This is an incomplete list of projects that use (modern) Gazebo. It includes "
+"plugins, examples, ROS integrations, etc. If you'd like to add your project, "
+"please open a pull request by clicking on the \"Edit on Github\" link."
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:7
+msgid "Gazebo Tools for Integration"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:9
+msgid ""
+"**ros_gz_project_template**: A template project integrating ROS and Gazebo "
+"simulator. https://github.com/gazebosim/ros_gz_project_template"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:12
+msgid "Gazebo Integrations"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:14
+msgid ""
+"**Aerostack2**: An open-source autonomous multi-aerial-robots systems "
+"framework. [{octicon}`globe` link](https://github.com/aerostack2/aerostack2)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:14 ../../../projects_using_gazebo.md:15
+#: ../../../projects_using_gazebo.md:16 ../../../projects_using_gazebo.md:18
+#: ../../../projects_using_gazebo.md:21 ../../../projects_using_gazebo.md:22
+#: ../../../projects_using_gazebo.md:23 ../../../projects_using_gazebo.md:24
+#: ../../../projects_using_gazebo.md:25 ../../../projects_using_gazebo.md:26
+#: ../../../projects_using_gazebo.md:29 ../../../projects_using_gazebo.md:30
+#: ../../../projects_using_gazebo.md:31 ../../../projects_using_gazebo.md:32
+#: ../../../projects_using_gazebo.md:33 ../../../projects_using_gazebo.md:34
+#: ../../../projects_using_gazebo.md:35 ../../../projects_using_gazebo.md:36
+#: ../../../projects_using_gazebo.md:40
+msgid ""
+"<svg version=\"1.1\" width=\"1.0em\" height=\"1.0em\" class=\"sd-octicon sd-"
+"octicon-globe\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 0a8 "
+"8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 "
+"4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 "
+"10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 "
+"0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 "
+"1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 "
+"5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 "
+"1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 "
+"1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 "
+"0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 "
+"0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z\"></"
+"path></svg>"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:15
+msgid ""
+"**ArduPilot**: ArduPilot is an autopilot built on ChibiOS RTOS that supports "
+"many vehicle types. [{octicon}`globe` link](https://ardupilot.org/dev/docs/"
+"sitl-with-gazebo.html)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:16
+msgid ""
+"**CogniPilot**: CogniPilot is an autopilot built on Zephyr RTOS that "
+"supports many vehicle types. [{octicon}`globe` link](https://cognipilot.org) "
+"| <https://github.com/CogniPilot/synapse_gz>"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:18
+msgid ""
+"**gz_ros2_control**: ROS 2 package for integrating `ros2_control` and "
+"Gazebo. [{octicon}`globe` link](https://control.ros.org/jazzy/doc/"
+"gz_ros2_control/doc/index.html) | <https://github.com/ros-controls/"
+"gz_ros2_control>"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:21
+msgid ""
+"**gz-sim-yarp-plugins**: Integration of Gazebo with YARP devices, used for "
+"simulation of iCub and ergoCub humanoid robots. [{octicon}`globe` link]"
+"(https://github.com/robotology/gz-sim-yarp-plugins)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:22
+msgid ""
+"**heightmap_spawner**: A ROS 2 package that converts occupancy grids from "
+"nav2_map_server into 3D heightmap models for use in Gazebo simulations. "
+"[{octicon}`globe` link](https://github.com/damanikjosh/heightmap_spawner)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:23
+msgid ""
+"**MBARI Buoy Sim**: Wave simulation for energy buoy control. [{octicon}"
+"`globe` link](https://github.com/osrf/buoy_sim)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:24
+msgid ""
+"**MBARI LRAUV**: Underwater simulation for glider science missions. "
+"[{octicon}`globe` link](https://github.com/osrf/lrauv)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:25
+msgid ""
+"**MBZIRC**: Maritime competition for surface and aerial vehicles with "
+"manipulation. [{octicon}`globe` link](https://github.com/osrf/mbzirc)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:26
+msgid ""
+"**Nav2**: ROS 2 Navigation framework and system. [{octicon}`globe` link]"
+"(https://nav2.org/) | <https://github.com/ros-navigation/navigation2>"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:29
+msgid ""
+"**Open-RMF**: Warehouse robot fleet sharing and interoperability between "
+"multiple fleets of robots and physical infrastructure. [{octicon}`globe` "
+"link](https://www.open-rmf.org/)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:30
+msgid ""
+"**PhantomX Pincher Robot Arm**: Manipulation packages in ROS 2, MoveIt 2, "
+"and new Gazebo for a class at the University of Luxembourg. [{octicon}"
+"`globe` link](https://github.com/snt-spacer/phantomx_pincher/tree/ros2)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:31
+msgid ""
+"**PX4**: PX4 is an autopilot built on Nuttx RTOS that supports many vehicle "
+"types. [{octicon}`globe` link](https://docs.px4.io/v1.15/en/sim_gazebo_gz/)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:32
+msgid ""
+"**Space ROS**: An open-source space robotics framework for developing flight-"
+"quality robotic and autonomous space systems. [{octicon}`globe` link]"
+"(https://space.ros.org/)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:33
+msgid ""
+"**SubT**: DARPA Subterranean Challenge. [{octicon}`globe` link](https://"
+"github.com/osrf/subt)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:34
+msgid ""
+"**Turtlebot 4**: Low-cost educational robot. [{octicon}`globe` link](https://"
+"clearpathrobotics.com/turtlebot-4)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:35
+msgid ""
+"**VRX**: Virtual RobotX, maritime surface vehicle competition. [{octicon}"
+"`globe` link](https://github.com/osrf/vrx)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:36
+msgid ""
+"**gazebo_terrain_generator**: A super easy-to-use tool for generate 3D "
+"Gazebo terrain using real-world elevation and satellite data. [{octicon}"
+"`globe` link](https://github.com/saiaravind19/gazebo_terrain_generator)"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:38
+msgid "Gazebo Plugins"
+msgstr ""
+
+#: ../../../projects_using_gazebo.md:40
+msgid ""
+"**gz_sim_spray_painting_plugin**: A Gazebo plugin that simulates spray "
+"painting through ray-casting and particle emitter visual effects. This "
+"plugin will help you visualize your paint coverage for your autonomous spray "
+"painting applications. [{octicon}`globe` link](https://github.com/topguns837/"
+"gz_sim_spray_painting_plugin)"
+msgstr ""
