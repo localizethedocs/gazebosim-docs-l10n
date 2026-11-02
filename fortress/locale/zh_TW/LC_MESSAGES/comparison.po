@@ -429,8 +429,8 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"Use `ignition::gui::KeyPublisher` with `ignition::gazebo::systems::"
-"TriggeredPublisher`"
+"Use `ignition::gui::KeyPublisher` with "
+"`ignition::gazebo::systems::TriggeredPublisher`"
 msgstr ""
 
 #: ../../../comparison.md:0
@@ -1072,8 +1072,8 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"Most of the stack works, outstanding issues: [command line](https://github."
-"com/gazebosim/gz-sim/issues/25), [render window](https://github.com/"
+"Most of the stack works, outstanding issues: [command line](https://"
+"github.com/gazebosim/gz-sim/issues/25), [render window](https://github.com/"
 "gazebosim/gz-sim/issues/44)"
 msgstr ""
 

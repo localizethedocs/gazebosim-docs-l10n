@@ -100,8 +100,8 @@ msgstr ""
 
 #: ../../../actors.md:29
 msgid ""
-"Actors support skeleton animation imported from COLLADA (.dae) and BVH (."
-"bvh) files."
+"Actors support skeleton animation imported from COLLADA (.dae) and BVH "
+"(.bvh) files."
 msgstr ""
 
 #: ../../../actors.md:30
@@ -120,8 +120,8 @@ msgstr ""
 
 #: ../../../actors.md:37
 msgid ""
-"Gazebo Sim supports two different skeleton animation file formats: COLLADA (."
-"dae) and Biovision Hierarchy (.bvh)."
+"Gazebo Sim supports two different skeleton animation file formats: COLLADA "
+"(.dae) and Biovision Hierarchy (.bvh)."
 msgstr ""
 
 #: ../../../actors.md:39
@@ -178,8 +178,8 @@ msgstr ""
 
 #: ../../../actors.md:64
 msgid ""
-"**Note**: You can find many actors and models on [Ignition Fuel](https://app."
-"gazebosim.org/fuel)."
+"**Note**: You can find many actors and models on [Ignition Fuel](https://"
+"app.gazebosim.org/fuel)."
 msgstr ""
 
 #: ../../../actors.md:66
@@ -371,7 +371,7 @@ msgstr ""
 
 #: ../../../actors.md:158
 msgid ""
-"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/"
-"embed/1VZexw67a2o\" frameborder=\"0\" allow=\"accelerometer; autoplay; "
-"encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"1VZexw67a2o\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-"
+"media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n"
 msgstr ""

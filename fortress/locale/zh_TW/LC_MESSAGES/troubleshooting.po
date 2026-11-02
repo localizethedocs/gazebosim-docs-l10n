@@ -353,10 +353,10 @@ msgstr ""
 
 #: ../../../troubleshooting.md:182
 msgid ""
-"Unable to create the rendering window: OGRE EXCEPTION(3:"
-"RenderingAPIException): currentGLContext was specified with no current GL "
-"context in GLXWindow::create at ./RenderSystems/GL3Plus/src/windowing/GLX/"
-"OgreGLXWindow.cpp (line 165)\n"
+"Unable to create the rendering window: OGRE "
+"EXCEPTION(3:RenderingAPIException): currentGLContext was specified with no "
+"current GL context in GLXWindow::create at ./RenderSystems/GL3Plus/src/"
+"windowing/GLX/OgreGLXWindow.cpp (line 165)\n"
 msgstr ""
 
 #: ../../../troubleshooting.md:186
