@@ -31,9 +31,9 @@ msgstr ""
 msgid ""
 "Most of the Gazebo libraries use [Gazebo Transport](https://github.com/"
 "gazebosim/gz-transport) to exchange data between different software "
-"components. This tutorial details how to interface with [ROS](http://www.ros."
-"org/), enabling the ability to use tools such as [Rviz](http://wiki.ros.org/"
-"rviz) for robot or sensor visualization."
+"components. This tutorial details how to interface with [ROS](http://"
+"www.ros.org/), enabling the ability to use tools such as [Rviz](http://"
+"wiki.ros.org/rviz) for robot or sensor visualization."
 msgstr ""
 
 #: ../../../ros_integration.md:13
@@ -136,8 +136,8 @@ msgstr ""
 msgid ""
 "# Shell D:\n"
 ". ~/bridge_ws/install/setup.bash\n"
-"rosrun ros1_gz_bridge parameter_bridge /camera@sensor_msgs/Image@ignition."
-"msgs.Image\n"
+"rosrun ros1_gz_bridge parameter_bridge /camera@sensor_msgs/"
+"Image@ignition.msgs.Image\n"
 msgstr ""
 
 #: ../../../ros_integration.md:74
@@ -165,8 +165,8 @@ msgstr ""
 
 #: ../../../ros_integration.md:89
 msgid ""
-"![Gazebo Transport images and ROS 1 rqt](images/bridge_image_exchange_gz-sim."
-"png)"
+"![Gazebo Transport images and ROS 1 rqt](images/bridge_image_exchange_gz-"
+"sim.png)"
 msgstr ""
 
 #: ../../../ros_integration.md:89

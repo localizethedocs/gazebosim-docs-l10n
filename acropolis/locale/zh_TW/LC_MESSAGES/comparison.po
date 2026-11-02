@@ -30,8 +30,8 @@ msgstr ""
 #: ../../../comparison.md:7
 msgid ""
 "A list of features present in [Gazebo-classic](https://github.com/osrf/"
-"gazebo/) and the status of their migration to [Gazebo](https://gazebosim."
-"org/)."
+"gazebo/) and the status of their migration to [Gazebo](https://"
+"gazebosim.org/)."
 msgstr ""
 
 #: ../../../comparison.md:10
