@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo jetty\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install.md:70
+msgid "Binary Ubuntu Install"
+msgstr ""
+
+#: ../../../install.md:70
+msgid "Binary macOS Install"
+msgstr ""
+
+#: ../../../install.md:70
+msgid "Binary Windows Install"
+msgstr ""
+
+#: ../../../install.md:70
+msgid "Ubuntu Source Install"
+msgstr ""
+
+#: ../../../install.md:70
+msgid "macOS Source Install"
+msgstr ""
+
+#: ../../../install.md:70
+msgid "Windows Source Install"
+msgstr ""
+
+#: ../../../install.md:70
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install.md:1
+msgid "Gazebo Jetty"
+msgstr ""
+
+#: ../../../install.md:3
+msgid ""
+"Gazebo Jetty is the 10th major release of Gazebo. It is a long-term release."
+msgstr ""
+
+#: ../../../install.md:6
+msgid "Binary installation instructions"
+msgstr ""
+
+#: ../../../install.md:8
+msgid "Binary installation is the recommended method of installing Gazebo."
+msgstr ""
+
+#: ../../../install.md:10
+msgid "[Binary Installation on Ubuntu](install_ubuntu)"
+msgstr ""
+
+#: ../../../install.md:11
+msgid "[Binary Installation on macOS](install_osx)"
+msgstr ""
+
+#: ../../../install.md:12
+msgid "[Binary Installation on Windows](install_windows)"
+msgstr ""
+
+#: ../../../install.md:14
+msgid "Server-only installation"
+msgstr ""
+
+#: ../../../install.md:16
+msgid ""
+"A server-only package is available on Ubuntu for headless and CI "
+"environments. It installs the Gazebo server without GUI components, avoiding "
+"Qt and extra X11 dependencies to provide a much lighter installation."
+msgstr ""
+
+#: ../../../install.md:20
+msgid ""
+"[Server-only Installation on Ubuntu](install_ubuntu.md#server-only-"
+"installation)"
+msgstr ""
+
+#: ../../../install.md:22
+msgid "Source Installation instructions"
+msgstr ""
+
+#: ../../../install.md:24
+msgid ""
+"Source installation is recommended for users planning on altering Gazebo's "
+"source code (advanced)."
+msgstr ""
+
+#: ../../../install.md:26
+msgid "[Source Installation on Ubuntu](install_ubuntu_src)"
+msgstr ""
+
+#: ../../../install.md:27
+msgid "[Source Installation on macOS](install_osx_src)"
+msgstr ""
+
+#: ../../../install.md:28
+msgid "[Source Installation on Windows](install_windows_src)"
+msgstr ""
+
+#: ../../../install.md:30
+msgid "Jetty Libraries"
+msgstr ""
+
+#: ../../../install.md:32
+msgid ""
+"The Jetty collection is composed of many different Gazebo libraries. The "
+"collection assures that all libraries are compatible and can be used "
+"together."
+msgstr ""
+
+#: ../../../install.md:35
+msgid "This list of library versions may change up to the release date."
+msgstr ""
+
+#: ../../../install.md:0
+msgid "Library name"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "Version"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-cmake"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "5.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-common"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "7.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-fuel-tools"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "11.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-sim"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "10.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-gui"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-launch"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "9.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-math"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-msgs"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "12.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-physics"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-plugin"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "4.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-rendering"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-sensors"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-tools"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "2.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-transport"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "15.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "gz-utils"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "sdformat"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "16.x"
+msgstr ""
+
+#: ../../../install.md:56
+msgid "Supported platforms"
+msgstr ""
+
+#: ../../../install.md:58
+msgid ""
+"Jetty is planned to be [supported](releases) on the platforms below. This "
+"list may change up to the release date."
+msgstr ""
+
+#: ../../../install.md:61
+msgid "These are the **officially** supported platforms:"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "Ubuntu Noble on amd64"
+msgstr ""
+
+#: ../../../install.md:65
+msgid ""
+"Platforms supported at **best-effort** include arm architectures, Windows "
+"and macOS. See [this ticket](https://github.com/gazebo-tooling/release-tools/"
+"issues/1158) for the full status."
+msgstr ""
