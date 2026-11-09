@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo ionic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"POT-Creation-Date: 2026-11-09 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1100,23 +1101,16 @@ msgid "Supported versions:"
 msgstr ""
 
 #: ../../../comparison.md:287
-msgid "ROS 2 Iron (from source) / Rolling (from source)"
+msgid "ROS 2 Kilted (from binaries)"
 msgstr ""
 
 #: ../../../comparison.md:289
 msgid ""
-"Note: binaries for ROS2 might be available sometime after the Ionic release."
+"See [Installing Gazebo with ROS](ros_installation) for all the supported "
+"combinations of ROS and Gazebo."
 msgstr ""
 
-#: ../../../comparison.md:291
-msgid ""
-"For **ROS 2 Rolling**, the Rolling distribution moves with the next future "
-"release of ROS 2 defined in [REP-2000](https://www.ros.org/reps/rep-2000."
-"html). For the Gz Ionic release this means that it will be adopted when ROS "
-"2 Jazzy goes into the [REP-2000](https://www.ros.org/reps/rep-2000.html)."
-msgstr ""
-
-#: ../../../comparison.md:296
+#: ../../../comparison.md:292
 msgid "Platforms"
 msgstr ""
 
@@ -1134,8 +1128,8 @@ msgstr ""
 
 #: ../../../comparison.md:0
 msgid ""
-"Most of the stack works, outstanding issues: [render window](https://github."
-"com/gazebosim/gz-sim/issues/44)"
+"Most of the stack works, outstanding issues: [render window](https://"
+"github.com/gazebosim/gz-sim/issues/44)"
 msgstr ""
 
 #: ../../../comparison.md:0
@@ -1148,7 +1142,7 @@ msgid ""
 "github.com/gazebosim/gz-sim/issues/168)"
 msgstr ""
 
-#: ../../../comparison.md:304
+#: ../../../comparison.md:300
 msgid "Others"
 msgstr ""
 
