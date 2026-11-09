@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-07-31 15:38:21 -0500",
-      "hash" : "f1ad61e4a69017e0a70831c8979c836ecd3c40a6",
-      "title" : "New installation instructions for windows binaries using pixi (#707)"
+      "date" : "2026-11-04 13:16:28 -0600",
+      "hash" : "05287873c23e4a9cfc148e0ad6a08a109fc406d8",
+      "title" : "docs: add documentation build instructions (#720)"
     }
   },
   "type" : "branch",
