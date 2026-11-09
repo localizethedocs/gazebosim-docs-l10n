@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo harmonic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-09 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../ros_installation.md:225
+#: ../../../ros_installation.md:236
 msgid "ROS 2 Gazebo Vendor Packages"
 msgstr ""
 
@@ -45,8 +46,8 @@ msgid ""
 "an LTS version. It is worth noting that each version of ROS works best with "
 "a specific version of each Tier 1 platform. Tier one platforms are "
 "platforms / host operating systems that are used in the development of ROS "
-"and Gazebo. All of this information is outlined in [REP-2000](https://www."
-"ros.org/reps/rep-2000.html)."
+"and Gazebo. All of this information is outlined in [REP-2000](https://"
+"www.ros.org/reps/rep-2000.html)."
 msgstr ""
 
 #: ../../../ros_installation.md:20
@@ -64,24 +65,33 @@ msgid "At the time of writing, our recommendation is that new users install:"
 msgstr ""
 
 #: ../../../ros_installation.md:29
-msgid "[Ubuntu Noble 24.04](https://www.releases.ubuntu.com/noble/)"
+msgid "[Ubuntu Resolute 26.04](https://releases.ubuntu.com/resolute/)"
 msgstr ""
 
 #: ../../../ros_installation.md:30
 msgid ""
-"[ROS 2 Jazzy Jalisco](https://www.ros.org/reps/rep-2000.html#jazzy-jalisco-"
-"may-2024-may-2029)"
+"[ROS 2 Lyrical Luth](https://docs.ros.org/en/lyrical/Releases/Release-"
+"Lyrical-Luth.html)"
 msgstr ""
 
 #: ../../../ros_installation.md:31
-msgid "[Gazebo Harmonic](https://gazebosim.org/docs/harmonic/install)"
+msgid "[Gazebo Jetty](https://gazebosim.org/docs/jetty/install)"
 msgstr ""
 
 #: ../../../ros_installation.md:33
+msgid ""
+"Users that cannot move to Ubuntu Resolute yet can use the previous LTS "
+"combination: [Ubuntu Noble 24.04](https://www.releases.ubuntu.com/noble/), "
+"[ROS 2 Jazzy Jalisco](https://www.ros.org/reps/rep-2000.html#jazzy-jalisco-"
+"may-2024-may-2029) and [Gazebo Harmonic](https://gazebosim.org/docs/harmonic/"
+"install)."
+msgstr ""
+
+#: ../../../ros_installation.md:38
 msgid "Summary of Compatible ROS and Gazebo Combinations"
 msgstr ""
 
-#: ../../../ros_installation.md:35
+#: ../../../ros_installation.md:40
 msgid ""
 "This table includes all currently supported versions of ROS and Gazebo. All "
 "other ROS and Gazebo releases are end of life and we do not recommend their "
@@ -105,7 +115,7 @@ msgid "**Gz Jetty (LTS)**"
 msgstr ""
 
 #: ../../../ros_installation.md:0
-msgid "**ROS 2 Rolling**"
+msgid "**ROS 2 Lyrical (LTS)**"
 msgstr ""
 
 #: ../../../ros_installation.md:0
@@ -121,10 +131,6 @@ msgid "✅"
 msgstr ""
 
 #: ../../../ros_installation.md:0
-msgid "**ROS 2 Lyrical (LTS)**"
-msgstr ""
-
-#: ../../../ros_installation.md:0
 msgid "**ROS 2 Kilted**"
 msgstr ""
 
@@ -136,53 +142,65 @@ msgstr ""
 msgid "**ROS 2 Humble (LTS)**"
 msgstr ""
 
-#: ../../../ros_installation.md:48
+#: ../../../ros_installation.md:0
+msgid "**GZ Rotary (rolling)**"
+msgstr ""
+
+#: ../../../ros_installation.md:0
+msgid "**ROS 2 Rolling** (*)"
+msgstr ""
+
+#: ../../../ros_installation.md:58
 msgid "✅ - Recommended combination"
 msgstr ""
 
-#: ../../../ros_installation.md:49
+#: ../../../ros_installation.md:59
 msgid "❌ - Incompatible / not possible."
 msgstr ""
 
-#: ../../../ros_installation.md:50
+#: ../../../ros_installation.md:60
 msgid ""
 "⚡ - Possible, *but use with caution*. These combinations of ROS and Gazebo "
 "can be made to work together, but some effort is required."
 msgstr ""
 
-#: ../../../ros_installation.md:54
-msgid "Installing the Default Gazebo/ROS Pairing"
+#: ../../../ros_installation.md:63
+msgid ""
+"(*) ROS 2 Rolling tracks the development of the next Gazebo release: its "
+"vendor packages contain prereleases of the Gazebo libraries built from the "
+"`main` branches, the same code used by [Gazebo Rotary](https://gazebosim.org/"
+"docs/rotary/rotary)."
 msgstr ""
 
-#: ../../../ros_installation.md:56
+#: ../../../ros_installation.md:67
 msgid ""
 "If you are planning on using a specific version of ROS and don't have a "
 "reason to use a specific version of Gazebo, we recommend using the default "
 "version of Gazebo available from the ROS repository when installing "
 "`ros_gz`. You can find  instructions on adding the ROS repository to your "
-"system in the  [ROS documentation](https://docs.ros.org/en/humble/"
-"Installation/Alternatives/Ubuntu-Development-Setup.html#add-the-ros-2-apt-"
-"repository).  The following command will install the correct version of "
-"Gazebo and `ros_gz`  for your ROS installation on a Linux system. You should "
-"replace `${ROS_DISTRO}`  with your ROS distribution (e.g. `humble`, "
-"`rolling`, `noetic`, etc)."
+"system in the  [ROS documentation](https://docs.ros.org/en/lyrical/Get-"
+"Started/Installation/Ubuntu-Install-Debs.html#set-up-your-system).  The "
+"following command will install the correct version of Gazebo and `ros_gz`  "
+"for your ROS installation on a Linux system. You should replace `$"
+"{ROS_DISTRO}`  with your ROS distribution (e.g. `lyrical`, `jazzy`, "
+"`humble`, `rolling`, etc)."
 msgstr ""
 
-#: ../../../ros_installation.md:65
+#: ../../../ros_installation.md:76
 msgid "sudo apt-get install ros-${ROS_DISTRO}-ros-gz\n"
 msgstr ""
 
-#: ../../../ros_installation.md:69
+#: ../../../ros_installation.md:80
 msgid ""
 "This command will install the Gazebo libraries recommended for your ROS "
 "installation."
 msgstr ""
 
-#: ../../../ros_installation.md:72
+#: ../../../ros_installation.md:83
 msgid "ROS 2 Gazebo Vendor packages"
 msgstr ""
 
-#: ../../../ros_installation.md:74
+#: ../../../ros_installation.md:85
 msgid ""
 "As of ROS 2 Jazzy, Gazebo is available from the ROS package repository via "
 "vendor packages. If your package directly depends on a Gazebo library, "
@@ -190,7 +208,7 @@ msgid ""
 "(ros2_gz_vendor_pkgs) to learn how to use the Gazebo vendor packages."
 msgstr ""
 
-#: ../../../ros_installation.md:80
+#: ../../../ros_installation.md:91
 msgid ""
 "<div class=\"warning\">\n"
 "The rest of this document provides more information and other, alternative,\n"
@@ -200,37 +218,38 @@ msgid ""
 "</div>\n"
 msgstr ""
 
-#: ../../../ros_installation.md:86
+#: ../../../ros_installation.md:97
 msgid "Specific ROS and Gazebo Pairings"
 msgstr ""
 
-#: ../../../ros_installation.md:88
+#: ../../../ros_installation.md:99
 msgid ""
 "Gazebo is an independent project like Boost, Ogre, and many other projects "
 "used by ROS. Usually, the latest version of Gazebo is available at the "
-"beginning of each ROS release cycle (for example Gazebo Fortress for ROS 2 "
-"Humble). This version of Gazebo is selected as the official Gazebo release "
+"beginning of each ROS release cycle (for example Gazebo Jetty for ROS 2 "
+"Lyrical). This version of Gazebo is selected as the official Gazebo release "
 "for that ROS Distro and is fully integrated, tested, and supported for the "
 "life of the ROS distribution."
 msgstr ""
 
-#: ../../../ros_installation.md:95
+#: ../../../ros_installation.md:106
 msgid ""
 "Note that all Gazebo libraries follow the [semantic versioning](http://"
 "semver.org/) philosophy for ABI stability. All Gazebo versions that have the "
-"same major number (`gz-sim7_7.0.0`, `gz-sim7_7.1.0`, `gz-sim7_7.0.1`, ...) "
-"are binary compatible and thus interchangeable with a given ROS distro."
+"same major number (`gz-sim10_10.0.0`, `gz-sim10_10.1.0`, `gz-"
+"sim10_10.0.1`, ...) are binary compatible and thus interchangeable with a "
+"given ROS distro."
 msgstr ""
 
-#: ../../../ros_installation.md:101
+#: ../../../ros_installation.md:112
 msgid "Installing Gazebo"
 msgstr ""
 
-#: ../../../ros_installation.md:103
+#: ../../../ros_installation.md:114
 msgid "Gazebo Packages for Ubuntu"
 msgstr ""
 
-#: ../../../ros_installation.md:105
+#: ../../../ros_installation.md:116
 msgid ""
 "The easiest way of installing Gazebo on Ubuntu is to use binary packages. "
 "There are two main repositories that host Gazebo simulator and Gazebo "
@@ -240,62 +259,64 @@ msgid ""
 "on the following hosts:"
 msgstr ""
 
-#: ../../../ros_installation.md:111
+#: ../../../ros_installation.md:122
 msgid "**packages.ros.org**"
 msgstr ""
 
-#: ../../../ros_installation.md:112
+#: ../../../ros_installation.md:123
 msgid "ROS 2 Humble: Gazebo Fortress"
 msgstr ""
 
-#: ../../../ros_installation.md:113
+#: ../../../ros_installation.md:124
 msgid "ROS 2 Jazzy: Gazebo Harmonic (ROS vendor packages)"
 msgstr ""
 
-#: ../../../ros_installation.md:114
+#: ../../../ros_installation.md:125
 msgid "ROS 2 Kilted: Gazebo Ionic (ROS vendor packages)"
 msgstr ""
 
-#: ../../../ros_installation.md:115
+#: ../../../ros_installation.md:126
 msgid "ROS 2 Lyrical: Gazebo Jetty (ROS vendor packages)"
 msgstr ""
 
-#: ../../../ros_installation.md:116
-msgid "ROS 2 Rolling: Gazebo Jetty (ROS vendor packages, changing frequently)"
+#: ../../../ros_installation.md:127
+msgid ""
+"ROS 2 Rolling: prereleases of the next Gazebo release built from `main` (ROS "
+"vendor packages, changing frequently)"
 msgstr ""
 
-#: ../../../ros_installation.md:118
+#: ../../../ros_installation.md:129
 msgid "**packages.osrfoundation.org**"
 msgstr ""
 
-#: ../../../ros_installation.md:119
+#: ../../../ros_installation.md:130
 msgid "Gazebo Fortress"
 msgstr ""
 
-#: ../../../ros_installation.md:120
+#: ../../../ros_installation.md:131
 msgid "Gazebo Harmonic"
 msgstr ""
 
-#: ../../../ros_installation.md:121
+#: ../../../ros_installation.md:132
 msgid "Gazebo Ionic"
 msgstr ""
 
-#: ../../../ros_installation.md:122
+#: ../../../ros_installation.md:133
 msgid "Gazebo Jetty"
 msgstr ""
 
-#: ../../../ros_installation.md:124
+#: ../../../ros_installation.md:135
 msgid ""
 "This means that including the `osrfoundation.org` repository is not strictly "
 "needed to get the Gazebo binary packages, as it can be installed from the "
 "ROS repository."
 msgstr ""
 
-#: ../../../ros_installation.md:128
+#: ../../../ros_installation.md:139
 msgid "Installing Non-Default Gazebo/ROS 2 Pairings"
 msgstr ""
 
-#: ../../../ros_installation.md:130
+#: ../../../ros_installation.md:141
 msgid ""
 "Only use this approach if you absolutely need to run a version of Gazebo "
 "that is not officially supported by your ROS distro. Using this approach "
@@ -303,11 +324,11 @@ msgid ""
 "on Gazebo."
 msgstr ""
 
-#: ../../../ros_installation.md:135
+#: ../../../ros_installation.md:146
 msgid "We do not recommend this approach for beginners!"
 msgstr ""
 
-#: ../../../ros_installation.md:138
+#: ../../../ros_installation.md:149
 msgid ""
 "To select a different release of Gazebo than the one officially supported by "
 "your ROS distribution you must either **use non ROS official Gazebo binary "
@@ -316,33 +337,33 @@ msgid ""
 "Gazebo library):"
 msgstr ""
 
-#: ../../../ros_installation.md:144
+#: ../../../ros_installation.md:155
 msgid ""
-"**Use non ROS official ros_gz binary packages:** `packages.osrfoundation."
-"org` provides binary packages for `ros_gz` for some combinations of Gazebo "
-"and ROS that are different from the officially supported combination. In "
-"some circumstances the non-official packages can be outdated or even buggy, "
-"the use of them is reserved for advanced users."
+"**Use non ROS official ros_gz binary packages:** "
+"`packages.osrfoundation.org` provides binary packages for `ros_gz` for some "
+"combinations of Gazebo and ROS that are different from the officially "
+"supported combination. In some circumstances the non-official packages can "
+"be outdated or even buggy, the use of them is reserved for advanced users."
 msgstr ""
 
-#: ../../../ros_installation.md:149
+#: ../../../ros_installation.md:160
 msgid ""
 "**Manually compile ros_gz:** some combinations of Gazebo and ROS can be "
 "prepared to be built together but have no binary packages, neither in "
 "`packages.ros.org` or `packages.osrfoundation.org`"
 msgstr ""
 
-#: ../../../ros_installation.md:152
+#: ../../../ros_installation.md:163
 msgid ""
 "Both approaches may also require that you modify your ROS or Gazebo source "
 "code to support this compilation."
 msgstr ""
 
-#: ../../../ros_installation.md:154
+#: ../../../ros_installation.md:165
 msgid "📦 Gazebo Harmonic with ROS 2 Humble"
 msgstr ""
 
-#: ../../../ros_installation.md:156
+#: ../../../ros_installation.md:167
 msgid ""
 "Gazebo Harmonic can be used with ROS 2 Humble and non ROS official binary "
 "packages hosted in `packages.osrfoundation.org`. These packages conflict "
@@ -350,67 +371,67 @@ msgid ""
 "Fortress)."
 msgstr ""
 
-#: ../../../ros_installation.md:160
+#: ../../../ros_installation.md:171
 msgid "To install the binary Gazebo Harmonic/ROS 2 Humble packages:"
 msgstr ""
 
-#: ../../../ros_installation.md:162
+#: ../../../ros_installation.md:173
 msgid ""
 "Follow [these instruction to install gz-harmonic](https://gazebosim.org/docs/"
-"harmonic/install_ubuntu#binary-installation-on-ubuntu) from [`packages."
-"osrfoundation.org`](https://packages.osrfoundation.org/gazebo/ubuntu/) "
-"repository."
-msgstr ""
-
-#: ../../../ros_installation.md:165
-msgid "Install `ros_gz` from the non official binary packages from apt:"
-msgstr ""
-
-#: ../../../ros_installation.md:166
-msgid "`apt-get install ros-humble-ros-gzharmonic`"
-msgstr ""
-
-#: ../../../ros_installation.md:168
-msgid "Using the Latest Gazebo Source Code for a Gazebo Distribution"
-msgstr ""
-
-#: ../../../ros_installation.md:170
-msgid ""
-"The Gazebo team usually backports and releases new versions of each of the "
-"supported Gazebo releases and libraries (i.e: bumping `gz-sim 7.0.0` to gz-"
-"sim `7.1.0`). These updates are hosted first in the `packages.osrfoundation."
-"org` repository. The ROS repository syncs from the `osrfoundation.org` "
-"repository frequently but versions can be different."
+"harmonic/install_ubuntu#binary-installation-on-ubuntu) from "
+"[`packages.osrfoundation.org`](https://packages.osrfoundation.org/gazebo/"
+"ubuntu/) repository."
 msgstr ""
 
 #: ../../../ros_installation.md:176
-msgid ""
-"Getting the latest versions of the Gazebo libraries and simulator is as easy "
-"as installing the [`osrfoundation.org` repository](install_ubuntu_src."
-"md#install-dependencies) together with the ROS repository. Updates should be "
-"fully compatible."
+msgid "Install `ros_gz` from the non official binary packages from apt:"
 msgstr ""
 
-#: ../../../ros_installation.md:180
+#: ../../../ros_installation.md:177
+msgid "`apt-get install ros-humble-ros-gzharmonic`"
+msgstr ""
+
+#: ../../../ros_installation.md:179
+msgid "Using the Latest Gazebo Source Code for a Gazebo Distribution"
+msgstr ""
+
+#: ../../../ros_installation.md:181
+msgid ""
+"The Gazebo team usually backports and releases new versions of each of the "
+"supported Gazebo releases and libraries (i.e: bumping `gz-sim 10.0.0` to gz-"
+"sim `10.1.0`). These updates are hosted first in the "
+"`packages.osrfoundation.org` repository. The ROS repository syncs from the "
+"`osrfoundation.org` repository frequently but versions can be different."
+msgstr ""
+
+#: ../../../ros_installation.md:187
+msgid ""
+"Getting the latest versions of the Gazebo libraries and simulator is as easy "
+"as installing the [`osrfoundation.org` repository]"
+"(install_ubuntu_src.md#install-dependencies) together with the ROS "
+"repository. Updates should be fully compatible."
+msgstr ""
+
+#: ../../../ros_installation.md:191
 msgid "FAQ"
 msgstr ""
 
-#: ../../../ros_installation.md:182
+#: ../../../ros_installation.md:193
 msgid "I am not using ROS at all, which version should I use?"
 msgstr ""
 
-#: ../../../ros_installation.md:184
+#: ../../../ros_installation.md:195
 msgid ""
 "If you don't need ROS support, the recommended version is the latest "
 "released version that can be [installed using the `osrfoundation.org` repo]"
 "(https://gazebosim.org/docs) depending on your platform."
 msgstr ""
 
-#: ../../../ros_installation.md:188
+#: ../../../ros_installation.md:199
 msgid "I want to use Gazebo Harmonic with ROS 2. Where are the packages?"
 msgstr ""
 
-#: ../../../ros_installation.md:190
+#: ../../../ros_installation.md:201
 msgid ""
 "We provide binary packages for `ros_gz` for the following Gazebo and ROS 2 "
 "pairings in the packages.osrfoundation.org repository but these packages are "
@@ -428,13 +449,13 @@ msgstr ""
 msgid "`ros-humble-ros-gzharmonic`"
 msgstr ""
 
-#: ../../../ros_installation.md:201
+#: ../../../ros_installation.md:212
 msgid ""
 "What is the difference between a ROS vendor package and other packages "
 "listed in this  page?"
 msgstr ""
 
-#: ../../../ros_installation.md:203
+#: ../../../ros_installation.md:214
 msgid ""
 "The ROS vendor packages are (indeed) ROS packages (built by the ROS "
 "buildfarm and hosted in the ROS repository) that provide the installation of "
@@ -443,28 +464,28 @@ msgid ""
 "by the package manager (usually apt)."
 msgstr ""
 
-#: ../../../ros_installation.md:207
+#: ../../../ros_installation.md:218
 msgid ""
 "Where I can find the different features implemented on each Gazebo version?"
 msgstr ""
 
-#: ../../../ros_installation.md:209
+#: ../../../ros_installation.md:220
 msgid ""
 "The best place is the Gazebo web page that hosts a list of the [main "
 "features available in each Gazebo distribution](release-features)."
 msgstr ""
 
-#: ../../../ros_installation.md:212
+#: ../../../ros_installation.md:223
 msgid ""
-"Some notes are regularly posted on the [Gazebo community site](https://"
-"community.gazebosim.org/tags/c/release-announcements-and-discussions/10/"
-"release) and special posts and videos are also posted there when a new "
-"release is out: See the one for [Garden](https://community.gazebosim.org/t/"
-"gazebo-garden-release/1627) or the one for [Fortress](https://community."
-"gazebosim.org/t/ignition-fortress-release/1127) as examples."
+"Some notes are regularly posted on the [Gazebo category of the Open Robotics "
+"Discourse](https://discourse.openrobotics.org/c/gazebo/95) and special posts "
+"and videos are also posted there when a new release is out: See the one for "
+"[Jetty](https://discourse.openrobotics.org/t/gazebo-jetty-released/50349) or "
+"the one for [Harmonic](https://discourse.openrobotics.org/t/gazebo-harmonic-"
+"release/48175) as examples."
 msgstr ""
 
-#: ../../../ros_installation.md:221
+#: ../../../ros_installation.md:232
 msgid ""
 "Additionally, when navigating through the different versions of Gazebo there "
 "is a menu item called \"[Feature Comparison](comparison)\" which provides a "
