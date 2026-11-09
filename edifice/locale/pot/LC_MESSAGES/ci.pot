@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo edifice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-09 18:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -148,7 +149,7 @@ msgstr ""
 msgid "Where dependencies come from?"
 msgstr ""
 
-#: ../../../ci.md:0 ../../../ci.md:257
+#: ../../../ci.md:0 ../../../ci.md:214
 msgid "Jenkins"
 msgstr ""
 
@@ -186,8 +187,8 @@ msgstr ""
 
 #: ../../../ci.md:0
 msgid ""
-"Windows ([deprecated](https://github.com/gazebo-tooling/release-tools/"
-"issues/412))"
+"Windows ([deprecated](https://github.com/gazebo-tooling/release-tools/issues/"
+"412))"
 msgstr ""
 
 #: ../../../ci.md:0
@@ -232,7 +233,7 @@ msgstr ""
 msgid "Stable binaries"
 msgstr ""
 
-#: ../../../ci.md:0 ../../../ci.md:245
+#: ../../../ci.md:0 ../../../ci.md:202
 msgid "Actions"
 msgstr ""
 
@@ -241,7 +242,7 @@ msgid "`Ubuntu CI / Ubuntu * CI`"
 msgstr ""
 
 #: ../../../ci.md:0
-msgid "Ubuntu Bionic and Focal"
+msgid "Ubuntu Jammy, Noble or Resolute (depending on the branch)"
 msgstr ""
 
 #: ../../../ci.md:0
@@ -267,9 +268,7 @@ msgid "`PR Collection Labeler`"
 msgstr ""
 
 #: ../../../ci.md:0
-msgid ""
-"Adds collection labels (i.e. Blueprint, Citadel...) according to the target "
-"branch"
+msgid "Adds collection labels according to the target branch"
 msgstr ""
 
 #: ../../../ci.md:0
@@ -319,11 +318,12 @@ msgstr ""
 
 #: ../../../ci.md:75
 msgid ""
-"Only the `Bionic` Action uploads coverage results to Codecov, so we have a "
-"single coverage result for each branch."
+"On branches with coverage enabled, only one of the Ubuntu Actions (i.e. "
+"`Jammy`) uploads coverage results to Codecov, so we have a single coverage "
+"result for each branch."
 msgstr ""
 
-#: ../../../ci.md:77
+#: ../../../ci.md:78
 msgid ""
 "There's some overlap between Jenkins and Actions jobs for Ubuntu, but they "
 "have some differences. Some Jenkins jobs run with on GPU machines and "
@@ -331,38 +331,38 @@ msgid ""
 "runs coverage and codecheck."
 msgstr ""
 
-#: ../../../ci.md:81
+#: ../../../ci.md:82
 msgid ""
 "For Linux CI, the choice of stable / pre-release / nightly dependencies on "
 "both Jenkins and Actions is defined in [gzdev's repository.yaml](https://"
 "github.com/gazebo-tooling/gzdev/blob/master/plugins/config/repository.yaml)."
 msgstr ""
 
-#: ../../../ci.md:84
+#: ../../../ci.md:85
 msgid ""
 "For macOS CI, the dependencies and tarball / source branch of each package "
 "are specified in the [Formula/*.rb](https://github.com/osrf/homebrew-"
 "simulation/tree/master/Formula) files."
 msgstr ""
 
-#: ../../../ci.md:87
+#: ../../../ci.md:88
 msgid ""
 "For Windows CI, the dependencies and source branch of each package are "
 "specified in `.yaml` files in the [gazebo-tooling/gazebodistro](https://"
 "github.com/gazebo-tooling/gazebodistro) repository."
 msgstr ""
 
-#: ../../../ci.md:91
+#: ../../../ci.md:92
 msgid "Required checks"
 msgstr ""
 
-#: ../../../ci.md:93
+#: ../../../ci.md:94
 msgid ""
 "Some checks are marked as `Required`. This means the pull request can't be "
 "merged unless that check is green."
 msgstr ""
 
-#: ../../../ci.md:96
+#: ../../../ci.md:97
 msgid ""
 "Ideally, all checks would be required. But known warnings, test failures and "
 "flaky tests often prevent us from marking them as required, otherwise no "
@@ -372,27 +372,27 @@ msgid ""
 "issues/398) for what checks are required for each library."
 msgstr ""
 
-#: ../../../ci.md:103
+#: ../../../ci.md:104
 msgid "Interpreting results"
 msgstr ""
 
-#: ../../../ci.md:105
+#: ../../../ci.md:106
 msgid "On the GitHub UI, checks can be:"
 msgstr ""
 
-#: ../../../ci.md:107
+#: ../../../ci.md:108
 msgid "✅: Passed, all good!"
 msgstr ""
 
-#: ../../../ci.md:108
+#: ../../../ci.md:109
 msgid "🟡: Pending, results haven't been received yet."
 msgstr ""
 
-#: ../../../ci.md:109
+#: ../../../ci.md:110
 msgid "❌: Failed, something is wrong."
 msgstr ""
 
-#: ../../../ci.md:111
+#: ../../../ci.md:112
 msgid ""
 "Depending on the library and on the build queue (from our [Jenkins server]"
 "(https://build.osrfoundation.org/)), checks can be in a pending 🟡 state "
@@ -401,59 +401,59 @@ msgid ""
 "didn't run or didn't report back."
 msgstr ""
 
-#: ../../../ci.md:117
+#: ../../../ci.md:118
 msgid "Failing builds ❌ usually require more investigation:"
 msgstr ""
 
-#: ../../../ci.md:119
+#: ../../../ci.md:120
 msgid ""
 "If the build is `Required`, something is definitely wrong and must be fixed "
 "before merging the pull request."
 msgstr ""
 
-#: ../../../ci.md:121
+#: ../../../ci.md:122
 msgid ""
 "If the build is not required, investigation is needed to find out if the "
 "failure is pre-existing or if it is being introduced by the pull request."
 msgstr ""
 
-#: ../../../ci.md:124
+#: ../../../ci.md:125
 msgid ""
 "Clicking on the `Details` button of a failing build takes you to the build "
 "so that you can inspect it."
 msgstr ""
 
-#: ../../../ci.md:127
+#: ../../../ci.md:128
 msgid "Builds can fail for a variety of reasons, for example:"
 msgstr ""
 
-#: ../../../ci.md:129
+#: ../../../ci.md:130
 msgid ""
 "The code **failed to compile**. This should never be accepted, even in non-"
 "required checks, and must be fixed."
 msgstr ""
 
-#: ../../../ci.md:131
+#: ../../../ci.md:132
 msgid ""
 "**Jenkins**: When there's a compilation failure, the build is marked red 🔴. "
 "On the build's page, click on `Console Output` then scroll until you find "
 "the compilation errors under the `compiling` section."
 msgstr ""
 
-#: ../../../ci.md:134
+#: ../../../ci.md:135
 msgid ""
 "**Actions**: When there's a compilation failure, the build is marked red ❌. "
 "On the build logs, the compilation failure should be under the `make` "
 "collapsible."
 msgstr ""
 
-#: ../../../ci.md:137
+#: ../../../ci.md:138
 msgid ""
 "There are **test failures**. Test failures that aren't pre-existing must be "
 "fixed."
 msgstr ""
 
-#: ../../../ci.md:138
+#: ../../../ci.md:139
 msgid ""
 "**Jenkins**: When there are test failures, the build is marked yellow 🟡. On "
 "the build's page, the failing tests are listed under `Test Result`. Click on "
@@ -461,60 +461,60 @@ msgid ""
 "before. It's often helpful to see the full test logs on `Console Output`."
 msgstr ""
 
-#: ../../../ci.md:143
+#: ../../../ci.md:144
 msgid ""
 "**Actions**: When there are test failures, the build is marked red ❌. On "
 "the build logs, the test failures should be under the `make test` "
 "collapsible."
 msgstr ""
 
-#: ../../../ci.md:146
+#: ../../../ci.md:147
 msgid ""
 "Check which tests are known failures by searching for the test name on "
 "issues."
 msgstr ""
 
-#: ../../../ci.md:148
+#: ../../../ci.md:149
 msgid ""
 "There are **warnings**. Warnings that aren't pre-existing must be fixed."
 msgstr ""
 
-#: ../../../ci.md:149
+#: ../../../ci.md:150
 msgid ""
 "**Jenkins**: When there are warnings, the build is marked yellow 🟡. On the "
 "build's page, the warnings are listed under `GNU C Compiler` and `CMake`. "
 "You can also check the `Console Output` for the full warning logs."
 msgstr ""
 
-#: ../../../ci.md:153
+#: ../../../ci.md:154
 msgid "**Actions**: Does not detect compiler or CMake warnings."
 msgstr ""
 
-#: ../../../ci.md:154
+#: ../../../ci.md:155
 msgid ""
 "There are **static checker failures**. All code checker failures must be "
 "fixed."
 msgstr ""
 
-#: ../../../ci.md:155
+#: ../../../ci.md:156
 msgid "**Jenkins**: Does not run static checkers."
 msgstr ""
 
-#: ../../../ci.md:156
+#: ../../../ci.md:157
 msgid ""
 "**Actions**: When there are code check failures, the build is marked red ❌. "
 "On the build logs, the checker failures should be under the `Code check` "
 "collapsible."
 msgstr ""
 
-#: ../../../ci.md:159
+#: ../../../ci.md:160
 msgid ""
 "There are **infrastructure failures**. Contributors should leave a comment "
 "on   the pull request for maintainers, who will report these to the build "
 "farmer."
 msgstr ""
 
-#: ../../../ci.md:161
+#: ../../../ci.md:162
 msgid ""
 "**Jenkins**: When there's an infra failure, the build is marked red 🔴. "
 "These can manifest in various ways. In general, if the build logs don't fall "
@@ -522,67 +522,212 @@ msgid ""
 "failure. Common patterns usually have several `java` or `hudson` messages."
 msgstr ""
 
-#: ../../../ci.md:165
+#: ../../../ci.md:166
 msgid "**Actions**: Infrastructure failures haven't been identified."
 msgstr ""
 
-#: ../../../ci.md:167
+#: ../../../ci.md:168
 msgid "Triggering CI"
 msgstr ""
 
-#: ../../../ci.md:169
+#: ../../../ci.md:170
 msgid ""
 "CI is usually triggered automatically when code is pushed or a pull request "
 "is opened. But often it's necessary to re-trigger CI without making changes "
 "to the code if:"
 msgstr ""
 
-#: ../../../ci.md:173
+#: ../../../ci.md:174
 msgid "There were infrastructure failures in a previous build."
 msgstr ""
 
-#: ../../../ci.md:174
+#: ../../../ci.md:175
 msgid ""
 "There are fixes upstream, on infra or dependencies, that may make a new "
 "build pass."
 msgstr ""
 
-#: ../../../ci.md:176
+#: ../../../ci.md:177
 msgid "The following methods can be used by maintainers to re-trigger builds:"
 msgstr ""
 
-#: ../../../ci.md:178
+#: ../../../ci.md:179
 msgid "**Jenkins**"
 msgstr ""
 
-#: ../../../ci.md:179
+#: ../../../ci.md:180
 msgid ""
 "Make a comment starting with `@osrf-jenkins run tests` on the pull request "
 "and all Jenkins builds will be re-triggered."
 msgstr ""
 
-#: ../../../ci.md:181
+#: ../../../ci.md:182
 msgid ""
 "To restart just one specific build and avoid re-running builds that aren't "
 "necessary, go to the failing build and click `Retry` in the Jenkins UI after "
 "login."
 msgstr ""
 
-#: ../../../ci.md:184
+#: ../../../ci.md:185
 msgid "**Actions**"
 msgstr ""
 
-#: ../../../ci.md:185
+#: ../../../ci.md:186
 msgid ""
 "On the top-right of a build inside the 'Actions' tab of GitHub, click `Re-"
 "run jobs`. Note that this button sometimes mysteriously disappears."
 msgstr ""
 
-#: ../../../ci.md:188
+#: ../../../ci.md:189
+msgid "Custom branches"
+msgstr ""
+
+#: ../../../ci.md:191
+msgid ""
+"Maintainers can manually trigger builds for custom branches without opening "
+"pull requests, optionally building dependencies from source and changing "
+"other configurations for testing."
+msgstr ""
+
+#: ../../../ci.md:195
+msgid ""
+"One possible reason to trigger CI with custom dependency branches is testing "
+"changes across repositories. For example, if your `gz-sim` pull request "
+"needs a change from `gz-physics`, you could build a custom branch of `gz-"
+"physics` from source to check it works with `gz-sim` on CI before even "
+"opening an `gz-physics` pull request, or making a release."
+msgstr ""
+
+#: ../../../ci.md:204
+msgid ""
+"By default, builds are run for every commit based on configuration inside "
+"the `.github/ci` directory. So it's possible to change the contents of that "
+"directory and immediately see updated CI results when you push commits."
+msgstr ""
+
+#: ../../../ci.md:208
+msgid ""
+"See the documentation on [action-gz-ci](https://github.com/gazebo-tooling/"
+"action-gz-ci) to see what can be configured and how."
+msgstr ""
+
+#: ../../../ci.md:212
+msgid "Be sure to revert these changes before merging the pull request."
+msgstr ""
+
+#: ../../../ci.md:216
+msgid ""
+"The `pr_any` jobs can be triggered manually for any branch by maintainers. "
+"Go to the job's page, for example [gz_sim-ci-pr_any-homebrew-arm64](https://"
+"build.osrfoundation.org/job/gz_sim-ci-pr_any-homebrew-arm64/), click on "
+"`Build with Parameters` to trigger a new build."
+msgstr ""
+
+#: ../../../ci.md:221
+msgid "There are some parameters to configure before triggering a build:"
+msgstr ""
+
+#: ../../../ci.md:223
+msgid ""
+"`sha1`: this is the custom branch you want to build, prefixed by `origin/`."
+msgstr ""
+
+#: ../../../ci.md:224
+msgid ""
+"`RTOOLS_BRANCH`: a branch in [release-tools](https://github.com/gazebo-"
+"tooling/release-tools) that contains custom configuration. For example, see "
+"[this change](https://github.com/gazebo-tooling/release-tools/commit/"
+"28fcb9d8ad66ad0a29ad4d2675c4c451d41fba19) for building a custom `ign-"
+"rendering` branch on [this ign-sensors pull request](https://github.com/"
+"gazebosim/gz-rendering/pull/138#issuecomment-692994562)."
+msgstr ""
+
+#: ../../../ci.md:230
+msgid ""
+"`GAZEBODISTRO_BRANCH` (windows jobs only): a branch in [gazebodistro]"
+"(https://github.com/gazebo-tooling/gazebodistro) with custom source branches "
+"for dependencies. For example, see the change in [gazebodistro#207](https://"
+"github.com/gazebo-tooling/gazebodistro/pull/207) that was required by [gz-"
+"tools#157](https://github.com/gazebosim/gz-tools/pull/157)."
+msgstr ""
+
+#: ../../../ci.md:237
+msgid ""
+"If you want to share the status of your custom build on a pull request, "
+"click on `Embeddable Build Status` and copy the markdown code into the pull "
+"request."
+msgstr ""
+
+#: ../../../ci.md:241
+msgid "Manually triggered from source jobs"
+msgstr ""
+
+#: ../../../ci.md:243
+msgid ""
+"The [CI view in Jenkins](https://build.osrfoundation.org/view/ci/) contains "
+"different jobs generated designed to build all the Gazebo libraries in a "
+"releases from source using the build tools: vcs (tool to grab sources, "
+"mainly with the yaml files at [gazebodistro repository](https://github.com/"
+"gazebo-tooling/gazebodistro) and colcon (build tool)."
+msgstr ""
+
+#: ../../../ci.md:249
+msgid ""
+"The [CI view in Jenkins](https://build.osrfoundation.org/view/ci/) contains "
+"different jobs:"
+msgstr ""
+
+#: ../../../ci.md:251
+msgid ""
+"Separated by ubuntu distro. i.e: `ci__colcon_any-manual_ubuntu_jammy_amd64` "
+"or `ci__colcon_any-manual_ubuntu_noble_amd64` for jammy and noble."
+msgstr ""
+
+#: ../../../ci.md:253
+msgid ""
+"Separated to be run on GPU or not: `ci__colcon_gpu_any-"
+"manual_ubuntu_jammy_amd64` in gpu or `ci__colcon_any-"
+"manual_ubuntu_jammy_amd64` to not use gpu."
+msgstr ""
+
+#: ../../../ci.md:256
+msgid "**Parameters** in the CI jobs (most important ones):"
+msgstr ""
+
+#: ../../../ci.md:257
+msgid ""
+"`repos_file_urls`: typically a VCS yaml file defining the sources to be "
+"built. Default can be modified to build any Gazebo collection or any Gazebo "
+"package starting from Harmonic. Typical value is one of the raw files at "
+"[gazebodistro repository](https://github.com/gazebo-tooling/gazebodistro) ."
+msgstr ""
+
+#: ../../../ci.md:262
+msgid ""
+"`build_tool_args`: [colcon build parameters](https://colcon.readthedocs.io/"
+"en/released/reference/verb/build.html) to use. Default can be preserve "
+"**but**, unless the whole list of packages defined in `repos_file_urls` is "
+"to be built, a set of packages needs to defined. For example, to build all "
+"packages needed until gz-tranport8, `--packages-up-to gz-transport8` can be "
+"added to the default options."
+msgstr ""
+
+#: ../../../ci.md:268
+msgid ""
+"`build_tool_test_args`: [colcon test parameters](https://"
+"colcon.readthedocs.io/en/released/reference/verb/test.html) to use. Default "
+"can be preserve **but**, unless the whole list of tests of all packages "
+"defined in `repos_file_urls` is to be run, a set of packages needs to be "
+"defined to be the software under test. For example, to run only gz-"
+"transport8 tests, the `--packages-select gz-transport8` can be added to the "
+"default options."
+msgstr ""
+
+#: ../../../ci.md:275
 msgid "Testing pull requests with custom tooling branches"
 msgstr ""
 
-#: ../../../ci.md:190
+#: ../../../ci.md:277
 msgid ""
 "As noted above, the [gzdev](https://github.com/gazebo-tooling/gzdev), "
 "[homebrew-simulation](https://github.com/osrf/homebrew-simulation), and "
@@ -594,11 +739,11 @@ msgid ""
 "` on both the tooling repository and the repository to be tested."
 msgstr ""
 
-#: ../../../ci.md:199
+#: ../../../ci.md:286
 msgid "Example: testing with an additional dependency on macOS"
 msgstr ""
 
-#: ../../../ci.md:201
+#: ../../../ci.md:288
 msgid ""
 "In [gz-math#361](https://github.com/gazebosim/gz-math/pull/361), a fix for "
 "gz-math's python bindings on macOS was proposed, but `pybind11` was not yet "
@@ -610,13 +755,13 @@ msgid ""
 "math macOS CI build to include the new dependency."
 msgstr ""
 
-#: ../../../ci.md:210
+#: ../../../ci.md:297
 msgid ""
 "Example: testing with a source build of a custom branch of a dependency on "
 "macOS"
 msgstr ""
 
-#: ../../../ci.md:212
+#: ../../../ci.md:299
 msgid ""
 "To determine whether changes in gz-math and sdformat were the cause of gz-"
 "sim test failures documented in [osrf/buildfarm-tools#67 (comment)](https://"
@@ -625,186 +770,42 @@ msgid ""
 "field contains the URL of their respective git repositories, along with a "
 "`branch` field indicating the branch name to be tested. The `gz-math8` "
 "formula was [modified to use the `scpeters/revert_606` branch](https://"
-"github.com/osrf/homebrew-simulation/"
-"blob/6bdfaea6c9b5a30fed163c619e1f398b31937514/Formula/gz-math8.rb#L4) "
-"(corresponding to [gz-math#609](https://github.com/gazebosim/gz-math/"
-"pull/609)), and the `sdformat15` formula was [modified to use the `scpeters/"
-"revert_1458` branch](https://github.com/osrf/homebrew-simulation/"
-"blob/6bdfaea6c9b5a30fed163c619e1f398b31937514/Formula/sdformat15.rb#L4) "
-"(corresponding to [sdformat#1459](https://github.com/gazebosim/sdformat/"
-"pull/1459)). These changes to formulae were committed to the "
-"`ci_matching_branch/revert_math_graph_init` branch (see [osrf/homebrew-"
-"simulation@6bdfaea6](https://github.com/osrf/homebrew-simulation/pull/2701/"
-"commits/6bdfaea6c9b5a30fed163c619e1f398b31937514)). To test gz-sim with "
-"these branches of gz-math and sdformat, a trivial change to the gz-sim "
-"README was made in a branch with matching name `ci_matching_branch/"
+"github.com/osrf/homebrew-simulation/blob/"
+"6bdfaea6c9b5a30fed163c619e1f398b31937514/Formula/gz-math8.rb#L4) "
+"(corresponding to [gz-math#609](https://github.com/gazebosim/gz-math/pull/"
+"609)), and the `sdformat15` formula was [modified to use the `scpeters/"
+"revert_1458` branch](https://github.com/osrf/homebrew-simulation/blob/"
+"6bdfaea6c9b5a30fed163c619e1f398b31937514/Formula/sdformat15.rb#L4) "
+"(corresponding to [sdformat#1459](https://github.com/gazebosim/sdformat/pull/"
+"1459)). These changes to formulae were committed to the `ci_matching_branch/"
+"revert_math_graph_init` branch (see [osrf/homebrew-simulation@6bdfaea6]"
+"(https://github.com/osrf/homebrew-simulation/pull/2701/commits/"
+"6bdfaea6c9b5a30fed163c619e1f398b31937514)). To test gz-sim with these "
+"branches of gz-math and sdformat, a trivial change to the gz-sim README was "
+"made in a branch with matching name `ci_matching_branch/"
 "revert_math_graph_init`, and a draft pull request ([gz-sim#2482](https://"
 "github.com/gazebosim/gz-sim/pull/2482)) was opened to trigger CI builds. The "
 "homebrew build used the matching branch of homebrew-simulation and built "
 "against the intended branches."
 msgstr ""
 
-#: ../../../ci.md:232
-msgid "Custom branches"
-msgstr ""
-
-#: ../../../ci.md:234
-msgid ""
-"Maintainers can manually trigger builds for custom branches without opening "
-"pull requests, optionally building dependencies from source and changing "
-"other configurations for testing."
-msgstr ""
-
-#: ../../../ci.md:238
-msgid ""
-"One possible reason to trigger CI with custom dependency branches is testing "
-"changes across repositories. For example, if your `gz-sim` pull request "
-"needs a change from `gz-physics`, you could build a custom branch of `gz-"
-"physics` from source to check it works with `gz-sim` on CI before even "
-"opening an `gz-physics` pull request, or making a release."
-msgstr ""
-
-#: ../../../ci.md:247
-msgid ""
-"By default, builds are run for every commit based on configuration inside "
-"the `.github/ci` directory. So it's possible to change the contents of that "
-"directory and immediately see updated CI results when you push commits."
-msgstr ""
-
-#: ../../../ci.md:251
-msgid ""
-"See the documentation on [action-gz-ci](https://github.com/gazebo-tooling/"
-"action-gz-ci) to see what can be configured and how."
-msgstr ""
-
-#: ../../../ci.md:255
-msgid "Be sure to revert these changes before merging the pull request."
-msgstr ""
-
-#: ../../../ci.md:259
-msgid ""
-"The `pr_any` jobs can be triggered manually for any branch by maintainers. "
-"Go to the job's page, for example [gz_sim-ci-pr_any-homebrew-arm64](https://"
-"build.osrfoundation.org/job/gz_sim-ci-pr_any-homebrew-arm64/), click on "
-"`Build with Parameters` to trigger a new build."
-msgstr ""
-
-#: ../../../ci.md:264
-msgid "There are some parameters to configure before triggering a build:"
-msgstr ""
-
-#: ../../../ci.md:266
-msgid ""
-"`sha1`: this is the custom branch you want to build, prefixed by `origin/`."
-msgstr ""
-
-#: ../../../ci.md:267
-msgid ""
-"`RTOOLS_BRANCH`: a branch in [release-tools](https://github.com/gazebo-"
-"tooling/release-tools) that contains custom configuration. For example, see "
-"[this change](https://github.com/gazebo-tooling/release-tools/"
-"commit/28fcb9d8ad66ad0a29ad4d2675c4c451d41fba19) for building a custom `ign-"
-"rendering` branch on [this ign-sensors pull request](https://github.com/"
-"gazebosim/gz-rendering/pull/138#issuecomment-692994562)."
-msgstr ""
-
-#: ../../../ci.md:273
-msgid ""
-"`GAZEBODISTRO_BRANCH` (windows jobs only): a branch in [gazebodistro]"
-"(https://github.com/gazebo-tooling/gazebodistro) with custom source branches "
-"for dependencies. For example, see the change in [gazebodistro#207](https://"
-"github.com/gazebo-tooling/gazebodistro/pull/207) that was required by [gz-"
-"tools#157](https://github.com/gazebosim/gz-tools/pull/157)."
-msgstr ""
-
-#: ../../../ci.md:280
-msgid ""
-"If you want to share the status of your custom build on a pull request, "
-"click on `Embeddable Build Status` and copy the markdown code into the pull "
-"request."
-msgstr ""
-
-#: ../../../ci.md:284
-msgid "Manually triggered from source jobs"
-msgstr ""
-
-#: ../../../ci.md:286
-msgid ""
-"The [CI view in Jenkins](https://build.osrfoundation.org/view/ci/) contains "
-"different jobs generated designed to build all the Gazebo libraries in a "
-"releases from source using the build tools: vcs (tool to grab sources, "
-"mainly with the yaml files at [gazebodistro repository](https://github.com/"
-"gazebo-tooling/gazebodistro) and colcon (build tool)."
-msgstr ""
-
-#: ../../../ci.md:292
-msgid ""
-"The [CI view in Jenkins](https://build.osrfoundation.org/view/ci/) contains "
-"different jobs:"
-msgstr ""
-
-#: ../../../ci.md:294
-msgid ""
-"Separated by ubuntu distro. i.e: `ci__colcon_any-manual_ubuntu_jammy_amd64` "
-"or `ci__colcon_any-manual_ubuntu_noble_amd64` for jammy and noble."
-msgstr ""
-
-#: ../../../ci.md:296
-msgid ""
-"Separated to be run on GPU or not: `ci__colcon_gpu_any-"
-"manual_ubuntu_jammy_amd64` in gpu or `ci__colcon_any-"
-"manual_ubuntu_jammy_amd64` to not use gpu."
-msgstr ""
-
-#: ../../../ci.md:299
-msgid "**Parameters** in the CI jobs (most important ones):"
-msgstr ""
-
-#: ../../../ci.md:300
-msgid ""
-"`repos_file_urls`: typically a VCS yaml file defining the sources to be "
-"built. Default can be modified to build any Gazebo collection or any Gazebo "
-"package starting from Harmonic. Typical value is one of the raw files at "
-"[gazebodistro repository](https://github.com/gazebo-tooling/gazebodistro) ."
-msgstr ""
-
-#: ../../../ci.md:305
-msgid ""
-"`build_tool_args`: [colcon build parameters](https://colcon.readthedocs.io/"
-"en/released/reference/verb/build.html) to use. Default can be preserve "
-"**but**, unless the whole list of packages defined in `repos_file_urls` is "
-"to be built, a set of packages needs to defined. For example, to build all "
-"packages needed until gz-tranport8, `--packages-up-to gz-transport8` can be "
-"added to the default options."
-msgstr ""
-
-#: ../../../ci.md:311
-msgid ""
-"`build_tool_test_args`: [colcon test parameters](https://colcon.readthedocs."
-"io/en/released/reference/verb/test.html) to use. Default can be preserve "
-"**but**, unless the whole list of tests of all packages defined in "
-"`repos_file_urls` is to be run, a set of packages needs to be defined to be "
-"the software under test. For example, to run only gz-transport8 tests, the "
-"`--packages-select gz-transport8` can be added to the default options."
-msgstr ""
-
-#: ../../../ci.md:318
+#: ../../../ci.md:319
 msgid "Development"
 msgstr ""
 
-#: ../../../ci.md:320
+#: ../../../ci.md:321
 msgid ""
-"All the infrastructure for our CI is in the [gazebo-tooling](https://github."
-"com/gazebo-tooling) organization."
+"All the infrastructure for our CI is in the [gazebo-tooling](https://"
+"github.com/gazebo-tooling) organization."
 msgstr ""
 
-#: ../../../ci.md:323
+#: ../../../ci.md:324
 msgid ""
-"Most of the stuff running in Jenkins is in [release-tools](https://github."
-"com/gazebo-tooling/release-tools/)."
+"Most of the stuff running in Jenkins is in [release-tools](https://"
+"github.com/gazebo-tooling/release-tools/)."
 msgstr ""
 
-#: ../../../ci.md:325
+#: ../../../ci.md:326
 msgid ""
 "The GitHub action is in [action-gz-ci](https://github.com/gazebo-tooling/"
 "action-gz-ci/)."
