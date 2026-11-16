@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo jetty\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-16 18:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -115,147 +116,157 @@ msgstr ""
 msgid "<!-- Alphabetized by last name -->\n"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60 ../../../governance.md:81
 msgid "Name"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60 ../../../governance.md:81
 msgid "Affiliation"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60 ../../../governance.md:81
 msgid "Github Handle"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60
 msgid "PMC Role"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60 ../../../governance.md:81
 msgid "Time Zone (optional)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60
 msgid "Carlos Agüero"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:60 ../../../governance.md:64
+#: ../../../governance.md:68
 msgid "[Honu Robotics](https://honurobotics.com)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:62
 msgid "[caguero](https://github.com/caguero)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:62 ../../../governance.md:63
+#: ../../../governance.md:64 ../../../governance.md:65
+#: ../../../governance.md:66 ../../../governance.md:67
+#: ../../../governance.md:68 ../../../governance.md:69
+#: ../../../governance.md:70
 msgid "Member"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:62 ../../../governance.md:65
+#: ../../../governance.md:69
 msgid "CET (UTC+2)/CET (UTC+1)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:62
 msgid "Michael Carroll"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:62 ../../../governance.md:63
+#: ../../../governance.md:65 ../../../governance.md:67
+#: ../../../governance.md:70 ../../../governance.md:81
+#: ../../../governance.md:83
 msgid "[Intrinsic](https://www.intrinsic.ai/)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:63
 msgid "[mjcarroll](https://github.com/mjcarroll)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:63 ../../../governance.md:71
 msgid "CST (UTC-6)/CDT (UTC-5)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:63
 msgid "Ian Chen"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:64
 msgid "[iche033](https://github.com/iche033)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:64 ../../../governance.md:66
+#: ../../../governance.md:68 ../../../governance.md:84
 msgid "PST (UTC-8)/PDT (UTC-7)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:64
 msgid "Alejandro Hernández"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:65
 msgid "[ahcorde](https://github.com/ahcorde)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:65
 msgid "Jenn Nguyen"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:66
 msgid "[jennuine](https://github.com/jennuine)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:66
 msgid "Benjamin Perseghetti"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:66
 msgid "[Rudis Labs](https://github.com/rudislabs)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:67
 msgid "[bperseghetti](https://github.com/bperseghetti)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:67
 msgid "EST (UTC-5)/EDT (UTC-4)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:67
 msgid "Steve Peters"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:68
 msgid "[scpeters](https://github.com/scpeters)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:68
 msgid "Jose Luis Rivero"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:69
 msgid "[jrivero](https://github.com/j-rivero)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:69
 msgid "Silvio Traversaro"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:69
 msgid "[Italian Institute of Technology](https://www.iit.it)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:70
 msgid "[traversaro](https://github.com/traversaro)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:70
 msgid "CEST (UTC+2)/CET (UTC+1)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:70
 msgid "Addisu Z. Taddese"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:71
 msgid "[azeey](https://github.com/azeey)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:71
 msgid "Project Leader"
 msgstr ""
 
@@ -269,34 +280,34 @@ msgid ""
 "the following individuals:"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:81
 msgid "Arjo Chakravarty"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:83
 msgid "[arjo129](https://github.com/arjo129)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:83 ../../../governance.md:85
 msgid "SST (UTC+8)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:83
 msgid "Shameek Ganguly"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:84
 msgid "[shameekganguly](https://github.com/shameekganguly)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:84
 msgid "Saurabh Kamat"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:84
 msgid "[ROS-Industrial](https://rosindustrial.org/)"
 msgstr ""
 
-#: ../../../governance.md:0
+#: ../../../governance.md:85
 msgid "[sauk2](https://github.com/sauk2)"
 msgstr ""
