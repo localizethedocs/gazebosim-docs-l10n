@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo ionic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"POT-Creation-Date: 2026-11-16 18:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,87 +68,100 @@ msgid ""
 "simulation time."
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:22 ../../../ros2_sim_interfaces.md:94
+#: ../../../ros2_sim_interfaces.md:129 ../../../ros2_sim_interfaces.md:163
+#: ../../../ros2_sim_interfaces.md:187
 msgid "Interface Name"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:22 ../../../ros2_sim_interfaces.md:94
+#: ../../../ros2_sim_interfaces.md:129 ../../../ros2_sim_interfaces.md:163
+#: ../../../ros2_sim_interfaces.md:187
 msgid "Topic Name"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:22 ../../../ros2_sim_interfaces.md:94
+#: ../../../ros2_sim_interfaces.md:129 ../../../ros2_sim_interfaces.md:163
+#: ../../../ros2_sim_interfaces.md:187
 msgid "Type"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:22 ../../../ros2_sim_interfaces.md:94
+#: ../../../ros2_sim_interfaces.md:129 ../../../ros2_sim_interfaces.md:163
+#: ../../../ros2_sim_interfaces.md:187
 msgid "Description"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:22
 msgid "`ResetSimulation`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:24
 msgid "`/gzserver/reset_simulation`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0 ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:24 ../../../ros2_sim_interfaces.md:25
+#: ../../../ros2_sim_interfaces.md:26 ../../../ros2_sim_interfaces.md:27
+#: ../../../ros2_sim_interfaces.md:96 ../../../ros2_sim_interfaces.md:97
+#: ../../../ros2_sim_interfaces.md:131 ../../../ros2_sim_interfaces.md:132
+#: ../../../ros2_sim_interfaces.md:133 ../../../ros2_sim_interfaces.md:165
+#: ../../../ros2_sim_interfaces.md:189
 msgid "Service"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:24
 msgid "Reset the simulation to its initial state"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:24
 msgid "`StepSimulation`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:25
 msgid "`/gzserver/step_simulation`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:25
 msgid "Step the simulation forward by a specified number of steps"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:25
 msgid "`GetSimulationState`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:26
 msgid "`/gzserver/get_simulation_state`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:26
 msgid "Get the current simulation state (playing/paused/stopped)"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:26
 msgid "`SetSimulationState`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:27
 msgid "`/gzserver/set_simulation_state`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:27
 msgid "Set the simulation state (play/pause/stop)"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:27
 msgid "`SimulateSteps`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:28
 msgid "`/gzserver/simulate_steps`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:28
 msgid "Action"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:28
 msgid ""
 "Step the simulation forward by a specified number of steps with feedback and "
 "cancellation support"
@@ -269,27 +283,27 @@ msgid ""
 "simulation at runtime."
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:94
 msgid "`SpawnEntity`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:96
 msgid "`/gzserver/spawn_entity`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:96
 msgid "Spawn a new entity in the simulation at a specific location"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:96
 msgid "`DeleteEntity`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:97
 msgid "`/gzserver/delete_entity`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:97
 msgid "Delete an existing entity by name"
 msgstr ""
 
@@ -341,39 +355,39 @@ msgid ""
 "state."
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:129
 msgid "`GetEntityState`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:131
 msgid "`/gzserver/get_entity_state`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:131
 msgid "Get the pose and twist of a specific entity"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:131
 msgid "`GetEntitiesStates`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:132
 msgid "`/gzserver/get_entities_states`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:132
 msgid "Get the state for multiple entities (optionally filtered)"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:132
 msgid "`GetEntities`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:133
 msgid "`/gzserver/get_entities`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:133
 msgid "Get a list of entities (optionally filtered)"
 msgstr ""
 
@@ -427,15 +441,15 @@ msgstr ""
 msgid "The following interfaces are used to set entity states."
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:163
 msgid "`SetEntityState`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:165
 msgid "`/gzserver/set_entity_state`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:0
+#: ../../../ros2_sim_interfaces.md:165
 msgid "Set the pose and twist of a specific entity"
 msgstr ""
 
@@ -478,15 +492,15 @@ msgid ""
 "services can be used to inspect supported features."
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:187
 msgid "`GetSimulatorFeatures`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:189
 msgid "`/gzserver/get_simulator_features`"
 msgstr ""
 
-#: ../../../ros2_sim_interfaces.md:175
+#: ../../../ros2_sim_interfaces.md:189
 msgid "Query which interface features are supported"
 msgstr ""
 
