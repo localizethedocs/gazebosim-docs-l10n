@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo ionic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"POT-Creation-Date: 2026-11-16 18:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,175 +38,219 @@ msgstr ""
 msgid "Sensors"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Sensor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13 ../../../comparison.md:41
+#: ../../../comparison.md:52 ../../../comparison.md:78
+#: ../../../comparison.md:131 ../../../comparison.md:145
+#: ../../../comparison.md:165 ../../../comparison.md:174
+#: ../../../comparison.md:183 ../../../comparison.md:193
+#: ../../../comparison.md:245 ../../../comparison.md:263
+#: ../../../comparison.md:294 ../../../comparison.md:302
 msgid "Gazebo-classic"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13 ../../../comparison.md:41
+#: ../../../comparison.md:52 ../../../comparison.md:78
+#: ../../../comparison.md:131 ../../../comparison.md:145
+#: ../../../comparison.md:165 ../../../comparison.md:174
+#: ../../../comparison.md:183 ../../../comparison.md:193
+#: ../../../comparison.md:245 ../../../comparison.md:263
+#: ../../../comparison.md:294 ../../../comparison.md:302
 msgid "Gazebo Sim"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Air pressure"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13 ../../../comparison.md:32
+#: ../../../comparison.md:35 ../../../comparison.md:52
+#: ../../../comparison.md:78 ../../../comparison.md:81
+#: ../../../comparison.md:86 ../../../comparison.md:103
+#: ../../../comparison.md:153 ../../../comparison.md:183
+#: ../../../comparison.md:229 ../../../comparison.md:250
+#: ../../../comparison.md:263 ../../../comparison.md:268
+#: ../../../comparison.md:302 ../../../comparison.md:311
+#: ../../../comparison.md:315 ../../../comparison.md:320
+#: ../../../comparison.md:322
 msgid "✕"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13 ../../../comparison.md:31
+#: ../../../comparison.md:32 ../../../comparison.md:35
+#: ../../../comparison.md:41 ../../../comparison.md:52
+#: ../../../comparison.md:55 ../../../comparison.md:56
+#: ../../../comparison.md:57 ../../../comparison.md:59
+#: ../../../comparison.md:78 ../../../comparison.md:81
+#: ../../../comparison.md:86 ../../../comparison.md:102
+#: ../../../comparison.md:103 ../../../comparison.md:131
+#: ../../../comparison.md:134 ../../../comparison.md:145
+#: ../../../comparison.md:148 ../../../comparison.md:150
+#: ../../../comparison.md:153 ../../../comparison.md:159
+#: ../../../comparison.md:165 ../../../comparison.md:174
+#: ../../../comparison.md:177 ../../../comparison.md:183
+#: ../../../comparison.md:186 ../../../comparison.md:193
+#: ../../../comparison.md:196 ../../../comparison.md:201
+#: ../../../comparison.md:208 ../../../comparison.md:212
+#: ../../../comparison.md:226 ../../../comparison.md:229
+#: ../../../comparison.md:245 ../../../comparison.md:247
+#: ../../../comparison.md:250 ../../../comparison.md:263
+#: ../../../comparison.md:268 ../../../comparison.md:294
+#: ../../../comparison.md:297 ../../../comparison.md:302
+#: ../../../comparison.md:310 ../../../comparison.md:311
+#: ../../../comparison.md:314 ../../../comparison.md:315
+#: ../../../comparison.md:320 ../../../comparison.md:322
 msgid "✓"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Altimeter"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Bounding Box camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Contact sensor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Depth camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Doppler Velocity Log (DVL)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Force-torque"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "GPS / NavSat"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "GPU Ray"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "✓ Renamed to GPU Lidar"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "IMU"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Logical audio sensor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Logical camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Magnetometer"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Multi-camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "✕  Use individual cameras with same update rate"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Optical tactile sensor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "Ray"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:13
 msgid "[Issue](https://github.com/gazebosim/gz-sensors/issues/26)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:31
 msgid "RFID sensor and tag"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:31
 msgid "[Issue](https://github.com/gazebosim/gz-sensors/issues/27)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:32
 msgid "RGBD camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:32
 msgid "Segmentation camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:32
 msgid "Sonar"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:32
 msgid "[Issue](https://github.com/gazebosim/gz-sensors/issues/19)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:35
 msgid "Thermal camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:35
 msgid "Triggered camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:35
 msgid "Wide-angle camera"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:35
 msgid "Wireless"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:35
 msgid "✓ RFComms"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Sensor features"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Custom update rate"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Gaussian noise"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Custom sensors"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Laser retroreflection"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Camera distortion"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:41
 msgid "Performance metrics"
 msgstr ""
 
@@ -213,115 +258,117 @@ msgstr ""
 msgid "SDF Features"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:52 ../../../comparison.md:193
+#: ../../../comparison.md:245 ../../../comparison.md:263
+#: ../../../comparison.md:302
 msgid "Feature"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:52
 msgid "SDF frame semantics"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:52
 msgid "SDF parametrization"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:52
 msgid "[✓](http://sdformat.org/tutorials?tut=param_passing_proposal)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:55
 msgid "Load models from local files"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:55
 msgid "[✓](https://gazebosim.org/api/gazebo/6.6/resources.html)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:56
 msgid "Closed kinematic chains"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:56
 msgid "[Issue](https://github.com/gazebosim/gz-physics/issues/25)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:57 ../../../comparison.md:302
 msgid "Nested models"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:57
 msgid "Populations"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:57
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/240)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "Actors"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "Markers"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "Heightmaps"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "DEM (Digital Elevation Models)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "Polylines"
 msgstr ""
 
-#: ../../../comparison.md:0 ../../../comparison.md:129
+#: ../../../comparison.md:59 ../../../comparison.md:129
 msgid "World plugins"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "✓ Now called System plugin"
 msgstr ""
 
-#: ../../../comparison.md:0 ../../../comparison.md:76
+#: ../../../comparison.md:59 ../../../comparison.md:76
 msgid "Model plugins"
 msgstr ""
 
-#: ../../../comparison.md:0 ../../../comparison.md:143
+#: ../../../comparison.md:59 ../../../comparison.md:143
 msgid "Sensor plugins"
 msgstr ""
 
-#: ../../../comparison.md:0 ../../../comparison.md:163
+#: ../../../comparison.md:59 ../../../comparison.md:163
 msgid "Visual plugins"
 msgstr ""
 
-#: ../../../comparison.md:0 ../../../comparison.md:172
+#: ../../../comparison.md:59 ../../../comparison.md:172
 msgid "GUI plugins"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "✓ Gazebo GUI plugins and Gazebo GUI systems"
 msgstr ""
 
-#: ../../../comparison.md:0 ../../../comparison.md:181
+#: ../../../comparison.md:59 ../../../comparison.md:181
 msgid "System plugins"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "✓ Through Gazebo Launch"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "SDF python bindings"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "x"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:59
 msgid "SDF <-> Mujoco MJCF"
 msgstr ""
 
@@ -329,408 +376,412 @@ msgstr ""
 msgid "Plugins"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:78 ../../../comparison.md:131
+#: ../../../comparison.md:145 ../../../comparison.md:165
+#: ../../../comparison.md:174 ../../../comparison.md:183
 msgid "Plugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:78
 msgid "AckermannSteering"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:78
 msgid "ActorPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:78
 msgid ""
 "✕ See [FollowActor](https://github.com/gazebosim/gz-sim/blob/main/src/"
 "systems/follow_actor/FollowActor.hh) for a demo of Actor APIs"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid "ActuatorPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid "ArduCopterPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid "AttachLightPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid "✕ Does not apply, use SDF"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid "Breadcrumbs"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid "BuoyancyPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:81
 msgid ""
 "[✓](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/examples/worlds/"
 "buoyancy.sdf)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "CartDemoPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "CessnaPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "DetachableJoint"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "DiffDrivePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "ElevatorPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "FlashLightPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "FollowerPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "GimbalSmall2dPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "GravityCompensationPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "HarnessPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "HydraDemoPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "InitialVelocityPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "✓ (use VelocityControl or JointController)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "JointControlPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "✓ (force / pos / vel, from SDF)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "✓ (vel, from msg)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "JointStatePublisher"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "JointTrajectoryPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86
 msgid "KeysToCmdVelPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:86 ../../../comparison.md:102
 msgid ""
 "Use `gz::gui::KeyPublisher` with `gz::gazebo::systems::TriggeredPublisher`"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:102
 msgid "KeysToJointsPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "LedPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "LiftDragPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "LinearBatteryConsumerPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "LinearBatteryPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "LinkPlot3DPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "✓ (renamed to Plot3D)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "MecanumDrive"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "MudPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "MulticopterMotorModel"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "OdometryPublisherPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "PlaneDemoPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "PosePublisher"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "RandomVelocityPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "RegionEventBoxPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "SimpleTrackedVehiclePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "SkidSteerDrivePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "SphereAtlasDemoPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "TouchPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "TrackedVehiclePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "VariableGearboxPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "VehiclePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "WheelSlipPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "WheelTrackedVehiclePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "KineticEnergyMonitor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:103
 msgid "Buoyancy engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:131
 msgid "ArrangePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:131
 msgid "ContainPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:131
 msgid "Partial port, [Issue](https://github.com/gazebosim/gz-sim/issues/162)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "HydraPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "JoyPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "✓ Migrated as an Gazebo Launch plugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "MisalignmentPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "RubblePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "StaticMapPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "TransporterPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:134
 msgid "WindPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:145
 msgid "BreakableJointPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:145
 msgid "CameraPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:145 ../../../comparison.md:148
+#: ../../../comparison.md:150 ../../../comparison.md:153
+#: ../../../comparison.md:159
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/49)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:148
 msgid "ContactPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:148
 msgid "DepthCameraPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:150
 msgid "FiducialCameraPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:150
 msgid "ForceTorquePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:150
 msgid "GpuRayPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:153
 msgid "ImuSensorPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:153
 msgid "LensFlareSensorPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:153
 msgid "MagnetometerPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:153
 msgid "OpticalTactilePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:153
 msgid "PressurePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:153
 msgid "RayPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:159
 msgid "RaySensorNoisePlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:159
 msgid "✕ Use SDF"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:159
 msgid "SonarPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:165
 msgid "AmbientOcclusionVisualPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:165
 msgid "BlinkVisualPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:165
 msgid "HeightmapLODPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:165
 msgid "ShaderParamVisualPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:174
 msgid "CessnaGUIPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:174
 msgid "KeyboardGUIPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:174
 msgid "`gz::gui::KeyPublisher`"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:177
 msgid "LookAtDemoPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:177
 msgid "TimerGUIPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:183
 msgid "ColladaWorldExporter"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:183
 msgid "ModelPropShop"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:183
 msgid "[✓](https://gazebosim.org/api/gazebo/5.4/model_photo_shoot.html)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:186
 msgid "RestUiPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:186
 msgid "RestWebPlugin"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:186
 msgid "StopWorldPlugin"
 msgstr ""
 
@@ -738,205 +789,205 @@ msgstr ""
 msgid "GUI"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:193
 msgid "Play / pause / step"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:193
 msgid "Reset world / models"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:193
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/203)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:196
 msgid "World stats"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:196
 msgid "Topic echo"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:196
 msgid "Image viewer"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:196
 msgid "Translate / rotate"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:196
 msgid "Scale models"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:196
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/195)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Insert models from Fuel"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Partial support"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Insert models from disk"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Insert simple shapes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Insert simple lights"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Delete models"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "World tree"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "Scene properties"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:201
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/246)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:208
 msgid "Log recording / playback"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:208
 msgid "Plotting"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:208
 msgid "Video recording"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:208
 msgid "Screenshot"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:208
 msgid "[✓](https://gazebosim.org/api/gui/3.5/screenshot.html)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "View angles"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Apply force / torque"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize as transparent"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize as wireframe"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize joints"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize collisions"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize inertia"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize CoM"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize contacts"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Visualize lights"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Follow / move to"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Copy / paste"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Building editor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid "Model editor"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:212
 msgid ""
 "[Issues](https://github.com/gazebosim/gz-sim/issues?"
 "q=is%3Aissue+is%3Aopen+label%3Aeditor)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:226
 msgid "FPS view control"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:226
 msgid "Orthographic projection"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:226
 msgid "Undo / redo"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:226
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/104)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Save world"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Save GUI configuration"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Color scheme and themes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Position, resize and configure widgets"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Load GUI plugins from menu"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Edit model pose"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Edit light properties"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:229
 msgid "Edit physics properties"
 msgstr ""
 
@@ -951,51 +1002,51 @@ msgid ""
 "in Gazebo."
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:245
 msgid "ODE engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:245 ../../../comparison.md:247
 msgid "[Issue](https://github.com/gazebosim/gz-physics/issues/63)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:247
 msgid "Bullet engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:247
 msgid "DART engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:247
 msgid "✓ Plugin shipped with gz-physics"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:247
 msgid "Simbody engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:250
 msgid "TPE engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:250 ../../../comparison.md:263
 msgid "Custom engine plugins"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:250
 msgid "Collide bitmasks"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:250
 msgid "Restitution coefficient"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:250
 msgid "Collision detector"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:250
 msgid "Solver"
 msgstr ""
 
@@ -1009,79 +1060,79 @@ msgid ""
 "can be integrated without changing the core source code."
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:263
 msgid "Ogre 1.x engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:263
 msgid "Ogre 2.x engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:263
 msgid "Optix engine"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:263
 msgid "✓ Partial support"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:263
 msgid "[✓](https://gazebosim.org/api/rendering/5.0/renderingplugin.html)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Sky"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Fog"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Material scripts"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "✓ (Ogre 1.x scripts)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Does not apply"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Physically Based Rendering (PBR)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "✓ (with engines that support it, like Ogre 2)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Normal maps"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Environment maps"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Lightmaps"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Particle effects"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Render order"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "Projector"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:268
 msgid "([ogre 1.x only](https://github.com/gazebosim/gz-sim/pull/1979))"
 msgstr ""
 
@@ -1100,171 +1151,164 @@ msgid "Supported versions:"
 msgstr ""
 
 #: ../../../comparison.md:287
-msgid "ROS 2 Iron (from source) / Rolling (from source)"
+msgid "ROS 2 Kilted (from binaries)"
 msgstr ""
 
 #: ../../../comparison.md:289
 msgid ""
-"Note: binaries for ROS2 might be available sometime after the Ionic release."
+"See [Installing Gazebo with ROS](ros_installation) for all the supported "
+"combinations of ROS and Gazebo."
 msgstr ""
 
-#: ../../../comparison.md:291
-msgid ""
-"For **ROS 2 Rolling**, the Rolling distribution moves with the next future "
-"release of ROS 2 defined in [REP-2000](https://www.ros.org/reps/rep-2000."
-"html). For the Gz Ionic release this means that it will be adopted when ROS "
-"2 Jazzy goes into the [REP-2000](https://www.ros.org/reps/rep-2000.html)."
-msgstr ""
-
-#: ../../../comparison.md:296
+#: ../../../comparison.md:292
 msgid "Platforms"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:294
 msgid "Platform"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:294
 msgid "Ubuntu"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:294
 msgid "OSX"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:294
 msgid ""
-"Most of the stack works, outstanding issues: [render window](https://github."
-"com/gazebosim/gz-sim/issues/44)"
+"Most of the stack works, outstanding issues: [render window](https://"
+"github.com/gazebosim/gz-sim/issues/44)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:297
 msgid "Windows"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:297
 msgid ""
 "All libraries compile, low-level libraries function well: [Issue](https://"
 "github.com/gazebosim/gz-sim/issues/168)"
 msgstr ""
 
-#: ../../../comparison.md:304
+#: ../../../comparison.md:300
 msgid "Others"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid "Log / playback"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid "Web client (GzWeb)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid "COLLADA meshes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid "OBJ meshes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid "STL meshes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid "USD meshes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:302
 msgid ""
 "[✓](https://github.com/gazebosim/sdformat/tree/sdf12/examples/usdConverter)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:310
 msgid "Code introspection"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:310
 msgid ""
 "All simulation state is accessible from system plugins or through the "
 "`SceneBroadcaster`'s state topic"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:311
 msgid "Distribute simulation across processes"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:311
 msgid "(coming up)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:311
 msgid "Incrementally load levels"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:311
 msgid "Online model database"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:311
 msgid "[gazebo_models repository](https://github.com/osrf/gazebo_models/)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:314
 msgid "[Gazebo Fuel](https://app.gazebosim.org/fuel/models)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:314
 msgid "Saved simulation states"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:314
 msgid "[Issue](https://github.com/gazebosim/gz-sim/issues/137)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:315
 msgid "Sphere, cylinder and box primitives"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:315
 msgid "Ellipsoid and capsule primitives"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:315
 msgid "Hydrodynamics"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:315
 msgid "Ocean currents"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:315
 msgid "Test fixture"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:315
 msgid "[✓](https://gazebosim.org/api/gazebo/6.6/test_fixture.html)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:320
 msgid "Spherical coordinates"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:320
 msgid "Generic comms system"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:320
 msgid ""
 "[✓](https://github.com/gazebosim/gz-sim/blob/ign-gazebo6/examples/worlds/"
 "perfect_comms.sdf)"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:322
 msgid "Acoustic communication"
 msgstr ""
 
-#: ../../../comparison.md:0
+#: ../../../comparison.md:322
 msgid "Static linked plugins"
 msgstr ""

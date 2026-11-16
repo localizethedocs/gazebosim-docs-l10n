@@ -8,39 +8,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo ionic\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:40+0000\n"
+"POT-Creation-Date: 2026-11-16 18:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "Binary Ubuntu Install"
 msgstr ""
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "Binary macOS Install"
 msgstr ""
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "Binary Windows Install"
 msgstr ""
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "Ubuntu Source Install"
 msgstr ""
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "macOS Source Install"
 msgstr ""
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "Windows Source Install"
 msgstr ""
 
-#: ../../../install.md:62
+#: ../../../install.md:91
 msgid "Troubleshooting"
 msgstr ""
 
@@ -96,151 +97,192 @@ msgid "[Source Installation on Windows](install_windows_src)"
 msgstr ""
 
 #: ../../../install.md:22
-msgid "Ionic Libraries"
+msgid "Building documentation"
 msgstr ""
 
 #: ../../../install.md:24
+msgid ""
+"After completing a source installation, you can build the documentation for "
+"the Gazebo libraries from the root of the workspace."
+msgstr ""
+
+#: ../../../install.md:27
+msgid "Install Doxygen and the documentation dependencies. On Ubuntu:"
+msgstr ""
+
+#: ../../../install.md:29
+msgid "sudo apt-get install -y doxygen graphviz\n"
+msgstr ""
+
+#: ../../../install.md:33
+msgid ""
+"**Note:** Building documentation for `sdformat` requires the additional "
+"`texlive-latex-extra` package. Install the documentation dependencies with:"
+msgstr ""
+
+#: ../../../install.md:36
+msgid "sudo apt-get install -y doxygen graphviz texlive-latex-extra\n"
+msgstr ""
+
+#: ../../../install.md:40
+msgid "Then run:"
+msgstr ""
+
+#: ../../../install.md:42
+msgid ""
+"colcon build --merge-install \\\n"
+"  --cmake-args -DBUILD_TESTING=OFF \\\n"
+"  --cmake-target doc\n"
+msgstr ""
+
+#: ../../../install.md:48
+msgid "The generated documentation for each library can be found under:"
+msgstr ""
+
+#: ../../../install.md:50
+msgid "build/<package>/doxygen/html/\n"
+msgstr ""
+
+#: ../../../install.md:54
+msgid "Ionic Libraries"
+msgstr ""
+
+#: ../../../install.md:56
 msgid ""
 "The Ionic collection is composed of many different Gazebo libraries. The "
 "collection assures that all libraries are compatible and can be used "
 "together."
 msgstr ""
 
-#: ../../../install.md:27
-msgid "This list of library versions may change up to the release date."
-msgstr ""
-
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "Library name"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "Version"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-cmake"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "4.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-common"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "6.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-fuel-tools"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "10.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-sim"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "9.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-gui"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-launch"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "8.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-math"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-msgs"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "11.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-physics"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-plugin"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "3.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-rendering"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-sensors"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-tools"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "2.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-transport"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "14.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "gz-utils"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "sdformat"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:59
 msgid "15.x"
 msgstr ""
 
-#: ../../../install.md:48
+#: ../../../install.md:78
 msgid "Supported platforms"
 msgstr ""
 
-#: ../../../install.md:50
-msgid ""
-"Ionic is planned to be [supported](releases) on the platforms below. This "
-"list may change up to the release date."
+#: ../../../install.md:80
+msgid "Ionic is [supported](releases) on the platforms below."
 msgstr ""
 
-#: ../../../install.md:53
+#: ../../../install.md:82
 msgid "These are the **officially** supported platforms:"
 msgstr ""
 
-#: ../../../install.md:55
+#: ../../../install.md:84
 msgid "Ubuntu Noble on amd64"
 msgstr ""
 
-#: ../../../install.md:57
+#: ../../../install.md:86
 msgid ""
 "Platforms supported at **best-effort** include arm architectures, Windows "
 "and macOS. See [this ticket](https://github.com/gazebo-tooling/release-tools/"
