@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo blueprint\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../gui.md:1
+msgid "Understanding the GUI"
+msgstr ""
+
+#: ../../../gui.md:3
+msgid ""
+"This guide is an introduction to the Ignition Graphical User Interface (GUI)."
+msgstr ""
+
+#: ../../../gui.md:5
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../gui.md:7
+msgid ""
+"Before beginning, you should have [Ignition installed](install). If you "
+"installed [from source](install.md#option-3-source-installation-any-"
+"platform) you will need to [source](install.md#using-the-workspace) the "
+"workspace; otherwise, you're good to go!"
+msgstr ""
+
+#: ../../../gui.md:12
+msgid "Start by getting Ignition up and running with a sample world:"
+msgstr ""
+
+#: ../../../gui.md:14
+msgid "ign gazebo shapes.sdf\n"
+msgstr ""
+
+#: ../../../gui.md:18
+msgid ""
+"`ign gazebo` will run the latest version of Ignition you have installed. You "
+"can check if you have more than one version of Ignition installed by running "
+"`ign gazebo --versions`. For example, if you have Blueprint and Citadel "
+"installed, `--versions` might return:"
+msgstr ""
+
+#: ../../../gui.md:22
+msgid ""
+"3.0.0\n"
+"2.16.0\n"
+msgstr ""
+
+#: ../../../gui.md:27
+msgid ""
+"To ensure you're working with Blueprint, include the `--force-version` "
+"directive when starting up:"
+msgstr ""
+
+#: ../../../gui.md:29
+msgid "ign gazebo --force-version 2.16.0 shapes.sdf\n"
+msgstr ""
+
+#: ../../../gui.md:33
+msgid "GUI"
+msgstr "GUI"
+
+#: ../../../gui.md:35
+msgid "After running `shapes.sdf`, you should see the following screen:"
+msgstr ""
+
+#: ../../../gui.md:37
+msgid "![shapes.sdf](img/shapes.png)"
+msgstr ""
+
+#: ../../../gui.md:37
+msgid "shapes.sdf"
+msgstr "shapes.sdf"
+
+#: ../../../gui.md:39
+msgid "The interface consists of several sections:"
+msgstr ""
+
+#: ../../../gui.md:41
+msgid "The Toolbar"
+msgstr ""
+
+#: ../../../gui.md:43
+msgid ""
+"The orange toolbar along the top of the GUI contains two buttons, a file "
+"menu button on the left (horizontal stripes), and a plugins button on the "
+"right (vertical ellipsis)."
+msgstr ""
+
+#: ../../../gui.md:45
+msgid ""
+"The file menu button allows you to save the world to a file, save and load "
+"interface configurations and customize interface style settings. An "
+"interface configuration consists of the plugins you have loaded and the "
+"style settings in place."
+msgstr ""
+
+#: ../../../gui.md:48
+msgid ""
+"The plugins button lists all the available plugins. You can scroll down this "
+"list to see all the plugins that are available for your version of Ignition. "
+"When you select one, its interface will appear in the right panel."
+msgstr ""
+
+#: ../../../gui.md:52
+msgid "The Right Panel"
+msgstr ""
+
+#: ../../../gui.md:54
+msgid ""
+"`shapes.sdf` contains three plugins that you see in the right panel upon "
+"starting. At the top is the Entity Tree, followed by the Component "
+"Inspector, and then Transform Control."
+msgstr ""
+
+#: ../../../gui.md:57
+msgid ""
+"Everything in a simulation is considered an \"entity.\" In `shapes.sdf`, the "
+"entities listed are the ground plane, each of the shape models, and the sun."
+msgstr ""
+
+#: ../../../gui.md:60
+msgid ""
+"Items in the list can be expanded to reveal their links, as well as "
+"corresponding visuals and collisions, and joints, if they exist."
+msgstr ""
+
+#: ../../../gui.md:62
+msgid ""
+"You can select entities in the simulation by clicking on their names in the "
+"entity tree. You can also hold `Ctrl` and click to select multiple."
+msgstr ""
+
+#: ../../../gui.md:65
+msgid ""
+"![Selecting multiple entities from the entity tree](img/entity_select.png)"
+msgstr ""
+
+#: ../../../gui.md:65
+msgid "Selecting multiple entities from the entity tree"
+msgstr ""
+
+#: ../../../gui.md:67
+msgid ""
+"You can also right-click on any plugin to open basic `Settings` or to "
+"`Close`."
+msgstr ""
+
+#: ../../../gui.md:69
+msgid "The Scene"
+msgstr ""
+
+#: ../../../gui.md:71
+msgid ""
+"Within the scene is where you'll interact with your simulated world and "
+"objects."
+msgstr ""
+
+#: ../../../gui.md:73
+msgid "Currently, you can navigate the scene with a mouse in several ways:"
+msgstr ""
+
+#: ../../../gui.md:75
+msgid "**Left-click**: select entity"
+msgstr ""
+
+#: ../../../gui.md:76
+msgid "**Right-click**: opens menu with options:"
+msgstr ""
+
+#: ../../../gui.md:77
+msgid "*Move to*: center the scene on an entity"
+msgstr ""
+
+#: ../../../gui.md:78
+msgid ""
+"*Follow*: choose an entity for the view to  stay centered on, whether it "
+"moves or you pan around"
+msgstr ""
+
+#: ../../../gui.md:79
+msgid "*Remove*: erase the entity from the simulation"
+msgstr ""
+
+#: ../../../gui.md:80
+msgid "**Left-click and drag**: pan around the scene"
+msgstr ""
+
+#: ../../../gui.md:81
+msgid "**Right-click and drag**: zoom in and out"
+msgstr ""
+
+#: ../../../gui.md:82
+msgid "**Scroll wheel forward/backward**: zoom in and out"
+msgstr ""
+
+#: ../../../gui.md:83
+msgid "**Scroll wheel click and drag**: rotate the scene"
+msgstr ""
+
+#: ../../../gui.md:85
+msgid ""
+"More complex methods for interacting with the entities within a scene will "
+"be explained in-depth in the coming tutorials."
+msgstr ""
+
+#: ../../../gui.md:87
+msgid "World Control"
+msgstr ""
+
+#: ../../../gui.md:89
+msgid "Along the bottom edge of the scene, you'll notice several buttons:"
+msgstr ""
+
+#: ../../../gui.md:91
+msgid "![Playback buttons](img/playback.png)"
+msgstr ""
+
+#: ../../../gui.md:91
+msgid "Playback buttons"
+msgstr ""
+
+#: ../../../gui.md:93
+msgid ""
+"From left to right, the options are `Play`, `Steps` and `RTF` (real time "
+"factor)."
+msgstr ""
+
+#: ../../../gui.md:95
+msgid ""
+"Pressing `Play` will start the simulation. You can use the same button to "
+"pause the simulation as well."
+msgstr ""
+
+#: ../../../gui.md:98
+msgid ""
+"The `Steps` button allows you to step through the simulation at the rate of "
+"a step size, or simulation iteration. You can customize step size by "
+"hovering over the button."
+msgstr ""
+
+#: ../../../gui.md:101
+msgid ""
+"At the furthest right end of the scene, you can expand `RTF` to see not only "
+"the percentage value that compares real time with sim time, but also those "
+"individual values themselves, as well as iteration count."
+msgstr ""
+
+#: ../../../gui.md:103
+msgid ""
+"The function of the World Control options will become clearer once you begin "
+"manipulating entities."
+msgstr ""
+
+#: ../../../gui.md:105
+msgid "Next Up"
+msgstr ""
+
+#: ../../../gui.md:107
+msgid ""
+"Now that you're comfortable with Ignition GUI navigation and terminology, "
+"let's start learning about more meaningful model interactions with the "
+"[Manipulating Models](manipulating_models) tutorial."
+msgstr ""
