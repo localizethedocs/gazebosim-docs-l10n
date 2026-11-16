@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo rotary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"POT-Creation-Date: 2026-11-16 18:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,43 +61,43 @@ msgid ""
 "rule:"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:30
 msgid "Regular package"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:30 ../../../rotary.md:42
 msgid "Rotary alias"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:30
 msgid "`libgz-cmake-dev`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:32
 msgid "`libgz-rotary-cmake-dev`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:32
 msgid "`gz-plugin-cli`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:33
 msgid "`gz-rotary-plugin-cli`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:33
 msgid "`python3-gz-math`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:34
 msgid "`python3-gz-rotary-math`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:34
 msgid "`libsdformat-dev` (*)"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:35
 msgid "`libgz-rotary-sdformat-dev`"
 msgstr ""
 
@@ -110,23 +111,23 @@ msgstr ""
 msgid "Homebrew (macOS)"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:42
 msgid "Regular formula"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:42
 msgid "`gz-mathN`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:44
 msgid "`gz-rotary-math`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:44
 msgid "`sdformatN`"
 msgstr ""
 
-#: ../../../rotary.md:10
+#: ../../../rotary.md:45
 msgid "`gz-rotary-sdformat`"
 msgstr ""
 
@@ -212,8 +213,8 @@ msgstr ""
 
 #: ../../../rotary.md:97
 msgid ""
-"Rotary formulae are published through the [`osrf/simulation`](https://github."
-"com/osrf/homebrew-simulation) tap:"
+"Rotary formulae are published through the [`osrf/simulation`](https://"
+"github.com/osrf/homebrew-simulation) tap:"
 msgstr ""
 
 #: ../../../rotary.md:100
