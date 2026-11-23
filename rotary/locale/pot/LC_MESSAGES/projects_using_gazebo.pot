@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo rotary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"POT-Creation-Date: 2026-11-23 20:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,32 +46,6 @@ msgstr ""
 msgid ""
 "**Aerostack2**: An open-source autonomous multi-aerial-robots systems "
 "framework. [{octicon}`globe` link](https://github.com/aerostack2/aerostack2)"
-msgstr ""
-
-#: ../../../projects_using_gazebo.md:14 ../../../projects_using_gazebo.md:15
-#: ../../../projects_using_gazebo.md:16 ../../../projects_using_gazebo.md:18
-#: ../../../projects_using_gazebo.md:21 ../../../projects_using_gazebo.md:22
-#: ../../../projects_using_gazebo.md:23 ../../../projects_using_gazebo.md:24
-#: ../../../projects_using_gazebo.md:25 ../../../projects_using_gazebo.md:26
-#: ../../../projects_using_gazebo.md:29 ../../../projects_using_gazebo.md:30
-#: ../../../projects_using_gazebo.md:31 ../../../projects_using_gazebo.md:32
-#: ../../../projects_using_gazebo.md:33 ../../../projects_using_gazebo.md:34
-#: ../../../projects_using_gazebo.md:35 ../../../projects_using_gazebo.md:36
-#: ../../../projects_using_gazebo.md:40
-msgid ""
-"<svg version=\"1.1\" width=\"1.0em\" height=\"1.0em\" class=\"sd-octicon sd-"
-"octicon-globe\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 0a8 "
-"8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 "
-"4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 "
-"10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 "
-"0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 "
-"1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 "
-"5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 "
-"1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 "
-"1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 "
-"0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 "
-"0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z\"></"
-"path></svg>"
 msgstr ""
 
 #: ../../../projects_using_gazebo.md:15
