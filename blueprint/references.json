@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-07-31 15:38:21 -0500",
-      "hash" : "f1ad61e4a69017e0a70831c8979c836ecd3c40a6",
-      "title" : "New installation instructions for windows binaries using pixi (#707)"
+      "date" : "2026-11-19 13:56:36 -0600",
+      "hash" : "93e26c00232029a74eeb3afcdd3009170eba9ff6",
+      "title" : "Add version bump instruction before PR (#730)"
     }
   },
   "type" : "branch",
