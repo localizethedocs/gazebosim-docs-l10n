@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo rotary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_ubuntu.md:1
+msgid "Binary Installation on Ubuntu"
+msgstr ""
+
+#: ../../../install_ubuntu.md:3
+msgid ""
+"Rotary binaries are published for Ubuntu Noble (24.04) and Ubuntu Resolute "
+"(26.04) via the nightly packages repository at `packages.osrfoundation.org`. "
+"To install all of them, the metapackage `gz-rotary` can be installed."
+msgstr ""
+
+#: ../../../install_ubuntu.md:9
+msgid ""
+"Rotary is a rolling, unstable stream. Packages are updated nightly and "
+"breakage is expected. For production use, install a named release such as "
+"[Jetty](https://gazebosim.org/docs/jetty) instead."
+msgstr ""
+
+#: ../../../install_ubuntu.md:14
+msgid "First install some necessary tools:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:16
+msgid ""
+"sudo apt-get update\n"
+"sudo apt-get install curl lsb-release gnupg\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:21
+msgid "Then install Gazebo Rotary:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:23
+msgid ""
+"sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/"
+"keyrings/pkgs-osrf-archive-keyring.gpg\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/"
+"ubuntu-stable $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-stable.list > /dev/null\n"
+"echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/"
+"pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/"
+"ubuntu-nightly $(lsb_release -cs) main\" | sudo tee /etc/apt/sources.list.d/"
+"gazebo-nightly.list > /dev/null\n"
+"sudo apt-get update\n"
+"sudo apt-get install gz-rotary\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:31
+msgid ""
+"All libraries should be ready to use and the `gz sim` app ready to be "
+"executed."
+msgstr ""
+
+#: ../../../install_ubuntu.md:33
+msgid ""
+"Head back to the [Getting started](getstarted) page to start using Gazebo!"
+msgstr ""
+
+#: ../../../install_ubuntu.md:37
+msgid "Server-only installation"
+msgstr ""
+
+#: ../../../install_ubuntu.md:39
+msgid ""
+"For headless and CI environments where the GUI is not needed, the `gz-sim-"
+"server` package provides a lightweight alternative. It installs only the "
+"Gazebo simulation server (`gz-sim-server`) without any GUI or Qt "
+"dependencies, resulting in a significantly smaller installation footprint."
+msgstr ""
+
+#: ../../../install_ubuntu.md:44
+msgid ""
+"After configuring the repository (same as above), install the server-only "
+"package:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:47
+msgid "sudo apt-get install gz-sim-server\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:51
+msgid ""
+"The server-only package includes the DART physics engine and the core "
+"simulation server plugins. To start a headless simulation:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:54
+msgid "/usr/libexec/gz/sim/gz-sim-server <world_file.sdf>\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:59
+msgid ""
+"The server-only binary is installed at `/usr/libexec/gz/sim/gz-sim-server`, "
+"which is not in the `PATH` by default. The regular `gz sim -s` command is "
+"not available in the server-only installation since it requires the full `gz-"
+"sim-cli` package."
+msgstr ""
+
+#: ../../../install_ubuntu.md:66
+msgid "Uninstalling binary install"
+msgstr ""
+
+#: ../../../install_ubuntu.md:68
+msgid ""
+"If you need to uninstall Gazebo Rotary or switch to a source-based install, "
+"run the following command:"
+msgstr ""
+
+#: ../../../install_ubuntu.md:71
+msgid "sudo apt remove gz-rotary && sudo apt autoremove\n"
+msgstr ""
+
+#: ../../../install_ubuntu.md:75
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install_ubuntu.md:77
+msgid "See [Troubleshooting](troubleshooting.md#ubuntu)"
+msgstr ""
