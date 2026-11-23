@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo acropolis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-23 20:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,95 +58,95 @@ msgid ""
 "together."
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "Library name"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "Version"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-cmake"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "2.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-common"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "3.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-fuel-tools"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-sim"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "1.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-gui"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-launch"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "0.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-math"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "6.x"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-msgs"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-physics"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-plugin"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-rendering"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-sensors"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-tools"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "gz-transport"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "sdformat"
 msgstr ""
 
-#: ../../../install.md:0
+#: ../../../install.md:22
 msgid "8.x"
 msgstr ""
 
@@ -162,8 +163,8 @@ msgstr ""
 #: ../../../install.md:45
 msgid ""
 "sudo sh -c 'echo \"deb http://packages.osrfoundation.org/gazebo/ubuntu-"
-"stable `lsb_release -cs` main\" > /etc/apt/sources.list.d/gazebo-stable."
-"list'\n"
+"stable `lsb_release -cs` main\" > /etc/apt/sources.list.d/gazebo-"
+"stable.list'\n"
 "wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -\n"
 "sudo apt-get update\n"
 "sudo apt-get install gazebo-acropolis\n"
@@ -339,8 +340,8 @@ msgstr ""
 #: ../../../install.md:148
 msgid ""
 "sudo sh -c 'echo \"deb http://packages.osrfoundation.org/gazebo/ubuntu-"
-"stable `lsb_release -cs` main\" > /etc/apt/sources.list.d/gazebo-stable."
-"list'\n"
+"stable `lsb_release -cs` main\" > /etc/apt/sources.list.d/gazebo-"
+"stable.list'\n"
 "wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -\n"
 "sudo apt-get update\n"
 msgstr ""
