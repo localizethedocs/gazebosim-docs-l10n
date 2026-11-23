@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Robotics
+# This file is distributed under the same license as the Gazebo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gazebo edifice\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install.md:63
+msgid "Binary Ubuntu Install"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "Binary macOS Install"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "Binary Windows Install"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "Ubuntu Source Install"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "macOS Source Install"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "Windows Source Install"
+msgstr ""
+
+#: ../../../install.md:63
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../install.md:1
+msgid ""
+"**Edifice has reached end-of-life on March 2022. This page exists for "
+"archival purposes. Please refer to the latest supported version.**"
+msgstr ""
+
+#: ../../../install.md:5
+msgid "Ignition Edifice"
+msgstr ""
+
+#: ../../../install.md:7
+msgid ""
+"Ignition Edifice is the 5th major release of Ignition. It's a short-term "
+"support."
+msgstr ""
+
+#: ../../../install.md:9
+msgid "Binary installation instructions"
+msgstr ""
+
+#: ../../../install.md:11
+msgid "Binary installation is the recommended method of installing Ignition."
+msgstr ""
+
+#: ../../../install.md:13
+msgid "[Binary Installation on Ubuntu](install_ubuntu)"
+msgstr ""
+
+#: ../../../install.md:14
+msgid "[Binary Installation on macOS](install_osx)"
+msgstr ""
+
+#: ../../../install.md:15
+msgid "[Binary Installation on Windows](install_windows)"
+msgstr ""
+
+#: ../../../install.md:17
+msgid "Source Installation instructions"
+msgstr ""
+
+#: ../../../install.md:19
+msgid ""
+"Source installation is recommended for users planning on altering Ignition's "
+"source code (advanced)."
+msgstr ""
+
+#: ../../../install.md:21
+msgid "[Source Installation on Ubuntu](install_ubuntu_src)"
+msgstr ""
+
+#: ../../../install.md:22
+msgid "[Source Installation on macOS](install_osx_src)"
+msgstr ""
+
+#: ../../../install.md:23
+msgid "[Source Installation on Windows](install_windows_src)"
+msgstr ""
+
+#: ../../../install.md:25
+msgid "Edifice Libraries"
+msgstr ""
+
+#: ../../../install.md:27
+msgid ""
+"The Edifice collection is composed of many different Ignition libraries. The "
+"collection assures that all libraries are compatible and can be used "
+"together."
+msgstr ""
+
+#: ../../../install.md:0
+msgid "Library name"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "Version"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-cmake"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "2.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-common"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "4.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-fuel-tools"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "6.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-gazebo"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "5.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-gui"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-launch"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-math"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-msgs"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "7.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-physics"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-plugin"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "1.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-rendering"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-sensors"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-tools"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-transport"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "10.x"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "ign-utils"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "sdformat"
+msgstr ""
+
+#: ../../../install.md:0
+msgid "11.x"
+msgstr ""
+
+#: ../../../install.md:49
+msgid "Supported platforms"
+msgstr ""
+
+#: ../../../install.md:51
+msgid "Edifice is [supported](releases) on the platforms below."
+msgstr ""
+
+#: ../../../install.md:53
+msgid "These are the **officially** supported platforms:"
+msgstr ""
+
+#: ../../../install.md:55
+msgid "Ubuntu Bionic on amd64/i386"
+msgstr ""
+
+#: ../../../install.md:56
+msgid "Ubuntu Focal on amd64"
+msgstr ""
+
+#: ../../../install.md:58
+msgid ""
+"Platforms supported at **best-effort** include arm architectures, Windows "
+"and macOS. See [this ticket](https://github.com/ignition-tooling/release-"
+"tools/issues/421) for the full status."
+msgstr ""
