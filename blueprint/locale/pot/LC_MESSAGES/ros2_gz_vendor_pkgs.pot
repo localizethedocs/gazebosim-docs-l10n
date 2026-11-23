@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gazebo blueprint\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 09:41+0000\n"
+"POT-Creation-Date: 2026-11-23 20:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,13 +32,14 @@ msgid ""
 "(https://wiki.ubuntu.com/StableReleaseUpdates), the Gazebo packages on "
 "upstream Ubuntu did not receive any updates. Thus, upstream Ubuntu almost "
 "always had older versions of Gazebo than what was available from the Gazebo "
-"package repository ([packages.osrfoundation.org](https://packages."
-"osrfoundation.org)). To overcome this, more up-to-date Gazebo packages were "
-"copied to the ROS bootstrap repository ([repos.ros.org](https://repos.ros."
-"org)) which were then copied to the main ROS package repository ([packages."
-"ros.org](https://packages.ros.org)). However, the process was error prone "
-"and keeping package versions in sync between the Gazebo and ROS package "
-"repositories was difficult since this was a manual process."
+"package repository ([packages.osrfoundation.org](https://"
+"packages.osrfoundation.org)). To overcome this, more up-to-date Gazebo "
+"packages were copied to the ROS bootstrap repository ([repos.ros.org]"
+"(https://repos.ros.org)) which were then copied to the main ROS package "
+"repository ([packages.ros.org](https://packages.ros.org)). However, the "
+"process was error prone and keeping package versions in sync between the "
+"Gazebo and ROS package repositories was difficult since this was a manual "
+"process."
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:17
@@ -65,9 +67,9 @@ msgstr ""
 msgid ""
 "Each release of ROS 2 is paired with a specific release of Gazebo. For ROS 2 "
 "Jazzy, the vendor packages contain Gazebo libraries from the Harmonic "
-"release. For ROS 2 K-turtle (next release), the vendor packages will contain "
-"Gazebo Ionic. This default pairing is found in the [ROS installation "
-"instructions](ros_installation)"
+"release, for ROS 2 Kilted they contain Gazebo Ionic and for ROS 2 Lyrical "
+"they contain Gazebo Jetty. This default pairing is found in the [ROS "
+"installation instructions](ros_installation)"
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:36
@@ -76,152 +78,152 @@ msgid ""
 "library they vendor:"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:39 ../../../ros2_gz_vendor_pkgs.md:60
 msgid "Vendor Package"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:39
 msgid "Gazebo Library"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:39
 msgid "[gz_cmake_vendor](https://github.com/gazebo-release/gz_cmake_vendor)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:41
 msgid "[gz-cmake](https://github.com/gazebosim/gz-cmake)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:41
 msgid "[gz_common_vendor](https://github.com/gazebo-release/gz_common_vendor)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:42
 msgid "[gz-common](https://github.com/gazebosim/gz-common)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:42
 msgid ""
 "[gz_fuel_tools_vendor](https://github.com/gazebo-release/"
 "gz_fuel_tools_vendor)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:43
 msgid "[gz-fuel-tools](https://github.com/gazebosim/gz-fuel-tools)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:43
 msgid "[gz_gui_vendor](https://github.com/gazebo-release/gz_gui_vendor)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:44
 msgid "[gz-gui](https://github.com/gazebosim/gz-gui)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:44
 msgid ""
 "[gz_launch_vendor](https://github.com/gazebo-release/gz_launch_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:45
 msgid "[gz-launch](https://github.com/gazebosim/gz-launch)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:45
 msgid "[gz_math_vendor](https://github.com/gazebo-release/gz_math_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:46
 msgid "[gz-math](https://github.com/gazebosim/gz-math)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:46
 msgid "[gz_msgs_vendor](https://github.com/gazebo-release/gz_msgs_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:47
 msgid "[gz-msgs](https://github.com/gazebosim/gz-msgs)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:47
 msgid ""
 "[gz_physics_vendor](https://github.com/gazebo-release/gz_physics_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:48
 msgid "[gz-physics](https://github.com/gazebosim/gz-physics)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:48
 msgid ""
 "[gz_plugin_vendor](https://github.com/gazebo-release/gz_plugin_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:49
 msgid "[gz-plugin](https://github.com/gazebosim/gz-plugin)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:49
 msgid ""
-"[gz_rendering_vendor](https://github.com/gazebo-release/gz_rendering_vendor."
-"git)"
+"[gz_rendering_vendor](https://github.com/gazebo-release/"
+"gz_rendering_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:50
 msgid "[gz-rendering](https://github.com/gazebosim/gz-rendering)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:50
 msgid ""
 "[gz_sensors_vendor](https://github.com/gazebo-release/gz_sensors_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:51
 msgid "[gz-sensors](https://github.com/gazebosim/gz-sensors)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:51
 msgid "[gz_sim_vendor](https://github.com/gazebo-release/gz_sim_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:52
 msgid "[gz-sim](https://github.com/gazebosim/gz-sim)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:52
 msgid ""
 "[gz_tools_vendor](https://github.com/gazebo-release/gz_tools_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:53
 msgid "[gz-tools](https://github.com/gazebosim/gz-tools)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:53
 msgid ""
-"[gz_transport_vendor](https://github.com/gazebo-release/gz_transport_vendor."
-"git)"
+"[gz_transport_vendor](https://github.com/gazebo-release/"
+"gz_transport_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:54
 msgid "[gz-transport](https://github.com/gazebosim/gz-transport)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:54
 msgid ""
 "[gz_utils_vendor](https://github.com/gazebo-release/gz_utils_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:55
 msgid "[gz-utils](https://github.com/gazebosim/gz-utils)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:55
 msgid ""
 "[sdformat_vendor](https://github.com/gazebo-release/sdformat_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:56
 msgid "[sdformat](https://github.com/gazebosim/sdformat)"
 msgstr ""
 
@@ -231,26 +233,26 @@ msgid ""
 "vendored:"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:60
 msgid "External Library"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:60
 msgid ""
 "[gz_dartsim_vendor](https://github.com/gazebo-release/gz_dartsim_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:62
 msgid "[dartsim](https://github.com/dartsim/dart)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:62
 msgid ""
-"[gz_ogre_next_vendor](https://github.com/gazebo-release/gz_ogre_next_vendor."
-"git)"
+"[gz_ogre_next_vendor](https://github.com/gazebo-release/"
+"gz_ogre_next_vendor.git)"
 msgstr ""
 
-#: ../../../ros2_gz_vendor_pkgs.md:0
+#: ../../../ros2_gz_vendor_pkgs.md:63
 msgid "[ogre-next](https://github.com/OGRECave/ogre-next)"
 msgstr ""
 
@@ -377,16 +379,16 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:143
 msgid ""
-"Install the binaries from [packages.osrfoundation.org](https://packages."
-"osrfoundation.org). Make sure to install the metapackage that includes all "
-"library components (e.g. gz-ionic, gz-harmonic, etc.)"
+"Install the binaries from [packages.osrfoundation.org](https://"
+"packages.osrfoundation.org). Make sure to install the metapackage that "
+"includes all library components (e.g. gz-ionic, gz-harmonic, etc.)"
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:146
 msgid ""
-"Clone the set of vendor packages included in [gz_vendor.repos](https://gist."
-"github.com/azeey/a94adb591475ea0e613313d3540ca451) in your workspace using "
-"[vcstool](https://github.com/dirk-thomas/vcstool)."
+"Clone the set of vendor packages included in [gz_vendor.repos](https://"
+"gist.github.com/azeey/a94adb591475ea0e613313d3540ca451) in your workspace "
+"using [vcstool](https://github.com/dirk-thomas/vcstool)."
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:149
@@ -440,9 +442,9 @@ msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:175
 msgid ""
-"Clone the set of vendor packages included in [gz_vendor.repos](https://gist."
-"github.com/azeey/a94adb591475ea0e613313d3540ca451) in the same workspace "
-"using [vcstool](https://github.com/dirk-thomas/vcstool)."
+"Clone the set of vendor packages included in [gz_vendor.repos](https://"
+"gist.github.com/azeey/a94adb591475ea0e613313d3540ca451) in the same "
+"workspace using [vcstool](https://github.com/dirk-thomas/vcstool)."
 msgstr ""
 
 #: ../../../ros2_gz_vendor_pkgs.md:179
